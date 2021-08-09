@@ -1,0 +1,144 @@
+.timeline-Widget {
+  background: #f1f1f1;
+}
+
+.env-bp-min .timeline-Tweet {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+.timeline-Header,
+.timeline-Tweet-brand,
+.timeline-Tweet-author,
+.timeline-Tweet-actions {
+  display: none;
+}
+
+.timeline-Tweet-text,
+.timeline-Tweet-media,
+.timeline-Tweet-actions {
+  margin-left: 0;
+}
+
+.timeline-Tweet-metadata {
+  float: none;
+  order: -1;
+}
+
+.timeline-Tweet:hover {
+  background: transparent;
+}
+
+.timeline-Body,
+.timeline-NewTweetsNotification {
+  border-top: 0 none;
+}
+
+.timeline-TweetList-tweet {
+  border-top: 2px solid #fff;
+}
+.timeline-TweetList-tweet:first-child {
+  border-top: 0 none;
+}
+.timeline-TweetList-tweet:first-child .timeline-Tweet {
+  padding-top: 0;
+}
+
+.env-bp-min .timeline-Tweet-text {
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  white-space: initial;
+}
+
+.timeline-Tweet-metadata time {
+  color: #979797;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+}
+
+a {
+  color: #388067;
+}
+
+.Icon--retweetBadge {
+  background: transparent url("../images/retweet.svg") no-repeat center center/17px 17px;
+  transform: scale(-1, 1);
+}
+
+.timeline-Tweet-retweetCredit {
+  margin-left: 0;
+  order: -1;
+  color: #979797;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+}
+
+.TwitterCard .SummaryCard-image {
+  border-radius: 10px 0px 0px 10px;
+  width: 79px;
+  height: 68px;
+  float: left;
+}
+
+.tcu-imageContainer {
+  height: 100%;
+}
+
+.TwitterCard .SummaryCard-content .TwitterCard-title {
+  max-height: none;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  margin-bottom: 5px;
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.TwitterCard .SummaryCard-destination {
+  background: transparent url("../images/links.svg") no-repeat left center/16px 16px;
+  padding-left: 20px;
+  color: #000 !important;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.TwitterCardsGrid .TwitterCardsGrid-col--12.SummaryCard-contentContainer {
+  width: 203px;
+  clear: none;
+}
+
+.TwitterCard-container {
+  border-color: #aaa;
+}
+
+.TwitterCard .SummaryCard--large .SummaryCard-content {
+  padding: 9px 7px;
+}
+
+.timeline-Viewport {
+  overflow: visible;
+}
+
+/*# sourceMappingURL=twitter.css.map */
