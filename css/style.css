@@ -1048,7 +1048,7 @@ table {
   font-size: 14.5px;
   line-height: 38px;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: none;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
@@ -1814,7 +1814,7 @@ body {
   margin-bottom: 60px;
   text-align: center;
 }
-.insights-wrapper a {
+.insights-wrapper .title-link {
   display: block;
   color: #fff;
   font-style: normal;
@@ -1826,6 +1826,7 @@ body {
 .insights-wrapper a.read-more {
   display: inline-block;
   margin: 0;
+  color: #fff;
 }
 .insights-wrapper .btn-wrapper {
   margin-bottom: 15px;
@@ -1858,7 +1859,7 @@ body {
   background: transparent url("../images/view-all-green.svg") no-repeat right top/23px 23px;
   padding-right: 42px;
   min-height: 18px;
-  min-width: 107px;
+  min-width: 110px;
   line-height: 25px;
 }
 .press-wrapper .content .view-all:hover {

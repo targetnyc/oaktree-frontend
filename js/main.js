@@ -35,19 +35,11 @@ function insertCSS(bodyEl, cssPath) {
 function loadTwitterCSS() {
 	// TODO iframe onload
 
-	if (frames.length > 0 && frames[0].document) {
-		twttr.events.bind(
-			'loaded',
-			function (event) {
-				setTimeout(function() {
-					insertCSS(frames[0].document.body, "css/twitter.css");
-					insertCSS(frames[0].document.body, "https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
-				}, 500);
-			}
-		);
-	} else {
-		setTimeout(loadTwitterCSS, 500);
-	}
+	// insertCSS(frames[0].document.body, "https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+	var options = {
+		"url": "css/twitter.css"
+	};
+	CustomizeTwitterWidget(options);
 }
 
 function initHomeEvents() {

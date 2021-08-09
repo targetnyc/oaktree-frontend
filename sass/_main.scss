@@ -459,7 +459,7 @@ body {
 		text-align: center;
 	}
 
-	a {
+	.title-link {
 		display: block;
 
 		color: #fff;
@@ -473,6 +473,8 @@ body {
 	a.read-more {
 		display: inline-block;
 		margin: 0;
+
+		color: #fff;
 	}
 
 	.btn-wrapper {
@@ -514,7 +516,7 @@ body {
 
 			padding-right: 42px;
 			min-height: 18px;
-			min-width: 107px;
+			min-width: 110px;
 
 			line-height: 25px;
 
