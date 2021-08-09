@@ -253,6 +253,35 @@
 				font-weight: normal;
 				font-size: 18px;
 				line-height: 28px;
+
+				&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+					opacity: 1; /* Firefox */
+					
+					color: #000;
+					font-family: Raleway, sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 28px;
+				}
+
+				&:-ms-input-placeholder { /* Internet Explorer 10-11 */
+					color: #000;
+					font-family: Raleway, sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 28px;
+				}
+
+				&::-ms-input-placeholder { /* Microsoft Edge */
+					color: #000;
+					font-family: Raleway, sans-serif;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 18px;
+					line-height: 28px;
+				}
 			}
 
 			.search-types-toggle {

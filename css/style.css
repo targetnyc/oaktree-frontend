@@ -1156,6 +1156,35 @@ table {
   font-size: 18px;
   line-height: 28px;
 }
+.actions-nav form.search .form-content input[type=text]::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1;
+  /* Firefox */
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+.actions-nav form.search .form-content input[type=text]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
+.actions-nav form.search .form-content input[type=text]::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #000;
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+}
 .actions-nav form.search .form-content .search-types-toggle {
   background: transparent url("../images/chevron.svg") no-repeat center center/24px 24px;
   width: 24px;
@@ -1811,7 +1840,6 @@ body {
 }
 .insights-wrapper .button-wrapper {
   margin-top: 95px;
-  margin-bottom: 60px;
   text-align: center;
 }
 .insights-wrapper .title-link {
