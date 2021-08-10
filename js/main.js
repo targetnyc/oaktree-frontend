@@ -4,8 +4,16 @@ function initHeaderEvents() {
 	});
 
 	$('.action-search').on('click', function() {
-		$(this).toggleClass('active');
-		$('form.search').toggleClass('show');
+		if ($(window).width() < 1024) {
+			$('.burger').toggleClass('opened');
+			$('.mega-nav').toggleClass('opened');
+			$('.actions-nav').toggleClass('invisible');
+			$('form.search input[type=text]').focus();
+		} else {
+			$(this).toggleClass('active');
+			$('form.search').toggleClass('show');
+		}
+
 	});
 
 	$('form.search .search-types-toggle').on('click', function() {
@@ -22,6 +30,37 @@ function initHeaderEvents() {
 			.removeClass('all insights strategies people')
 			.addClass( $(this).val() );
 		$('.search-types').removeClass('show');
+	});
+
+	$(document)
+		.on('click', '.burger', function(e) {
+			e.preventDefault();
+
+			if ($(window).width() < 1280) {
+				$('.burger').toggleClass('opened');
+				$('.mega-nav').toggleClass('opened');
+				$('.actions-nav').toggleClass('invisible');
+			}
+		}).on('click', '.mega-nav .menu > li.has-submenu > a', function(e) {
+			if ($(window).width() < 1280) {
+				e.preventDefault();
+
+				$(this)
+					.closest('li')
+					.toggleClass('opened');
+			}
+		});
+}
+
+function initFooterEventss() {
+	$('.footer-menu').on('click', 'h5 a', function(e) {
+		if ($(window).width() < 1280) {
+			e.preventDefault();
+
+			$(this)
+				.closest('li')
+				.toggleClass('opened');
+		}
 	});
 }
 
@@ -89,7 +128,8 @@ function initHomeEvents() {
 	loadTwitterCSS();
 }
 
-$(window).on('load', function () {
+$(document).ready(function () {
 	initHeaderEvents();
 	initHomeEvents();
+	initFooterEventss();
 });

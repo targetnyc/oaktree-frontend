@@ -6,6 +6,7 @@
 		<link rel="preconnect" href="https://use.typekit.net">
 
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Oaktree Capital</title>
 		<link rel="stylesheet" href="css/style.css?v1"/>
 		<link rel="stylesheet" href="css/lib/owl.carousel.min.css">
@@ -22,11 +23,28 @@
 	<body>
 		<div class="header">
 			<div class="header-content">
+				<span class="burger"></span>
 				<a href="https://www.oaktreecapital.com/" class="logo"><img src="images/logo.svg" alt=""></a>
 				<div class="navigations">
 					<div class="mega-nav">
+						<form action="" class="search">
+							<div class="form-content">
+								<span class="search-types-toggle all"></span>
+								<ul class="search-types">
+									<li class="all"><label for="search-type-all"><input type="radio" name="search-type" value="all" id="search-type-all">All</label></li>
+									<li class="insights"><label for="search-type-insights"><input type="radio" name="search-type" value="insights" id="search-type-insights">Insights</label></li>
+									<li class="strategies"><label for="search-type-strategies"><input type="radio" name="search-type" value="strategies" id="search-type-strategies">Strategies</label></li>
+									<li class="people"><label for="search-type-people"><input type="radio" name="search-type" value="people" id="search-type-people">People</label></li>
+								</ul>
+								
+								<input type="text" name="" id="" placeholder="Search">
+								<input type="submit" value="" class="do-search">
+								<span class="close"></span>
+							</div>
+						</form>
+
 						<ul class="menu">
-							<li>
+							<li class="has-submenu">
 								<a href="/about.html"><span>About</span></a>
 				
 								<ul class="sub-menu">
@@ -35,7 +53,7 @@
 									<li><a href="">Leadership</a></li>
 								</ul>
 							</li>
-							<li>
+							<li class="has-submenu">
 								<a href="/strategies.html"><span>Strategies</span></a>
 				
 								<ul class="sub-menu">
@@ -45,7 +63,7 @@
 									<li><a href="">Listed Equities</a></li>
 								</ul>
 							</li>
-							<li>
+							<li class="has-submenu">
 								<a href="/responsibility.html"><span>Responsibility</span></a>
 				
 								<ul class="sub-menu">
@@ -54,7 +72,7 @@
 									<li><a href="">Philanthropy</a></li>
 								</ul>
 							</li>
-							<li>
+							<li class="has-submenu">
 								<a href="/insights.html"><span>Insights</span></a>
 				
 								<ul class="sub-menu">
@@ -64,6 +82,39 @@
 									<li><a href="">Podcasts</a></li>
 									<li><a href="">Press</a></li>
 								</ul>
+							</li>
+
+							<li class="mobile-only has-submenu">
+								<a href="/investors.html"><span>Investors</span></a>
+				
+								<ul class="sub-menu">
+									<li>
+										<h5>Investor Type</h5>
+										<ul class="sub-sub-menu">
+											<li><a href="/investors/institutional-investors.html">Institutional Investors</a></li>
+											<li><a href="/investors/financial-professionals.html">Financial Professionals</a></li>
+											<li><a href="/investors/individual-investors.html">Individual Investors</a></li>
+											<li><a href="/investors/public-unitholders.html">Public Unitholders</a></li>
+										</ul>
+									</li>
+									<li>
+										<h5>Investor Login</h5>
+										<ul class="sub-sub-menu">
+											<li><a href="/investors/lp-client-portal.html">LP Client Portal</a></li>
+											<li><a href="/investors/public-unitholders.html">Public Unitholder</a></li>
+											<li><a href="/investors/tax-package.html">Tax Package</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="mobile-only">
+								<a href="/careers.html"><span>Careers</span></a>
+							</li>
+							<li class="mobile-only">
+								<a href="/contact-us.html"><span>Contact Us</span></a>
+							</li>
+							<li class="login mobile-only">
+								<a href="" class="btn primary">Login</a>
 							</li>
 						</ul>
 					</div>
@@ -122,7 +173,7 @@
 			</div>
 		</div>
 
-		<div class="wrapper">
+		<div class="hero-wrapper">
 			<div class="hero-slides owl-carousel">
 				<div data-dot="About Oaktree">
 					<div class="img-wrapper">

@@ -69,12 +69,19 @@
 	.links {
 		display: flex;
 
-		& > li {
-			text-align: center;
-			width: 33.3333%;
+		& > li:first-child {
+			width: 25%;
 		}
 
-		li:last-child {
+		& > li {
+			width: 50%;
+
+			text-align: center;
+		}
+
+		& > li:last-child {
+			width: 25%;
+
 			text-align: right;
 		}
 	}
@@ -194,6 +201,134 @@
 
 				&:hover {
 					color: #0C2F4B;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1279px) {
+	.footer {
+		padding: 0 32px 25px;
+
+		.logo {
+			text-align: center;
+		}
+
+		.footer-links {
+			border-bottom: 0 none;
+			padding: 45px 0 0;
+
+			flex-direction: column;
+
+			.footer-menu {
+				margin-top: 30px;
+				width: auto;
+
+				flex-direction: column;
+
+				& > li {
+					border-bottom: 1px solid #E7E7E7;
+
+					ul {
+						display: none;
+						padding-left: 20px;
+					}
+
+					&.opened {
+						h5:after {
+							transform: rotate(-90deg);
+						}
+
+						ul {
+							display: block;
+						}
+					}
+				}
+
+				li {
+					margin-bottom: 25px;
+
+					& > a {
+						font-size: 14.5px;
+						line-height: 17px;
+						letter-spacing: 0.2em;
+					}
+				}
+
+				h5 {
+					position: relative;
+
+					&:after {
+						background: transparent url('../images/arrow-right.svg') no-repeat center center / 20px 20px;
+
+						content: '';
+						display: block;
+						height: 20px;
+						position: absolute;
+						right: 0;
+						top: 0;
+						width: 20px;
+
+						transform: rotate(90deg);
+					}
+
+					a,
+					a:hover,
+					a:focus,
+					a:active {
+						margin-bottom: 20px;
+
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.links {
+			flex-direction: column;
+
+			& > li,
+			& > li:last-child {
+				width: auto;
+			}
+
+			.menu {
+				margin-top: 27px;
+
+				li {
+					margin: 0 16.5px;
+				}
+			}
+
+			.social-links {
+				margin-top: 45px;
+
+				justify-content: center;
+
+				li:last-child {
+					margin: 0 11.5px;
+					text-align: center;
+				}
+			}
+		}
+
+		.copyright {
+			margin-bottom: 45px;
+
+			font-size: 11px;
+			line-height: 16px;
+		}
+
+		.additional-links {
+			margin: 0 -30px;
+
+			li {
+				padding: 0 12.5px;
+
+				a {
+					font-size: 11px;
+					line-height: 13px;
 				}
 			}
 		}

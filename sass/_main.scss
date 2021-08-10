@@ -690,3 +690,20 @@ a.btn.primary {
 .twitter-timeline {
 	width: 304px !important;
 }
+
+
+@media screen and (max-width: 1279px) {
+	.hero-wrapper,
+	.press-wrapper,
+	.insights-wrapper {
+		display: none;
+	}
+}
+
+.hidden {
+	display: none !important;
+}
+
+.invisible {
+	visibility: hidden !important;
+}
