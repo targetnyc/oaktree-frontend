@@ -33,13 +33,21 @@ function insertCSS(bodyEl, cssPath) {
 }
 
 function loadTwitterCSS() {
-	// TODO iframe onload
+	if (frames.length > 0 && frames[0].document) {
+		twttr.events.bind(
+			'loaded',
+			function (event) {
+				setTimeout(function() {
+					var twitterBody = $('.twitter-timeline').contents().find('body');
 
-	// insertCSS(frames[0].document.body, "https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
-	var options = {
-		"url": "css/twitter.css"
-	};
-	CustomizeTwitterWidget(options);
+					twitterBody.append('<link rel="stylesheet" href="https://raw.githack.com/targetnyc/oaktree-frontend/master/css/twitter.css"/>');
+					twitterBody.append('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap"/>');
+				}, 500);
+			}
+		);
+	} else {
+		setTimeout(loadTwitterCSS, 500);
+	}
 }
 
 function initHomeEvents() {

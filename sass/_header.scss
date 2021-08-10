@@ -16,11 +16,11 @@
 	}
 
 	.logo {
-		margin: 16px 0 24px;
+		margin: 23px 0 24px;
 	}
 
 	.logo img {
-		max-height: 68px;
+		max-height: 54px;
 	}
 }
 
@@ -248,7 +248,7 @@
 				border-radius: 3px;
 
 				width: 100%;
-				padding: 11px 20px 11px 60px;
+				padding: 11px 20px 11px 70px;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 18px;
@@ -256,7 +256,7 @@
 
 				&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 					opacity: 1; /* Firefox */
-					
+
 					color: #000;
 					font-family: Raleway, sans-serif;
 					font-style: normal;
@@ -285,7 +285,6 @@
 			}
 
 			.search-types-toggle {
-				background: transparent url('../images/chevron.svg') no-repeat center center / 24px 24px;
 
 				width: 24px;
 				height: 24px;
@@ -295,6 +294,22 @@
 				transform: translateY(-50%);
 
 				cursor: pointer;
+
+				&:after {
+					background: transparent url('../images/chevron.svg') no-repeat center center / 24px 24px;
+					content: '';
+
+					position: absolute;
+					left: 24px;
+					top: 50%;
+					transform: translateY(-50%);
+					height: 24px;
+					width: 24px;
+				}
+
+				&.all {
+					background: transparent url('../images/search-type-all.svg') no-repeat center center / 24px 24px;
+				}
 
 				&.insights {
 					background: transparent url('../images/search-type-insights.svg') no-repeat center center / 24px 24px;

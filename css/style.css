@@ -969,10 +969,10 @@ table {
   position: relative;
 }
 .header .logo {
-  margin: 16px 0 24px;
+  margin: 23px 0 24px;
 }
 .header .logo img {
-  max-height: 68px;
+  max-height: 54px;
 }
 
 .navigations {
@@ -1150,7 +1150,7 @@ table {
   border: 2px solid #e7e7e7;
   border-radius: 3px;
   width: 100%;
-  padding: 11px 20px 11px 60px;
+  padding: 11px 20px 11px 70px;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1186,7 +1186,6 @@ table {
   line-height: 28px;
 }
 .actions-nav form.search .form-content .search-types-toggle {
-  background: transparent url("../images/chevron.svg") no-repeat center center/24px 24px;
   width: 24px;
   height: 24px;
   position: absolute;
@@ -1194,6 +1193,19 @@ table {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+}
+.actions-nav form.search .form-content .search-types-toggle:after {
+  background: transparent url("../images/chevron.svg") no-repeat center center/24px 24px;
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 24px;
+  width: 24px;
+}
+.actions-nav form.search .form-content .search-types-toggle.all {
+  background: transparent url("../images/search-type-all.svg") no-repeat center center/24px 24px;
 }
 .actions-nav form.search .form-content .search-types-toggle.insights {
   background: transparent url("../images/search-type-insights.svg") no-repeat center center/24px 24px;
