@@ -33,7 +33,7 @@ function insertCSS(bodyEl, cssPath) {
 }
 
 function loadTwitterCSS() {
-	if (frames.length > 0 && frames[0].document) {
+	if (frames.length > 0) {
 		twttr.events.bind(
 			'loaded',
 			function (event) {
