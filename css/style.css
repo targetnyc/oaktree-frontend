@@ -2261,7 +2261,7 @@ body {
   text-decoration: none;
 }
 .article-content .article h5 a:hover {
-  color: #388067;
+  text-decoration: underline;
 }
 .article-content .article a {
   margin-bottom: 40px;
