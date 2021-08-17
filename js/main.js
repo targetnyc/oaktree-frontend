@@ -1,4 +1,25 @@
 function initHeaderEvents() {
+	var triggeredSearch = false;
+
+	$(document).on('click', function() {
+		if (!triggeredSearch && $('.search-types').hasClass('show')) {
+			$('.search-types').removeClass('show')
+			$('.search-types-toggle').toggleClass('opened');
+		}
+
+		triggeredSearch = false;
+	});
+
+	$('#search-field')
+		.on('focus', function() {
+			$(this).data('placeholder', $(this).attr('placeholder'));
+			$(this).attr('placeholder', '');
+		})
+		.on('blur', function() {
+			$(this).attr('placeholder', $(this).data('placeholder'));
+			$(this).data('placeholder', false);
+		});
+
 	$('.navigations .mega-nav .menu li').on('mouseenter', function() {
 		$('.sub-menu', this).css('text-indent', $(this).offset().left);
 	});
@@ -17,6 +38,8 @@ function initHeaderEvents() {
 	});
 
 	$('form.search .search-types-toggle').on('click', function() {
+		triggeredSearch = true;
+		$(this).toggleClass('opened');
 		$('.search-types').toggleClass('show');
 	});
 
@@ -30,6 +53,8 @@ function initHeaderEvents() {
 			.removeClass('all insights strategies people')
 			.addClass( $(this).val() );
 		$('.search-types').removeClass('show');
+
+		$('#search-field').attr('placeholder', $(this).closest('li').data('label'));
 	});
 
 	$(document)

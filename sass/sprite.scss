@@ -1,0 +1,514 @@
+%svg-common {
+	background: url("svg/sprite.css-be7989a7.svg") no-repeat;
+}
+
+.svg-arrow-down {
+	@extend %svg-common;
+	background-position: 49.11660777385159% 94.28571428571429%;
+}
+
+.svg-arrow-down-dims {
+	width: 16px;
+	height: 16px;
+}
+
+.svg-arrow-left {
+	@extend %svg-common;
+	background-position: 19.12350597609562% 22.535211267605632%;
+}
+
+.svg-arrow-left-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-arrow-left-hover {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-arrow-left-hover-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-arrow-right {
+	@extend %svg-common;
+	background-position: 19.12350597609562% 0;
+}
+
+.svg-arrow-right-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-arrow-right-hover {
+	@extend %svg-common;
+	background-position: 0 22.535211267605632%;
+}
+
+.svg-arrow-right-hover-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-arrow-up {
+	@extend %svg-common;
+	background-position: 43.46289752650177% 94.28571428571429%;
+}
+
+.svg-arrow-up-dims {
+	width: 16px;
+	height: 16px;
+}
+
+.svg-burger {
+	@extend %svg-common;
+	background-position: 29.927007299270073% 94.28571428571429%;
+}
+
+.svg-burger-dims {
+	width: 25px;
+	height: 16px;
+}
+
+.svg-chevron {
+	@extend %svg-common;
+	background-position: 100% 40.50632911392405%;
+}
+
+.svg-chevron-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-chevron-green {
+	@extend %svg-common;
+	background-position: 100% 60.75949367088607%;
+}
+
+.svg-chevron-green-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-close {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-close-dims {
+	width: 30px;
+	height: 30px;
+}
+
+.svg-close-black {
+	@extend %svg-common;
+	background-position: 75.09293680297398% 82.25108225108225%;
+}
+
+.svg-close-black-dims {
+	width: 30px;
+	height: 30px;
+}
+
+.svg-close-blue {
+	@extend %svg-common;
+	background-position: 88.10408921933086% 82.25108225108225%;
+}
+
+.svg-close-blue-dims {
+	width: 30px;
+	height: 30px;
+}
+
+.svg-ellipse {
+	@extend %svg-common;
+	background-position: 93.8566552901024% 97.6470588235294%;
+}
+
+.svg-ellipse-dims {
+	width: 6px;
+	height: 6px;
+}
+
+.svg-ellipse-empty {
+	@extend %svg-common;
+	background-position: 100% 70.88607594936708%;
+}
+
+.svg-ellipse-empty-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-ellipse-selected {
+	@extend %svg-common;
+	background-position: 100% 50.63291139240506%;
+}
+
+.svg-ellipse-selected-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-facebook {
+	@extend %svg-common;
+	background-position: 55.95238095238095% 66.82242990654206%;
+}
+
+.svg-facebook-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-facebook-green-fill {
+	@extend %svg-common;
+	background-position: 75.39682539682539% 0;
+}
+
+.svg-facebook-green-fill-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-facebook-green-outline {
+	@extend %svg-common;
+	background-position: 75.39682539682539% 21.962616822429908%;
+}
+
+.svg-facebook-green-outline-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-facebook-white {
+	@extend %svg-common;
+	background-position: 75.39682539682539% 43.925233644859816%;
+}
+
+.svg-facebook-white-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-insights-article {
+	@extend %svg-common;
+	background-position: 62.83524904214559% 85.20179372197309%;
+}
+
+.svg-insights-article-dims {
+	width: 38px;
+	height: 38px;
+}
+
+.svg-insights-article-hover {
+	@extend %svg-common;
+	background-position: 90.80459770114942% 17.04035874439462%;
+}
+
+.svg-insights-article-hover-dims {
+	width: 38px;
+	height: 38px;
+}
+
+.svg-insights-audio {
+	@extend %svg-common;
+	background-position: 90.80459770114942% 0;
+}
+
+.svg-insights-audio-dims {
+	width: 38px;
+	height: 38px;
+}
+
+.svg-insights-audio-hover {
+	@extend %svg-common;
+	background-position: 90.80459770114942% 51.12107623318386%;
+}
+
+.svg-insights-audio-hover-dims {
+	width: 38px;
+	height: 38px;
+}
+
+.svg-insights-video {
+	@extend %svg-common;
+	background-position: 90.80459770114942% 34.08071748878924%;
+}
+
+.svg-insights-video-dims {
+	width: 38px;
+	height: 38px;
+}
+
+.svg-insights-video-hover {
+	@extend %svg-common;
+	background-position: 90.80459770114942% 68.16143497757848%;
+}
+
+.svg-insights-video-hover-dims {
+	width: 38px;
+	height: 38px;
+}
+
+.svg-linkedin {
+	@extend %svg-common;
+	background-position: 38.095238095238095% 0;
+}
+
+.svg-linkedin-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-linkedin-green-fill {
+	@extend %svg-common;
+	background-position: 37.301587301587304% 66.82242990654206%;
+}
+
+.svg-linkedin-green-fill-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-linkedin-green-outline {
+	@extend %svg-common;
+	background-position: 18.650793650793652% 66.82242990654206%;
+}
+
+.svg-linkedin-green-outline-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-linkedin-white {
+	@extend %svg-common;
+	background-position: 0 66.82242990654206%;
+}
+
+.svg-linkedin-white-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-links {
+	@extend %svg-common;
+	background-position: 37.80918727915194% 94.28571428571429%;
+}
+
+.svg-links-dims {
+	width: 16px;
+	height: 16px;
+}
+
+.svg-retweet {
+	@extend %svg-common;
+	background-position: 98.21428571428571% 95.2%;
+}
+
+.svg-retweet-dims {
+	width: 19px;
+	height: 11px;
+}
+
+.svg-search {
+	@extend %svg-common;
+	background-position: 10.989010989010989% 98.29787234042553%;
+}
+
+.svg-search-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-search-blue {
+	@extend %svg-common;
+	background-position: 20.512820512820515% 98.29787234042553%;
+}
+
+.svg-search-blue-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-search-icon {
+	@extend %svg-common;
+	background-position: 47.674418604651166% 86.36363636363636%;
+}
+
+.svg-search-icon-dims {
+	width: 41px;
+	height: 41px;
+}
+
+.svg-search-icon-hover {
+	@extend %svg-common;
+	background-position: 31.782945736434108% 86.36363636363636%;
+}
+
+.svg-search-icon-hover-dims {
+	width: 41px;
+	height: 41px;
+}
+
+.svg-search-type-all {
+	@extend %svg-common;
+	background-position: 100% 30.379746835443036%;
+}
+
+.svg-search-type-all-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-search-type-insights {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-search-type-insights-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-search-type-people {
+	@extend %svg-common;
+	background-position: 100% 10.126582278481013%;
+}
+
+.svg-search-type-people-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-search-type-strategies {
+	@extend %svg-common;
+	background-position: 100% 20.253164556962027%;
+}
+
+.svg-search-type-strategies-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-twitter {
+	@extend %svg-common;
+	background-position: 56.74603174603175% 43.925233644859816%;
+}
+
+.svg-twitter-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-twitter-green-fill {
+	@extend %svg-common;
+	background-position: 56.74603174603175% 21.962616822429908%;
+}
+
+.svg-twitter-green-fill-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-twitter-green-outline {
+	@extend %svg-common;
+	background-position: 56.74603174603175% 0;
+}
+
+.svg-twitter-green-outline-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-twitter-white {
+	@extend %svg-common;
+	background-position: 37.301587301587304% 44.85981308411215%;
+}
+
+.svg-twitter-white-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-user {
+	@extend %svg-common;
+	background-position: 0 86.36363636363636%;
+}
+
+.svg-user-dims {
+	width: 41px;
+	height: 41px;
+}
+
+.svg-user-hover {
+	@extend %svg-common;
+	background-position: 15.891472868217054% 86.36363636363636%;
+}
+
+.svg-user-hover-dims {
+	width: 41px;
+	height: 41px;
+}
+
+.svg-view-all-blue {
+	@extend %svg-common;
+	background-position: 99.6376811594203% 80.67226890756302%;
+}
+
+.svg-view-all-blue-dims {
+	width: 23px;
+	height: 23px;
+}
+
+.svg-view-all-green {
+	@extend %svg-common;
+	background-position: 99.6376811594203% 90.33613445378151%;
+}
+
+.svg-view-all-green-dims {
+	width: 23px;
+	height: 23px;
+}
+
+.svg-youtube {
+	@extend %svg-common;
+	background-position: 18.650793650793652% 44.85981308411215%;
+}
+
+.svg-youtube-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-youtube-green-fill {
+	@extend %svg-common;
+	background-position: 0 44.85981308411215%;
+}
+
+.svg-youtube-green-fill-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-youtube-green-outline {
+	@extend %svg-common;
+	background-position: 38.095238095238095% 21.962616822429908%;
+}
+
+.svg-youtube-green-outline-dims {
+	width: 47px;
+	height: 47px;
+}
+
+.svg-youtube-white {
+	@extend %svg-common;
+	background-position: 75.39682539682539% 65.88785046728972%;
+}
+
+.svg-youtube-white-dims {
+	width: 47px;
+	height: 47px;
+}
+

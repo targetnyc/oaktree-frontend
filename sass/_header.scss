@@ -23,7 +23,13 @@
 	}
 
 	.burger {
+		@extend .svg-burger;
+
 		display: none;
+
+		&.opened {
+			@extend .svg-close-black;
+		}
 	}
 }
 
@@ -45,6 +51,12 @@
 
 		list-style: none;
 		justify-content: space-between;
+
+		&.has-submenu > a {
+			&:after {
+				@extend .svg-arrow-right-hover;
+			}
+		}
 
 		& > li:hover {
 			.sub-menu {
@@ -150,24 +162,24 @@
 		width: 41px;
 		height: 41px;
 
-		transition: all 0.2s ease-in-out;
+		transition: background-image 0.2s ease-in-out;
 	}
 
 	.action-search {
-		background: transparent url('../images/search-icon.svg') no-repeat center center / 41px 41px;
+		@extend .svg-search-icon;
 
 		&:hover,
 		&.active {
-			background: transparent url('../images/search-icon-hover.svg') no-repeat center center / 41px 41px;
+			@extend .svg-search-icon-hover;
 		}
 	}
 	
 	.action-login {
-		background: transparent url('../images/user.svg') no-repeat center center / 41px 41px;
+		@extend .svg-user;
 
 		&:hover,
 		&.active {
-			background: transparent url('../images/user-hover.svg') no-repeat center center / 41px 41px;
+			@extend .svg-user-hover;
 		}
 	}
 }
@@ -193,6 +205,7 @@ form.search {
 		margin: 0 auto;
 		width: 83%;
 		position: relative;
+		height: 54px;
 
 		.search-types {
 			display: none;
@@ -219,6 +232,7 @@ form.search {
 			li label {
 				display: block;
 				padding: 16px 16px 16px 59px;
+				position: relative;
 
 				color: #000;
 				font-style: normal;
@@ -226,7 +240,17 @@ form.search {
 				font-size: 18px;
 				line-height: 18px;
 
-				transition: all 0.2s ease-in-out;
+				transition: background-image 0.2s ease-in-out;
+
+				&:before {
+					content: '';
+					display: inline-block;					
+					width: 24px;
+					height: 24px;
+					position: absolute;
+					top: 14px;
+					left: 18px;
+				}
 
 				&:hover {
 					background-color: #f1f1f1;
@@ -234,20 +258,20 @@ form.search {
 				}
 			}
 
-			.all label {
-				background: transparent url('../images/search-type-all.svg') no-repeat 20px center / 24px 24px;
+			.all label:before {
+				@extend .svg-search-type-all;
 			}
 
-			.insights label {
-				background: transparent url('../images/search-type-insights.svg') no-repeat 20px center / 24px 24px;
+			.insights label:before {
+				@extend .svg-search-type-insights;
 			}
 
-			.strategies label {
-				background: transparent url('../images/search-type-strategies.svg') no-repeat 20px center / 24px 24px;
+			.strategies label:before {
+				@extend .svg-search-type-strategies;
 			}
 
-			.people label {
-				background: transparent url('../images/search-type-people.svg') no-repeat 20px center / 24px 24px;
+			.people label:before {
+				@extend .svg-search-type-people;
 			}
 		}
 
@@ -293,7 +317,6 @@ form.search {
 		}
 
 		.search-types-toggle {
-
 			width: 24px;
 			height: 24px;
 			position: absolute;
@@ -304,7 +327,7 @@ form.search {
 			cursor: pointer;
 
 			&:after {
-				background: transparent url('../images/chevron.svg') no-repeat center center / 24px 24px;
+				@extend .svg-chevron;
 				content: '';
 
 				position: absolute;
@@ -315,25 +338,35 @@ form.search {
 				width: 24px;
 			}
 
+			&:hover {
+				&:after {
+					@extend .svg-chevron-green;
+				}
+			}
+
+			&.opened:after {
+				transform: translateY(-50%) rotate(180deg);
+			}
+
 			&.all {
-				background: transparent url('../images/search-type-all.svg') no-repeat center center / 24px 24px;
+				@extend .svg-search-type-all;
 			}
 
 			&.insights {
-				background: transparent url('../images/search-type-insights.svg') no-repeat center center / 24px 24px;
+				@extend .svg-search-type-insights;
 			}
 
 			&.strategies {
-				background: transparent url('../images/search-type-strategies.svg') no-repeat center center / 24px 24px;
+				@extend .svg-search-type-strategies;
 			}
 
 			&.people {
-				background: transparent url('../images/search-type-people.svg') no-repeat center center / 24px 24px;
+				@extend .svg-search-type-people;
 			}
 		}
 
 		.do-search {
-			background: #fff url('../images/search.svg') no-repeat center center / 26px 26px;
+			@extend .svg-search;
 			border: 0 none;
 
 			height: 26px;
@@ -344,15 +377,15 @@ form.search {
 			transform: translateY(-50%);
 
 			cursor: pointer;
-			transition: background 0.2s ease-in-out;
+			transition: background-image 0.2s ease-in-out;
 
 			&:hover {
-				background: transparent url('../images/search-blue.svg') no-repeat center center / 26px 26px;
+				@extend .svg-search-blue;
 			}
 		}
 
 		.close {
-			background: transparent url('../images/close.svg') no-repeat center center / 30px 30px;
+			@extend .svg-close;
 
 			height: 30px;
 			width: 30px;
@@ -362,10 +395,10 @@ form.search {
 			transform: translateY(-50%);
 
 			cursor: pointer;
-			transition: background 0.2s ease-in-out;
+			transition: background-image 0.2s ease-in-out;
 
 			&:hover {
-				background: transparent url('../images/close-blue.svg') no-repeat center center / 30px 30px;
+				@extend .svg-close-blue;
 			}
 		}
 	}
@@ -410,7 +443,6 @@ form.search {
 
 						position: absolute;
 						bottom: -10px;
-						
 						transform-origin: 100% 50%;
 						transform: scaleX(0);
 						transition: transform .2s ease;
@@ -493,16 +525,10 @@ form.search {
 		}
 
 		.burger {
-			background: transparent url('../images/burger.svg') no-repeat center center / 25px 16px;
-
 			display: inline-block;
 			width: 32px;
 			height: 32px;
 			margin: 15px 67px 15px 0;
-
-			&.opened {
-				background: transparent url('../images/close-black.svg') no-repeat center center / 32px 32px;
-			}
 		}
 
 		.logo {
@@ -590,8 +616,6 @@ form.search {
 
 					&.has-submenu > a {
 						&:after {
-							background: transparent url('../images/arrow-right-hover.svg') no-repeat center center / 20px 20px;
-
 							content: '';
 							display: block;
 							height: 20px;

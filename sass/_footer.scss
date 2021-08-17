@@ -30,27 +30,55 @@
 			}
 		}
 
-		h5 a {
-			display: block;
-			margin-bottom: 25px;
+		h5 {
+			&:after {
+				@extend .svg-arrow-right;
+			}
 
-			color: #fff;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 14.5px;
-			line-height: 17px;
-			letter-spacing: 0.2em;
-			text-decoration: none;
-			text-transform: uppercase;
+			a {
+				display: inline-block;
+				margin-bottom: 25px;
+				position: relative;
 
-			transition: all 0.2s ease-in-out;
+				color: #fff;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 14.5px;
+				line-height: 17px;
+				letter-spacing: 0.2em;
+				text-decoration: none;
+				text-transform: uppercase;
 
-			&:hover {
-				color: #0C2F4B;
+				transition: all 0.2s ease-in-out;
+
+
+				&:after {
+					border: 1px solid #fff;
+					border-radius: 2px;
+					content: '';
+
+					bottom: -10px;
+					display: block;
+					position: absolute;
+					width: 100%;
+
+					transform-origin: 100% 50%;
+					transform: scaleX(0);
+					transition: transform .2s ease;
+				}
+
+				&:hover {
+					&:after {
+						transform: scaleX(1);
+						transform-origin: 0 50%;
+					}
+				}
 			}
 		}
 
 		li > a {
+			opacity: 0.6;
+
 			color: #fff;
 			font-style: normal;
 			font-weight: 600;
@@ -61,7 +89,7 @@
 			transition: all 0.2s ease-in-out;
 
 			&:hover {
-				color: #0C2F4B;
+				opacity: 1;
 			}
 		}
 	}
@@ -104,39 +132,39 @@
 				width: 47px;
 				height: 47px;
 
-				transition: all 0.2s ease-in-out;
+				transition: background-image 0.2s ease-in-out;
 			}
 		}
 
 		.twitter {
-			background: transparent url('../images/twitter.svg') no-repeat center center / 47px 47px;
+			@extend .svg-twitter;
 
 			&:hover {
-				background: transparent url('../images/twitter-white.svg') no-repeat center center / 47px 47px;
+				@extend .svg-twitter-white;
 			}
 		}
 
 		.linkedin {
-			background: transparent url('../images/linkedin.svg') no-repeat center center / 47px 47px;
+			@extend .svg-linkedin;
 
 			&:hover {
-				background: transparent url('../images/linkedin-white.svg') no-repeat center center / 47px 47px;
+				@extend .svg-linkedin-white;
 			}
 		}
 
 		.facebook {
-			background: transparent url('../images/facebook.svg') no-repeat center center / 47px 47px;
+			@extend .svg-facebook;
 
 			&:hover {
-				background: transparent url('../images/facebook-white.svg') no-repeat center center / 47px 47px;
+				@extend .svg-facebook-white;
 			}
 		}
 
 		.youtube {
-			background: transparent url('../images/youtube.svg') no-repeat center center / 47px 47px;
+			@extend .svg-youtube;
 
 			&:hover {
-				background: transparent url('../images/youtube-white.svg') no-repeat center center / 47px 47px;
+				@extend .svg-youtube-white;
 			}
 		}
 	}
@@ -260,8 +288,6 @@
 					position: relative;
 
 					&:after {
-						background: transparent url('../images/arrow-right.svg') no-repeat center center / 20px 20px;
-
 						content: '';
 						display: block;
 						height: 20px;

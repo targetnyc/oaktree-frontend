@@ -10,8 +10,10 @@
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.4.1",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
-    "grunt-sass": "^3.1.0"
+    "grunt-sass": "^3.1.0",
+    "grunt-svg-sprite": "^1.5.0"
   }
 }
