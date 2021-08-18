@@ -26,8 +26,16 @@ function initHeaderEvents() {
 
 	$('.action-search').on('click', function() {
 		if ($(window).width() < 1024) {
-			$('.burger').toggleClass('opened');
-			$('.mega-nav').toggleClass('opened').css('min-height', $(window).outerHeight() - 70);
+			$('#menu-toggle').toggleClass('opened');
+
+			if ($('.mega-nav').hasClass('opened')) {
+				$('.mega-nav').css('min-height', $(window).outerHeight() - 70).toggleClass('opened');
+				setTimeout(function() {
+					$('.mega-nav').toggle();
+				}, 1000);
+			} else {
+				$('.mega-nav').toggle().css('min-height', $(window).outerHeight() - 70).toggleClass('opened');
+			}
 			$('.actions-nav').toggleClass('invisible');
 			$('form.search.mobile input[type=text]').focus();
 		} else {
@@ -59,12 +67,21 @@ function initHeaderEvents() {
 	});
 
 	$(document)
-		.on('click', '.burger', function(e) {
+		.on('click', '#menu-toggle', function(e) {
 			e.preventDefault();
 
 			if ($(window).width() < 1280) {
-				$('.burger').toggleClass('opened');
-				$('.mega-nav').toggleClass('opened').css('min-height', $(window).outerHeight() - 70);
+				$('#menu-toggle').toggleClass('opened');
+
+				if ($('.mega-nav').hasClass('opened')) {
+					$('.mega-nav').css('min-height', $(window).outerHeight() - 70).toggleClass('opened');
+					setTimeout(function() {
+						$('.mega-nav').toggle();
+					}, 1000);
+				} else {
+					$('.mega-nav').toggle().css('min-height', $(window).outerHeight() - 70).toggleClass('opened');
+				}
+				
 				$('.actions-nav').toggleClass('invisible');
 			}
 		}).on('click', '.mega-nav .menu > li.has-submenu > a', function(e) {

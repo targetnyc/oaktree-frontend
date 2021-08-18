@@ -57,7 +57,11 @@ table {
   outline: none;
 }
 
-.svg-arrow-down, .svg-arrow-left, .insights-wrapper .insights-list .owl-nav .owl-prev, .svg-arrow-left-hover, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .svg-arrow-right, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .svg-arrow-right-hover, .mega-nav .menu.has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .svg-arrow-up, .svg-burger, .header .burger:before, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .svg-close-black, .header .burger.opened:before, .svg-close-blue, form.search .form-content .close:hover, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .svg-facebook-green-fill, .svg-facebook-green-outline, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .svg-insights-article, .insights-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .svg-linkedin-green-fill, .svg-linkedin-green-outline, .svg-linkedin-white, .footer .social-links .linkedin:hover, .hero-slides-wrapper .social-links .linkedin:hover, .svg-links, .svg-retweet, .svg-search, form.search .form-content .do-search, .svg-search-blue, form.search .form-content .do-search:hover, .svg-search-icon, .actions-nav .action-search, .svg-search-icon-hover, .actions-nav .action-search:hover, .actions-nav .action-search.active, .svg-search-type-all, form.search .form-content .search-types .all label:before, form.search .form-content .search-types-toggle.all, .svg-search-type-insights, form.search .form-content .search-types .insights label:before, form.search .form-content .search-types-toggle.insights, .svg-search-type-people, form.search .form-content .search-types .people label:before, form.search .form-content .search-types-toggle.people, .svg-search-type-strategies, form.search .form-content .search-types .strategies label:before, form.search .form-content .search-types-toggle.strategies, .svg-twitter, .footer .social-links .twitter, .hero-slides-wrapper .social-links .twitter, .svg-twitter-green-fill, .svg-twitter-green-outline, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .svg-youtube-green-fill, .svg-youtube-green-outline, .svg-youtube-white, .footer .social-links .youtube:hover, .hero-slides-wrapper .social-links .youtube:hover {
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.svg-arrow-down, .svg-arrow-left, .insights-wrapper .insights-list .owl-nav .owl-prev, .svg-arrow-left-hover, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .svg-arrow-right, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .svg-arrow-right-hover, .mega-nav .menu.has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .svg-arrow-up, .svg-burger, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .svg-close-black, .svg-close-blue, form.search .form-content .close:hover, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .svg-facebook-green-fill, .svg-facebook-green-outline, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .svg-insights-article, .insights-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .svg-linkedin-green-fill, .svg-linkedin-green-outline, .svg-linkedin-white, .footer .social-links .linkedin:hover, .hero-slides-wrapper .social-links .linkedin:hover, .svg-links, .svg-retweet, .svg-search, form.search .form-content .do-search, .svg-search-blue, form.search .form-content .do-search:hover, .svg-search-icon, .actions-nav .action-search, .svg-search-icon-hover, .actions-nav .action-search:hover, .actions-nav .action-search.active, .svg-search-type-all, form.search .form-content .search-types .all label:before, form.search .form-content .search-types-toggle.all, .svg-search-type-insights, form.search .form-content .search-types .insights label:before, form.search .form-content .search-types-toggle.insights, .svg-search-type-people, form.search .form-content .search-types .people label:before, form.search .form-content .search-types-toggle.people, .svg-search-type-strategies, form.search .form-content .search-types .strategies label:before, form.search .form-content .search-types-toggle.strategies, .svg-twitter, .footer .social-links .twitter, .hero-slides-wrapper .social-links .twitter, .svg-twitter-green-fill, .svg-twitter-green-outline, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .svg-youtube-green-fill, .svg-youtube-green-outline, .svg-youtube-white, .footer .social-links .youtube:hover, .hero-slides-wrapper .social-links .youtube:hover {
   background: url("svg/sprite.css-be7989a7.svg") no-repeat;
 }
 
@@ -115,7 +119,7 @@ table {
   height: 16px;
 }
 
-.svg-burger, .header .burger:before {
+.svg-burger {
   background-position: 29.927007299270073% 94.28571428571429%;
 }
 
@@ -151,7 +155,7 @@ table {
   height: 30px;
 }
 
-.svg-close-black, .header .burger.opened:before {
+.svg-close-black {
   background-position: 75.09293680297398% 82.25108225108225%;
 }
 
@@ -1437,18 +1441,84 @@ table {
 .header .logo img {
   max-height: 54px;
 }
-.header .burger {
-  display: none;
+
+#menu-toggle {
+  height: 32px;
+  width: 32px;
+  margin: 19px 67px 19px 0;
+  position: relative;
+  cursor: pointer;
 }
-.header .burger:before {
-  content: '';
+#menu-toggle span {
+  background: #000;
+  border-radius: 2px;
   display: block;
-  width: 25px;
-  height: 16px;
+  transition: .25s ease-in-out;
 }
-.header .burger.opened:before {
-  width: 30px;
-  height: 30px;
+#menu-toggle #hamburger {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#menu-toggle #hamburger span {
+  width: 25px;
+  height: 2px;
+  position: relative;
+  top: 5px;
+  left: 3.5px;
+  margin: 5px 0;
+}
+#menu-toggle #hamburger span:nth-child(1) {
+  transition-delay: .5s;
+}
+#menu-toggle #hamburger span:nth-child(2) {
+  width: 12.5px;
+  transition-delay: .625s;
+}
+#menu-toggle #hamburger span:nth-child(3) {
+  transition-delay: .75s;
+}
+#menu-toggle #cross {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: rotate(45deg);
+}
+#menu-toggle #cross span:nth-child(1) {
+  height: 0%;
+  width: 2px;
+  position: absolute;
+  top: 10%;
+  left: 15px;
+  transition-delay: 0s;
+}
+#menu-toggle #cross span:nth-child(2) {
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  left: 10%;
+  top: 15px;
+  transition-delay: .25s;
+}
+#menu-toggle.opened #hamburger span {
+  width: 0%;
+}
+#menu-toggle.opened #hamburger span:nth-child(1) {
+  transition-delay: 0s;
+}
+#menu-toggle.opened #hamburger span:nth-child(2) {
+  transition-delay: .125s;
+}
+#menu-toggle.opened #hamburger span:nth-child(3) {
+  transition-delay: .25s;
+}
+#menu-toggle.opened #cross span:nth-child(1) {
+  height: 80%;
+  transition-delay: .625s;
+}
+#menu-toggle.opened #cross span:nth-child(2) {
+  width: 80%;
+  transition-delay: .375s;
 }
 
 .navigations {
@@ -1789,29 +1859,20 @@ form.search .form-content .close {
   .header .header-content {
     padding: 0 11px 0 12.5px;
   }
-  .header .burger {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    padding: 8px 3.5px;
-    margin: 19px 67px 19px 0;
-  }
-  .header .burger.opened {
-    padding: 1px;
-  }
   .header .logo {
-    margin: 19px 0;
+    margin: 19px 0 19px 15px;
   }
   .header .logo img {
     max-height: 32px;
   }
   .header .actions-nav {
+    margin: 0 -5px;
     width: auto;
     justify-content: normal;
   }
   .header .action-login,
   .header .action-search {
-    margin: 14px 5px;
+    margin: 14px 6px;
     transform: scale(0.7804);
   }
   .header .navigations {
@@ -1827,9 +1888,15 @@ form.search .form-content .close {
     top: 70px;
     width: 100%;
     z-index: 999;
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.555, 0.205, 0.295, 0.975);
   }
   .header .mega-nav.opened {
-    display: block;
+    opacity: 1;
+  }
+  .header .mega-nav.opened .menu > li {
+    opacity: 1;
+    transform: translateX(0);
   }
   .header .mega-nav .menu {
     padding: 0 16px;
@@ -1837,6 +1904,9 @@ form.search .form-content .close {
   }
   .header .mega-nav .menu > li {
     border-bottom: 1px solid #E7E7E7;
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 0.75s cubic-bezier(0.555, 0.205, 0.295, 0.975);
   }
   .header .mega-nav .menu > li:hover ul {
     display: none;
