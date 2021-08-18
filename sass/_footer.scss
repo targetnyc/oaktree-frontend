@@ -181,6 +181,9 @@
 			}
 
 			a {
+				display: inline-block;
+				position: relative;
+
 				color: #fff;
 				font-style: normal;
 				font-weight: 600;
@@ -190,8 +193,25 @@
 
 				transition: all 0.2s ease-in-out;
 
+				&:after {
+					content: '';
+					display: block;
+					border: 1px solid #fff;
+					border-radius: 2px;
+					width: 100%;
+
+					position: absolute;
+					bottom: -5px;
+					transform-origin: 100% 50%;
+					transform: scaleX(0);
+					transition: transform .2s ease;
+				}
+
 				&:hover {
-					color: #0C2F4B;
+					&:after {
+						transform: scaleX(1);
+						transform-origin: 0 50%;
+					}
 				}
 			}
 		}
@@ -217,6 +237,9 @@
 			padding: 0 11px;
 
 			a {
+				display: inline-block;
+				position: relative;
+
 				color: #fff;
 				font-style: normal;
 				font-weight: 600;
@@ -227,8 +250,25 @@
 
 				transition: all 0.2s ease-in-out;
 
+				&:after {
+					content: '';
+					display: block;
+					border: 1px solid #fff;
+					border-radius: 2px;
+					width: 100%;
+
+					position: absolute;
+					bottom: -5px;
+					transform-origin: 100% 50%;
+					transform: scaleX(0);
+					transition: transform .2s ease;
+				}
+
 				&:hover {
-					color: #0C2F4B;
+					&:after {
+						transform: scaleX(1);
+						transform-origin: 0 50%;
+					}
 				}
 			}
 		}
@@ -265,7 +305,7 @@
 
 					&.opened {
 						h5:after {
-							transform: rotate(-90deg);
+							transform: rotate(-90deg) scale(0.5);
 						}
 
 						ul {
@@ -275,12 +315,13 @@
 				}
 
 				li {
-					margin-bottom: 25px;
+					margin-bottom: 20px;
 
 					& > a {
 						font-size: 14.5px;
 						line-height: 17px;
 						letter-spacing: 0.2em;
+						opacity: 1;
 					}
 				}
 
@@ -290,22 +331,33 @@
 					&:after {
 						content: '';
 						display: block;
-						height: 20px;
+						height: 48px;
 						position: absolute;
 						right: 0;
-						top: 0;
-						width: 20px;
+						top: -50%;
+						width: 48px;
+						margin-right: -12px;
+						margin-top: 6px;
+						z-index: 0;
 
-						transform: rotate(90deg);
+						transform: rotate(90deg) scale(0.5);
 					}
 
 					a,
 					a:hover,
 					a:focus,
 					a:active {
-						margin-bottom: 20px;
+						padding-bottom: 20px;
+						margin: 0;
+						display: block;
+						position: relative;
+						z-index: 1;
 
 						color: #fff;
+
+						&:after {
+							display: none;
+						}
 					}
 				}
 			}

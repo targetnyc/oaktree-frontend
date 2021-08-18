@@ -23,12 +23,22 @@
 	}
 
 	.burger {
-		@extend .svg-burger;
-
 		display: none;
 
+		&:before {
+			@extend .svg-burger;
+			content: '';
+			display: block;
+			width: 25px;
+			height: 16px;
+		}
+
 		&.opened {
-			@extend .svg-close-black;
+			&:before {
+				@extend .svg-close-black;
+				width: 30px;
+				height: 30px;
+			}
 		}
 	}
 }
@@ -528,11 +538,16 @@ form.search {
 			display: inline-block;
 			width: 32px;
 			height: 32px;
-			margin: 15px 67px 15px 0;
+			padding: 8px 3.5px;
+			margin: 19px 67px 19px 0;
+
+			&.opened {
+				padding: 1px;
+			}
 		}
 
 		.logo {
-			margin: 15px 0;
+			margin: 19px 0;
 
 			img {
 				max-height: 32px;
@@ -547,11 +562,9 @@ form.search {
 
 		.action-login,
 		.action-search {
-			background-size: 32px 32px !important;
+			margin: 14px 5px;
 
-			height: 32px;
-			margin: 15px 5px;
-			width: 32px;
+			transform: scale(0.7804);
 		}
 
 		.navigations {
@@ -566,7 +579,7 @@ form.search {
 			left: 0;
 			max-height: none;
 			padding: 5px 16px 10px;
-			top: 62px;
+			top: 70px;
 			width: 100%;
 			z-index: 999;
 
@@ -713,21 +726,26 @@ form.search {
 
 				.form-content {
 					width: auto;
+					height: 40px;
 
 					.search-types-toggle {
-						background-size: 20px 20px;
+						// background-size: 20px 20px;
 
-						left: 15px;
+						left: 12.5px;
+						top: 50%;
+						transform: translateY(-12px) scale(0.8333);
 
 						&:after {
-							background-size: 20px 20px;
+							// background-size: 20px 20px;
 
-							left: 20px;
+							// left: 16.5px;
+							// transform: scale(0.8333);
 						}
 					}
 
 					.do-search {
-						background-size: 24px 24px;
+						// background-size: 24px 24px;
+						transform: translateY(-14px) scale(0.9230);
 					}
 
 					input[type=text] {
@@ -735,7 +753,7 @@ form.search {
 
 						padding: 5px 15px 5px 65px;
 
-						font-size: 14px;
+						font-size: 16px;
 
 						&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 							font-size: 14px;
@@ -751,13 +769,20 @@ form.search {
 					}
 
 					.search-types {
+						border-width: 1px;
+
+						margin-top: -1px;
+
 						z-index: 1;
 
 						li {
 							label {
-								background-size: 20px 20px;
-
+								padding: 13px 13px 13px 49px;
 								font-size: 14px;
+
+								&:before {
+									transform: scale(0.8333);
+								}
 							}
 						}
 					}

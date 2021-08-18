@@ -4,13 +4,13 @@ function initHeaderEvents() {
 	$(document).on('click', function() {
 		if (!triggeredSearch && $('.search-types').hasClass('show')) {
 			$('.search-types').removeClass('show')
-			$('.search-types-toggle').toggleClass('opened');
+			$('.search-types-toggle').removeClass('opened');
 		}
 
 		triggeredSearch = false;
 	});
 
-	$('#search-field')
+	$('form.search input[type=text]')
 		.on('focus', function() {
 			$(this).data('placeholder', $(this).attr('placeholder'));
 			$(this).attr('placeholder', '');
@@ -27,12 +27,12 @@ function initHeaderEvents() {
 	$('.action-search').on('click', function() {
 		if ($(window).width() < 1024) {
 			$('.burger').toggleClass('opened');
-			$('.mega-nav').toggleClass('opened');
+			$('.mega-nav').toggleClass('opened').css('min-height', $(window).outerHeight() - 70);
 			$('.actions-nav').toggleClass('invisible');
-			$('form.search input[type=text]').focus();
+			$('form.search.mobile input[type=text]').focus();
 		} else {
 			$(this).toggleClass('active');
-			$('form.search').toggleClass('show');
+			$('form.search.desktop').toggleClass('show');
 		}
 
 	});
@@ -40,7 +40,7 @@ function initHeaderEvents() {
 	$('form.search .search-types-toggle').on('click', function() {
 		triggeredSearch = true;
 		$(this).toggleClass('opened');
-		$('.search-types').toggleClass('show');
+		$(this).siblings('.search-types').toggleClass('show');
 	});
 
 	$('form.search .close').on('click', function() {
@@ -49,12 +49,13 @@ function initHeaderEvents() {
 	});
 
 	$('.search-types input:radio').on('change', function() {
-		$('form.search .search-types-toggle')
+		var formSearch = $(this).closest('form.search');
+		formSearch.find('.search-types-toggle')
 			.removeClass('all insights strategies people')
 			.addClass( $(this).val() );
-		$('.search-types').removeClass('show');
+		formSearch.find('.search-types').removeClass('show');
 
-		$('#search-field').attr('placeholder', $(this).closest('li').data('label'));
+		formSearch.find('input[type=text]').attr('placeholder', $(this).closest('li').data('label'));
 	});
 
 	$(document)
@@ -63,7 +64,7 @@ function initHeaderEvents() {
 
 			if ($(window).width() < 1280) {
 				$('.burger').toggleClass('opened');
-				$('.mega-nav').toggleClass('opened');
+				$('.mega-nav').toggleClass('opened').css('min-height', $(window).outerHeight() - 70);
 				$('.actions-nav').toggleClass('invisible');
 			}
 		}).on('click', '.mega-nav .menu > li.has-submenu > a', function(e) {
@@ -115,18 +116,14 @@ function loadTwitterCSS() {
 }
 
 function initHomeEvents() {
-	$('.tile-content').each(function() {
-		$(this).css('bottom', (parseInt($('p:eq(0)', this).outerHeight(true)) + parseInt($('p:eq(1)', this).outerHeight(true))) * -1);
-	});
-	
 	$('.home-info .tiles li')
 		.on('mouseenter', function() {
 			$('h3', this).css('margin-bottom', 5);
-			$('.tile-content', this).css('bottom', 0);
+			$('.tile-content', this).css('top', $('.tile-content', this).outerHeight(true) - $('.tile-content a', this).outerHeight(true) + 20);
 		})
 		.on('mouseleave', function() {
 			$('h3', this).css('margin-bottom', 25);
-			$('.tile-content', this).css('bottom', (parseInt($('p:eq(0)', this).outerHeight(true)) + parseInt($('p:eq(1)', this).outerHeight(true))) * -1);
+			$('.tile-content', this).css('top', 247);
 		});
 
 	$(".hero-slides").owlCarousel({
@@ -151,10 +148,27 @@ function initHomeEvents() {
 	$('.scrollbar-inner').scrollbar();
 
 	loadTwitterCSS();
+
+	$(window).on('scroll', function() {
+		if ($(window).scrollTop() + $(window).innerHeight() > $('.home-info .content').offset().top) {
+			var delay = 200;
+
+			$(window).off('scroll');
+
+			$('.tiles li').each(function(i) {
+				var tile = $(this);
+
+				setTimeout(function() {
+					tile.addClass('show')
+				}, delay * i);
+			})
+		}
+	});
 }
 
 $(document).ready(function () {
 	initHeaderEvents();
 	initHomeEvents();
 	initFooterEventss();
+
 });
