@@ -139,7 +139,8 @@ function loadTwitterCSS() {
 
 function initHomeEvents() {
 	$('.home-info .tiles li').each(function() {
-		$('.tile-content', this).css('top', $(this).outerHeight() - $('h3', this).outerHeight(true));
+		var h3Margin = $(window).width() < 1280 ? 10 : 25;
+		$('.tile-content', this).css('top', $(this).outerHeight() - $('h3', this).outerHeight() - h3Margin);
 	});
 
 	$('.home-info .tiles li')
@@ -148,8 +149,9 @@ function initHomeEvents() {
 			$('.tile-content', this).css('top', $('.tile-content', this).outerHeight(true) - $('.tile-content a', this).outerHeight(true) + ($(window).width() < 1280 ? 10 : 20));
 		})
 		.on('mouseleave', function() {
-			$('h3', this).css('margin-bottom', $(window).width() < 1280 ? 10 : 25);
-			$('.tile-content', this).css('top', $(this).outerHeight() - $('h3', this).outerHeight(true));
+			var h3Margin = $(window).width() < 1280 ? 10 : 25;
+			$('h3', this).css('margin-bottom', h3Margin);
+			$('.tile-content', this).css('top', $(this).outerHeight() - $('h3', this).outerHeight() - h3Margin);
 		});
 
 	$(".hero-slides").owlCarousel({
