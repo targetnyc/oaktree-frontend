@@ -56,5 +56,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-svg-sprite');
+  grunt.registerTask('build', ['svg_sprite', 'copy', 'sass']);
   grunt.registerTask('default',['watch', 'sass']);
 }
