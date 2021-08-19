@@ -57,8 +57,8 @@ body {
 			display: flex;
 			flex-direction: column;
 			position: relative;
-			padding: 80px;
-			min-height: 566px;
+			padding: 75px;
+			min-height: 550px;
 
 			text-align: center;
 			overflow: hidden;
@@ -116,7 +116,8 @@ body {
 			right: 0;
 			bottom: 0;
 			z-index: -1;
-			width: 100%;
+			min-width: 100%;
+			min-height: 100%;
 			display: block;
 
 			transform: translate(-50%,-50%);
@@ -277,16 +278,27 @@ body {
 		}
 
 		.tile-content {
-			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 87.5%);
-
 			position: relative;
 			height: 100%;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
 			top: 247px;
+			z-index: 2;
 
 			transition: top 1s;
+
+			&:before {
+				background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 87.5%);
+				content: '';
+				display: block;
+				position: absolute;
+				height: 100%;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 1;
+			}
 
 			a {
 				text-decoration: none;
@@ -432,7 +444,7 @@ body {
 		.owl-nav .owl-next {
 			height: 48px;
 			position: absolute;
-			top: 121.5px;
+			top: 88px;
 			width: 48px;
 
 			font-size: 0;
@@ -651,7 +663,7 @@ body {
 		}
 
 		.title {
-			margin-bottom: 80px;
+			margin-bottom: 42px;
 
 			.separator {
 				margin: 0 15px 0 25px;
@@ -685,10 +697,6 @@ body {
 		line-height: 25px;
 		letter-spacing: 0.165em;
 		text-transform: uppercase;
-	}
-
-	.side {
-		padding-top: 35px;
 	}
 
 	.article {
@@ -803,15 +811,116 @@ a.btn.primary {
 }
 
 .twitter-timeline {
-	width: 304px !important;
+	width: 374px !important;
 }
 
 
 @media screen and (max-width: 1279px) {
-	.hero-wrapper,
 	.press-wrapper,
 	.insights-wrapper {
 		display: none;
+	}
+
+	.link-underline {
+		font-size: 13px;
+		line-height: 14px;
+	}
+
+	.hero-wrapper {
+		.owl-carousel {
+			.owl-item {
+				padding: 115px 15px;
+			}
+		}
+
+		.img-wrapper {
+			img, 
+			video {
+				width: auto;
+				height: 100%;
+			}
+		}
+
+		h1 {
+			font-size: 42px;
+			line-height: 42px;
+
+			.animate-rows {
+				display: inline;
+			}
+		}
+
+		.social-links-wrapper {
+			display: none;
+		}
+	}
+
+	.home-info {
+		flex-direction: column;
+		padding: 50px 15px;
+
+		.content {
+			text-align: center;
+
+			h2 {
+				font-size: 22px;
+				line-height: 28px;
+			}
+
+			p {
+				padding: 0 20px;
+
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+
+		.tiles {
+			margin: 55px -7.5px 0;
+			width: 100%;
+
+			& > li {
+				height: auto;
+				margin: 7.5px !important;
+				padding-top: calc(50% - 15px);
+				width: calc(50% - 15px);
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+
+				.tile-content {
+					position: absolute;
+
+					&:before {
+						background: linear-gradient(180.12deg, rgba(0, 0, 0, 0) -27.43%, #000000 99.89%);
+					}
+
+					h3 {
+						max-width: 90%;
+						margin: 0 auto 10px;
+
+						font-size: 16px;
+						line-height: 28px;
+					}
+
+					p {
+						max-width: 90%;
+						width: auto;
+
+						font-size: 12px;
+						line-height: 16px;
+					}
+
+					.link-underline {
+						font-size: 13px;
+						line-height: 14px;
+					}
+				}
+
+			}
+		}
 	}
 }
 
