@@ -165,10 +165,7 @@ function initHomeEvents() {
 		});
 
 	$(".hero-slides").owlCarousel({
-		items: 1,
-		dots: true,
-		loop: true,
-		dotsData: true
+		items: 1
 	});
 
 	$('.hero-slides .owl-dot').on('click', function() {
