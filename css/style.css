@@ -1424,6 +1424,10 @@ a {
   max-height: 54px;
 }
 
+#menu-toggle {
+  display: none;
+}
+
 .navigations {
   display: flex;
   width: 997px;
@@ -1762,6 +1766,7 @@ form.search .form-content .close {
   #menu-toggle {
     height: 32px;
     width: 32px;
+    display: block;
     margin: 19px 67px 19px 0;
     position: relative;
     cursor: pointer;
