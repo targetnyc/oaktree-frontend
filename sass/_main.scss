@@ -285,6 +285,7 @@ body {
 			flex-direction: column;
 			justify-content: flex-start;
 			top: 247px;
+			max-height: 300px;
 
 			transition: top 1s;
 
@@ -298,7 +299,7 @@ body {
 					content: '';
 					display: block;
 					position: absolute;
-					padding-top: 100%;
+					padding-top: min(100%, 300px);
 					left: 0;
 					right: 0;
 					bottom: 0;
@@ -599,7 +600,7 @@ body {
 	.content {
 		display: flex;
 		margin: 0 auto;
-		padding: 55px 0 90px;
+		padding: 55px 15px 90px;
 		// max-width: 1180px;
 		max-width: 1345px;
 
@@ -651,6 +652,10 @@ body {
 				}
 			}
 		}
+	}
+
+	.side {
+		padding-left: 15px;
 	}
 
 	.tweet-content {
@@ -820,11 +825,6 @@ a.btn.primary {
 
 
 @media screen and (max-width: 1279px) {
-	.press-wrapper,
-	.insights-wrapper {
-		display: none;
-	}
-
 	.link-underline {
 		font-size: 13px;
 		line-height: 14px;
@@ -841,7 +841,7 @@ a.btn.primary {
 			img, 
 			video {
 				width: auto;
-				height: 100%;
+				min-height: 100%;
 			}
 		}
 
@@ -862,11 +862,13 @@ a.btn.primary {
 	.home-info {
 		flex-direction: column;
 		padding: 50px 15px;
+		margin: 0 auto;
 
 		.content {
 			text-align: center;
 
 			h2 {
+				margin-bottom: 20px;
 				font-size: 22px;
 				line-height: 28px;
 			}
@@ -880,18 +882,24 @@ a.btn.primary {
 		}
 
 		.tiles {
-			margin: 55px -7.5px 0;
-			width: 100%;
+			margin: 47.5px -7.5px 0;
+			width: calc(100% + 15px);
+			justify-content: center;
+			max-width: 630px;
 
 			& > li {
 				height: auto;
 				margin: 7.5px !important;
-				padding-top: calc(50% - 15px);
+				padding-top: min( calc(50% - 15px), 300px);
 				width: calc(50% - 15px);
+				max-width: 300px;
+				max-height: 300px;
 
 				img {
 					width: 100%;
 					height: 100%;
+					max-height: 300px;
+					max-width: 300px;
 				}
 
 				.tile-content {
@@ -902,7 +910,7 @@ a.btn.primary {
 					}
 
 					h3 {
-						max-width: 90%;
+						max-width: 85%;
 						margin: 0 auto 10px;
 
 						font-size: 16px;
@@ -925,6 +933,179 @@ a.btn.primary {
 
 			}
 		}
+	}
+
+	.insights-wrapper {
+		h2 {
+			font-size: 22px;
+			line-height: 28px;
+		}
+
+		.content {
+			padding: 45px 15px;
+		}
+
+		.insights-list {
+			margin: 0 -15px;
+			width: auto;
+
+			.owl-item {
+				margin: 0;
+				padding: 0 15px;
+			}
+
+			.owl-dots {
+				display: block;
+				margin: 40px auto;
+
+				text-align: center;
+			}
+		}
+
+		.title-link {
+			font-size: 16px;
+			line-height: 20px !important;
+		}
+
+		.owl-nav {
+			display: none;
+		}
+
+
+		.owl-dot {
+			background: #F1F1F1 !important;
+			border-radius: 100%;
+
+			height: 10px;
+			margin: 0 7.5px;
+			width: 10px;
+
+			opacity: 0.5;
+
+			&.active {
+				background: #fff !important;
+
+				opacity: 1;
+			}
+		}
+
+		.button-wrapper {
+			margin: 0;
+		}
+	}
+
+	.press-wrapper {
+		.content {
+			flex-direction: column;
+			padding: 50px 15px 0;
+
+			h2 {
+				font-size: 22px;
+				line-height: 28px;
+			}
+
+			.title .separator {
+				margin: 0 22px;
+			}
+
+			.view-all {
+				min-width: 99px;
+				padding-right: 32px;
+			}
+		}
+
+		.article-content {
+			padding: 0;
+
+			.article {
+				&.main {
+					margin: 0 auto;
+
+					h5 {
+						margin-bottom: 0;
+						a {
+							font-size: 22px;
+							line-height: 28px;
+						}
+					}
+
+					p {
+						font-size: 14px;
+						line-height: 20px;
+					}
+				}
+
+				h5 {
+					a {
+						font-size: 18px;
+						line-height: 26px;
+					}
+				}
+
+				a {
+					font-size: 22px;
+					line-height: 28px;
+				}
+
+				.link-underline {
+					font-size: 13px;
+					line-height: 14px;
+				}
+			}
+		}
+
+		.title {
+			max-width: 510px;
+			margin: 0 auto 45px;
+		}
+
+		.side {
+			display: flex;
+			justify-content: center;
+			margin: 0 -7.5px;
+			padding-bottom: 20px;
+
+			.article {
+				width: 50%;
+				max-width: 262.5px;
+				padding: 0 7.5px;
+			}
+
+			.article:nth-child(n+3) {
+				display: none;
+			}
+		}
+
+		.articles {
+			flex-direction: column;
+		}
+
+		.tweet-content {
+			margin: 0 -15px;
+			padding: 45px 15px;
+			width: auto;
+			max-width: none;
+
+			.title {
+				max-width: 510px;
+				margin: 0 auto 42px;
+			}
+
+			.twitter-feed {
+				max-width: 510px;
+				margin: 0 auto;
+			}
+
+			.twitter-timeline {
+				max-width: 490px;
+				width: 100% !important;
+			}
+		}
+	}
+
+	a.btn.primary {
+		min-width: 144px;
+		padding: 16.5px 27px;
 	}
 }
 

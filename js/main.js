@@ -170,7 +170,15 @@ function initHomeEvents() {
 
 	$(".insights-list").owlCarousel({
 		nav: true,
-		loop: true
+		loop: true,
+		responsive: {
+			0: {
+				items: 2
+			},
+			628: {
+				items: 3
+			}
+		}
 	});
 
 	$('.scrollbar-inner').scrollbar();
