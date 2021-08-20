@@ -47,11 +47,13 @@ body {
 	}
 }
 
-.hero-slides {
+.hero-slides-wrapper {
 	overflow: hidden;
 	margin: 0 auto;
 	max-width: 1440px;
+}
 
+.hero-slides {
 	&.owl-carousel {
 		.owl-item {
 			display: flex;
