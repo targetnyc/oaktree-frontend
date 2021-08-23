@@ -209,9 +209,106 @@ function initHomeEvents() {
 	});
 }
 
-$(document).ready(function () {
-	initHeaderEvents();
-	initHomeEvents();
-	initFooterEventss();
+function initAboutEvents() {
+	var chartOptions = $('#aum-chart').data('chart');
 
+	var chart1Canvas = document.getElementById('aum-chart');
+	var c1Ctx = chart1Canvas.getContext("2d");
+	var gradient = c1Ctx.createLinearGradient(0, 0, 0, 450);
+	
+	gradient.addColorStop(1, "rgba(255, 255, 255, 0)");
+	gradient.addColorStop(0, "#388067");
+
+	const data = {
+		labels: chartOptions.labels,
+		datasets: [
+			{
+				label: chartOptions.label,
+				data: chartOptions.data,
+				backgroundColor: gradient,
+				borderColor: "#388067",
+				fill: 'origin',
+				pointRadius: 0
+			}
+		]
+	};
+
+	const config = {
+	  	type: 'line',
+		data: data,
+		options: {
+			layout: {
+				padding: {
+					top: 45,
+					bottom: 45,
+					left: 50,
+					right: 50,
+				}
+			},
+			plugins: {
+				filler: {
+					propagate: false,
+				},
+				title: {
+					display: false,
+				},
+				legend: {
+					position: 'bottom',
+					align: 'start'
+				}
+			},
+			interaction: {
+				intersect: false,
+			},
+			scales: {
+				y: {
+					ticks: {
+						stepSize: 50
+					},
+					grid: {
+						display: function(a) {
+							console.log(a);
+							return true;
+						}
+					}
+				},
+				x: {
+					ticks: {
+						padding: 20,
+						fontSize: 16,
+						fontColor: '#0071CE'
+					},
+					grid: {
+						display: false,
+					},
+				}
+			},
+			elements: {
+				line: {
+					tension: 0.4
+				}
+			},
+			tooltips: {
+				yAlign: 'bottom'
+			}
+		},
+	};
+
+	var myChart = new Chart(chart1Canvas, config);
+}
+
+$(document).ready(function () {
+	var page = $('body').data('page');
+	initHeaderEvents();
+
+	switch (page) {
+		case 'home':
+			initHomeEvents();
+			break;
+		case 'about':
+			initAboutEvents();
+			break;
+	}
+
+	initFooterEventss();
 });

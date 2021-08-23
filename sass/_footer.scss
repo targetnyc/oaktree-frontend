@@ -60,7 +60,7 @@
 					bottom: -10px;
 					display: block;
 					position: absolute;
-					width: 100%;
+					width: calc(100% - 2px);
 
 					transform-origin: 100% 50%;
 					transform: scaleX(0);
