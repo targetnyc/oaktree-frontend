@@ -229,10 +229,10 @@ function initAboutEvents() {
 
 	var chart1Canvas = document.getElementById('aum-chart');
 	var c1Ctx = chart1Canvas.getContext("2d");
-	var gradient = c1Ctx.createLinearGradient(0, 0, 0, 450);
+	var gradient = c1Ctx.createLinearGradient(0, 0, 0, $(window).width() < 600 ? 120 : 300);
 	
 	gradient.addColorStop(1, "rgba(255, 255, 255, 0)");
-	gradient.addColorStop(0, "#388067");
+	gradient.addColorStop(.2, "#388067");
 
 	const data = {
 		labels: chartOptions.labels,
@@ -244,6 +244,8 @@ function initAboutEvents() {
 				borderColor: "#388067",
 				fill: 'origin',
 				pointRadius: 0,
+				drawBorder: false,
+				pointBackgroundColor: "#388067",
 				// datalabels: {
 				// 	align: 'top',
 				// 	anchor: 'top',
@@ -258,10 +260,10 @@ function initAboutEvents() {
 		options: {
 			layout: {
 				padding: {
-					top: 45,
-					bottom: 45,
-					left: 50,
-					right: 50,
+					top: $(window).width() < 600 ? 30 : 45,
+					bottom: $(window).width() < 600 ? 5 : 45,
+					left: $(window).width() < 600 ? 15 : 50,
+					right: $(window).width() < 600 ? 15 : 50,
 				}
 			},
 			plugins: {
@@ -273,7 +275,38 @@ function initAboutEvents() {
 				},
 				legend: {
 					position: 'bottom',
-					align: 'start'
+					align: 'start',
+					labels: {
+						pointStyle: 'rect',
+						usePointStyle: true,
+						font: {
+							family: "Raleway",
+							size: $(window).width() < 600 ? 11 : 16,
+							color: '#0071CE',
+							weight: 700
+						},
+						padding: 0
+					},
+				},
+				tooltip: {
+					callbacks: {
+						title: function(tooltipItem, data) {
+							return false;
+						},
+						label: function(tooltipItem, data) {
+							return '$' + tooltipItem.raw;
+						}
+					},
+					backgroundColor: '#388067',
+					color: '#fff',
+					displayColors: false,
+					bodyFont: {
+						family: "Raleway",
+						size: $(window).width() < 600 ? 11 : 16,
+						color: '#0071CE',
+						weight: 700
+					},
+					yAlign: 'bottom'
 				}
 			},
 			interaction: {
@@ -282,23 +315,38 @@ function initAboutEvents() {
 			scales: {
 				y: {
 					ticks: {
-						stepSize: 50
+						stepSize: 50,
+						padding: 5,
+						font: {
+							family: "Raleway",
+							size: $(window).width() < 600 ? 11 : 16,
+							color: '#0071CE',
+							weight: 700
+						},
+						callback: function(value, index, values) {
+							return '$' + value;
+						}
 					},
 					grid: {
-						display: function(a) {
-							console.log(a);
-							return true;
-						}
-					}
+						borderDash: [10,5],
+						borderDashOffset: 10,
+						tickBorderDash: [100],
+						drawBorder: false,
+					},
 				},
 				x: {
 					ticks: {
-						padding: 20,
-						fontSize: 16,
-						fontColor: '#0071CE'
+						padding: $(window).width() < 600 ? 10 : 20,
+						font: {
+							family: "Raleway",
+							size: $(window).width() < 600 ? 11 : 16,
+							color: '#0071CE',
+							weight: 700
+						}
 					},
 					grid: {
 						display: false,
+						drawBorder: false,
 					},
 				}
 			},
@@ -308,7 +356,7 @@ function initAboutEvents() {
 				}
 			},
 			tooltips: {
-				yAlign: 'bottom'
+				yAlign: 'bottom',
 			}
 		},
 	};
@@ -358,7 +406,6 @@ function initAboutEvents() {
 				ChartDataLabels, 
 				{
 					beforeDraw: function (chart, args, options) {
-						console.log(chart);
 						var txt = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].raw + '%' : chart.options.elements.center.text;
 						var color = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].dataset.backgroundColor[chart.tooltip.dataPoints[0].dataIndex] : chart.options.elements.center.color;
 

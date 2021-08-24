@@ -1153,6 +1153,23 @@ a.btn.primary {
 		}
 	}
 }
+@media screen and (max-width: 600px) {
+	.chart-wrapper {
+		.chart-content {
+			padding: 55px 15px;
+			h2 {
+				margin-bottom: 35px;
+
+				font-size: 22px;
+				line-height: 31px;
+			}
+
+			canvas {
+				margin: 0 auto;
+			}
+		}
+	}
+}
 
 .fullimage-block {
 	background: #0C2F4B;
