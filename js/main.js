@@ -210,6 +210,21 @@ function initHomeEvents() {
 }
 
 function initAboutEvents() {
+	// Chart.register(ChartDataLabels);
+	$(document).on('click', '.tabs li', function() {
+		$(this)
+			.closest('.tabs')
+				.find('li')
+					.removeClass('active')
+				.end()
+			.end()
+			.addClass('active');	
+
+		$('.tabs-content li').removeClass('active');
+		$($(this).data('target')).addClass('active');
+	})
+
+
 	var chartOptions = $('#aum-chart').data('chart');
 
 	var chart1Canvas = document.getElementById('aum-chart');
@@ -228,7 +243,11 @@ function initAboutEvents() {
 				backgroundColor: gradient,
 				borderColor: "#388067",
 				fill: 'origin',
-				pointRadius: 0
+				pointRadius: 0,
+				// datalabels: {
+				// 	align: 'top',
+				// 	anchor: 'top',
+				// }
 			}
 		]
 	};
@@ -295,6 +314,81 @@ function initAboutEvents() {
 	};
 
 	var myChart = new Chart(chart1Canvas, config);
+
+	document.querySelectorAll('.mix-chart').forEach(function(mixCanvas) {
+		var chartOptions  = $(mixCanvas).data('chart');
+
+		const config = {
+	  		type: 'doughnut',
+			data: {
+				datasets: [
+					{
+						data: chartOptions.data,
+						backgroundColor: ['#388067','#BA7838','#BCA236','#766660','#9D4D34','#A0BFC4','#DCAE7C','#65929A','#F7DE63','#AEA19D','#CF8B76','#79833C'],
+						borderWidth: 0,
+						// borderColor: "#388067",
+						// fill: 'origin',
+						// pointRadius: 0
+						rotation: 90,
+						hover: false,
+					}
+				]
+			},
+			options: {
+				cutout: 110,
+				hover: false,
+				plugins: {
+					tooltip: {
+						enabled: false,
+						external: empty
+					},
+					datalabels: {
+        				display: false,
+        			}
+				},
+				elements: {
+					center: {
+						text: chartOptions.data[0] + '%',
+						color: '#388067', //Default black
+						fontStyle: 'Raleway'
+					}
+				}
+			},
+			plugins: [
+				ChartDataLabels, 
+				{
+					beforeDraw: function (chart, args, options) {
+						console.log(chart);
+						var txt = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].raw + '%' : chart.options.elements.center.text;
+						var color = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].dataset.backgroundColor[chart.tooltip.dataPoints[0].dataIndex] : chart.options.elements.center.color;
+
+						if (txt) {
+							//Get ctx from string
+							var ctx = chart.ctx;
+
+							//Get options from the center object in options
+							var centerConfig = chart.config.options.elements.center;
+							var fontStyle = centerConfig.fontStyle || 'Arial';
+							//Start with a base font of 30px
+							ctx.font = "64px " + fontStyle;
+
+							//Set font settings to draw it correctly.
+							ctx.textAlign = 'center';
+							ctx.textBaseline = 'middle';
+							var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+							var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+							ctx.fillStyle = color;
+
+							//Draw text in center
+							ctx.fillText(txt, centerX, centerY);
+						}
+					}
+				}
+			],
+		};
+
+		new Chart(mixCanvas, config);
+	});
 }
 
 $(document).ready(function () {
@@ -312,3 +406,5 @@ $(document).ready(function () {
 
 	initFooterEventss();
 });
+
+function empty() {}

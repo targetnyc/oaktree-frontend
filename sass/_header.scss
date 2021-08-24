@@ -1,5 +1,6 @@
 .header {
 	border-bottom: 1px solid #E7E7E7;
+	position: relative;
 
 	.header-content {
 		display: flex;
@@ -10,8 +11,6 @@
 		margin: 0 auto;
 		padding: 0 40px;
 		max-height: 108px;
-		position: relative;
-
 	}
 
 	.logo {
@@ -65,7 +64,7 @@
 		list-style: none;
 		justify-content: space-between;
 
-		&.has-submenu > a {
+		.has-submenu > a {
 			&:after {
 				@extend .svg-arrow-right-hover;
 			}
@@ -466,8 +465,8 @@ form.search {
 		}
 
 		& > li:hover {
-			.sub-menu {
-				display: flex;
+			.sub-menu-wrapper {
+				display: block;
 			}
 
 			& > a span:after {
@@ -477,19 +476,26 @@ form.search {
 		}
 	}
 
-	.sub-menu {
+	.sub-menu-wrapper {
 		background: #fff;
 
 		display: none;
-		min-height: 189px;
-		padding: 25px 20px;
+		padding: 25px 0;
 		position: absolute;
-		top: 100%;
 		left: 0;
 		right: 0;
+		top: 100%;
 		margin-top: 1px;
 		z-index: 99;
-		
+	}
+
+	.sub-menu {
+		display: flex;
+		max-width: 1440px;
+		padding: 0 20px;
+		margin: 0 auto;
+		width: 100%;
+
 		line-height: 16px;
 		justify-content: flex-end;
 
@@ -734,7 +740,7 @@ form.search {
 
 					&.opened {
 						&.has-submenu > a:after {
-							transform: rotate(-90deg);
+							transform: rotate(-90deg) scale(0.5);
 						}
 
 						& > a {
@@ -762,13 +768,15 @@ form.search {
 						&:after {
 							content: '';
 							display: block;
-							height: 20px;
+							height: 48px;
 							position: absolute;
 							right: 0;
-							top: 0;
-							width: 20px;
+							top: -50%;
+							width: 48px;
+							margin-right: -12px;
+							margin-top: -7px;
 
-							transform: rotate(90deg);
+							transform: rotate(90deg) scale(0.5);
 						}
 					}
 				}
@@ -913,6 +921,7 @@ form.search {
 
 								&:before {
 									transform: scale(0.8333);
+									top: 10px;
 								}
 							}
 						}
