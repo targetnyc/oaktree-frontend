@@ -1778,7 +1778,7 @@ form.search .form-content .close {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1079px) {
   #menu-toggle {
     height: 32px;
     width: 32px;
@@ -2236,7 +2236,7 @@ form.search .form-content .close {
   transform-origin: 0 50%;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1079px) {
   .footer {
     padding: 0 32px 25px;
   }
@@ -3641,7 +3641,7 @@ a.btn.primary:hover:before {
     padding: 65px 15px;
   }
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1079px) {
   .link-underline {
     font-size: 13px;
     line-height: 14px;
