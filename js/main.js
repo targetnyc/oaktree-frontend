@@ -252,6 +252,18 @@ function initAboutEvents() {
 	gradient.addColorStop(1, "rgba(255, 255, 255, 0)");
 	gradient.addColorStop(.2, "#388067");
 
+	const tooltipPlugin = Chart.registry.getPlugin('tooltip');
+	tooltipPlugin.positioners.above = function(elements, position) {
+		if (!elements.length) {
+			return false;
+		}
+
+		return {
+			x: elements[0].element.x,
+			y: elements[0].element.y - 10
+		}
+	}
+
 	const data = {
 		labels: chartOptions.labels,
 		datasets: [
@@ -297,16 +309,17 @@ function initAboutEvents() {
 					labels: {
 						pointStyle: 'rect',
 						usePointStyle: true,
+						color: '#000000',
 						font: {
 							family: "Raleway",
 							size: $(window).width() < 600 ? 11 : 16,
-							color: '#0071CE',
 							weight: 700
 						},
 						padding: 0
 					},
 				},
 				tooltip: {
+					position: 'above',
 					callbacks: {
 						title: function(tooltipItem, data) {
 							return false;
@@ -321,7 +334,6 @@ function initAboutEvents() {
 					bodyFont: {
 						family: "Raleway",
 						size: $(window).width() < 600 ? 11 : 16,
-						color: '#0071CE',
 						weight: 600
 					},
 					yAlign: 'bottom'
@@ -335,10 +347,10 @@ function initAboutEvents() {
 					ticks: {
 						stepSize: 50,
 						padding: 5,
+						color: '#000000',
 						font: {
 							family: "Raleway",
-							size: $(window).width() < 600 ? 11 : 16,
-							color: '#0071CE',
+							size: $(window).width() < 600 ? 11 : 14,
 							weight: 600
 						},
 						callback: function(value, index, values) {
@@ -355,10 +367,10 @@ function initAboutEvents() {
 				x: {
 					ticks: {
 						padding: $(window).width() < 600 ? 10 : 20,
+						color: '#000000',
 						font: {
 							family: "Raleway",
-							size: $(window).width() < 600 ? 11 : 16,
-							color: '#0071CE',
+							size: $(window).width() < 600 ? 11 : 14,
 							weight: 600
 						}
 					},
@@ -372,9 +384,6 @@ function initAboutEvents() {
 				line: {
 					tension: 0.4
 				}
-			},
-			tooltips: {
-				yAlign: 'bottom',
 			}
 		},
 	};
