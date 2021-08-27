@@ -903,10 +903,11 @@ a.btn.primary {
 			text-align: center;
 
 			&:after {
-				border: 2px solid #0C2F4B;
+				background: #0C2F4B;
 				content: '';
 
 				display: block;
+				height: 4px;
 				margin: 20px auto 0;
 				width: 60px;
 			}
@@ -1349,10 +1350,11 @@ a.btn.primary {
 		text-align: center;
 
 		&:after {
-			border: 2px solid #0C2F4B;
+			background: #0C2F4B;
 			content: '';
 
 			display: block;
+			height: 4px;
 			margin: 20px auto 0;
 			width: 60px;
 		}

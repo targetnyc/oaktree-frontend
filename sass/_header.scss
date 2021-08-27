@@ -96,11 +96,12 @@
 				top: 41px;
 
 				&:after {
-					border: 1px solid #388067;
+					background: #388067;
 					border-radius: 2px;
 					content: '';
 
 					bottom: -10px;
+					height: 2px;
 					display: block;
 					position: absolute;
 					width: 100%;
@@ -450,11 +451,12 @@ form.search {
 					&:after {
 						content: '';
 						display: block;
-						border: 1px solid #388067;
+						background: #388067;
 						border-radius: 2px;
 						width: 100%;
 
 						position: absolute;
+						height: 2px;
 						bottom: -10px;
 						transform-origin: 100% 50%;
 						transform: scaleX(0);

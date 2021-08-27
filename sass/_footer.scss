@@ -53,11 +53,12 @@
 
 
 				&:after {
-					border: 1px solid #fff;
+					background: #fff;
 					border-radius: 2px;
 					content: '';
 
 					bottom: -10px;
+					height: 2px;
 					display: block;
 					position: absolute;
 					width: calc(100% - 2px);
@@ -196,11 +197,12 @@
 				&:after {
 					content: '';
 					display: block;
-					border: 1px solid #fff;
+					background: #fff;
 					border-radius: 2px;
 					width: 100%;
 
 					position: absolute;
+					height: 2px;
 					bottom: -5px;
 					transform-origin: 100% 50%;
 					transform: scaleX(0);
@@ -253,11 +255,12 @@
 				&:after {
 					content: '';
 					display: block;
-					border: 1px solid #fff;
+					background: #fff;
 					border-radius: 2px;
 					width: 100%;
 
 					position: absolute;
+					height: 2px;
 					bottom: -5px;
 					transform-origin: 100% 50%;
 					transform: scaleX(0);

@@ -1475,10 +1475,11 @@ a {
   top: 41px;
 }
 .mega-nav .menu a span:after {
-  border: 1px solid #388067;
+  background: #388067;
   border-radius: 2px;
   content: '';
   bottom: -10px;
+  height: 2px;
   display: block;
   position: absolute;
   width: 100%;
@@ -1711,10 +1712,11 @@ form.search .form-content .close {
 .sub-nav .menu > li > a span:after {
   content: '';
   display: block;
-  border: 1px solid #388067;
+  background: #388067;
   border-radius: 2px;
   width: 100%;
   position: absolute;
+  height: 2px;
   bottom: -10px;
   transform-origin: 100% 50%;
   transform: scaleX(0);
@@ -2094,10 +2096,11 @@ form.search .form-content .close {
   transition: all 0.2s ease-in-out;
 }
 .footer .footer-links h5 a:after {
-  border: 1px solid #fff;
+  background: #fff;
   border-radius: 2px;
   content: '';
   bottom: -10px;
+  height: 2px;
   display: block;
   position: absolute;
   width: calc(100% - 2px);
@@ -2177,10 +2180,11 @@ form.search .form-content .close {
 .footer .footer-submenu .menu a:after {
   content: '';
   display: block;
-  border: 1px solid #fff;
+  background: #fff;
   border-radius: 2px;
   width: 100%;
   position: absolute;
+  height: 2px;
   bottom: -5px;
   transform-origin: 100% 50%;
   transform: scaleX(0);
@@ -2222,10 +2226,11 @@ form.search .form-content .close {
 .footer .additional-links li a:after {
   content: '';
   display: block;
-  border: 1px solid #fff;
+  background: #fff;
   border-radius: 2px;
   width: 100%;
   position: absolute;
+  height: 2px;
   bottom: -5px;
   transform-origin: 100% 50%;
   transform: scaleX(0);
@@ -3006,9 +3011,10 @@ a.btn.primary:hover:before {
   text-align: center;
 }
 .featured-stats-wrapper .featured-stats li:after {
-  border: 2px solid #0C2F4B;
+  background: #0C2F4B;
   content: '';
   display: block;
+  height: 4px;
   margin: 20px auto 0;
   width: 60px;
 }
@@ -3348,9 +3354,10 @@ a.btn.primary:hover:before {
   text-align: center;
 }
 .sliding-info .description:after {
-  border: 2px solid #0C2F4B;
+  background: #0C2F4B;
   content: '';
   display: block;
+  height: 4px;
   margin: 20px auto 0;
   width: 60px;
 }
