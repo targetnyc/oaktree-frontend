@@ -211,18 +211,36 @@ function initHomeEvents() {
 
 function initAboutEvents() {
 	// Chart.register(ChartDataLabels);
-	$(document).on('click', '.tabs li', function() {
-		$(this)
-			.closest('.tabs')
-				.find('li')
-					.removeClass('active')
+	$(document)
+		.on('click', '.tabs li', function() {
+			$(this)
+				.closest('.tabs')
+					.find('li')
+						.removeClass('active')
+					.end()
 				.end()
-			.end()
-			.addClass('active');	
+				.addClass('active');	
 
-		$('.tabs-content li').removeClass('active');
-		$($(this).data('target')).addClass('active');
-	})
+			$('.tabs-content li').removeClass('active');
+			$($(this).data('target')).addClass('active');
+
+			loadMixedChart($($(this).data('target')).find('.doughnut-chart' + ($(window).width() < 600 ? '.mobile' : '.desktop'))[0]);
+		})
+		.on('click', '.breakdown h5', function() {
+			$(this)
+				.closest('.breakdown')
+					.find('li')
+						.removeClass('active')
+					.end()
+				.end()
+				.closest('li')
+					.addClass('active');	
+
+			$('.tabs li').removeClass('active');
+			$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
+
+			loadMixedChart($(this).closest('li').find('.doughnut-chart' + ($(window).width() < 600 ? '.mobile' : '.desktop'))[0]);
+		})
 
 
 	var chartOptions = $('#aum-chart').data('chart');
@@ -304,7 +322,7 @@ function initAboutEvents() {
 						family: "Raleway",
 						size: $(window).width() < 600 ? 11 : 16,
 						color: '#0071CE',
-						weight: 700
+						weight: 600
 					},
 					yAlign: 'bottom'
 				}
@@ -321,7 +339,7 @@ function initAboutEvents() {
 							family: "Raleway",
 							size: $(window).width() < 600 ? 11 : 16,
 							color: '#0071CE',
-							weight: 700
+							weight: 600
 						},
 						callback: function(value, index, values) {
 							return '$' + value;
@@ -341,7 +359,7 @@ function initAboutEvents() {
 							family: "Raleway",
 							size: $(window).width() < 600 ? 11 : 16,
 							color: '#0071CE',
-							weight: 700
+							weight: 600
 						}
 					},
 					grid: {
@@ -363,79 +381,80 @@ function initAboutEvents() {
 
 	var myChart = new Chart(chart1Canvas, config);
 
-	document.querySelectorAll('.mix-chart').forEach(function(mixCanvas) {
-		var chartOptions  = $(mixCanvas).data('chart');
-
-		const config = {
-	  		type: 'doughnut',
-			data: {
-				datasets: [
-					{
-						data: chartOptions.data,
-						backgroundColor: ['#388067','#BA7838','#BCA236','#766660','#9D4D34','#A0BFC4','#DCAE7C','#65929A','#F7DE63','#AEA19D','#CF8B76','#79833C'],
-						borderWidth: 0,
-						// borderColor: "#388067",
-						// fill: 'origin',
-						// pointRadius: 0
-						rotation: 90,
-						hover: false,
-					}
-				]
-			},
-			options: {
-				cutout: 110,
-				hover: false,
-				plugins: {
-					tooltip: {
-						enabled: false,
-						external: empty
-					},
-					datalabels: {
-        				display: false,
-        			}
-				},
-				elements: {
-					center: {
-						text: chartOptions.data[0] + '%',
-						color: '#388067', //Default black
-						fontStyle: 'Raleway'
-					}
-				}
-			},
-			plugins: [
-				ChartDataLabels, 
-				{
-					beforeDraw: function (chart, args, options) {
-						var txt = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].raw + '%' : chart.options.elements.center.text;
-						var color = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].dataset.backgroundColor[chart.tooltip.dataPoints[0].dataIndex] : chart.options.elements.center.color;
-
-						if (txt) {
-							//Get ctx from string
-							var ctx = chart.ctx;
-
-							//Get options from the center object in options
-							var centerConfig = chart.config.options.elements.center;
-							var fontStyle = centerConfig.fontStyle || 'Arial';
-							//Start with a base font of 30px
-							ctx.font = "64px " + fontStyle;
-
-							//Set font settings to draw it correctly.
-							ctx.textAlign = 'center';
-							ctx.textBaseline = 'middle';
-							var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
-							var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
-							ctx.fillStyle = color;
-
-							//Draw text in center
-							ctx.fillText(txt, centerX, centerY);
-						}
-					}
-				}
-			],
-		};
-
-		new Chart(mixCanvas, config);
+	document.querySelectorAll('.breakdown .active .doughnut-chart' + ($(window).width() < 600 ? '.mobile' : '.desktop')).forEach(function(mixCanvas) {
+		loadMixedChart(mixCanvas);
 	});
+}
+
+function loadMixedChart(mixCanvas) {
+	if ($(mixCanvas).attr('style')) {
+		// already initialized
+		return;
+	}
+
+	var chartOptions  = $(mixCanvas).data('chart');
+
+	const config = {
+  		type: 'doughnut',
+		data: {
+			datasets: [
+				{
+					data: chartOptions.data,
+					backgroundColor: ['#388067','#BA7838','#BCA236','#766660','#9D4D34','#A0BFC4','#DCAE7C','#65929A','#F7DE63','#AEA19D','#CF8B76','#79833C'],
+					borderWidth: 0,
+					rotation: 90,
+					hover: false,
+				}
+			]
+		},
+		options: {
+			cutout: $(window).width() < 600 ? 65 : 110,
+			hover: false,
+			plugins: {
+				tooltip: {
+					enabled: false,
+					external: empty
+				},
+				datalabels: {
+    				display: false,
+    			}
+			},
+			elements: {
+				center: {
+					text: chartOptions.data[0] + '%',
+					color: '#388067',
+					fontStyle: 'Raleway'
+				}
+			}
+		},
+		plugins: [
+			ChartDataLabels, 
+			{
+				beforeDraw: function (chart, args, options) {
+					var txt = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].raw + '%' : chart.options.elements.center.text;
+					var color = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].dataset.backgroundColor[chart.tooltip.dataPoints[0].dataIndex] : chart.options.elements.center.color;
+
+					if (txt) {
+						var ctx = chart.ctx;
+
+						var centerConfig = chart.config.options.elements.center;
+						var fontStyle = centerConfig.fontStyle || 'Arial';
+						ctx.font = ($(window).width() < 600 ? "34px " : "64px ") + fontStyle;
+
+						ctx.textAlign = 'center';
+						ctx.textBaseline = 'middle';
+						var centerX = ((chart.chartArea.left + chart.chartArea.right) / 2);
+						var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
+						ctx.fillStyle = color;
+
+						ctx.fillText(txt, centerX, centerY);
+					}
+				}
+			}
+		],
+	};
+
+	new Chart(mixCanvas, config);
 }
 
 $(document).ready(function () {

@@ -61,7 +61,7 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.svg-arrow-down, .svg-arrow-left, .insights-wrapper .insights-list .owl-nav .owl-prev, .svg-arrow-left-hover, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .svg-arrow-right, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .svg-arrow-right-hover, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .svg-arrow-up, .svg-burger, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .svg-close-black, .svg-close-blue, form.search .form-content .close:hover, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .svg-facebook-green-outline, .two-column-content-wrapper .social-links .facebook, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .svg-insights-article, .insights-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .svg-linkedin-green-fill, .two-column-content-wrapper .social-links .linkedin:hover, .svg-linkedin-green-outline, .two-column-content-wrapper .social-links .linkedin, .svg-linkedin-white, .footer .social-links .linkedin:hover, .hero-slides-wrapper .social-links .linkedin:hover, .svg-map-icon, .fullimage-block .list li:before, .svg-search, form.search .form-content .do-search, .svg-search-blue, form.search .form-content .do-search:hover, .svg-search-icon, .actions-nav .action-search, .svg-search-icon-hover, .actions-nav .action-search:hover, .actions-nav .action-search.active, .svg-search-type-all, form.search .form-content .search-types .all label:before, form.search .form-content .search-types-toggle.all, .svg-search-type-insights, form.search .form-content .search-types .insights label:before, form.search .form-content .search-types-toggle.insights, .svg-search-type-people, form.search .form-content .search-types .people label:before, form.search .form-content .search-types-toggle.people, .svg-search-type-strategies, form.search .form-content .search-types .strategies label:before, form.search .form-content .search-types-toggle.strategies, .svg-twitter, .footer .social-links .twitter, .hero-slides-wrapper .social-links .twitter, .svg-twitter-green-fill, .two-column-content-wrapper .social-links .twitter:hover, .svg-twitter-green-outline, .two-column-content-wrapper .social-links .twitter, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .svg-youtube-green-fill, .two-column-content-wrapper .social-links .youtube:hover, .svg-youtube-green-outline, .two-column-content-wrapper .social-links .youtube, .svg-youtube-white, .footer .social-links .youtube:hover, .hero-slides-wrapper .social-links .youtube:hover {
+.svg-arrow-down, .svg-arrow-left, .insights-wrapper .insights-list .owl-nav .owl-prev, .svg-arrow-left-hover, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .svg-arrow-right, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .svg-arrow-right-hover, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .breakdown h5:after, .svg-arrow-up, .svg-burger, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .svg-close-black, .svg-close-blue, form.search .form-content .close:hover, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .svg-facebook-green-outline, .two-column-content-wrapper .social-links .facebook, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .svg-insights-article, .insights-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .svg-linkedin-green-fill, .two-column-content-wrapper .social-links .linkedin:hover, .svg-linkedin-green-outline, .two-column-content-wrapper .social-links .linkedin, .svg-linkedin-white, .footer .social-links .linkedin:hover, .hero-slides-wrapper .social-links .linkedin:hover, .svg-map-icon, .fullimage-block .list li:before, .svg-search, form.search .form-content .do-search, .svg-search-blue, form.search .form-content .do-search:hover, .svg-search-icon, .actions-nav .action-search, .svg-search-icon-hover, .actions-nav .action-search:hover, .actions-nav .action-search.active, .svg-search-type-all, form.search .form-content .search-types .all label:before, form.search .form-content .search-types-toggle.all, .svg-search-type-insights, form.search .form-content .search-types .insights label:before, form.search .form-content .search-types-toggle.insights, .svg-search-type-people, form.search .form-content .search-types .people label:before, form.search .form-content .search-types-toggle.people, .svg-search-type-strategies, form.search .form-content .search-types .strategies label:before, form.search .form-content .search-types-toggle.strategies, .svg-twitter, .footer .social-links .twitter, .hero-slides-wrapper .social-links .twitter, .svg-twitter-green-fill, .two-column-content-wrapper .social-links .twitter:hover, .svg-twitter-green-outline, .two-column-content-wrapper .social-links .twitter, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .svg-youtube-green-fill, .two-column-content-wrapper .social-links .youtube:hover, .svg-youtube-green-outline, .two-column-content-wrapper .social-links .youtube, .svg-youtube-white, .footer .social-links .youtube:hover, .hero-slides-wrapper .social-links .youtube:hover {
   background: url("svg/sprite.css-33e82f05.svg") no-repeat;
 }
 
@@ -101,7 +101,7 @@ a {
   height: 48px;
 }
 
-.svg-arrow-right-hover, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover {
+.svg-arrow-right-hover, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .breakdown h5:after {
   background-position: 0 20.338983050847457%;
 }
 
@@ -3392,6 +3392,16 @@ a.btn.primary:hover:before {
   margin: 0 auto;
   padding: 100px 0;
 }
+.portfolio h5 {
+  cursor: pointer;
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14.5px;
+  line-height: 17px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
 .portfolio .tabs {
   display: flex;
   padding: 0 45px 20px;
@@ -3423,18 +3433,21 @@ a.btn.primary:hover:before {
   bottom: -20px;
   z-index: 1;
 }
-.portfolio .tabs h5 {
-  cursor: pointer;
-  color: #000;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14.5px;
-  line-height: 17px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
 .portfolio .breakdown {
   padding: 0 45px;
+}
+.portfolio .breakdown h5 {
+  display: none;
+  position: relative;
+}
+.portfolio .breakdown h5:after {
+  content: '';
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: -18px;
+  top: -15px;
+  transform: rotate(90deg) scale(0.35);
 }
 .portfolio .breakdown h6 {
   margin-bottom: 35px;
@@ -3467,6 +3480,9 @@ a.btn.primary:hover:before {
 }
 .portfolio .breakdown .active .content {
   display: flex;
+}
+.portfolio .breakdown .active h5:after {
+  transform: rotate(-90deg) scale(0.35);
 }
 .portfolio .breakdown .asset-wrap {
   max-width: 600px;
@@ -3537,20 +3553,54 @@ a.btn.primary:hover:before {
 .portfolio .breakdown ul li:nth-child(n + 12):before {
   background-color: #79833C;
 }
-.portfolio .breakdown .mix-chart {
+.portfolio .breakdown .doughnut-chart {
   max-width: 330px;
   max-height: 330px;
 }
+.portfolio .breakdown .doughnut-chart.mobile {
+  display: none;
+}
 
 @media screen and (max-width: 600px) {
+  .portfolio .portfolio-content {
+    padding: 35px 15px;
+  }
   .portfolio .tabs {
     display: none;
+  }
+  .portfolio .breakdown {
+    padding: 0;
+  }
+  .portfolio .breakdown h5 {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: normal;
+  }
+  .portfolio .breakdown h6 {
+    font-size: 12.5px;
+    line-height: 15px;
+  }
+  .portfolio .breakdown > li {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 5px auto;
+    padding: 15px;
   }
   .portfolio .breakdown ul {
     max-height: none;
   }
   .portfolio .breakdown .active .content {
     flex-direction: column;
+  }
+  .portfolio .breakdown .doughnut-chart.desktop {
+    display: none !important;
+  }
+  .portfolio .breakdown .doughnut-chart.mobile {
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto 50px;
   }
 }
 .fullimage-text-block {
