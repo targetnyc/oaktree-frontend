@@ -240,7 +240,20 @@ function initAboutEvents() {
 			$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
 
 			loadMixedChart($(this).closest('li').find('.doughnut-chart' + ($(window).width() < 600 ? '.mobile' : '.desktop'))[0]);
-		})
+		});
+
+	$(window).on('scroll', throttle(function() {
+		$('.odometer').each(function() {
+			if (elementInViewport(this) && !$(this).data('odometer-ready')) {
+				od = new Odometer({
+					el: this
+				});
+
+				od.update($(this).data('odometer'));
+				$(this).data('odometer-ready', true)
+			}
+		});
+	}, 100));
 
 
 	var chartOptions = $('#aum-chart').data('chart');
@@ -483,3 +496,37 @@ $(document).ready(function () {
 });
 
 function empty() {}
+
+function elementInViewport(el) {
+	var top = el.offsetTop;
+	var left = el.offsetLeft;
+	var width = el.offsetWidth;
+	var height = el.offsetHeight;
+
+	while(el.offsetParent) {
+		el = el.offsetParent;
+		top += el.offsetTop;
+		left += el.offsetLeft;
+	}
+
+	return (
+		top >= window.pageYOffset &&
+		left >= window.pageXOffset &&
+		(top + height) <= (window.pageYOffset + window.innerHeight) &&
+		(left + width) <= (window.pageXOffset + window.innerWidth)
+	);
+}
+
+function throttle(callback, limit) {
+	var waiting = false;
+
+	return function () {
+		if (!waiting) {
+			callback.apply(this, arguments);
+			waiting = true;
+			setTimeout(function () {
+				waiting = false;
+			}, limit);
+		}
+	}
+}
