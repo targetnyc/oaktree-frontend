@@ -45,6 +45,23 @@ body {
 	&:hover:after {
 		--d: 100%;
 	}
+
+	&.inline {
+		color: inherit;
+		font-size: inherit;
+		line-height: inherit;
+		text-transform: inherit;
+		text-decoration: none;
+
+		&:after {
+			margin-top: -5px;
+			height: 1px;
+		}
+
+		&.white:after {
+			background: linear-gradient(90deg, #fff calc(100%/3), transparent 0 calc(200%/3), #fff 0) var(--d, 0%) 100% / 300% 3px no-repeat;
+		}
+	}
 }
 
 .hero-slides-wrapper {
@@ -1003,7 +1020,6 @@ a.btn.primary {
 		a {
 			color: #388067;
 			font-weight: 600;
-			text-decoration: underline;
 		}
 	}
 

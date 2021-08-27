@@ -2389,6 +2389,20 @@ body {
 .link-underline:hover:after {
   --d: 100%;
 }
+.link-underline.inline {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  text-decoration: none;
+}
+.link-underline.inline:after {
+  margin-top: -5px;
+  height: 1px;
+}
+.link-underline.inline.white:after {
+  background: linear-gradient(90deg, #fff calc(100%/3), transparent 0 calc(200%/3), #fff 0) var(--d, 0%) 100%/300% 3px no-repeat;
+}
 
 .hero-slides-wrapper {
   overflow: hidden;
@@ -3092,7 +3106,6 @@ a.btn.primary:hover:before {
 .two-column-content-wrapper .two-column-content a {
   color: #388067;
   font-weight: 600;
-  text-decoration: underline;
 }
 .two-column-content-wrapper .social-links-wrapper {
   position: absolute;
