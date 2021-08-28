@@ -1,10 +1,10 @@
 %svg-common {
-	background: url("svg/sprite.css-33e82f05.svg") no-repeat;
+	background: url("svg/sprite.css-17b631e5.svg") no-repeat;
 }
 
 .svg-arrow-down {
 	@extend %svg-common;
-	background-position: 37.80918727915194% 86.19402985074628%;
+	background-position: 75.60975609756098% 79.53667953667954%;
 }
 
 .svg-arrow-down-dims {
@@ -12,49 +12,69 @@
 	height: 16px;
 }
 
-.svg-arrow-left {
+.svg-arrow-left-black {
 	@extend %svg-common;
-	background-position: 19.12350597609562% 20.338983050847457%;
+	background-position: 37.64705882352941% 21.145374449339208%;
 }
 
-.svg-arrow-left-dims {
+.svg-arrow-left-black-dims {
 	width: 48px;
 	height: 48px;
 }
 
-.svg-arrow-left-hover {
+.svg-arrow-left-green {
+	@extend %svg-common;
+	background-position: 37.64705882352941% 0;
+}
+
+.svg-arrow-left-green-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-arrow-left-white {
 	@extend %svg-common;
 	background-position: 0 0;
 }
 
-.svg-arrow-left-hover-dims {
+.svg-arrow-left-white-dims {
 	width: 48px;
 	height: 48px;
 }
 
-.svg-arrow-right {
+.svg-arrow-right-black {
 	@extend %svg-common;
-	background-position: 19.12350597609562% 0;
+	background-position: 18.823529411764707% 0;
 }
 
-.svg-arrow-right-dims {
+.svg-arrow-right-black-dims {
 	width: 48px;
 	height: 48px;
 }
 
-.svg-arrow-right-hover {
+.svg-arrow-right-green {
 	@extend %svg-common;
-	background-position: 0 20.338983050847457%;
+	background-position: 0 21.145374449339208%;
 }
 
-.svg-arrow-right-hover-dims {
+.svg-arrow-right-green-dims {
+	width: 48px;
+	height: 48px;
+}
+
+.svg-arrow-right-white {
+	@extend %svg-common;
+	background-position: 18.823529411764707% 21.145374449339208%;
+}
+
+.svg-arrow-right-white-dims {
 	width: 48px;
 	height: 48px;
 }
 
 .svg-arrow-up {
 	@extend %svg-common;
-	background-position: 97.17314487632508% 89.17910447761194%;
+	background-position: 75.60975609756098% 73.35907335907336%;
 }
 
 .svg-arrow-up-dims {
@@ -64,7 +84,7 @@
 
 .svg-burger {
 	@extend %svg-common;
-	background-position: 29.927007299270073% 86.19402985074628%;
+	background-position: 64.74820143884892% 91.5057915057915%;
 }
 
 .svg-burger-dims {
@@ -74,7 +94,7 @@
 
 .svg-chevron {
 	@extend %svg-common;
-	background-position: 100% 73.84615384615384%;
+	background-position: 100% 76.49402390438247%;
 }
 
 .svg-chevron-dims {
@@ -84,7 +104,7 @@
 
 .svg-chevron-green {
 	@extend %svg-common;
-	background-position: 100% 46.15384615384615%;
+	background-position: 100% 66.93227091633466%;
 }
 
 .svg-chevron-green-dims {
@@ -94,7 +114,7 @@
 
 .svg-close {
 	@extend %svg-common;
-	background-position: 0 90.94488188976378%;
+	background-position: 24.90842490842491% 96.73469387755102%;
 }
 
 .svg-close-dims {
@@ -104,7 +124,7 @@
 
 .svg-close-black {
 	@extend %svg-common;
-	background-position: 75.09293680297398% 74.80314960629921%;
+	background-position: 35.8974358974359% 96.73469387755102%;
 }
 
 .svg-close-black-dims {
@@ -114,7 +134,7 @@
 
 .svg-close-blue {
 	@extend %svg-common;
-	background-position: 88.10408921933086% 74.80314960629921%;
+	background-position: 13.91941391941392% 96.73469387755102%;
 }
 
 .svg-close-blue-dims {
@@ -124,7 +144,7 @@
 
 .svg-ellipse {
 	@extend %svg-common;
-	background-position: 99.31740614334471% 85.97122302158273%;
+	background-position: 93.93939393939394% 97.39776951672863%;
 }
 
 .svg-ellipse-dims {
@@ -134,7 +154,7 @@
 
 .svg-ellipse-empty {
 	@extend %svg-common;
-	background-position: 100% 18.46153846153846%;
+	background-position: 100% 19.12350597609562%;
 }
 
 .svg-ellipse-empty-dims {
@@ -144,7 +164,7 @@
 
 .svg-ellipse-selected {
 	@extend %svg-common;
-	background-position: 100% 64.61538461538461%;
+	background-position: 100% 47.808764940239044%;
 }
 
 .svg-ellipse-selected-dims {
@@ -154,7 +174,7 @@
 
 .svg-facebook {
 	@extend %svg-common;
-	background-position: 55.95238095238095% 60.33755274261603%;
+	background-position: 74.609375% 0;
 }
 
 .svg-facebook-dims {
@@ -164,7 +184,7 @@
 
 .svg-facebook-green-fill {
 	@extend %svg-common;
-	background-position: 75.39682539682539% 0;
+	background-position: 74.609375% 20.614035087719298%;
 }
 
 .svg-facebook-green-fill-dims {
@@ -174,7 +194,7 @@
 
 .svg-facebook-green-outline {
 	@extend %svg-common;
-	background-position: 75.39682539682539% 19.831223628691983%;
+	background-position: 74.609375% 41.228070175438596%;
 }
 
 .svg-facebook-green-outline-dims {
@@ -184,7 +204,7 @@
 
 .svg-facebook-white {
 	@extend %svg-common;
-	background-position: 75.39682539682539% 39.66244725738397%;
+	background-position: 74.609375% 61.8421052631579%;
 }
 
 .svg-facebook-white-dims {
@@ -194,7 +214,7 @@
 
 .svg-insights-article {
 	@extend %svg-common;
-	background-position: 90.80459770114942% 0;
+	background-position: 89.81132075471699% 33.333333333333336%;
 }
 
 .svg-insights-article-dims {
@@ -204,7 +224,7 @@
 
 .svg-insights-article-hover {
 	@extend %svg-common;
-	background-position: 90.80459770114942% 61.78861788617886%;
+	background-position: 89.81132075471699% 49.36708860759494%;
 }
 
 .svg-insights-article-hover-dims {
@@ -214,7 +234,7 @@
 
 .svg-insights-audio {
 	@extend %svg-common;
-	background-position: 62.83524904214559% 77.23577235772358%;
+	background-position: 89.81132075471699% 65.40084388185655%;
 }
 
 .svg-insights-audio-dims {
@@ -224,7 +244,7 @@
 
 .svg-insights-audio-hover {
 	@extend %svg-common;
-	background-position: 90.80459770114942% 46.34146341463415%;
+	background-position: 89.81132075471699% 81.43459915611814%;
 }
 
 .svg-insights-audio-hover-dims {
@@ -234,7 +254,7 @@
 
 .svg-insights-video {
 	@extend %svg-common;
-	background-position: 90.80459770114942% 15.447154471544716%;
+	background-position: 0 100%;
 }
 
 .svg-insights-video-dims {
@@ -244,7 +264,7 @@
 
 .svg-insights-video-hover {
 	@extend %svg-common;
-	background-position: 90.80459770114942% 30.89430894308943%;
+	background-position: 89.81132075471699% 17.29957805907173%;
 }
 
 .svg-insights-video-hover-dims {
@@ -254,7 +274,7 @@
 
 .svg-linkedin {
 	@extend %svg-common;
-	background-position: 38.095238095238095% 0;
+	background-position: 18.359375% 83.33333333333333%;
 }
 
 .svg-linkedin-dims {
@@ -264,7 +284,7 @@
 
 .svg-linkedin-green-fill {
 	@extend %svg-common;
-	background-position: 37.301587301587304% 60.33755274261603%;
+	background-position: 55.078125% 62.719298245614034%;
 }
 
 .svg-linkedin-green-fill-dims {
@@ -274,7 +294,7 @@
 
 .svg-linkedin-green-outline {
 	@extend %svg-common;
-	background-position: 18.650793650793652% 60.33755274261603%;
+	background-position: 56.25% 20.614035087719298%;
 }
 
 .svg-linkedin-green-outline-dims {
@@ -284,7 +304,7 @@
 
 .svg-linkedin-white {
 	@extend %svg-common;
-	background-position: 0 60.33755274261603%;
+	background-position: 56.25% 0;
 }
 
 .svg-linkedin-white-dims {
@@ -294,7 +314,7 @@
 
 .svg-map-icon {
 	@extend %svg-common;
-	background-position: 100% 36.92307692307692%;
+	background-position: 100% 0;
 }
 
 .svg-map-icon-dims {
@@ -304,7 +324,7 @@
 
 .svg-search {
 	@extend %svg-common;
-	background-position: 20.512820512820515% 89.53488372093024%;
+	background-position: 46.20938628158845% 95.18072289156626%;
 }
 
 .svg-search-dims {
@@ -314,7 +334,7 @@
 
 .svg-search-blue {
 	@extend %svg-common;
-	background-position: 10.989010989010989% 89.53488372093024%;
+	background-position: 55.5956678700361% 95.18072289156626%;
 }
 
 .svg-search-blue-dims {
@@ -324,7 +344,7 @@
 
 .svg-search-icon {
 	@extend %svg-common;
-	background-position: 0 78.18930041152264%;
+	background-position: 90.83969465648855% 0;
 }
 
 .svg-search-icon-dims {
@@ -334,7 +354,7 @@
 
 .svg-search-icon-hover {
 	@extend %svg-common;
-	background-position: 47.674418604651166% 78.18930041152264%;
+	background-position: 35.87786259541985% 81.19658119658119%;
 }
 
 .svg-search-icon-hover-dims {
@@ -344,7 +364,7 @@
 
 .svg-search-type-all {
 	@extend %svg-common;
-	background-position: 100% 55.38461538461539%;
+	background-position: 100% 38.24701195219124%;
 }
 
 .svg-search-type-all-dims {
@@ -354,7 +374,7 @@
 
 .svg-search-type-insights {
 	@extend %svg-common;
-	background-position: 100% 27.692307692307693%;
+	background-position: 100% 28.685258964143426%;
 }
 
 .svg-search-type-insights-dims {
@@ -364,7 +384,7 @@
 
 .svg-search-type-people {
 	@extend %svg-common;
-	background-position: 100% 0;
+	background-position: 100% 57.37051792828685%;
 }
 
 .svg-search-type-people-dims {
@@ -374,7 +394,7 @@
 
 .svg-search-type-strategies {
 	@extend %svg-common;
-	background-position: 100% 9.23076923076923%;
+	background-position: 100% 9.56175298804781%;
 }
 
 .svg-search-type-strategies-dims {
@@ -384,7 +404,7 @@
 
 .svg-twitter {
 	@extend %svg-common;
-	background-position: 56.74603174603175% 39.66244725738397%;
+	background-position: 36.71875% 62.719298245614034%;
 }
 
 .svg-twitter-dims {
@@ -394,7 +414,7 @@
 
 .svg-twitter-green-fill {
 	@extend %svg-common;
-	background-position: 56.74603174603175% 19.831223628691983%;
+	background-position: 0 42.10526315789474%;
 }
 
 .svg-twitter-green-fill-dims {
@@ -404,7 +424,7 @@
 
 .svg-twitter-green-outline {
 	@extend %svg-common;
-	background-position: 56.74603174603175% 0;
+	background-position: 0 62.719298245614034%;
 }
 
 .svg-twitter-green-outline-dims {
@@ -414,7 +434,7 @@
 
 .svg-twitter-white {
 	@extend %svg-common;
-	background-position: 37.301587301587304% 40.50632911392405%;
+	background-position: 56.25% 41.228070175438596%;
 }
 
 .svg-twitter-white-dims {
@@ -424,7 +444,7 @@
 
 .svg-user {
 	@extend %svg-common;
-	background-position: 31.782945736434108% 78.18930041152264%;
+	background-position: 51.52671755725191% 81.19658119658119%;
 }
 
 .svg-user-dims {
@@ -434,7 +454,7 @@
 
 .svg-user-hover {
 	@extend %svg-common;
-	background-position: 15.891472868217054% 78.18930041152264%;
+	background-position: 67.17557251908397% 81.19658119658119%;
 }
 
 .svg-user-hover-dims {
@@ -444,7 +464,7 @@
 
 .svg-view-all-blue {
 	@extend %svg-common;
-	background-position: 0 100%;
+	background-position: 99.64285714285714% 94.84126984126983%;
 }
 
 .svg-view-all-blue-dims {
@@ -454,7 +474,7 @@
 
 .svg-view-all-green {
 	@extend %svg-common;
-	background-position: 99.6376811594203% 82.75862068965517%;
+	background-position: 99.64285714285714% 85.71428571428571%;
 }
 
 .svg-view-all-green-dims {
@@ -464,7 +484,7 @@
 
 .svg-youtube {
 	@extend %svg-common;
-	background-position: 18.650793650793652% 40.50632911392405%;
+	background-position: 36.71875% 42.10526315789474%;
 }
 
 .svg-youtube-dims {
@@ -474,7 +494,7 @@
 
 .svg-youtube-green-fill {
 	@extend %svg-common;
-	background-position: 0 40.50632911392405%;
+	background-position: 18.359375% 42.10526315789474%;
 }
 
 .svg-youtube-green-fill-dims {
@@ -484,7 +504,7 @@
 
 .svg-youtube-green-outline {
 	@extend %svg-common;
-	background-position: 38.095238095238095% 19.831223628691983%;
+	background-position: 0 83.33333333333333%;
 }
 
 .svg-youtube-green-outline-dims {
@@ -494,7 +514,7 @@
 
 .svg-youtube-white {
 	@extend %svg-common;
-	background-position: 75.39682539682539% 59.49367088607595%;
+	background-position: 18.359375% 62.719298245614034%;
 }
 
 .svg-youtube-white-dims {

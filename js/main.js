@@ -210,7 +210,6 @@ function initHomeEvents() {
 }
 
 function initAboutEvents() {
-	// Chart.register(ChartDataLabels);
 	$(document)
 		.on('click', '.tabs li', function() {
 			$(this)
@@ -325,10 +324,6 @@ function initAboutEvents() {
 				pointRadius: 0,
 				drawBorder: false,
 				pointBackgroundColor: "#388067",
-				// datalabels: {
-				// 	align: 'top',
-				// 	anchor: 'top',
-				// }
 			}
 		]
 	};
@@ -515,6 +510,99 @@ function loadMixedChart(mixCanvas) {
 	new Chart(mixCanvas, config);
 }
 
+function filterData(data, key) {
+	var filterData = [];
+
+	for (var i in data) {
+		if (filterData.indexOf(data[i][key]) == -1) {
+			filterData.push(data[i][key]);
+		}
+	}
+
+	return filterData;
+}
+
+function initLeadershipEvents() {
+	var tabledata = $('.table-view table').data('tabledata');
+	var columnOptions = $('.table-view table').data('columns');
+	columnOptions[0].fnCreatedCell = function (nTd, sData, oData, iRow, iCol) {
+		$(nTd).html('<a href="#">' + oData[columnOptions[0].data] + '</a>');
+	};
+
+	var searchDepartments = filterData(tabledata, 'department');
+	var searchLocations = filterData(tabledata, 'location');
+
+	$.fn.dataTable.ext.search.push(
+		function( settings, data, dataIndex ) {
+			var departmentValue = $('#department-filter').val();
+			var locationValue = $('#location-filter').val();
+			var searchValue = $('#search-filter').val();
+			console.log(departmentValue, locationValue, searchValue);
+
+			if ((departmentValue && data[2] !== departmentValue) ||
+				(locationValue && data[3] !== locationValue) ||
+				(searchValue && data[0].toLowerCase().indexOf(searchValue) === -1)) {
+				return false;
+			}
+
+			return true;
+		}
+	);
+
+	var table = $('.table-view table').DataTable( {
+		paging:   true,
+		ordering: false,
+		info: false,
+		lengthChange: false,
+		data: tabledata,
+		columns: columnOptions,
+	});
+
+	// TODO: change on resize
+	if ($(window).width() > 860) {
+		$('.owl-carousel').owlCarousel({
+			items: 5,
+			nav: true
+		});
+	} else {
+		$('.bios-wrapper')
+			.addClass('scrollable-content scrollbar-inner')
+			.scrollbar();
+
+		$('.dataTables_wrapper')
+			.addClass('scrollable-content scrollbar-inner')
+			.scrollbar();
+	}
+
+	$('#department-filter')
+		.html('<option value="">Department</option><option>' + searchDepartments.join('</option><option>') + '</option>')
+		.selectmenu({
+			change: function() {
+				table.draw();
+			}
+		});
+	$('#location-filter')
+		.html('<option value="">Location</option><option>' + searchLocations.join('</option><option>') + '</option>')
+		.selectmenu({
+			change: function() {
+				table.draw();
+			}
+		});
+
+	$('#search-filter')
+		.on('keyup', function() {
+			table.draw();
+		})
+		.on('focus', function() {
+			$(this).data('placeholder', $(this).attr('placeholder'));
+			$(this).attr('placeholder', '');
+		})
+		.on('blur', function() {
+			$(this).attr('placeholder', $(this).data('placeholder'));
+			$(this).data('placeholder', false);
+		});
+}
+
 $(document).ready(function () {
 	var page = $('body').data('page');
 	initHeaderEvents();
@@ -525,6 +613,9 @@ $(document).ready(function () {
 			break;
 		case 'about':
 			initAboutEvents();
+			break;
+		case 'leadership':
+			initLeadershipEvents();
 			break;
 	}
 
