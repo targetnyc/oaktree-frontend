@@ -242,18 +242,54 @@ function initAboutEvents() {
 			loadMixedChart($(this).closest('li').find('.doughnut-chart' + ($(window).width() < 600 ? '.mobile' : '.desktop'))[0]);
 		});
 
-	$(window).on('scroll', throttle(function() {
-		$('.odometer').each(function() {
-			if (elementInViewport(this) && !$(this).data('odometer-ready')) {
-				od = new Odometer({
-					el: this
-				});
+	$(window)
+		.on('scroll', throttle(function() {
+			$('.odometer').each(function() {
+				if (elementInViewport(this) && !$(this).data('odometer-ready')) {
+					od = new Odometer({
+						el: this
+					});
 
-				od.update($(this).data('odometer'));
-				$(this).data('odometer-ready', true)
-			}
+					od.update($(this).data('odometer'));
+					$(this).data('odometer-ready', true)
+				}
+			});
+		}, 100));
+
+	if ($(window).width() > 600) {
+		var controller = new ScrollMagic.Controller();
+
+		function tweenOpacity(el) {
+			var tween = TweenMax.fromTo(el, 1, {
+				opacity: 0,
+				y: 100,
+				force3D: true
+			}, {
+				opacity: 1,
+				y: 0,
+				force3D: true
+			});
+
+			return tween;
+		};
+
+		$('.sliding-info .slides li').each(function() {
+			new ScrollMagic.Scene({
+					triggerElement: $(this).get(),
+					triggerHook: .75,
+					duration: '50%'
+				})
+				.setTween(tweenOpacity($(this).get()))
+				.addTo(controller);
 		});
-	}, 100));
+
+		new ScrollMagic.Scene({triggerElement: '.trigger-1', duration: $('.trigger-2').offset().top - $('.trigger-1').offset().top}).setPin('.sliding-info h2').addTo(controller);
+	} else {
+		$('.sliding-info .slides').addClass('owl-carousel').owlCarousel({
+			items: 1,
+			dots: true
+		});
+	}
 
 
 	var chartOptions = $('#aum-chart').data('chart');
