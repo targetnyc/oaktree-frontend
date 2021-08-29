@@ -3023,3 +3023,140 @@ a.btn.primary {
 		}
 	}
 }
+
+.person-bio {
+	padding: 80px 0 130px;
+
+	.person-bio-content {
+		margin: 0 auto;
+		max-width: 1180px;
+
+		.back.link-underline {
+			display: inline-block;
+			min-height: 18px;
+			position: relative;
+			padding-left: 32px;
+
+			line-height: 15px;
+
+			&:before {
+				@extend .svg-view-all-green;
+				@extend .svg-view-all-green-dims;
+
+				content: '';
+				display: inline-block;
+				position: absolute;
+				left: 0;
+
+				transform: rotate(180deg);
+				transition: background-image 0.2s ease-in-out;
+			}
+
+			&:hover {
+				&:before {
+					@extend .svg-view-all-blue;
+				}
+			}
+		}
+
+		img {
+			max-width: 324px;
+			margin-right: 55px;
+			height: 100%;
+		}
+
+		.bio-wrapper {
+			display: flex;
+			padding: 50px 0 0;
+
+			color: #000;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 25px;
+
+			h1 {
+				margin: 0 0 5px;
+
+				color: #388067;
+				font-family: "orpheuspro";
+				font-style: normal;
+				font-weight: normal;
+				font-size: 58px;
+				line-height: 81px;
+			}
+
+			h2 {
+				margin-bottom: 35px;
+
+				color: #000;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 22px;
+				line-height: 31px;
+			}
+
+			p {
+				margin-bottom: 25px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.person-bio {
+		.person-bio-content {
+			.bio-wrapper {
+				font-size: 16px;
+				line-height: 24px;
+
+				h1 {
+					font-size: 26px;
+					line-height: 37px;
+				}
+
+				h2 {
+					font-size: 14px;
+					line-height: 20px;
+				}
+
+				img ~ .bio-text-wrapper {
+					h1 {
+						font-size: 20px;
+						line-height: 28px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.person-bio {
+		padding: 50px 15px;
+
+		.person-bio-content {
+			.bio-wrapper {
+				display: block;
+
+				img {
+					float: left;
+					width: 40%;
+					margin: 0 15px 35px 0;
+				}
+
+				img ~ .bio-text-wrapper {
+					padding-top: min(162px, 21.4818674%);
+
+					.bio-heading-wrapper {
+						transform: translateY(-50%);
+					}
+				}
+
+				.bio-description-wrapper {
+					clear: both;
+				}
+			}
+		}
+	}
+}

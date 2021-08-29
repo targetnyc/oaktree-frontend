@@ -660,6 +660,21 @@ function initLeadershipEvents() {
 		});
 }
 
+function initPeopleEvents() {
+	$(".insights-list").owlCarousel({
+		nav: true,
+		loop: true,
+		responsive: {
+			0: {
+				items: 2
+			},
+			628: {
+				items: 3
+			}
+		}
+	});
+}
+
 $(document).ready(function () {
 	var page = $('body').data('page');
 	initHeaderEvents();
@@ -673,6 +688,9 @@ $(document).ready(function () {
 			break;
 		case 'leadership':
 			initLeadershipEvents();
+			break;
+		case 'people':
+			initPeopleEvents();
 			break;
 	}
 
