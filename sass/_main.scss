@@ -1492,10 +1492,12 @@ a.btn.primary {
 	}
 }
 
-.portfolio {
+.portfolio,
+.leadership {
 	background: #f2f2f2;
 
-	.portfolio-content {
+	.portfolio-content,
+	.leadership-content {
 		max-width: 1180px;
 		margin: 0 auto;
 		padding: 100px 0;
@@ -1550,9 +1552,10 @@ a.btn.primary {
 		}
 	}
 
-	.breakdown {
+	.tabs-content {
 		padding: 0 45px;
 
+		h2,
 		h5 {
 			display: none;
 			position: relative;
@@ -1609,7 +1612,10 @@ a.btn.primary {
 				display: flex;
 			}
 
+			h2,
 			h5 {
+				display: block;
+
 				&:after {
 					transform: rotate(-90deg) scale(.35);
 				}
@@ -1620,7 +1626,9 @@ a.btn.primary {
 			max-width: 600px;
 			width: 100%;
 		}
+	}
 
+	.breakdown {
 		ul {
 			padding: 0;
 
@@ -1716,9 +1724,56 @@ a.btn.primary {
 	}
 }
 
+.leadership {
+	.leadership-content {
+		padding: 80px 0;
+
+		.active {
+			h2:after {
+				display: none;
+			}
+		}
+	}
+
+	.tabs {
+		// width: 100%;
+		max-width: none;
+
+		li {
+			max-width: 225px;
+
+			&:first-child {
+				min-width: 315px;
+				width: 30%;
+				max-width: none;
+			}
+
+			&.active {
+				padding: 0;
+			}
+		}
+
+		h5 {
+			font-size: 14.5px;
+			line-height: 17px;
+		}
+	}
+
+	.tabs-content {
+		.active {
+			.content {
+				display: block;
+				padding: 0;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 600px) {
-	.portfolio {
-		.portfolio-content {
+	.portfolio,
+	.leadership {
+		.portfolio-content,
+		.leadership-content {
 			padding: 35px 15px;
 		}
 
@@ -1726,9 +1781,10 @@ a.btn.primary {
 			display: none;
 		}
 
-		.breakdown {
+		.tabs-content {
 			padding: 0;
 
+			h2,
 			h5 {
 				display: block;
 
@@ -2434,16 +2490,145 @@ a.btn.primary {
 	.table-view-content {
 		max-width: 1180px;
 		margin: 0 auto;
-		padding: 0 0 130px;
+		padding-bottom: 130px;
 
 		h2 {
-			margin-bottom: 45px;
+			margin: 45px auto;
 
 			color: #000;
 			font-style: normal;
 			font-weight: bold;
 			font-size: 28px;
 			line-height: 39px;
+		}
+
+		.collapsable-table {
+			border-top: 2px solid #fff;
+
+			&.collapsed {
+				h3 {
+					border-radius: 3px;
+
+					&:after {
+						transform: rotate(90deg) scale(0.35);
+						transform-origin: right;
+						top: 7.5px;
+						right: 28px;
+					}
+				}
+
+
+				.sub-tables,
+				.dataTables_wrapper{
+					display: none;
+				}
+			}
+
+			h3 {
+				background: #0C2F4B;
+				border-radius: 3px 3px 0px 0px;
+
+				cursor: pointer;
+
+				padding: 12px 20px;
+				position: relative;
+
+				color: #fff;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 22px;
+				letter-spacing: 0.03em;
+
+				&:after {
+					@extend .svg-arrow-right-white;
+
+					content: '';
+					height: 48px;
+					position: absolute;
+					width: 48px;
+					right: 36px;
+					top: 15.5px;
+
+					transform: rotate(-90deg) scale(0.35);
+					transform-origin: right top;
+				}
+			}
+
+			.sub-tables {
+				h4 {
+					background: #388067;
+					cursor: pointer;
+
+					padding: 13px 40px;
+					position: relative;
+
+					color: #fff;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 20px;
+					letter-spacing: 0.03em;
+
+					&:after {
+						@extend .svg-arrow-right-white;
+
+						content: '';
+						height: 48px;
+						position: absolute;
+						width: 48px;
+						top: 7.5px;
+						right: 48px;
+
+						transform: rotate(90deg) scale(0.35);
+						transform-origin: right;
+					}
+				}
+
+				.dataTables_wrapper {
+					display: none;
+				}
+
+				.opened {
+					.dataTables_wrapper {
+						display: block;
+					}
+
+					h4 {
+						&:after {
+							transform: rotate(-90deg) scale(0.35);
+							transform-origin: right top;
+							right: 56px;
+							top: 15.5px;
+						}
+					}
+				}
+
+				li ~ li {
+					border-top: 1px solid #fff;
+				}
+			}
+
+			.dataTable {
+				width: 100% !important;
+
+				thead {
+					background: #f1f1f1;
+
+					th {
+						color: #aaa;
+					}
+				}
+
+				.odd {
+					background: #fff;
+				}
+
+				.even {
+					background: #f1f1f1;
+				}
+			}
+
 		}
 
 		.table-filters {

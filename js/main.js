@@ -225,9 +225,9 @@ function initAboutEvents() {
 
 			loadMixedChart($($(this).data('target')).find('.doughnut-chart' + ($(window).width() < 600 ? '.mobile' : '.desktop'))[0]);
 		})
-		.on('click', '.breakdown h5', function() {
+		.on('click', '.tabs-content h5', function() {
 			$(this)
-				.closest('.breakdown')
+				.closest('.tabs-content')
 					.find('li')
 						.removeClass('active')
 					.end()
@@ -525,29 +525,32 @@ function filterData(data, key) {
 function initLeadershipEvents() {
 	var tabledata = $('.table-view table').data('tabledata');
 	var columnOptions = $('.table-view table').data('columns');
+
 	columnOptions[0].fnCreatedCell = function (nTd, sData, oData, iRow, iCol) {
 		$(nTd).html('<a href="#">' + oData[columnOptions[0].data] + '</a>');
 	};
 
-	var searchDepartments = filterData(tabledata, 'department');
-	var searchLocations = filterData(tabledata, 'location');
+	if ($('.table-filters').length) {
+		var searchDepartments = filterData(tabledata, 'department');
+		var searchLocations = filterData(tabledata, 'location');
 
-	$.fn.dataTable.ext.search.push(
-		function( settings, data, dataIndex ) {
-			var departmentValue = $('#department-filter').val();
-			var locationValue = $('#location-filter').val();
-			var searchValue = $('#search-filter').val();
-			console.log(departmentValue, locationValue, searchValue);
+		$.fn.dataTable.ext.search.push(
+			function( settings, data, dataIndex ) {
+				var departmentValue = $('#department-filter').val();
+				var locationValue = $('#location-filter').val();
+				var searchValue = $('#search-filter').val();
+				console.log(departmentValue, locationValue, searchValue);
 
-			if ((departmentValue && data[2] !== departmentValue) ||
-				(locationValue && data[3] !== locationValue) ||
-				(searchValue && data[0].toLowerCase().indexOf(searchValue) === -1)) {
-				return false;
+				if ((departmentValue && data[2] !== departmentValue) ||
+					(locationValue && data[3] !== locationValue) ||
+					(searchValue && data[0].toLowerCase().indexOf(searchValue) === -1)) {
+					return false;
+				}
+
+				return true;
 			}
-
-			return true;
-		}
-	);
+		);
+	}
 
 	var table = $('.table-view table').DataTable( {
 		paging:   true,
@@ -559,47 +562,101 @@ function initLeadershipEvents() {
 	});
 
 	// TODO: change on resize
-	if ($(window).width() > 860) {
-		$('.owl-carousel').owlCarousel({
-			items: 5,
-			nav: true
-		});
-	} else {
-		$('.bios-wrapper')
-			.addClass('scrollable-content scrollbar-inner')
-			.scrollbar();
+	if ($('.table-filters').length) {
+		if ($(window).width() > 860) {
+			$('.owl-carousel').owlCarousel({
+				items: 5,
+				nav: true
+			});
+		} else {
+			$('.bios-wrapper')
+				.addClass('scrollable-content scrollbar-inner')
+				.scrollbar();
+		}
 
+		$('#department-filter')
+			.html('<option value="">Department</option><option>' + searchDepartments.join('</option><option>') + '</option>')
+			.selectmenu({
+				change: function() {
+					table.draw();
+				}
+			});
+
+		$('#location-filter')
+			.html('<option value="">Location</option><option>' + searchLocations.join('</option><option>') + '</option>')
+			.selectmenu({
+				change: function() {
+					table.draw();
+				}
+			});
+
+		$('#search-filter')
+			.on('keyup', function() {
+				table.draw();
+			})
+			.on('focus', function() {
+				$(this).data('placeholder', $(this).attr('placeholder'));
+				$(this).attr('placeholder', '');
+			})
+			.on('blur', function() {
+				$(this).attr('placeholder', $(this).data('placeholder'));
+				$(this).data('placeholder', false);
+			});
+	}
+	
+	if ($(window).width() < 860) {
 		$('.dataTables_wrapper')
 			.addClass('scrollable-content scrollbar-inner')
 			.scrollbar();
 	}
 
-	$('#department-filter')
-		.html('<option value="">Department</option><option>' + searchDepartments.join('</option><option>') + '</option>')
-		.selectmenu({
-			change: function() {
-				table.draw();
-			}
-		});
-	$('#location-filter')
-		.html('<option value="">Location</option><option>' + searchLocations.join('</option><option>') + '</option>')
-		.selectmenu({
-			change: function() {
-				table.draw();
-			}
-		});
+	$('.collapsable-table h3').on('click', function() {
+		$(this)
+			.closest('.table-view-content')
+				.find('.collapsable-table')
+					.addClass('collapsed')
+				.end()
+			.end()
+			.closest('.collapsable-table')
+				.removeClass('collapsed');
+	});
 
-	$('#search-filter')
-		.on('keyup', function() {
-			table.draw();
+	$('.sub-tables h4').on('click', function() {
+		$(this)
+			.closest('.sub-tables')
+				.find('li')
+					.removeClass('opened')
+				.end()
+			.end()
+			.closest('li')
+				.addClass('opened');
+	});
+
+	$(document)
+		.on('click', '.tabs li', function() {
+			$(this)
+				.closest('.tabs')
+					.find('li')
+						.removeClass('active')
+					.end()
+				.end()
+				.addClass('active');	
+
+			$('.tabs-content li').removeClass('active');
+			$($(this).data('target')).addClass('active');
 		})
-		.on('focus', function() {
-			$(this).data('placeholder', $(this).attr('placeholder'));
-			$(this).attr('placeholder', '');
-		})
-		.on('blur', function() {
-			$(this).attr('placeholder', $(this).data('placeholder'));
-			$(this).data('placeholder', false);
+		.on('click', '.tabs-content h2', function() {
+			$(this)
+				.closest('.tabs-content')
+					.find('li')
+						.removeClass('active')
+					.end()
+				.end()
+				.closest('li')
+					.addClass('active');	
+
+			$('.tabs li').removeClass('active');
+			$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
 		});
 }
 

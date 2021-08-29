@@ -61,7 +61,10 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.svg-arrow-down, .svg-arrow-left-black, .bio-list .bio-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .bio-list .bio-list-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .bio-list .bio-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .breakdown h5:after, .bio-list .bio-list-content .owl-nav .owl-next, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .svg-close-black, .svg-close-blue, form.search .form-content .close:hover, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .svg-facebook-green-outline, .two-column-content-wrapper .social-links .facebook, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .svg-insights-article, .insights-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .svg-linkedin-green-fill, .two-column-content-wrapper .social-links .linkedin:hover, .svg-linkedin-green-outline, .two-column-content-wrapper .social-links .linkedin, .svg-linkedin-white, .footer .social-links .linkedin:hover, .hero-slides-wrapper .social-links .linkedin:hover, .svg-map-icon, .fullimage-block .list li:before, .svg-search, form.search .form-content .do-search, .table-view .table-view-content .table-filters .search-filter-wrapper:after, .svg-search-blue, form.search .form-content .do-search:hover, .svg-search-icon, .actions-nav .action-search, .svg-search-icon-hover, .actions-nav .action-search:hover, .actions-nav .action-search.active, .svg-search-type-all, form.search .form-content .search-types .all label:before, form.search .form-content .search-types-toggle.all, .svg-search-type-insights, form.search .form-content .search-types .insights label:before, form.search .form-content .search-types-toggle.insights, .svg-search-type-people, form.search .form-content .search-types .people label:before, form.search .form-content .search-types-toggle.people, .svg-search-type-strategies, form.search .form-content .search-types .strategies label:before, form.search .form-content .search-types-toggle.strategies, .svg-twitter, .footer .social-links .twitter, .hero-slides-wrapper .social-links .twitter, .svg-twitter-green-fill, .two-column-content-wrapper .social-links .twitter:hover, .svg-twitter-green-outline, .two-column-content-wrapper .social-links .twitter, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .svg-youtube-green-fill, .two-column-content-wrapper .social-links .youtube:hover, .svg-youtube-green-outline, .two-column-content-wrapper .social-links .youtube, .svg-youtube-white, .footer .social-links .youtube:hover, .hero-slides-wrapper .social-links .youtube:hover {
+.svg-arrow-down, .svg-arrow-left-black, .bio-list .bio-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .bio-list .bio-list-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .bio-list .bio-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
+.portfolio .tabs-content h5:after,
+.leadership .tabs-content h2:after,
+.leadership .tabs-content h5:after, .bio-list .bio-list-content .owl-nav .owl-next, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .svg-close-black, .svg-close-blue, form.search .form-content .close:hover, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .svg-facebook-green-outline, .two-column-content-wrapper .social-links .facebook, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .svg-insights-article, .insights-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .svg-linkedin-green-fill, .two-column-content-wrapper .social-links .linkedin:hover, .svg-linkedin-green-outline, .two-column-content-wrapper .social-links .linkedin, .svg-linkedin-white, .footer .social-links .linkedin:hover, .hero-slides-wrapper .social-links .linkedin:hover, .svg-map-icon, .fullimage-block .list li:before, .svg-search, form.search .form-content .do-search, .table-view .table-view-content .table-filters .search-filter-wrapper:after, .svg-search-blue, form.search .form-content .do-search:hover, .svg-search-icon, .actions-nav .action-search, .svg-search-icon-hover, .actions-nav .action-search:hover, .actions-nav .action-search.active, .svg-search-type-all, form.search .form-content .search-types .all label:before, form.search .form-content .search-types-toggle.all, .svg-search-type-insights, form.search .form-content .search-types .insights label:before, form.search .form-content .search-types-toggle.insights, .svg-search-type-people, form.search .form-content .search-types .people label:before, form.search .form-content .search-types-toggle.people, .svg-search-type-strategies, form.search .form-content .search-types .strategies label:before, form.search .form-content .search-types-toggle.strategies, .svg-twitter, .footer .social-links .twitter, .hero-slides-wrapper .social-links .twitter, .svg-twitter-green-fill, .two-column-content-wrapper .social-links .twitter:hover, .svg-twitter-green-outline, .two-column-content-wrapper .social-links .twitter, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .svg-youtube-green-fill, .two-column-content-wrapper .social-links .youtube:hover, .svg-youtube-green-outline, .two-column-content-wrapper .social-links .youtube, .svg-youtube-white, .footer .social-links .youtube:hover, .hero-slides-wrapper .social-links .youtube:hover {
   background: url("svg/sprite.css-17b631e5.svg") no-repeat;
 }
 
@@ -110,7 +113,10 @@ a {
   height: 48px;
 }
 
-.svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .breakdown h5:after, .bio-list .bio-list-content .owl-nav .owl-next, .table-view .table-view-content .table-filters .ui-selectmenu-icon {
+.svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
+.portfolio .tabs-content h5:after,
+.leadership .tabs-content h2:after,
+.leadership .tabs-content h5:after, .bio-list .bio-list-content .owl-nav .owl-next, .table-view .table-view-content .table-filters .ui-selectmenu-icon {
   background-position: 0 21.145374449339208%;
 }
 
@@ -119,7 +125,7 @@ a {
   height: 48px;
 }
 
-.svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after {
+.svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after {
   background-position: 18.823529411764707% 21.145374449339208%;
 }
 
@@ -3478,15 +3484,20 @@ a.btn.primary:hover:before {
     line-height: 22px;
   }
 }
-.portfolio {
+.portfolio,
+.leadership {
   background: #f2f2f2;
 }
-.portfolio .portfolio-content {
+.portfolio .portfolio-content,
+.portfolio .leadership-content,
+.leadership .portfolio-content,
+.leadership .leadership-content {
   max-width: 1180px;
   margin: 0 auto;
   padding: 100px 0;
 }
-.portfolio h5 {
+.portfolio h5,
+.leadership h5 {
   cursor: pointer;
   color: #000;
   font-style: normal;
@@ -3496,7 +3507,8 @@ a.btn.primary:hover:before {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.portfolio .tabs {
+.portfolio .tabs,
+.leadership .tabs {
   display: flex;
   padding: 0 45px 20px;
   max-width: 690px;
@@ -3504,7 +3516,8 @@ a.btn.primary:hover:before {
   justify-content: space-between;
   position: relative;
 }
-.portfolio .tabs:after {
+.portfolio .tabs:after,
+.leadership .tabs:after {
   background: #E0E0E0;
   border-radius: 100px;
   content: '';
@@ -3514,10 +3527,12 @@ a.btn.primary:hover:before {
   position: absolute;
   bottom: 0;
 }
-.portfolio .tabs .active {
+.portfolio .tabs .active,
+.leadership .tabs .active {
   position: relative;
 }
-.portfolio .tabs .active:after {
+.portfolio .tabs .active:after,
+.leadership .tabs .active:after {
   background: #388067;
   border-radius: 100px;
   content: '';
@@ -3527,14 +3542,21 @@ a.btn.primary:hover:before {
   bottom: -20px;
   z-index: 1;
 }
-.portfolio .breakdown {
+.portfolio .tabs-content,
+.leadership .tabs-content {
   padding: 0 45px;
 }
-.portfolio .breakdown h5 {
+.portfolio .tabs-content h2,
+.portfolio .tabs-content h5,
+.leadership .tabs-content h2,
+.leadership .tabs-content h5 {
   display: none;
   position: relative;
 }
-.portfolio .breakdown h5:after {
+.portfolio .tabs-content h2:after,
+.portfolio .tabs-content h5:after,
+.leadership .tabs-content h2:after,
+.leadership .tabs-content h5:after {
   content: '';
   width: 48px;
   height: 48px;
@@ -3543,7 +3565,8 @@ a.btn.primary:hover:before {
   top: -15px;
   transform: rotate(90deg) scale(0.35);
 }
-.portfolio .breakdown h6 {
+.portfolio .tabs-content h6,
+.leadership .tabs-content h6 {
   margin-bottom: 35px;
   position: relative;
   color: #000;
@@ -3554,7 +3577,8 @@ a.btn.primary:hover:before {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.portfolio .breakdown h6 sup {
+.portfolio .tabs-content h6 sup,
+.leadership .tabs-content h6 sup {
   position: absolute;
   top: -50%;
   margin-left: 5px;
@@ -3567,22 +3591,35 @@ a.btn.primary:hover:before {
   text-transform: uppercase;
   vertical-align: top;
 }
-.portfolio .breakdown .content {
+.portfolio .tabs-content .content,
+.leadership .tabs-content .content {
   padding-top: 45px;
   display: none;
   justify-content: space-between;
 }
-.portfolio .breakdown .active .content {
+.portfolio .tabs-content .active .content,
+.leadership .tabs-content .active .content {
   display: flex;
 }
-.portfolio .breakdown .active h5:after {
+.portfolio .tabs-content .active h2,
+.portfolio .tabs-content .active h5,
+.leadership .tabs-content .active h2,
+.leadership .tabs-content .active h5 {
+  display: block;
+}
+.portfolio .tabs-content .active h2:after,
+.portfolio .tabs-content .active h5:after,
+.leadership .tabs-content .active h2:after,
+.leadership .tabs-content .active h5:after {
   transform: rotate(-90deg) scale(0.35);
 }
-.portfolio .breakdown .asset-wrap {
+.portfolio .tabs-content .asset-wrap,
+.leadership .tabs-content .asset-wrap {
   max-width: 600px;
   width: 100%;
 }
-.portfolio .breakdown ul {
+.portfolio .breakdown ul,
+.leadership .breakdown ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -3590,7 +3627,8 @@ a.btn.primary:hover:before {
   max-height: 222px;
   width: 100%;
 }
-.portfolio .breakdown ul li {
+.portfolio .breakdown ul li,
+.leadership .breakdown ul li {
   margin-bottom: 15px;
   padding-left: 24px;
   position: relative;
@@ -3601,7 +3639,8 @@ a.btn.primary:hover:before {
   line-height: 22px;
   letter-spacing: 0.03em;
 }
-.portfolio .breakdown ul li:before {
+.portfolio .breakdown ul li:before,
+.leadership .breakdown ul li:before {
   border-radius: 100%;
   content: '';
   display: block;
@@ -3611,86 +3650,143 @@ a.btn.primary:hover:before {
   top: 4px;
   left: 0;
 }
-.portfolio .breakdown ul li:nth-child(n + 1):before {
+.portfolio .breakdown ul li:nth-child(n + 1):before,
+.leadership .breakdown ul li:nth-child(n + 1):before {
   background-color: #388067;
 }
-.portfolio .breakdown ul li:nth-child(n + 2):before {
+.portfolio .breakdown ul li:nth-child(n + 2):before,
+.leadership .breakdown ul li:nth-child(n + 2):before {
   background-color: #BA7838;
 }
-.portfolio .breakdown ul li:nth-child(n + 3):before {
+.portfolio .breakdown ul li:nth-child(n + 3):before,
+.leadership .breakdown ul li:nth-child(n + 3):before {
   background-color: #BCA236;
 }
-.portfolio .breakdown ul li:nth-child(n + 4):before {
+.portfolio .breakdown ul li:nth-child(n + 4):before,
+.leadership .breakdown ul li:nth-child(n + 4):before {
   background-color: #766660;
 }
-.portfolio .breakdown ul li:nth-child(n + 5):before {
+.portfolio .breakdown ul li:nth-child(n + 5):before,
+.leadership .breakdown ul li:nth-child(n + 5):before {
   background-color: #9D4D34;
 }
-.portfolio .breakdown ul li:nth-child(n + 6):before {
+.portfolio .breakdown ul li:nth-child(n + 6):before,
+.leadership .breakdown ul li:nth-child(n + 6):before {
   background-color: #A0BFC4;
 }
-.portfolio .breakdown ul li:nth-child(n + 7):before {
+.portfolio .breakdown ul li:nth-child(n + 7):before,
+.leadership .breakdown ul li:nth-child(n + 7):before {
   background-color: #DCAE7C;
 }
-.portfolio .breakdown ul li:nth-child(n + 8):before {
+.portfolio .breakdown ul li:nth-child(n + 8):before,
+.leadership .breakdown ul li:nth-child(n + 8):before {
   background-color: #65929A;
 }
-.portfolio .breakdown ul li:nth-child(n + 9):before {
+.portfolio .breakdown ul li:nth-child(n + 9):before,
+.leadership .breakdown ul li:nth-child(n + 9):before {
   background-color: #F7DE63;
 }
-.portfolio .breakdown ul li:nth-child(n + 10):before {
+.portfolio .breakdown ul li:nth-child(n + 10):before,
+.leadership .breakdown ul li:nth-child(n + 10):before {
   background-color: #AEA19D;
 }
-.portfolio .breakdown ul li:nth-child(n + 11):before {
+.portfolio .breakdown ul li:nth-child(n + 11):before,
+.leadership .breakdown ul li:nth-child(n + 11):before {
   background-color: #CF8B76;
 }
-.portfolio .breakdown ul li:nth-child(n + 12):before {
+.portfolio .breakdown ul li:nth-child(n + 12):before,
+.leadership .breakdown ul li:nth-child(n + 12):before {
   background-color: #79833C;
 }
-.portfolio .breakdown .doughnut-chart {
+.portfolio .breakdown .doughnut-chart,
+.leadership .breakdown .doughnut-chart {
   max-width: 330px;
   max-height: 330px;
 }
-.portfolio .breakdown .doughnut-chart.mobile {
+.portfolio .breakdown .doughnut-chart.mobile,
+.leadership .breakdown .doughnut-chart.mobile {
   display: none;
 }
 
+.leadership .leadership-content {
+  padding: 80px 0;
+}
+.leadership .leadership-content .active h2:after {
+  display: none;
+}
+.leadership .tabs {
+  max-width: none;
+}
+.leadership .tabs li {
+  max-width: 225px;
+}
+.leadership .tabs li:first-child {
+  min-width: 315px;
+  width: 30%;
+  max-width: none;
+}
+.leadership .tabs li.active {
+  padding: 0;
+}
+.leadership .tabs h5 {
+  font-size: 14.5px;
+  line-height: 17px;
+}
+.leadership .tabs-content .active .content {
+  display: block;
+  padding: 0;
+}
+
 @media screen and (max-width: 600px) {
-  .portfolio .portfolio-content {
+  .portfolio .portfolio-content,
+  .portfolio .leadership-content,
+  .leadership .portfolio-content,
+  .leadership .leadership-content {
     padding: 35px 15px;
   }
-  .portfolio .tabs {
+  .portfolio .tabs,
+  .leadership .tabs {
     display: none;
   }
-  .portfolio .breakdown {
+  .portfolio .tabs-content,
+  .leadership .tabs-content {
     padding: 0;
   }
-  .portfolio .breakdown h5 {
+  .portfolio .tabs-content h2,
+  .portfolio .tabs-content h5,
+  .leadership .tabs-content h2,
+  .leadership .tabs-content h5 {
     display: block;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: normal;
   }
-  .portfolio .breakdown h6 {
+  .portfolio .tabs-content h6,
+  .leadership .tabs-content h6 {
     font-size: 12.5px;
     line-height: 15px;
   }
-  .portfolio .breakdown > li {
+  .portfolio .tabs-content > li,
+  .leadership .tabs-content > li {
     border: 1px solid #aaa;
     border-radius: 3px;
     margin: 5px auto;
     padding: 15px;
   }
-  .portfolio .breakdown ul {
+  .portfolio .tabs-content ul,
+  .leadership .tabs-content ul {
     max-height: none;
   }
-  .portfolio .breakdown .active .content {
+  .portfolio .tabs-content .active .content,
+  .leadership .tabs-content .active .content {
     flex-direction: column;
   }
-  .portfolio .breakdown .doughnut-chart.desktop {
+  .portfolio .tabs-content .doughnut-chart.desktop,
+  .leadership .tabs-content .doughnut-chart.desktop {
     display: none !important;
   }
-  .portfolio .breakdown .doughnut-chart.mobile {
+  .portfolio .tabs-content .doughnut-chart.mobile,
+  .leadership .tabs-content .doughnut-chart.mobile {
     display: block;
     max-width: 200px;
     max-height: 200px;
@@ -4223,15 +4319,106 @@ a.btn.primary:hover:before {
 .table-view .table-view-content {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 0 130px;
+  padding-bottom: 130px;
 }
 .table-view .table-view-content h2 {
-  margin-bottom: 45px;
+  margin: 45px auto;
   color: #000;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
   line-height: 39px;
+}
+.table-view .table-view-content .collapsable-table {
+  border-top: 2px solid #fff;
+}
+.table-view .table-view-content .collapsable-table.collapsed h3 {
+  border-radius: 3px;
+}
+.table-view .table-view-content .collapsable-table.collapsed h3:after {
+  transform: rotate(90deg) scale(0.35);
+  transform-origin: right;
+  top: 7.5px;
+  right: 28px;
+}
+.table-view .table-view-content .collapsable-table.collapsed .sub-tables,
+.table-view .table-view-content .collapsable-table.collapsed .dataTables_wrapper {
+  display: none;
+}
+.table-view .table-view-content .collapsable-table h3 {
+  background: #0C2F4B;
+  border-radius: 3px 3px 0px 0px;
+  cursor: pointer;
+  padding: 12px 20px;
+  position: relative;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+}
+.table-view .table-view-content .collapsable-table h3:after {
+  content: '';
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  right: 36px;
+  top: 15.5px;
+  transform: rotate(-90deg) scale(0.35);
+  transform-origin: right top;
+}
+.table-view .table-view-content .collapsable-table .sub-tables h4 {
+  background: #388067;
+  cursor: pointer;
+  padding: 13px 40px;
+  position: relative;
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+}
+.table-view .table-view-content .collapsable-table .sub-tables h4:after {
+  content: '';
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  top: 7.5px;
+  right: 48px;
+  transform: rotate(90deg) scale(0.35);
+  transform-origin: right;
+}
+.table-view .table-view-content .collapsable-table .sub-tables .dataTables_wrapper {
+  display: none;
+}
+.table-view .table-view-content .collapsable-table .sub-tables .opened .dataTables_wrapper {
+  display: block;
+}
+.table-view .table-view-content .collapsable-table .sub-tables .opened h4:after {
+  transform: rotate(-90deg) scale(0.35);
+  transform-origin: right top;
+  right: 56px;
+  top: 15.5px;
+}
+.table-view .table-view-content .collapsable-table .sub-tables li ~ li {
+  border-top: 1px solid #fff;
+}
+.table-view .table-view-content .collapsable-table .dataTable {
+  width: 100% !important;
+}
+.table-view .table-view-content .collapsable-table .dataTable thead {
+  background: #f1f1f1;
+}
+.table-view .table-view-content .collapsable-table .dataTable thead th {
+  color: #aaa;
+}
+.table-view .table-view-content .collapsable-table .dataTable .odd {
+  background: #fff;
+}
+.table-view .table-view-content .collapsable-table .dataTable .even {
+  background: #f1f1f1;
 }
 .table-view .table-view-content .table-filters {
   padding-bottom: 40px;
