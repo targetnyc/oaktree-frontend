@@ -675,6 +675,31 @@ function initPeopleEvents() {
 	});
 }
 
+function initPhilosophyEvents() {
+	$(document)
+		.on('click', '.tabbed-sections li', function() {
+			$(this)
+				.closest('.tabbed-sections')
+					.find('li')
+						.removeClass('active')
+					.end()
+				.end()
+				.addClass('active');
+
+			$('.tabbed-content-list li').removeClass('active');
+			$($(this).data('target')).addClass('active');
+		})
+		.on('click', '.tabbed-content-list li', function() {
+			$(this)
+				.closest('.tabbed-content-list')
+					.find('li')
+						.removeClass('active')
+					.end()
+				.end()
+				.addClass('active');
+		});
+}
+
 $(document).ready(function () {
 	var page = $('body').data('page');
 	initHeaderEvents();
@@ -685,6 +710,9 @@ $(document).ready(function () {
 			break;
 		case 'about':
 			initAboutEvents();
+			break;
+		case 'about-philosophy':
+			initPhilosophyEvents();
 			break;
 		case 'leadership':
 			initLeadershipEvents();

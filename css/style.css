@@ -64,7 +64,7 @@ a {
 .svg-arrow-down, .svg-arrow-left-black, .bio-list .bio-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .bio-list .bio-list-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .bio-list .bio-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
-.leadership .tabs-content h5:after, .bio-list .bio-list-content .owl-nav .owl-next, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .svg-close-black, .svg-close-blue, form.search .form-content .close:hover, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .svg-facebook-green-outline, .two-column-content-wrapper .social-links .facebook, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .svg-insights-article, .insights-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .svg-linkedin-green-fill, .two-column-content-wrapper .social-links .linkedin:hover, .svg-linkedin-green-outline, .two-column-content-wrapper .social-links .linkedin, .svg-linkedin-white, .footer .social-links .linkedin:hover, .hero-slides-wrapper .social-links .linkedin:hover, .svg-map-icon, .fullimage-block .list li:before, .svg-search, form.search .form-content .do-search, .table-view .table-view-content .table-filters .search-filter-wrapper:after, .svg-search-blue, form.search .form-content .do-search:hover, .svg-search-icon, .actions-nav .action-search, .svg-search-icon-hover, .actions-nav .action-search:hover, .actions-nav .action-search.active, .svg-search-type-all, form.search .form-content .search-types .all label:before, form.search .form-content .search-types-toggle.all, .svg-search-type-insights, form.search .form-content .search-types .insights label:before, form.search .form-content .search-types-toggle.insights, .svg-search-type-people, form.search .form-content .search-types .people label:before, form.search .form-content .search-types-toggle.people, .svg-search-type-strategies, form.search .form-content .search-types .strategies label:before, form.search .form-content .search-types-toggle.strategies, .svg-twitter, .footer .social-links .twitter, .hero-slides-wrapper .social-links .twitter, .svg-twitter-green-fill, .two-column-content-wrapper .social-links .twitter:hover, .svg-twitter-green-outline, .two-column-content-wrapper .social-links .twitter, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .person-bio .person-bio-content .back.link-underline:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .person-bio .person-bio-content .back.link-underline:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .svg-youtube-green-fill, .two-column-content-wrapper .social-links .youtube:hover, .svg-youtube-green-outline, .two-column-content-wrapper .social-links .youtube, .svg-youtube-white, .footer .social-links .youtube:hover, .hero-slides-wrapper .social-links .youtube:hover {
+.leadership .tabs-content h5:after, .bio-list .bio-list-content .owl-nav .owl-next, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .svg-close-black, .svg-close-blue, form.search .form-content .close:hover, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .svg-facebook-green-outline, .two-column-content-wrapper .social-links .facebook, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .svg-insights-article, .insights-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .svg-linkedin-green-fill, .two-column-content-wrapper .social-links .linkedin:hover, .svg-linkedin-green-outline, .two-column-content-wrapper .social-links .linkedin, .svg-linkedin-white, .footer .social-links .linkedin:hover, .hero-slides-wrapper .social-links .linkedin:hover, .svg-map-icon, .fullimage-block .list li:before, .svg-search, form.search .form-content .do-search, .table-view .table-view-content .table-filters .search-filter-wrapper:after, .svg-search-blue, form.search .form-content .do-search:hover, .svg-search-icon, .actions-nav .action-search, .svg-search-icon-hover, .actions-nav .action-search:hover, .actions-nav .action-search.active, .svg-search-type-all, form.search .form-content .search-types .all label:before, form.search .form-content .search-types-toggle.all, .svg-search-type-insights, form.search .form-content .search-types .insights label:before, form.search .form-content .search-types-toggle.insights, .svg-search-type-people, form.search .form-content .search-types .people label:before, form.search .form-content .search-types-toggle.people, .svg-search-type-strategies, form.search .form-content .search-types .strategies label:before, form.search .form-content .search-types-toggle.strategies, .svg-twitter, .footer .social-links .twitter, .hero-slides-wrapper .social-links .twitter, .svg-twitter-green-fill, .two-column-content-wrapper .social-links .twitter:hover, .svg-twitter-green-outline, .two-column-content-wrapper .social-links .twitter, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .person-bio .person-bio-content .back.link-underline:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .person-bio .person-bio-content .back.link-underline:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .svg-youtube-green-fill, .two-column-content-wrapper .social-links .youtube:hover, .svg-youtube-green-outline, .two-column-content-wrapper .social-links .youtube, .svg-youtube-white, .footer .social-links .youtube:hover, .hero-slides-wrapper .social-links .youtube:hover {
   background: url("svg/sprite.css-17b631e5.svg") no-repeat;
 }
 
@@ -116,7 +116,7 @@ a {
 .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
-.leadership .tabs-content h5:after, .bio-list .bio-list-content .owl-nav .owl-next, .table-view .table-view-content .table-filters .ui-selectmenu-icon {
+.leadership .tabs-content h5:after, .bio-list .bio-list-content .owl-nav .owl-next, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after {
   background-position: 0 21.145374449339208%;
 }
 
@@ -4801,6 +4801,192 @@ a.btn.primary:hover:before {
   }
   .person-bio .person-bio-content .bio-wrapper .bio-description-wrapper {
     clear: both;
+  }
+}
+.quote-wrapper {
+  padding: 80px 0 95px;
+}
+.quote-wrapper .quote-content {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.quote-wrapper .quote-content img {
+  max-width: 533px;
+  width: 100%;
+}
+.quote-wrapper .quote-content .quote {
+  max-width: 554px;
+  margin-top: 40px;
+  color: #000;
+  font-family: "orpheuspro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 59px;
+}
+.quote-wrapper .quote-content .quote i {
+  font-style: italic;
+}
+
+.tabbed-content-wrapper {
+  background: #f1f1f1;
+  display: flex;
+  margin-bottom: 130px;
+}
+.tabbed-content-wrapper .tabbed-sections-wrapper {
+  background: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+.tabbed-content-wrapper .tabbed-sections-wrapper .tabbed-sections {
+  max-width: 290px;
+  position: relative;
+  padding-left: 15px;
+}
+.tabbed-content-wrapper .tabbed-sections-wrapper .tabbed-sections:after {
+  background: #E0E0E0;
+  border-radius: 100px;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+}
+.tabbed-content-wrapper .tabbed-sections-wrapper .tabbed-sections li {
+  padding: 15px 20px 15px 0;
+  position: relative;
+  cursor: pointer;
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14.5px;
+  line-height: 17px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.tabbed-content-wrapper .tabbed-sections-wrapper .tabbed-sections li:hover:after, .tabbed-content-wrapper .tabbed-sections-wrapper .tabbed-sections li.active:after {
+  background: #388067;
+  border-radius: 100px;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  z-index: 1;
+}
+.tabbed-content-wrapper .tabbed-content-list-wrapper {
+  display: flex;
+}
+.tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list {
+  padding: 40px 15px 40px 80px;
+  max-width: 920px;
+}
+.tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li {
+  display: none;
+}
+.tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li.active {
+  display: block;
+}
+.tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li.active h5:after {
+  transform: rotate(-90deg) scale(0.35);
+}
+.tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5 {
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 39px;
+}
+.tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after {
+  display: none;
+  content: '';
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  margin-top: -24px;
+  transform: rotate(90deg) scale(0.35);
+}
+.tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list .content {
+  margin-top: 19px;
+}
+.tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list p {
+  margin-bottom: 1.5em;
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 1211px) {
+  .tabbed-content-wrapper .tabbed-sections-wrapper {
+    width: 50%;
+    margin-left: -315px;
+  }
+  .tabbed-content-wrapper .tabbed-content-list-wrapper {
+    display: flex;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .quote-wrapper {
+    padding: 30px 15px 55px;
+  }
+  .quote-wrapper .quote-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .quote-wrapper .quote-content .quote {
+    margin: 0 auto 25px;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+  }
+
+  .tabbed-content-wrapper {
+    background: #fff;
+    margin: 0 auto 65px;
+  }
+  .tabbed-content-wrapper .tabbed-sections-wrapper .tabbed-sections {
+    display: none;
+  }
+  .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list {
+    padding: 0 15px;
+    max-width: none;
+  }
+  .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 16px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li h5 {
+    padding-right: 30px;
+    position: relative;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li h5:after {
+    display: block;
+  }
+  .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li .content {
+    display: none;
+  }
+  .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li.active .content {
+    display: block;
   }
 }
 
