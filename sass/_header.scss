@@ -540,6 +540,54 @@ form.search {
 	}
 }
 
+@media screen and (min-width: 1080px) and (max-width: 1279px) {
+	.header {
+		.header-content {
+			padding: 0 47px;
+		}
+
+		.logo {
+			margin: 30px 0 22px;
+
+			img {
+				max-height: 36px;
+			}
+		}
+	}
+
+	.navigations {
+		margin-left: 36px;
+	}
+
+	.mega-nav {
+		width: 46.428571%; // 377px
+
+		.menu {
+			a {
+				font-size: 11px;
+				line-height: 13px;
+			}
+		}
+	}
+
+	.actions-nav {
+		width: 19.334975%; //157px
+	}
+
+	.sub-nav {
+		width: 34.236453%; //278px
+
+		.menu {
+			& > li {
+				& > a {
+					font-size: 12px;
+					line-height: 14px;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1079px) {
 	#menu-toggle {
 		height: 32px;

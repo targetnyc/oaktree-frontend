@@ -1804,6 +1804,41 @@ form.search .form-content .close {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1080px) and (max-width: 1279px) {
+  .header .header-content {
+    padding: 0 47px;
+  }
+  .header .logo {
+    margin: 30px 0 22px;
+  }
+  .header .logo img {
+    max-height: 36px;
+  }
+
+  .navigations {
+    margin-left: 36px;
+  }
+
+  .mega-nav {
+    width: 46.428571%;
+  }
+  .mega-nav .menu a {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .actions-nav {
+    width: 19.334975%;
+  }
+
+  .sub-nav {
+    width: 34.236453%;
+  }
+  .sub-nav .menu > li > a {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 @media screen and (max-width: 1079px) {
   #menu-toggle {
     height: 32px;
