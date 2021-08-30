@@ -241,19 +241,31 @@ function initAboutEvents() {
 			loadMixedChart($(this).closest('li').find('.doughnut-chart' + ($(window).width() < 600 ? '.mobile' : '.desktop'))[0]);
 		});
 
-	$(window)
-		.on('scroll', throttle(function() {
-			$('.odometer').each(function() {
-				if (elementInViewport(this) && !$(this).data('odometer-ready')) {
-					od = new Odometer({
-						el: this
-					});
 
-					od.update($(this).data('odometer'));
-					$(this).data('odometer-ready', true)
-				}
+	if ($(window).width() < 600) {
+		$(window)
+			.on('scroll', throttle(function() {
+				$('.odometer').each(function() {
+					if (elementInViewport(this) && !$(this).data('odometer-ready')) {
+						od = new Odometer({
+							el: this
+						});
+
+						od.update($(this).data('odometer'));
+						$(this).data('odometer-ready', true)
+					}
+				});
+			}, 100));
+	} else {
+		$('.odometer').each(function() {
+			od = new Odometer({
+				el: this
 			});
-		}, 100));
+
+			od.update($(this).data('odometer'));
+			$(this).data('odometer-ready', true)
+		});
+	}
 
 	if ($(window).width() > 600) {
 		var controller = new ScrollMagic.Controller();
