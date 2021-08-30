@@ -272,7 +272,7 @@ function initAboutEvents() {
 			return tween;
 		};
 
-		$('.sliding-info .slides li').each(function() {
+		$('.sliding-info .slides .item').each(function() {
 			new ScrollMagic.Scene({
 					triggerElement: $(this).get(),
 					triggerHook: .75,

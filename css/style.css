@@ -3601,12 +3601,6 @@ a.btn.primary:hover:before {
 .leadership .tabs-content .active .content {
   display: flex;
 }
-.portfolio .tabs-content .active h2,
-.portfolio .tabs-content .active h5,
-.leadership .tabs-content .active h2,
-.leadership .tabs-content .active h5 {
-  display: block;
-}
 .portfolio .tabs-content .active h2:after,
 .portfolio .tabs-content .active h5:after,
 .leadership .tabs-content .active h2:after,
@@ -3706,6 +3700,14 @@ a.btn.primary:hover:before {
 .portfolio .breakdown .doughnut-chart.mobile,
 .leadership .breakdown .doughnut-chart.mobile {
   display: none;
+}
+
+.leadership .tabs-content .active .content {
+  display: flex;
+}
+.leadership .tabs-content .active h2,
+.leadership .tabs-content .active h5 {
+  display: block;
 }
 
 .leadership .leadership-content {

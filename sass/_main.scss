@@ -1614,8 +1614,6 @@ a.btn.primary {
 
 			h2,
 			h5 {
-				display: block;
-
 				&:after {
 					transform: rotate(-90deg) scale(.35);
 				}
@@ -1723,6 +1721,22 @@ a.btn.primary {
 		}
 	}
 }
+
+.leadership {
+	.tabs-content {
+		.active {
+			.content {
+				display: flex;
+			}
+
+			h2,
+			h5 {
+				display: block;
+			}
+		}
+	}
+}
+
 
 .leadership {
 	.leadership-content {
