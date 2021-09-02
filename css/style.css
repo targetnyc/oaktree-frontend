@@ -4966,6 +4966,9 @@ a.btn.primary:hover:before {
   width: 4px;
   z-index: 1;
 }
+.tabbed-content-wrapper .tabbed-sections-wrapper .tabbed-sections li:hover {
+  color: #388067;
+}
 .tabbed-content-wrapper .tabbed-content-list-wrapper {
   display: flex;
 }
