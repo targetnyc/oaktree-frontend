@@ -1424,17 +1424,19 @@ a.btn.primary {
 
 @media screen and (max-width: 600px) {
 	.sliding-info {
-		padding: 100px 15px 55px;
+		padding: 55px 15px 55px;
 
 		.sliding-info-content {
 			flex-direction: column;
 
 			h2 {
-				margin-bottom: 40px;
+				margin-bottom: 55px;
 				position: static;
 
 				font-size: 22px;
 				line-height: 31px;
+
+				transform: translate(0,0);
 			}
 
 			.slides {
@@ -1566,8 +1568,8 @@ a.btn.primary {
 				width: 48px;
 				height: 48px;
 				position: absolute;
-				right: -18px;
-				top: -15px;
+				right: -3px;
+				top: -0px;
 
 				transform: rotate(90deg) scale(.35)
 			}
@@ -1824,6 +1826,8 @@ a.btn.primary {
 
 			h2,
 			h5 {
+				padding: 15px;
+				margin: 0 -15px -15px;
 				display: block;
 
 				font-size: 16px;
@@ -1841,7 +1845,7 @@ a.btn.primary {
 				border-radius: 3px;
 
 				margin: 5px auto;
-				padding: 15px;
+				padding: 0 15px 15px;
 			}
 
 			ul {

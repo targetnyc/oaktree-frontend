@@ -3470,16 +3470,17 @@ a.btn.primary:hover:before {
 
 @media screen and (max-width: 600px) {
   .sliding-info {
-    padding: 100px 15px 55px;
+    padding: 55px 15px 55px;
   }
   .sliding-info .sliding-info-content {
     flex-direction: column;
   }
   .sliding-info .sliding-info-content h2 {
-    margin-bottom: 40px;
+    margin-bottom: 55px;
     position: static;
     font-size: 22px;
     line-height: 31px;
+    transform: translate(0, 0);
   }
   .sliding-info .sliding-info-content .slides .item {
     opacity: 1;
@@ -3596,8 +3597,8 @@ a.btn.primary:hover:before {
   width: 48px;
   height: 48px;
   position: absolute;
-  right: -18px;
-  top: -15px;
+  right: -3px;
+  top: -0px;
   transform: rotate(90deg) scale(0.35);
 }
 .portfolio .tabs-content h6,
@@ -3817,6 +3818,8 @@ a.btn.primary:hover:before {
   .portfolio .tabs-content h5,
   .leadership .tabs-content h2,
   .leadership .tabs-content h5 {
+    padding: 15px;
+    margin: 0 -15px -15px;
     display: block;
     font-size: 16px;
     line-height: 19px;
@@ -3832,7 +3835,7 @@ a.btn.primary:hover:before {
     border: 1px solid #aaa;
     border-radius: 3px;
     margin: 5px auto;
-    padding: 15px;
+    padding: 0 15px 15px;
   }
   .portfolio .tabs-content ul,
   .leadership .tabs-content ul {
