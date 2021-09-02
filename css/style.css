@@ -3744,7 +3744,6 @@ a.btn.primary:hover:before {
 .leadership .tabs-content .active h5 {
   display: block;
 }
-
 .leadership .leadership-content {
   padding: 80px 0;
 }
@@ -3769,9 +3768,34 @@ a.btn.primary:hover:before {
   font-size: 14.5px;
   line-height: 17px;
 }
+.leadership .tabs h5:hover {
+  color: #388067;
+}
 .leadership .tabs-content .active .content {
   display: block;
   padding: 0;
+}
+
+#location-filter-menu,
+#department-filter-menu {
+  box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+}
+#location-filter-menu .ui-menu-item .ui-menu-item-wrapper,
+#department-filter-menu .ui-menu-item .ui-menu-item-wrapper {
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 37px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+}
+#location-filter-menu .ui-menu-item .ui-menu-item-wrapper.ui-state-active,
+#department-filter-menu .ui-menu-item .ui-menu-item-wrapper.ui-state-active {
+  background: transparent;
+  border: 0;
+  color: #388067;
+  margin: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -4246,7 +4270,7 @@ a.btn.primary:hover:before {
   margin: 0 auto;
 }
 .bio-list .bio-list-content h2 {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   color: #000;
   font-style: normal;
   font-weight: bold;
@@ -4256,13 +4280,15 @@ a.btn.primary:hover:before {
 .bio-list .bio-list-content .bio {
   max-width: 200px;
   margin: 0 auto;
+  padding-top: 10px;
 }
 .bio-list .bio-list-content .bio img {
   max-width: 200px;
   margin-bottom: 15px;
+  transition: all .3s ease-in-out;
 }
 .bio-list .bio-list-content .bio img:hover {
-  opacity: 0.7;
+  transform: translateY(-2%);
 }
 .bio-list .bio-list-content .bio h4 a {
   margin-bottom: 6px;
@@ -4369,6 +4395,10 @@ a.btn.primary:hover:before {
 .table-view .table-view-content .collapsable-table {
   border-top: 2px solid #fff;
 }
+.table-view .table-view-content .collapsable-table:not(.collapsed) .dataTable {
+  background: #f1f1f1;
+  margin-bottom: -2px;
+}
 .table-view .table-view-content .collapsable-table.collapsed h3 {
   border-radius: 3px;
 }
@@ -4377,10 +4407,6 @@ a.btn.primary:hover:before {
   transform-origin: right;
   top: 7.5px;
   right: 28px;
-}
-.table-view .table-view-content .collapsable-table.collapsed .sub-tables,
-.table-view .table-view-content .collapsable-table.collapsed .dataTables_wrapper {
-  display: none;
 }
 .table-view .table-view-content .collapsable-table h3 {
   background: #0C2F4B;
@@ -4427,11 +4453,9 @@ a.btn.primary:hover:before {
   transform: rotate(90deg) scale(0.35);
   transform-origin: right;
 }
-.table-view .table-view-content .collapsable-table .sub-tables .dataTables_wrapper {
-  display: none;
-}
-.table-view .table-view-content .collapsable-table .sub-tables .opened .dataTables_wrapper {
-  display: block;
+.table-view .table-view-content .collapsable-table .sub-tables .dataTables_wrapper th:first-child,
+.table-view .table-view-content .collapsable-table .sub-tables .dataTables_wrapper td:first-child {
+  padding-left: 40px;
 }
 .table-view .table-view-content .collapsable-table .sub-tables .opened h4:after {
   transform: rotate(-90deg) scale(0.35);
@@ -4449,7 +4473,14 @@ a.btn.primary:hover:before {
   background: #f1f1f1;
 }
 .table-view .table-view-content .collapsable-table .dataTable thead th {
+  background: transparent;
   color: #aaa;
+}
+.table-view .table-view-content .collapsable-table .dataTable tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 3px;
+}
+.table-view .table-view-content .collapsable-table .dataTable tbody tr:last-child td:last-child {
+  border-radius: 0 0 3px 0;
 }
 .table-view .table-view-content .collapsable-table .dataTable .odd {
   background: #fff;
@@ -4484,16 +4515,29 @@ a.btn.primary:hover:before {
   height: 48px;
   width: 48px;
   position: absolute;
-  right: 0;
+  right: 5px;
   top: 10px;
   transition: background-image 0.2s ease-in-out;
   transform: rotate(90deg) scale(0.35);
   transform-origin: right;
 }
 .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button {
-  border-bottom: 2px solid #388067;
   display: inline-block;
+  position: relative;
   width: 239px;
+}
+.table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button:after {
+  border-radius: 2px;
+  background: #388067;
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open:after {
+  background: #000;
 }
 .table-view .table-view-content .table-filters .ui-selectmenu-text {
   display: inline-block;
@@ -4535,6 +4579,9 @@ a.btn.primary:hover:before {
   line-height: 22px;
   letter-spacing: 0.03em;
 }
+.table-view .table-view-content .table-filters #search-filter:focus {
+  border-bottom: 2px solid #000;
+}
 .table-view .table-view-content .table-filters #search-filter::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   opacity: .45;
@@ -4568,19 +4615,15 @@ a.btn.primary:hover:before {
   line-height: 22px;
   letter-spacing: 0.03em;
 }
-.table-view .table-view-content .dataTables_wrapper .ui-toolbar.ui-widget-header {
+.table-view .table-view-content .dataTables_wrapper .dataTables_filter {
   display: none;
 }
 .table-view .table-view-content .dataTable {
   border-bottom: 0 none;
 }
-.table-view .table-view-content .dataTable thead {
-  background: #0C2F4B;
-  border-radius: 3px 3px 0 0;
-}
 .table-view .table-view-content .dataTable thead th {
+  background: #0C2F4B;
   border: 0 none;
-  background: transparent;
   padding: 18px 20px;
   color: #fff;
   font-style: normal;
@@ -4589,6 +4632,12 @@ a.btn.primary:hover:before {
   line-height: 22px;
   letter-spacing: 0.03em;
   text-align: left;
+}
+.table-view .table-view-content .dataTable thead th:first-child {
+  border-radius: 3px 0 0 0;
+}
+.table-view .table-view-content .dataTable thead th:last-child {
+  border-radius: 0 3px 0 0;
 }
 .table-view .table-view-content .dataTable tbody td {
   width: 25%;
@@ -4766,6 +4815,7 @@ a.btn.primary:hover:before {
   transition: background-image 0.2s ease-in-out;
 }
 .person-bio .person-bio-content img {
+  border-radius: 3px;
   max-width: 324px;
   margin-right: 55px;
   height: 100%;

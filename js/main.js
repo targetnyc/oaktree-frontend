@@ -535,42 +535,44 @@ function filterData(data, key) {
 }
 
 function initLeadershipEvents() {
-	var tabledata = $('.table-view table').data('tabledata');
-	var columnOptions = $('.table-view table').data('columns');
+	$('.table-view table').each(function() {
+		var tabledata = $(this).data('tabledata');
+		var columnOptions = $(this).data('columns');
 
-	columnOptions[0].fnCreatedCell = function (nTd, sData, oData, iRow, iCol) {
-		$(nTd).html('<a href="#">' + oData[columnOptions[0].data] + '</a>');
-	};
+		columnOptions[0].fnCreatedCell = function (nTd, sData, oData, iRow, iCol) {
+			$(nTd).html('<a href="#">' + oData[columnOptions[0].data] + '</a>');
+		};
 
-	if ($('.table-filters').length) {
-		var searchDepartments = filterData(tabledata, 'department');
-		var searchLocations = filterData(tabledata, 'location');
+		if ($('.table-filters').length) {
+			var searchDepartments = filterData(tabledata, 'department');
+			var searchLocations = filterData(tabledata, 'location');
 
-		$.fn.dataTable.ext.search.push(
-			function( settings, data, dataIndex ) {
-				var departmentValue = $('#department-filter').val();
-				var locationValue = $('#location-filter').val();
-				var searchValue = $('#search-filter').val();
-				console.log(departmentValue, locationValue, searchValue);
+			$.fn.dataTable.ext.search.push(
+				function( settings, data, dataIndex ) {
+					var departmentValue = $('#department-filter').val();
+					var locationValue = $('#location-filter').val();
+					var searchValue = $('#search-filter').val();
+					console.log(departmentValue, locationValue, searchValue);
 
-				if ((departmentValue && data[2] !== departmentValue) ||
-					(locationValue && data[3] !== locationValue) ||
-					(searchValue && data[0].toLowerCase().indexOf(searchValue) === -1)) {
-					return false;
+					if ((departmentValue && data[2] !== departmentValue) ||
+						(locationValue && data[3] !== locationValue) ||
+						(searchValue && data[0].toLowerCase().indexOf(searchValue) === -1)) {
+						return false;
+					}
+
+					return true;
 				}
+			);
+		}
 
-				return true;
-			}
-		);
-	}
-
-	var table = $('.table-view table').DataTable( {
-		paging:   true,
-		ordering: false,
-		info: false,
-		lengthChange: false,
-		data: tabledata,
-		columns: columnOptions,
+		var table = $(this).DataTable( {
+			paging:   $(this).data('showpagination') ? true : false,
+			ordering: false,
+			info: false,
+			lengthChange: false,
+			data: tabledata,
+			columns: columnOptions,
+		});
 	});
 
 	// TODO: change on resize
@@ -622,26 +624,69 @@ function initLeadershipEvents() {
 			.scrollbar();
 	}
 
+	$('.sub-tables,.dataTables_wrapper', '.collapsable-table.collapsed').hide();
+
 	$('.collapsable-table h3').on('click', function() {
-		$(this)
-			.closest('.table-view-content')
-				.find('.collapsable-table')
+		var collapsableTable = $(this).closest('.collapsable-table');
+
+		if (collapsableTable.hasClass('collapsed')) {
+			collapsableTable
+					.parent()
+						.find('.collapsable-table')
+							.each(function() {
+								var target = $(this).find('.sub-tables').length ? '.sub-tables' : '.dataTables_wrapper';
+								$(this)
+									.find(target)
+										.slideUp(500);
+							})
+							.addClass('collapsed')
+						.end()
+					.end()
+					.removeClass('collapsed')
+					.each(function() {
+						var target = $(this).find('.sub-tables').length ? '.sub-tables' : '.dataTables_wrapper';
+						$(this)
+							.find(target)
+								.slideDown(500);
+					})
+		} else {
+			collapsableTable
 					.addClass('collapsed')
-				.end()
-			.end()
-			.closest('.collapsable-table')
-				.removeClass('collapsed');
+					.each(function() {
+						var target = $(this).find('.sub-tables').length ? '.sub-tables' : '.dataTables_wrapper';
+						$(this)
+							.find(target)
+								.slideUp(500);
+					})
+		}
 	});
 
+	$('.sub-tables li:not(.opened) .dataTables_wrapper').hide();
+
 	$('.sub-tables h4').on('click', function() {
-		$(this)
-			.closest('.sub-tables')
-				.find('li')
-					.removeClass('opened')
+		if (!$(this).closest('li').hasClass('opened')) {
+			$(this)
+				.closest('.sub-tables')
+					.find('li')
+						.find('.dataTables_wrapper')
+							.slideUp(500)
+						.end()
+						.removeClass('opened')
+					.end()
 				.end()
-			.end()
-			.closest('li')
-				.addClass('opened');
+				.closest('li')
+					.find('.dataTables_wrapper')
+						.slideDown(500)
+					.end()
+					.addClass('opened');
+		} else {
+			$(this)
+				.closest('li')
+					.find('.dataTables_wrapper')
+						.slideUp(500)
+					.end()
+					.removeClass('opened');
+		}
 	});
 
 	$(document)
@@ -654,8 +699,14 @@ function initLeadershipEvents() {
 				.end()
 				.addClass('active');	
 
-			$('.tabs-content li').removeClass('active');
-			$($(this).data('target')).addClass('active');
+			$(this)
+				.closest('.tabs')
+					.siblings('.tabs-content')
+						.find('li')
+							.removeClass('active')
+						.end()
+						.find($(this).data('target'))
+							.addClass('active');
 		})
 		.on('click', '.tabs-content h2', function() {
 			$(this)
@@ -667,8 +718,14 @@ function initLeadershipEvents() {
 				.closest('li')
 					.addClass('active');	
 
-			$('.tabs li').removeClass('active');
-			$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
+			$(this)
+				.closest('.tabs-content')
+					.parent()
+						.find('.tabs li')
+							.removeClass('active')
+						.end()
+						.find('[data-target="#' + $(this).data('id') + '"]')
+							.addClass('active');
 		});
 }
 

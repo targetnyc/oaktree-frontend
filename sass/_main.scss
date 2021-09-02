@@ -1735,10 +1735,7 @@ a.btn.primary {
 			}
 		}
 	}
-}
 
-
-.leadership {
 	.leadership-content {
 		padding: 80px 0;
 
@@ -1770,6 +1767,10 @@ a.btn.primary {
 		h5 {
 			font-size: 14.5px;
 			line-height: 17px;
+
+			&:hover {
+				color: #388067;
+			}
 		}
 	}
 
@@ -1779,6 +1780,29 @@ a.btn.primary {
 				display: block;
 				padding: 0;
 			}
+		}
+	}
+}
+
+#location-filter-menu,
+#department-filter-menu {
+	box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+
+	.ui-menu-item .ui-menu-item-wrapper {
+		color: #000;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 37px;
+		letter-spacing: 0.05em;
+		text-transform: capitalize;
+
+		&.ui-state-active {
+			background: transparent;
+			border: 0;
+			color: #388067;
+
+			margin: 0;
 		}
 	}
 }
@@ -2351,7 +2375,7 @@ a.btn.primary {
 		margin: 0 auto;
 
 		h2 {
-			margin-bottom: 45px;
+			margin-bottom: 35px;
 
 			color: #000;
 			font-style: normal;
@@ -2363,13 +2387,15 @@ a.btn.primary {
 		.bio {
 			max-width: 200px;
 			margin: 0 auto;
+			padding-top: 10px;
 
 			img {
 				max-width: 200px;
 				margin-bottom: 15px;
+				transition: all .3s ease-in-out;
 
 				&:hover {
-					opacity: 0.7;
+					transform: translateY(-2%);
 				}
 			}
 
@@ -2519,6 +2545,14 @@ a.btn.primary {
 		.collapsable-table {
 			border-top: 2px solid #fff;
 
+			&:not(.collapsed) {
+				.dataTable {
+					background: #f1f1f1;
+
+					margin-bottom: -2px;
+				}
+			}
+
 			&.collapsed {
 				h3 {
 					border-radius: 3px;
@@ -2531,10 +2565,9 @@ a.btn.primary {
 					}
 				}
 
-
 				.sub-tables,
-				.dataTables_wrapper{
-					display: none;
+				.dataTables_wrapper {
+					// display: none;
 				}
 			}
 
@@ -2600,13 +2633,13 @@ a.btn.primary {
 				}
 
 				.dataTables_wrapper {
-					display: none;
+					th:first-child,
+					td:first-child {
+						padding-left: 40px;
+					}
 				}
 
 				.opened {
-					.dataTables_wrapper {
-						display: block;
-					}
 
 					h4 {
 						&:after {
@@ -2616,6 +2649,7 @@ a.btn.primary {
 							top: 15.5px;
 						}
 					}
+
 				}
 
 				li ~ li {
@@ -2630,7 +2664,21 @@ a.btn.primary {
 					background: #f1f1f1;
 
 					th {
+						background: transparent;
+
 						color: #aaa;
+					}
+				}
+
+				tbody {
+					tr:last-child {
+						td:first-child {
+							border-radius: 0 0 0 3px;
+						}
+
+						td:last-child {
+							border-radius: 0 0 3px 0;
+						}
 					}
 				}
 
@@ -2678,7 +2726,7 @@ a.btn.primary {
 				height: 48px;
 				width: 48px;
 				position: absolute;
-				right: 0;
+				right: 5px;
 				top: 10px;
 
 				transition: background-image 0.2s ease-in-out;
@@ -2687,10 +2735,28 @@ a.btn.primary {
 			}
 
 			.ui-selectmenu-button.ui-button {
-				border-bottom: 2px solid #388067;
-
 				display: inline-block;
+				position: relative;
 				width: 239px;
+
+				&:after {
+					border-radius: 2px;
+					background: #388067;
+					content: '';
+
+					height: 2px;
+					width: 100%;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+				}
+
+				&.ui-selectmenu-button-open {
+					&:after {
+						background: #000;
+					}
+				}
+
 			}
 
 			.ui-selectmenu-text {
@@ -2743,6 +2809,10 @@ a.btn.primary {
 				line-height: 22px;
 				letter-spacing: 0.03em;
 
+				&:focus {
+					border-bottom: 2px solid #000;
+				}
+
 				&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 					opacity: .45;
 
@@ -2782,7 +2852,7 @@ a.btn.primary {
 		}
 
 		.dataTables_wrapper {
-			.ui-toolbar.ui-widget-header {
+			.dataTables_filter {
 				display: none;
 			}
 		}
@@ -2792,12 +2862,9 @@ a.btn.primary {
 
 
 			thead {
-				background: #0C2F4B;
-				border-radius: 3px 3px 0 0;
-
 				th {
+					background: #0C2F4B;
 					border: 0 none;
-					background: transparent;
 
 					padding: 18px 20px;
 
@@ -2808,6 +2875,14 @@ a.btn.primary {
 					line-height: 22px;
 					letter-spacing: 0.03em;
 					text-align: left;
+
+					&:first-child {
+						border-radius: 3px 0 0 0;
+					}
+
+					&:last-child {
+						border-radius: 0 3px 0 0;
+					}
 				}
 			}
 
@@ -3074,6 +3149,7 @@ a.btn.primary {
 		}
 
 		img {
+			border-radius: 3px;
 			max-width: 324px;
 			margin-right: 55px;
 			height: 100%;
