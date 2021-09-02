@@ -544,15 +544,11 @@ function initLeadershipEvents() {
 		};
 
 		if ($('.table-filters').length) {
-			var searchDepartments = filterData(tabledata, 'department');
-			var searchLocations = filterData(tabledata, 'location');
-
 			$.fn.dataTable.ext.search.push(
 				function( settings, data, dataIndex ) {
 					var departmentValue = $('#department-filter').val();
 					var locationValue = $('#location-filter').val();
 					var searchValue = $('#search-filter').val();
-					console.log(departmentValue, locationValue, searchValue);
 
 					if ((departmentValue && data[2] !== departmentValue) ||
 						(locationValue && data[3] !== locationValue) ||
@@ -577,6 +573,10 @@ function initLeadershipEvents() {
 
 	// TODO: change on resize
 	if ($('.table-filters').length) {
+		var tabledata = $('.table-view table').data('tabledata');
+		var searchDepartments = filterData(tabledata, 'department');
+		var searchLocations = filterData(tabledata, 'location');
+
 		if ($(window).width() > 860) {
 			$('.owl-carousel').owlCarousel({
 				items: 5,
