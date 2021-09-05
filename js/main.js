@@ -583,7 +583,7 @@ function initLeadershipEvents() {
 				nav: true
 			});
 		} else {
-			$('.bios-wrapper')
+			$('.people-wrapper')
 				.addClass('scrollable-content scrollbar-inner')
 				.scrollbar();
 		}
@@ -733,6 +733,7 @@ function initPeopleEvents() {
 	$(".insights-list").owlCarousel({
 		nav: true,
 		loop: true,
+		dots: true,
 		responsive: {
 			0: {
 				items: 2
@@ -769,6 +770,233 @@ function initPhilosophyEvents() {
 		});
 }
 
+function loadInsights(wrapper, template, start, append) {
+	var items = wrapper.find('.insights-list').data('items');
+	var filter = wrapper.find('#insights-filter').val();
+	var itemsHtml = '';
+	var pageCount = 6;
+	var count = 0;
+	var filteredItems = [];
+
+	$.each(items, function(i, value) {
+		if (!filter || filter == value.type) {
+			filteredItems.push(value);
+		}
+	});
+	var startCount = start;
+
+	for (var i = start; i < filteredItems.length; i++) {
+		var value = filteredItems[i];
+
+		if ((count < pageCount) && (!filter || filter == value.type)) {
+			itemsHtml += template
+				.replace('{image}', value.image)
+				.replace('{type}', value.type)
+				.replace('{label}', value.label)
+				.replace('{date}', value.date)
+				.replace('{title}', value.title)
+				.replace('{action}', value.action);
+			count++;
+		}
+	}
+
+	wrapper.find('.insights-list')
+		.siblings('.btn-wrap')
+			.toggleClass('hidden', (start + pageCount) >= filteredItems.length);
+
+	wrapper.find('.insights-list').html((append ? wrapper.find('.insights-list').html() : '') + itemsHtml);
+}
+
+function initInsightEvents() {
+	$(document)
+		.on('click', '.tabs li', function() {
+			$(this)
+				.closest('.tabs')
+					.find('li')
+						.removeClass('active')
+					.end()
+				.end()
+				.addClass('active');	
+
+			$('.tabs-content li').removeClass('active');
+			$($(this).data('target')).addClass('active');
+
+		});
+
+	var insightsTemplate = '<div class="insight-item">' + 
+		'<div class="img-wrapper">' + 
+			'<a href="">' + 
+				'<img src="{image}" alt="">' + 
+				'<span class="insight-type {type}"></span>' + 
+			'</a>' + 
+		'</div>' + 
+		'<div class="insights-type">{label}</div>' + 
+		'<div class="date">{date}</div>' + 
+		'<a href="" class="title-link">{title}</a>' + 
+		'<div class="read-more"><a href="" class="link-underline">{action}</a></div>' + 
+	'</div>';
+
+	$('.dropdown-filter-wrapper select').selectmenu({
+		change: function() {
+			loadInsights($(this).closest('.content'), insightsTemplate, 0, false);
+		}
+	});
+
+	$('.insights-list').each(function() {
+		loadInsights($(this).closest('.content'), insightsTemplate, 0, false);
+	});
+
+	$('.insights-list ~ .btn-wrap .btn').on('click', function(e) {
+		e.preventDefault();
+
+		loadInsights($(this).closest('.content'), insightsTemplate, $(this).closest('.content').find('.insights-list .insight-item').length, true);
+	});
+
+	var memosTemplate = '<li class="memo-item">' + 
+		'<div class="archived">{archived}</div>' + 
+		'<div class="date">{date}</div>' + 
+		'<a href="" class="title">{title}</a>'
+	'</li>';
+
+	$('.memo-items').each(function() {
+		var items = $(this).data('items');
+		var itemsHTML = '';
+
+		$.each(items, function(i, item) {
+			itemsHTML += memosTemplate
+									.replace('{archived}', item.archived)
+									.replace('{date}', item.date)
+									.replace('{title}', item.title);
+		});
+
+		$(this).html(itemsHTML);
+	});
+
+	$('.memo-sublist:not(.opened)').each(function() {
+		$('.memo-items', this).hide();
+	});
+
+	$('.memo-sublist h3').on('click', function() {
+		var thisSublist = $(this).closest('.memo-sublist');
+
+		if ($(this).closest('.memo-sublist').hasClass('opened')) {
+			thisSublist
+				.find('.memo-items')
+					.slideUp(500)
+				.end()
+				.removeClass('opened');
+		} else {
+			thisSublist
+				.closest('.memos-list')
+					.find('.memo-sublist.opened')
+						.find('.memo-items')
+							.slideUp(500)
+						.end()
+						.removeClass('opened')
+					.end()
+				.end()
+				.find('.memo-items')
+					.slideDown(500)
+				.end()
+				.addClass('opened');
+		}
+	});
+
+	$('.owl-carousel').owlCarousel({
+		nav: true,
+		dots: true,
+		responsive: {
+			0: {
+				items: 2
+			},
+			768: {
+				items: 5
+			}
+		}
+	});
+
+	$(window)
+		.on('resize', function() {
+			if ($(window).width() < 1024) {
+				$('.tabs li:not(.active)').hide();
+
+				$('.tabs li')
+					.off('click.mobile-only')
+					.on('click.mobile-only', function() {
+						var self = this;
+						if ($(this).closest('.tabs').hasClass('opened')) {
+							$(this)
+								.addClass('active')
+								.closest('.tabs')
+									.find('li')
+										.each(function() {
+											if (this !== self) {
+												$(this)
+													.removeClass('active')
+													.slideUp(500);
+											}
+										})
+									.end()
+								.removeClass('opened');
+						} else {
+							$(this)
+								.closest('.tabs')
+									.find('li:not(.active)')
+										.slideDown(500)
+									.end()
+								.addClass('opened');
+						}
+					});
+			} else {
+				$('.tabs li:not(.active)').show();
+				$('.tabs li').off('click.mobile-only');
+			}
+		})
+		.trigger('resize');
+
+
+	$('#memo-archives-filter').selectmenu({
+		change: function() {
+			$(this)
+				.closest('.filter')
+					.siblings('.memos-list')
+						.find('.memo-sublist.opened')
+							.fadeOut(500)
+							.removeClass('opened');
+
+
+			$('[data-target="archive-' + $(this).val() + '"]')
+				.fadeIn(500)
+				.addClass('opened');
+		}
+	});
+
+	$(document).on('change', '.checkbox-field', function() {
+		$(this).siblings('.checkbox').toggleClass('checked');
+	});
+
+	$(document).on('click', '.submit', function(e) {
+		e.preventDefault();
+
+		$(this)
+			.closest('form')
+				.submit();
+	});
+
+	$(document).on('click', '.btn.subscribe', function(e) {
+		e.preventDefault();
+
+		$('#sf-country').selectmenu();
+
+		$('.subscribe-lightbox').dialog({
+			modal: true,
+			width: '90%',
+			maxWidth: '1180',
+			resizable: false
+		});
+	});
+}
+
 $(document).ready(function () {
 	var page = $('body').data('page');
 	initHeaderEvents();
@@ -788,6 +1016,9 @@ $(document).ready(function () {
 			break;
 		case 'people':
 			initPeopleEvents();
+			break;
+		case 'insights':
+			initInsightEvents();
 			break;
 	}
 
