@@ -768,6 +768,71 @@ function initPhilosophyEvents() {
 				.end()
 				.addClass('active');
 		});
+
+	$(".insights-list").owlCarousel({
+		nav: true,
+		loop: false,
+		responsive: {
+			0: {
+				items: 2
+			},
+			628: {
+				items: 3
+			}
+		}
+	});
+
+	$(document)
+		.on('click', '.tabs li', function() {
+			$(this)
+				.closest('.tabs')
+					.find('li')
+						.removeClass('active')
+					.end()
+				.end()
+				.addClass('active');	
+
+			$('.tabs-content li').removeClass('active');
+			$($(this).data('target'), $(this).closest('.tabs').siblings('.tabs-content')).addClass('active');
+		})
+		.on('click', '.tabs-content h2', function() {
+			$(this)
+				.closest('.tabs-content')
+					.find('li')
+						.removeClass('active')
+					.end()
+				.end()
+				.closest('li')
+					.addClass('active');	
+
+			$('.tabs li').removeClass('active');
+			$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
+		});
+
+	if ($(window).width() < 600) {
+		$(window)
+			.on('scroll', throttle(function() {
+				$('.odometer').each(function() {
+					if (elementInViewport(this) && !$(this).data('odometer-ready')) {
+						od = new Odometer({
+							el: this
+						});
+
+						od.update($(this).data('odometer'));
+						$(this).data('odometer-ready', true)
+					}
+				});
+			}, 100));
+	} else {
+		$('.odometer').each(function() {
+			od = new Odometer({
+				el: this
+			});
+
+			od.update($(this).data('odometer'));
+			$(this).data('odometer-ready', true)
+		});
+	}
 }
 
 function loadInsights(wrapper, template, start, append) {
@@ -997,6 +1062,170 @@ function initInsightEvents() {
 	});
 }
 
+function initResponsibilityEvents() {
+	$('.insights-list').owlCarousel({
+		nav: true,
+		dots: true,
+		responsive: {
+			0: {
+				items: 2
+			},
+			640: {
+				items: 3
+			}
+		}
+	});
+
+	$(window)
+		.on('resize', function() {
+			if ($(window).width() >= 550) {
+				$('.membership-list .description').show();
+
+				$('.membership-list').owlCarousel({
+					nav: true,
+					dots: true,
+					responsive: {
+						550: {
+							items: 2
+						},
+						820: {
+							items: 3
+						},
+						1090: {
+							items: 4
+						}
+					}
+				});
+			} else {
+				$('.membership-list .item:not(.active) .description').hide();
+				$('.membership-list').trigger('destroy.owl.carousel');
+
+				$(document).on('click', '.membership-list .item .img-wrap', function() {
+					if ($(this).closest('.item').hasClass('active')) {
+						$(this)
+							.closest('.item')
+								.find('.description')
+									.slideUp()
+								.end()
+							.removeClass('active');
+					} else {
+						$(this)
+							.closest('.membership-list')
+								.find('.item.active')
+									.each(function() {
+										$(this)
+											.find('.description')
+												.slideUp()
+											.end()
+											.removeClass('active');
+									})
+								.end()
+							.end()
+							.closest('.item')
+								.find('.description')
+									.slideDown()
+								.end()
+								.addClass('active');
+					}
+				});
+			}
+		})
+		.trigger('resize');
+}
+
+function initStrategiesEvents() {
+	if ($(window).width() < 600) {
+		$(window)
+			.on('scroll', throttle(function() {
+				$('.odometer').each(function() {
+					if (elementInViewport(this) && !$(this).data('odometer-ready')) {
+						od = new Odometer({
+							el: this
+						});
+
+						od.update($(this).data('odometer'));
+						$(this).data('odometer-ready', true)
+					}
+				});
+			}, 100));
+	} else {
+		$('.odometer').each(function() {
+			od = new Odometer({
+				el: this
+			});
+
+			od.update($(this).data('odometer'));
+			$(this).data('odometer-ready', true)
+		});
+	}
+
+	$(".insights-list").owlCarousel({
+		nav: true,
+		loop: false,
+		responsive: {
+			0: {
+				items: 2
+			},
+			628: {
+				items: 3
+			}
+		}
+	});
+
+	$(".people-wrapper").owlCarousel({
+		nav: true,
+		loop: false,
+		responsive: {
+			0: {
+				items: 2
+			},
+			831: {
+				items: 3
+			},
+			1076: {
+				items: 4
+			}
+		}
+	});
+
+	$('.full-width-tabs .tab:not(.active) .description').hide();
+
+	$(document).on('click', '.full-width-tabs .tab h4', function() {
+		if ($(this).closest('.tab').hasClass('active')) {
+			$(this).closest('.full-width-tabs')
+		}
+	});
+
+	$(document).on('click', '.full-width-tabs .tab h4', function() {
+		if ($(this).closest('.tab').hasClass('active')) {
+			$(this)
+				.closest('.tab')
+					.find('.description')
+						.slideUp()
+					.end()
+				.removeClass('active');
+		} else {
+			$(this)
+				.closest('.full-width-tabs')
+					.find('.tab.active')
+						.each(function() {
+							$(this)
+								.find('.description')
+									.slideUp()
+								.end()
+								.removeClass('active');
+						})
+					.end()
+				.end()
+				.closest('.tab')
+					.find('.description')
+						.slideDown()
+					.end()
+					.addClass('active');
+		}
+	});
+}
+
 $(document).ready(function () {
 	var page = $('body').data('page');
 	initHeaderEvents();
@@ -1020,7 +1249,17 @@ $(document).ready(function () {
 		case 'insights':
 			initInsightEvents();
 			break;
+		case 'responsibility':
+			initResponsibilityEvents();
+			break;
+		case 'strategies':
+			initStrategiesEvents();
+			break;
 	}
+
+	$('a.has-tooltip').tooltip({
+		position: { my: "center top+15", at: "center bottom", collision: "flipfit" }
+	});
 
 	initFooterEventss();
 });

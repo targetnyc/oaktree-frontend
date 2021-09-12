@@ -1,10 +1,10 @@
 %svg-common {
-	background: url("svg/sprite.css-7d83ac47.svg") no-repeat;
+	background: url("svg/sprite.css-33967923.svg") no-repeat;
 }
 
 .svg-archived-memo {
 	@extend %svg-common;
-	background-position: 100% 34.90909090909091%;
+	background-position: 100% 17.454545454545453%;
 }
 
 .svg-archived-memo-dims {
@@ -24,7 +24,7 @@
 
 .svg-arrow-down-green {
 	@extend %svg-common;
-	background-position: 31.57894736842105% 97.86476868327402%;
+	background-position: 38.59649122807018% 97.86476868327402%;
 }
 
 .svg-arrow-down-green-dims {
@@ -124,7 +124,7 @@
 
 .svg-checkbox-checked {
 	@extend %svg-common;
-	background-position: 76.67844522968198% 74.55197132616487%;
+	background-position: 76.67844522968198% 75.26881720430107%;
 }
 
 .svg-checkbox-checked-dims {
@@ -134,7 +134,7 @@
 
 .svg-chevron {
 	@extend %svg-common;
-	background-position: 100% 61.09090909090909%;
+	background-position: 100% 87.27272727272727%;
 }
 
 .svg-chevron-dims {
@@ -144,7 +144,7 @@
 
 .svg-chevron-green {
 	@extend %svg-common;
-	background-position: 0 100%;
+	background-position: 100% 69.81818181818181%;
 }
 
 .svg-chevron-green-dims {
@@ -184,7 +184,7 @@
 
 .svg-download {
 	@extend %svg-common;
-	background-position: 100% 26.181818181818183%;
+	background-position: 100% 34.90909090909091%;
 }
 
 .svg-download-dims {
@@ -204,7 +204,7 @@
 
 .svg-ellipse-empty {
 	@extend %svg-common;
-	background-position: 100% 17.454545454545453%;
+	background-position: 100% 43.63636363636363%;
 }
 
 .svg-ellipse-empty-dims {
@@ -214,7 +214,7 @@
 
 .svg-ellipse-selected {
 	@extend %svg-common;
-	background-position: 100% 8.727272727272727%;
+	background-position: 100% 26.181818181818183%;
 }
 
 .svg-ellipse-selected-dims {
@@ -264,7 +264,7 @@
 
 .svg-folder {
 	@extend %svg-common;
-	background-position: 76.67844522968198% 67.61565836298932%;
+	background-position: 31.802120141342755% 97.86476868327402%;
 }
 
 .svg-folder-dims {
@@ -272,9 +272,19 @@
 	height: 18px;
 }
 
+.svg-info {
+	@extend %svg-common;
+	background-position: 76.67844522968198% 68.10035842293907%;
+}
+
+.svg-info-dims {
+	width: 20px;
+	height: 20px;
+}
+
 .svg-insights-article {
 	@extend %svg-common;
-	background-position: 89.81132075471699% 30.268199233716476%;
+	background-position: 89.81132075471699% 44.827586206896555%;
 }
 
 .svg-insights-article-dims {
@@ -284,7 +294,7 @@
 
 .svg-insights-article-hover {
 	@extend %svg-common;
-	background-position: 89.81132075471699% 44.827586206896555%;
+	background-position: 89.81132075471699% 59.38697318007663%;
 }
 
 .svg-insights-article-hover-dims {
@@ -304,7 +314,7 @@
 
 .svg-insights-audio-hover {
 	@extend %svg-common;
-	background-position: 89.81132075471699% 73.9463601532567%;
+	background-position: 0 90.80459770114942%;
 }
 
 .svg-insights-audio-hover-dims {
@@ -314,7 +324,7 @@
 
 .svg-insights-video {
 	@extend %svg-common;
-	background-position: 0 90.80459770114942%;
+	background-position: 89.81132075471699% 73.9463601532567%;
 }
 
 .svg-insights-video-dims {
@@ -324,7 +334,7 @@
 
 .svg-insights-video-hover {
 	@extend %svg-common;
-	background-position: 89.81132075471699% 59.38697318007663%;
+	background-position: 89.81132075471699% 30.268199233716476%;
 }
 
 .svg-insights-video-hover-dims {
@@ -374,7 +384,7 @@
 
 .svg-listen {
 	@extend %svg-common;
-	background-position: 100% 78.54545454545455%;
+	background-position: 0 100%;
 }
 
 .svg-listen-dims {
@@ -384,7 +394,7 @@
 
 .svg-map-icon {
 	@extend %svg-common;
-	background-position: 100% 87.27272727272727%;
+	background-position: 100% 8.727272727272727%;
 }
 
 .svg-map-icon-dims {
@@ -434,7 +444,7 @@
 
 .svg-search-type-all {
 	@extend %svg-common;
-	background-position: 100% 43.63636363636363%;
+	background-position: 100% 52.36363636363637%;
 }
 
 .svg-search-type-all-dims {
@@ -444,7 +454,7 @@
 
 .svg-search-type-insights {
 	@extend %svg-common;
-	background-position: 100% 52.36363636363637%;
+	background-position: 100% 61.09090909090909%;
 }
 
 .svg-search-type-insights-dims {
@@ -464,7 +474,7 @@
 
 .svg-search-type-strategies {
 	@extend %svg-common;
-	background-position: 100% 69.81818181818181%;
+	background-position: 100% 78.54545454545455%;
 }
 
 .svg-search-type-strategies-dims {
