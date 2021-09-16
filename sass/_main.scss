@@ -2460,6 +2460,10 @@ body {
 		max-width: 1175px;
 		margin: 0 auto;
 
+		.people-wrapper {
+			display: block;
+		}
+
 		h2 {
 			margin-bottom: 35px;
 
@@ -2626,6 +2630,16 @@ body {
 
 @media screen and (max-width: 831px) {
 	.people-list {
+		padding: 50px 0;
+
+		h2 {
+			padding: 0 15px;
+		}
+
+		.people-wrapper.owl-carousel {
+			margin: 0 7.5px;
+		}
+
 		&.grey {
 			.people-list-content {
 				.owl-stage-outer {
@@ -2868,16 +2882,14 @@ body {
 			}
 
 			.ui-selectmenu-icon {
-				@extend .svg-arrow-right-green;
-				height: 48px;
-				width: 48px;
+				@extend .svg-arrow-down-green;
+				@extend .svg-arrow-down-green-dims;
 				position: absolute;
-				right: 5px;
-				top: 10px;
+				right: 0;
+				top: 50%;
 
 				transition: background-image 0.2s ease-in-out;
-				transform: rotate(90deg) scale(0.35);
-				transform-origin: right;
+				transform: translateY(-50%);
 			}
 
 			.ui-selectmenu-button.ui-button {
@@ -2905,7 +2917,16 @@ body {
 					&:after {
 						background: #000;
 					}
+
+					.ui-selectmenu-icon {
+						@extend .svg-arrow-down-blue;
+						@extend .svg-arrow-down-blue-dims;
+
+						transform: rotate(180deg)translateY(-50%);
+						transform-origin: top;
+					}
 				}
+
 			}
 
 			.ui-selectmenu-text {
@@ -3199,8 +3220,8 @@ body {
 		padding: 0 15px;
 
 		.table-view-content {
-
 			h2 {
+				margin-top: 0;
 				margin-bottom: 35px;
 
 				font-size: 22px;
@@ -3215,11 +3236,6 @@ body {
 					display: none;
 				}
 
-				.ui-selectmenu-icon {
-					right: 7px;
-					transform: rotate(90deg) scale(0.4);
-				}
-
 				.dropdown-filter-wrapper {
 					display: block;
 					width: 100%;
@@ -3232,6 +3248,10 @@ body {
 				.search-filter-wrapper {
 					display: block;
 					width: 100%;
+
+					&:after {
+						top: 43px;
+					}
 
 					span {
 						display: block;
@@ -3761,16 +3781,14 @@ body {
 			display: inline-block;
 
 			.ui-selectmenu-icon {
-				@extend .svg-arrow-right-green;
-				height: 48px;
-				width: 48px;
+				@extend .svg-arrow-down-green;
+				@extend .svg-arrow-down-green-dims;
 				position: absolute;
-				right: 5px;
-				top: 10px;
+				right: 0;
+				top: 50%;
 
 				transition: background-image 0.2s ease-in-out;
-				transform: rotate(90deg) scale(0.35);
-				transform-origin: right;
+				transform: translateY(-50%);
 			}
 
 			.ui-selectmenu-button.ui-button {
@@ -3800,11 +3818,11 @@ body {
 					}
 
 					.ui-selectmenu-icon {
-						@extend .svg-arrow-right-black;
-						top: -10px;
+						@extend .svg-arrow-down-green;
+						@extend .svg-arrow-down-green-dims;
 
-						transform: rotate(-90deg) scale(0.35);
-						transform-origin: right;
+						transform: rotate(180deg);
+						transform-origin: top;
 					}
 				}
 			}
@@ -5569,6 +5587,91 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+	.people-list {
+		.people-list-content {
+			h2 {
+				margin-bottom: 25px;
+			}
+
+			.people-wrapper {
+				padding: 0;
+				margin: 0;
+				display: block;
+				white-space: nowrap;
+
+				&.scroll-wrapper {
+					margin: 0 7.5px;
+				}
+			}
+
+			.person {
+				width: 157px;
+				display: inline-block;
+				margin: 0 7.5px;
+				vertical-align: top;
+
+				img {
+					max-width: 100%;
+				}
+
+				h4,
+				h5 {
+					white-space: normal;
+				}
+
+				h4 {
+					font-size: 18px;
+					line-height: 25px;
+				}
+
+				h5 {
+					font-size: 14px;
+					line-height: 18px;
+				}
+			}
+
+			.owl-stage-outer {
+				margin: 0 -7.5px;
+			}
+
+			.owl-item {
+				padding: 0 7.5px;
+				min-width: 172px;
+			}
+
+			.owl-nav {
+				display: none;
+			}
+
+			.owl-dots {
+				margin-top: 50px;
+				display: block;
+
+				text-align: center;
+			}
+
+			.owl-dot {
+				background: #000;
+				border: 0 none;
+				border-radius: 100%;
+
+				width: 10px;
+				height: 10px;
+				margin: 0 7.5px;
+				opacity: 0.4;
+
+				&.active {
+					background: #388067;
+					opacity: 1;
+				}
+			}
+
+			.btn-wrap {
+				margin-top: 50px;
+			}
+		}
+	}
+
 	.people-list.grey {
 		padding: 40px 0 50px;
 
