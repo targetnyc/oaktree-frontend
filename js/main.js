@@ -1226,6 +1226,88 @@ function initStrategiesEvents() {
 	});
 }
 
+function initContactUsEvents() {
+	$('.map-wrapper svg .map-item').each(function() {
+		var content = "<h4>{location}</h4><div class='address'>{address}</div><div class='phone'>P: <a href='tel:{phone}'>{phone}</a></div>";
+		var data = $(this).data('tooltip');
+		if (data) {
+			content = content
+					.replaceAll('{location}', data.location)
+					.replaceAll('{address}', data.address)
+					.replaceAll('{phone}', data.phone);
+
+			if (data.fax) {
+				content += "<div class='fax'>F: <a href='tel:{fax}'>{fax}</a></div>".replaceAll('{fax}', data.fax);
+			}
+
+			$(this).attr('title', content);
+		}
+	});
+
+	$('.map-wrapper svg').tooltip({
+		content: function () {
+			return $(this).attr('title');
+		},
+		position: { my: "center top+15", at: "center bottom", collision: "flipfit" },
+		classes: {
+			"ui-tooltip": "map-info"
+		}
+	});
+
+	var addressTemplate = "<h5>{location}</h5><div class='address'>{address}</div><div class='phone'>P: <a href='tel:{phone}'>{phone}</a></div>";
+
+	$('.addresses').each(function() {
+		var allAddresses = $(this).data('addresses');
+		console.log(allAddresses);
+		var addressesList = "";
+
+		$.each(allAddresses, function(i, data) {
+			var content = addressTemplate
+					.replaceAll('{location}', data.location)
+					.replaceAll('{address}', data.address)
+					.replaceAll('{phone}', data.phone);
+
+			if (data.fax) {
+				content += "<div class='fax'>F: <a href='tel:{fax}'>{fax}</a></div>".replaceAll('{fax}', data.fax);
+			}
+			addressesList += "<li>" + content + "</li>";
+		});
+
+		$(this).html(addressesList);
+	});
+
+	$('.countries .country:not(.active) .addresses').hide();
+
+	$(document).on('click', '.countries h4', function() {
+		if ($(this).closest('.country').hasClass('active')) {
+			$(this)
+				.closest('.country')
+					.find('.addresses')
+						.slideUp()
+					.end()
+				.removeClass('active');
+		} else {
+			$(this)
+				.closest('.countries')
+					.find('.country.active')
+						.each(function() {
+							$(this)
+								.find('.addresses')
+									.slideUp()
+								.end()
+								.removeClass('active');
+						})
+					.end()
+				.end()
+				.closest('.country')
+					.find('.addresses')
+						.slideDown()
+					.end()
+					.addClass('active');
+		}
+	});
+}
+
 $(document).ready(function () {
 	var page = $('body').data('page');
 	initHeaderEvents();
@@ -1255,10 +1337,16 @@ $(document).ready(function () {
 		case 'strategies':
 			initStrategiesEvents();
 			break;
+		case 'contact-us':
+			initContactUsEvents();
+			break;
 	}
 
 	$('a.has-tooltip').tooltip({
-		position: { my: "center top+15", at: "center bottom", collision: "flipfit" }
+		position: { my: "center top+15", at: "center bottom", collision: "flipfit" },
+		classes: {
+			"ui-tooltip": "has-arrow"
+		}
 	});
 
 	initFooterEventss();
