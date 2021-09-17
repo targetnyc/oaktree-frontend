@@ -1837,14 +1837,19 @@ body {
 #insights-filter-menu,
 #location-filter-menu,
 #department-filter-menu {
+	border: 0 none;
 	box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
 
+	padding: 20px 27px;
+
 	.ui-menu-item .ui-menu-item-wrapper {
+		padding: 0;
+
 		color: #000;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 14px;
-		line-height: 37px;
+		line-height: 32px;
 		letter-spacing: 0.05em;
 		text-transform: capitalize;
 
@@ -2962,10 +2967,11 @@ body {
 					display: none;
 				}
 
-				&:after {
+				button.search {
+					border: 0 none;
+					cursor: pointer;
 					@extend .svg-search;
 
-					content: '';
 					position: absolute;
 					right: 0;
 					top: 13px;
@@ -2973,6 +2979,10 @@ body {
 					height: 26px;
 					width: 26px;
 					transform: scale(0.85);
+
+					&:hover {
+						@extend .svg-search-blue;
+					}
 				}
 			}
 

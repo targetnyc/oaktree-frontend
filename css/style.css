@@ -68,7 +68,7 @@ a {
 .article-wrapper .social-links .facebook:hover, .country-addresses-wrapper .social-links .facebook:hover, .svg-facebook-green-outline, .two-column-content-wrapper .social-links .facebook, .memo-wrapper .social-links .facebook,
 .article-wrapper .social-links .facebook, .country-addresses-wrapper .social-links .facebook, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .svg-folder, .archived:before, .svg-info, .warning-message .info:before, .svg-insights-article, .insights-wrapper .article, .insights-list-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .insights-list-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .insights-list-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .insights-list-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .insights-list-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .insights-list-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .svg-linkedin-green-fill, .two-column-content-wrapper .social-links .linkedin:hover, .memo-wrapper .social-links .linkedin:hover,
 .article-wrapper .social-links .linkedin:hover, .country-addresses-wrapper .social-links .linkedin:hover, .svg-linkedin-green-outline, .two-column-content-wrapper .social-links .linkedin, .memo-wrapper .social-links .linkedin,
-.article-wrapper .social-links .linkedin, .country-addresses-wrapper .social-links .linkedin, .svg-linkedin-white, .footer .social-links .linkedin:hover, .hero-slides-wrapper .social-links .linkedin:hover, .svg-listen, .listen:before, .svg-map-icon, .fullimage-block .list li:before, .country-addresses-wrapper .countries .addresses li:before, .svg-search, form.search .form-content .do-search, .table-view .table-view-content .table-filters .search-filter-wrapper:after, .svg-search-blue, form.search .form-content .do-search:hover, .svg-search-icon, .actions-nav .action-search, .svg-search-icon-hover, .actions-nav .action-search:hover, .actions-nav .action-search.active, .svg-search-type-all, form.search .form-content .search-types .all label:before, form.search .form-content .search-types-toggle.all, .svg-search-type-insights, form.search .form-content .search-types .insights label:before, form.search .form-content .search-types-toggle.insights, .svg-search-type-people, form.search .form-content .search-types .people label:before, form.search .form-content .search-types-toggle.people, .svg-search-type-strategies, form.search .form-content .search-types .strategies label:before, form.search .form-content .search-types-toggle.strategies, .svg-twitter, .footer .social-links .twitter, .hero-slides-wrapper .social-links .twitter, .svg-twitter-green-fill, .two-column-content-wrapper .social-links .twitter:hover, .memo-wrapper .social-links .twitter:hover,
+.article-wrapper .social-links .linkedin, .country-addresses-wrapper .social-links .linkedin, .svg-linkedin-white, .footer .social-links .linkedin:hover, .hero-slides-wrapper .social-links .linkedin:hover, .svg-listen, .listen:before, .svg-map-icon, .fullimage-block .list li:before, .country-addresses-wrapper .countries .addresses li:before, .svg-search, form.search .form-content .do-search, .table-view .table-view-content .table-filters .search-filter-wrapper button.search, .svg-search-blue, form.search .form-content .do-search:hover, .table-view .table-view-content .table-filters .search-filter-wrapper button.search:hover, .svg-search-icon, .actions-nav .action-search, .svg-search-icon-hover, .actions-nav .action-search:hover, .actions-nav .action-search.active, .svg-search-type-all, form.search .form-content .search-types .all label:before, form.search .form-content .search-types-toggle.all, .svg-search-type-insights, form.search .form-content .search-types .insights label:before, form.search .form-content .search-types-toggle.insights, .svg-search-type-people, form.search .form-content .search-types .people label:before, form.search .form-content .search-types-toggle.people, .svg-search-type-strategies, form.search .form-content .search-types .strategies label:before, form.search .form-content .search-types-toggle.strategies, .svg-twitter, .footer .social-links .twitter, .hero-slides-wrapper .social-links .twitter, .svg-twitter-green-fill, .two-column-content-wrapper .social-links .twitter:hover, .memo-wrapper .social-links .twitter:hover,
 .article-wrapper .social-links .twitter:hover, .country-addresses-wrapper .social-links .twitter:hover, .svg-twitter-green-outline, .two-column-content-wrapper .social-links .twitter, .memo-wrapper .social-links .twitter,
 .article-wrapper .social-links .twitter, .country-addresses-wrapper .social-links .twitter, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .back.link-underline:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .back.link-underline:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .svg-youtube-green-fill, .two-column-content-wrapper .social-links .youtube:hover, .memo-wrapper .social-links .youtube:hover,
 .article-wrapper .social-links .youtube:hover, .country-addresses-wrapper .social-links .youtube:hover, .svg-youtube-green-outline, .two-column-content-wrapper .social-links .youtube, .memo-wrapper .social-links .youtube,
@@ -452,7 +452,7 @@ a {
   height: 24px;
 }
 
-.svg-search, form.search .form-content .do-search, .table-view .table-view-content .table-filters .search-filter-wrapper:after {
+.svg-search, form.search .form-content .do-search, .table-view .table-view-content .table-filters .search-filter-wrapper button.search {
   background-position: 43.0976430976431% 86.81318681318682%;
 }
 
@@ -461,7 +461,7 @@ a {
   height: 26px;
 }
 
-.svg-search-blue, form.search .form-content .do-search:hover {
+.svg-search-blue, form.search .form-content .do-search:hover, .table-view .table-view-content .table-filters .search-filter-wrapper button.search:hover {
   background-position: 51.851851851851855% 86.81318681318682%;
 }
 
@@ -3912,17 +3912,20 @@ body {
 #insights-filter-menu,
 #location-filter-menu,
 #department-filter-menu {
+  border: 0 none;
   box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px 27px;
 }
 #memo-archives-filter-menu .ui-menu-item .ui-menu-item-wrapper,
 #insights-filter-menu .ui-menu-item .ui-menu-item-wrapper,
 #location-filter-menu .ui-menu-item .ui-menu-item-wrapper,
 #department-filter-menu .ui-menu-item .ui-menu-item-wrapper {
+  padding: 0;
   color: #000;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 37px;
+  line-height: 32px;
   letter-spacing: 0.05em;
   text-transform: capitalize;
 }
@@ -4772,8 +4775,9 @@ body {
 .table-view .table-view-content .table-filters .search-filter-wrapper span {
   display: none;
 }
-.table-view .table-view-content .table-filters .search-filter-wrapper:after {
-  content: '';
+.table-view .table-view-content .table-filters .search-filter-wrapper button.search {
+  border: 0 none;
+  cursor: pointer;
   position: absolute;
   right: 0;
   top: 13px;

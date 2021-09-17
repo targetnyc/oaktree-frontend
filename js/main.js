@@ -604,7 +604,7 @@ function initLeadershipEvents() {
 			.html('<option value="">Department</option><option>' + searchDepartments.join('</option><option>') + '</option>')
 			.selectmenu({
 				change: function() {
-					table.draw();
+					$(this).closest('.table-view').find('table').DataTable().draw();
 				}
 			});
 
@@ -612,14 +612,11 @@ function initLeadershipEvents() {
 			.html('<option value="">Location</option><option>' + searchLocations.join('</option><option>') + '</option>')
 			.selectmenu({
 				change: function() {
-					table.draw();
+					$(this).closest('.table-view').find('table').DataTable().draw();
 				}
 			});
 
 		$('#search-filter')
-			.on('keyup', function() {
-				table.draw();
-			})
 			.on('focus', function() {
 				$(this).data('placeholder', $(this).attr('placeholder'));
 				$(this).attr('placeholder', '');
@@ -628,6 +625,9 @@ function initLeadershipEvents() {
 				$(this).attr('placeholder', $(this).data('placeholder'));
 				$(this).data('placeholder', false);
 			});
+		$('button.search').on('click', function() {
+			$(this).closest('.table-view').find('table').DataTable().draw();
+		});
 	}
 	
 	if ($(window).width() < 860) {
