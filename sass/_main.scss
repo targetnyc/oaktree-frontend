@@ -893,6 +893,14 @@ body {
 	align-items: center;
 	justify-content: center;
 
+	&.bottom {
+		img {
+			top: auto;
+			bottom: 0;
+			transform: translate(-50%, 0);
+		}
+	}
+
 	&:before {
 		background: rgba(0, 0, 0, 0.55);
 		content: '';
