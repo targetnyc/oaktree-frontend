@@ -3508,6 +3508,7 @@ body {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 1;
 }
 .sliding-info h2 {
   position: absolute;
@@ -7630,6 +7631,10 @@ body .ui-tooltip.ui-widget-content {
 }
 .clear {
   clear: both;
+}
+
+.trigger-top {
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */

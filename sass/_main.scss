@@ -1357,6 +1357,7 @@ body {
 				position: fixed;
 				top: 50%;
 				transform: translateY(-50%);
+				z-index: 1;
 			}
 		}
 	}
@@ -6743,4 +6744,8 @@ body .ui-tooltip.ui-widget-content {
 
 .clear {
  	clear: both;
+}
+
+.trigger-top {
+	position: absolute;
 }

@@ -1072,6 +1072,10 @@ function initInsightEvents() {
 			resizable: false
 		});
 	});
+
+	$('.trigger-top').css('top', 'calc(50vh + ' + ($('.social-links-wrapper').offset().top - 50) + 'px)' );
+	var controller = new ScrollMagic.Controller();
+	new ScrollMagic.Scene({triggerElement: '.trigger-top', duration: ($('.memo-content').offset().top + $('.memo-content').innerHeight()) - $('.trigger-top').offset().top}).setPin('.social-links-wrapper').addTo(controller);
 }
 
 function initResponsibilityEvents() {
