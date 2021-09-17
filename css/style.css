@@ -3863,7 +3863,7 @@ body {
 }
 .portfolio .breakdown .doughnut-chart.mobile,
 .leadership .breakdown .doughnut-chart.mobile {
-  display: none;
+  display: none !important;
 }
 
 .leadership {
@@ -3936,7 +3936,7 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .portfolio .portfolio-content,
   .portfolio .leadership-content,
   .leadership .portfolio-content,
@@ -3982,13 +3982,17 @@ body {
   .leadership .tabs-content .active .content {
     flex-direction: column;
   }
+  .portfolio .tabs-content .asset-wrap,
+  .leadership .tabs-content .asset-wrap {
+    max-width: none;
+  }
   .portfolio .tabs-content .doughnut-chart.desktop,
   .leadership .tabs-content .doughnut-chart.desktop {
     display: none !important;
   }
   .portfolio .tabs-content .doughnut-chart.mobile,
   .leadership .tabs-content .doughnut-chart.mobile {
-    display: block;
+    display: block !important;
     max-width: 200px;
     max-height: 200px;
     margin: 0 auto 50px;

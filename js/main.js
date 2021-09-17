@@ -209,99 +209,10 @@ function initHomeEvents() {
 	});
 }
 
-function initAboutEvents() {
-	$(document)
-		.on('click', '.tabs li', function() {
-			$(this)
-				.closest('.tabs')
-					.find('li')
-						.removeClass('active')
-					.end()
-				.end()
-				.addClass('active');	
-
-			$('.tabs-content li').removeClass('active');
-			$($(this).data('target')).addClass('active');
-
-			loadMixedChart($($(this).data('target')).find('.doughnut-chart' + ($(window).width() < 600 ? '.mobile' : '.desktop'))[0]);
-		})
-		.on('click', '.tabs-content h5', function() {
-			$(this)
-				.closest('.tabs-content')
-					.find('li')
-						.removeClass('active')
-					.end()
-				.end()
-				.closest('li')
-					.addClass('active');	
-
-			$('.tabs li').removeClass('active');
-			$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
-
-			loadMixedChart($(this).closest('li').find('.doughnut-chart' + ($(window).width() < 600 ? '.mobile' : '.desktop'))[0]);
-		});
-
-
-	if ($(window).width() < 600) {
-		$(window)
-			.on('scroll', throttle(function() {
-				$('.odometer').each(function() {
-					if (elementInViewport(this) && !$(this).data('odometer-ready')) {
-						od = new Odometer({
-							el: this
-						});
-
-						od.update($(this).data('odometer'));
-						$(this).data('odometer-ready', true)
-					}
-				});
-			}, 100));
-	} else {
-		$('.odometer').each(function() {
-			od = new Odometer({
-				el: this
-			});
-
-			od.update($(this).data('odometer'));
-			$(this).data('odometer-ready', true)
-		});
+function loadAumChart() {
+	if (window.aumChart) {
+		window.aumChart.destroy();
 	}
-
-	if ($(window).width() > 600) {
-		var controller = new ScrollMagic.Controller();
-
-		function tweenOpacity(el) {
-			var tween = TweenMax.fromTo(el, 1, {
-				opacity: 0,
-				y: 100,
-				force3D: true
-			}, {
-				opacity: 1,
-				y: 0,
-				force3D: true
-			});
-
-			return tween;
-		};
-
-		$('.sliding-info .slides .item').each(function() {
-			new ScrollMagic.Scene({
-					triggerElement: $(this).get(),
-					triggerHook: .75,
-					duration: '50%'
-				})
-				.setTween(tweenOpacity($(this).get()))
-				.addTo(controller);
-		});
-
-		new ScrollMagic.Scene({triggerElement: '.trigger-1', duration: $('.trigger-2').offset().top - $('.trigger-1').offset().top}).setPin('.sliding-info h2').addTo(controller);
-	} else {
-		$('.sliding-info .slides').addClass('owl-carousel').owlCarousel({
-			items: 1,
-			dots: true
-		});
-	}
-
 
 	var chartOptions = $('#aum-chart').data('chart');
 
@@ -444,7 +355,109 @@ function initAboutEvents() {
 		},
 	};
 
-	var myChart = new Chart(chart1Canvas, config);
+	window.aumChart = new Chart(chart1Canvas, config);
+}
+
+function initAboutEvents() {
+	$(document)
+		.on('click', '.tabs li', function() {
+			$(this)
+				.closest('.tabs')
+					.find('li')
+						.removeClass('active')
+					.end()
+				.end()
+				.addClass('active');	
+
+			$('.tabs-content li').removeClass('active');
+			$($(this).data('target')).addClass('active');
+
+			loadMixedChart($($(this).data('target')).find('.doughnut-chart' + ($(window).width() < 1024 ? '.mobile' : '.desktop'))[0]);
+		})
+		.on('click', '.tabs-content h5', function() {
+			$(this)
+				.closest('.tabs-content')
+					.find('li')
+						.removeClass('active')
+					.end()
+				.end()
+				.closest('li')
+					.addClass('active');	
+
+			$('.tabs li').removeClass('active');
+			$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
+
+			loadMixedChart($(this).closest('li').find('.doughnut-chart' + ($(window).width() < 1024 ? '.mobile' : '.desktop'))[0]);
+		});
+
+
+	if ($(window).width() < 600) {
+		$(window)
+			.on('scroll', throttle(function() {
+				$('.odometer').each(function() {
+					if (elementInViewport(this) && !$(this).data('odometer-ready')) {
+						od = new Odometer({
+							el: this
+						});
+
+						od.update($(this).data('odometer'));
+						$(this).data('odometer-ready', true)
+					}
+				});
+			}, 100));
+	} else {
+		$('.odometer').each(function() {
+			od = new Odometer({
+				el: this
+			});
+
+			od.update($(this).data('odometer'));
+			$(this).data('odometer-ready', true)
+		});
+	}
+
+	if ($(window).width() > 600) {
+		var controller = new ScrollMagic.Controller();
+
+		function tweenOpacity(el) {
+			var tween = TweenMax.fromTo(el, 1, {
+				opacity: 0,
+				y: 100,
+				force3D: true
+			}, {
+				opacity: 1,
+				y: 0,
+				force3D: true
+			});
+
+			return tween;
+		};
+
+		$('.sliding-info .slides .item').each(function() {
+			new ScrollMagic.Scene({
+					triggerElement: $(this).get(),
+					triggerHook: .75,
+					duration: '50%'
+				})
+				.setTween(tweenOpacity($(this).get()))
+				.addTo(controller);
+		});
+
+		new ScrollMagic.Scene({triggerElement: '.trigger-1', duration: $('.trigger-2').offset().top - $('.trigger-1').offset().top}).setPin('.sliding-info h2').addTo(controller);
+	} else {
+		$('.sliding-info .slides').addClass('owl-carousel').owlCarousel({
+			items: 1,
+			dots: true
+		});
+	}
+
+	$(window)
+		.on('resize', function() {
+			loadMixedChart($('.tabs-content .active .doughnut-chart' + ($(window).width() < 1024 ? '.mobile' : '.desktop'))[0]);
+
+			loadAumChart();
+		})
+		.trigger('resize');
 
 	document.querySelectorAll('.breakdown .active .doughnut-chart' + ($(window).width() < 600 ? '.mobile' : '.desktop')).forEach(function(mixCanvas) {
 		loadMixedChart(mixCanvas);
@@ -452,9 +465,8 @@ function initAboutEvents() {
 }
 
 function loadMixedChart(mixCanvas) {
-	if ($(mixCanvas).attr('style')) {
-		// already initialized
-		return;
+	if (Chart.getChart(mixCanvas)) {
+		Chart.getChart(mixCanvas).destroy();
 	}
 
 	var chartOptions  = $(mixCanvas).data('chart');
@@ -473,7 +485,7 @@ function loadMixedChart(mixCanvas) {
 			]
 		},
 		options: {
-			cutout: $(window).width() < 600 ? 65 : 110,
+			cutout: $(window).width() < 1024 ? 65 : 110,
 			hover: false,
 			plugins: {
 				tooltip: {
@@ -504,7 +516,7 @@ function loadMixedChart(mixCanvas) {
 
 						var centerConfig = chart.config.options.elements.center;
 						var fontStyle = centerConfig.fontStyle || 'Arial';
-						ctx.font = ($(window).width() < 600 ? "34px " : "64px ") + fontStyle;
+						ctx.font = ($(window).width() < 1024 ? "34px " : "64px ") + fontStyle;
 
 						ctx.textAlign = 'center';
 						ctx.textBaseline = 'middle';

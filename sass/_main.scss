@@ -1763,7 +1763,7 @@ body {
 			max-height: 330px;
 
 			&.mobile {
-				display: none;
+				display: none !important;
 			}
 		}
 	}
@@ -1858,7 +1858,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
 	.portfolio,
 	.leadership {
 		.portfolio-content,
@@ -1907,13 +1907,17 @@ body {
 				}
 			}
 
+			.asset-wrap {
+				max-width: none;
+			}
+
 			.doughnut-chart {
 				&.desktop {
 					display: none !important;
 				}
 				
 				&.mobile {
-					display: block;
+					display: block !important;
 					max-width: 200px;
 					max-height: 200px;
 
