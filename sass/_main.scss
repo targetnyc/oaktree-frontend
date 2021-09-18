@@ -4308,7 +4308,9 @@ body {
 
 		span {
 			display: block;
+			max-width: 50px;
 			transform: rotate(90deg);
+			transform-origin: bottom;
 
 			color: #000;
 			font-style: normal;
@@ -4323,7 +4325,7 @@ body {
 		justify-content: flex-end;
 		flex-direction: column;
 		position: relative;
-		margin-top: 25px;
+		margin-top: 15px;
 
 		li {
 			margin: 5px;
@@ -4372,6 +4374,15 @@ body {
 
 			&:hover {
 				@extend .svg-youtube-green-fill;
+			}
+		}
+
+		.mail {
+			@extend .svg-mail-green-outline;
+			transition: background-image 0.2s ease-in-out;
+
+			&:hover {
+				@extend .svg-mail-green-fill;
 			}
 		}
 	}
