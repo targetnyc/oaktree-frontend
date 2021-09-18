@@ -4519,11 +4519,12 @@ body {
 	display: none;
 }
 
-.ui-dialog {
+.ui-widget.ui-dialog {
 	border: 0 none !important;
 
 	padding: 0 !important;
 	max-width: 1180px;
+	font-family: "Raleway", sans-serif;
 
 	.ui-dialog-titlebar {
 		border: 0 none !important;
