@@ -4803,7 +4803,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 0;
-  top: 13px;
+  bottom: 13px;
   height: 26px;
   width: 26px;
   transform: scale(0.85);
@@ -5007,6 +5007,7 @@ body {
   .table-view .table-view-content .table-filters .dropdown-filter-wrapper {
     display: block;
     width: 100%;
+    margin-top: 15px;
   }
   .table-view .table-view-content .table-filters .dropdown-filter-wrapper .ui-selectmenu-button.ui-button {
     width: 100%;
@@ -5014,6 +5015,7 @@ body {
   .table-view .table-view-content .table-filters .search-filter-wrapper {
     display: block;
     width: 100%;
+    margin-top: 15px;
   }
   .table-view .table-view-content .table-filters .search-filter-wrapper:after {
     top: 43px;
@@ -6815,6 +6817,7 @@ body {
   }
   .people-list .people-list-content .people-wrapper.scroll-wrapper {
     margin: 0 7.5px;
+    padding-bottom: 25px !important;
   }
   .people-list .people-list-content .person {
     width: 157px;

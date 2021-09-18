@@ -2975,7 +2975,7 @@ body {
 
 					position: absolute;
 					right: 0;
-					top: 13px;
+					bottom: 13px;
 
 					height: 26px;
 					width: 26px;
@@ -3262,6 +3262,7 @@ body {
 				.dropdown-filter-wrapper {
 					display: block;
 					width: 100%;
+					margin-top: 15px;
 
 					.ui-selectmenu-button.ui-button {
 						width: 100%;
@@ -3271,6 +3272,7 @@ body {
 				.search-filter-wrapper {
 					display: block;
 					width: 100%;
+					margin-top: 15px;
 
 					&:after {
 						top: 43px;
@@ -5635,6 +5637,7 @@ body {
 
 				&.scroll-wrapper {
 					margin: 0 7.5px;
+					padding-bottom: 25px !important;
 				}
 			}
 

@@ -629,12 +629,6 @@ function initLeadershipEvents() {
 			$(this).closest('.table-view').find('table').DataTable().draw();
 		});
 	}
-	
-	if ($(window).width() < 860) {
-		$('.dataTables_wrapper')
-			.addClass('scrollable-content scrollbar-inner')
-			.scrollbar();
-	}
 
 	$('.sub-tables,.dataTables_wrapper', '.collapsable-table.collapsed').hide();
 
@@ -739,6 +733,19 @@ function initLeadershipEvents() {
 						.find('[data-target="#' + $(this).data('id') + '"]')
 							.addClass('active');
 		});
+
+	
+	if ($(window).width() < 860) {
+		$('.dataTables_wrapper table')
+			.wrap('<div></div>');
+
+		$('.dataTables_wrapper table')
+			.parent()
+			.scrollbar();
+
+		$('.dataTables_wrapper .scroll-wrapper')
+			.addClass('scrollable-content scrollbar-inner');
+	}
 }
 
 function initPeopleEvents() {
