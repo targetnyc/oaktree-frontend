@@ -476,18 +476,22 @@ function loadMixedChart(mixCanvas) {
 		data: {
 			datasets: [
 				{
-					data: chartOptions.data,
+					data: $.map(chartOptions, function(item) { return  item.value}),
 					backgroundColor: ['#388067','#BA7838','#BCA236','#766660','#9D4D34','#A0BFC4','#DCAE7C','#65929A','#F7DE63','#AEA19D','#CF8B76','#79833C'],
 					borderWidth: 0,
 					rotation: 90,
 					hover: false,
 				}
-			]
+			],
+			labels: $.map(chartOptions, function(item) { return  item.id})
 		},
 		options: {
 			cutout: $(window).width() < 1024 ? 65 : 110,
 			hover: false,
 			plugins: {
+				legend: {
+					display: false
+				},
 				tooltip: {
 					enabled: false,
 					external: empty
@@ -498,21 +502,24 @@ function loadMixedChart(mixCanvas) {
 			},
 			elements: {
 				center: {
-					text: chartOptions.data[0] + '%',
+					text: chartOptions[0],
 					color: '#388067',
 					fontStyle: 'Raleway'
 				}
 			}
 		},
 		plugins: [
-			ChartDataLabels, 
+			ChartDataLabels,
 			{
 				beforeDraw: function (chart, args, options) {
-					var txt = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].raw + '%' : chart.options.elements.center.text;
+					console.log(chart.tooltip)
+					var txt = (chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].raw : chart.options.elements.center.text.value) + '%';
+					var label = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].label : chart.options.elements.center.text.id;
 					var color = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].dataset.backgroundColor[chart.tooltip.dataPoints[0].dataIndex] : chart.options.elements.center.color;
 
 					if (txt) {
 						var ctx = chart.ctx;
+						var labels = label.split('\n');
 
 						var centerConfig = chart.config.options.elements.center;
 						var fontStyle = centerConfig.fontStyle || 'Arial';
@@ -524,7 +531,30 @@ function loadMixedChart(mixCanvas) {
 						var centerY = ((chart.chartArea.top + chart.chartArea.bottom) / 2);
 						ctx.fillStyle = color;
 
-						ctx.fillText(txt, centerX, centerY);
+						if ($(window).width() < 1024) {
+							ctx.fillText(txt, centerX, centerY - (labels > 1 ? 17 : 9));
+						} else {
+							ctx.fillText(txt, centerX, centerY - (labels > 1 ? 34 : 17));
+						}
+
+
+						ctx.font = ($(window).width() < 1024 ? "14px " : "22px ") + fontStyle;
+						ctx.textAlign = 'center';
+						ctx.fillStyle = "#000000";
+
+						if ($(window).width() < 1024) {
+							ctx.fillText(labels[0], centerX, centerY + 17);
+						} else {
+							ctx.fillText(labels[0], centerX, centerY + 32);
+						}
+
+						if (labels.length > 1) {
+							if ($(window).width() < 1024) {
+								ctx.fillText(labels[1], centerX, centerY + 9 + 17 + 10);
+							} else {
+								ctx.fillText(labels[1], centerX, centerY + 17 + 32 + 10);
+							}
+						}
 					}
 				}
 			}
