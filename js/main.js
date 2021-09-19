@@ -192,11 +192,11 @@ function initHomeEvents() {
 
 	loadTwitterCSS();
 
-	$(window).on('scroll', function() {
+	$(window).on('scroll.tiles-delay', function() {
 		if ($(window).scrollTop() + $(window).innerHeight() > $('.home-info .content').offset().top) {
 			var delay = 200;
 
-			$(window).off('scroll');
+			$(window).off('scroll.tiles-delay');
 
 			$('.tiles li').each(function(i) {
 				var tile = $(this);
@@ -1441,8 +1441,32 @@ $(document).ready(function () {
 		},
 	});
 
+	window.prevScrollpos = window.pageYOffset;
+	$(window).on('scroll', throttle(function(e) {
+		showHideNav(e);
+	}, 150));
+
 	initFooterEventss();
 });
+
+function showHideNav(e) {
+	var currentScrollPos = window.pageYOffset;
+
+	var bannerElement = $('.hero-slides-wrapper').length > 0 ? $('.hero-slides-wrapper') : $('.page-hero');
+	var bannerHeight = bannerElement.length > 0 ? bannerElement.offset().top + bannerElement.outerHeight() : 400;
+
+	if (currentScrollPos > bannerHeight) {
+		if (window.prevScrollpos > currentScrollPos) {
+			$('.header').removeClass('hide-nav');
+		} else {
+			$('.header').addClass('hide-nav');
+		}
+	} else {
+		$('.header').removeClass('hide-nav');
+	}
+
+	window.prevScrollpos = currentScrollPos;
+}
 
 function empty() {}
 

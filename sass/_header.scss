@@ -1,6 +1,24 @@
+body {
+	padding-top: 102px;
+}
+
 .header {
 	border-bottom: 1px solid #E7E7E7;
+	background: #fff;
+
 	position: relative;
+	height: 102px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 90;
+
+	transition: background .15s ease-out, transform .25s linear, opacity .1s ease-out;
+
+	&.hide-nav {
+		transform: translateY(-100%);
+	}
 
 	.header-content {
 		display: flex;
@@ -541,7 +559,13 @@ form.search {
 }
 
 @media screen and (min-width: 1080px) and (max-width: 1279px) {
+	body {
+		padding-top: 89px;
+	}
+
 	.header {
+		height: 89px;
+
 		.header-content {
 			padding: 0 47px;
 		}
@@ -699,7 +723,13 @@ form.search {
 		}
 	}
 
+	body {
+		padding-top: 71px;
+	}
+
 	.header {
+		height: 71px;
+
 		.header-content {
 			padding: 0 11px 0 12.5px
 		}

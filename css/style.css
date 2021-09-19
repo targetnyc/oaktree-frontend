@@ -1556,9 +1556,24 @@ a {
   top: -19px;
 }
 
+body {
+  padding-top: 102px;
+}
+
 .header {
   border-bottom: 1px solid #E7E7E7;
+  background: #fff;
   position: relative;
+  height: 102px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+  transition: background .15s ease-out, transform .25s linear, opacity .1s ease-out;
+}
+.header.hide-nav {
+  transform: translateY(-100%);
 }
 .header .header-content {
   display: flex;
@@ -1924,6 +1939,13 @@ form.search .form-content .close {
 }
 
 @media screen and (min-width: 1080px) and (max-width: 1279px) {
+  body {
+    padding-top: 89px;
+  }
+
+  .header {
+    height: 89px;
+  }
   .header .header-content {
     padding: 0 47px;
   }
@@ -2039,6 +2061,13 @@ form.search .form-content .close {
     transition-delay: .375s;
   }
 
+  body {
+    padding-top: 71px;
+  }
+
+  .header {
+    height: 71px;
+  }
   .header .header-content {
     padding: 0 11px 0 12.5px;
   }
