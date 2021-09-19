@@ -935,6 +935,85 @@ body {
 	.btn-wrap {
 		margin-top: 20px;
 	}
+
+	.social-links-wrapper {
+		position: absolute;
+		padding-top: 25px;
+		right: 40px;
+		top: 50%;
+
+		transform: translateY(-50%);
+		z-index: 1;
+
+		span {
+			display: block;
+			transform: rotate(90deg);
+
+			color: #fff;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 10px;
+			line-height: 10px;
+		}
+	}
+
+	.social-links {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		position: relative;
+		margin-top: 25px;
+
+		li {
+			margin: 5px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a {
+				display: block;
+				width: 47px;
+				height: 47px;
+			}
+		}
+
+		.twitter {
+			@extend .svg-twitter;
+			transition: background-image 0.2s ease-in-out;
+
+			&:hover {
+				@extend .svg-twitter-white;
+			}
+		}
+
+		.linkedin {
+			@extend .svg-linkedin;
+			transition: background-image 0.2s ease-in-out;
+
+			&:hover {
+				@extend .svg-linkedin-white;
+			}
+		}
+
+		.facebook {
+			@extend .svg-facebook;
+			transition: background-image 0.2s ease-in-out;
+
+			&:hover {
+				@extend .svg-facebook-white;
+			}
+		}
+
+		.youtube {
+			@extend .svg-youtube;
+			transition: background-image 0.2s ease-in-out;
+
+			&:hover {
+				@extend .svg-youtube-white;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 600px) {
