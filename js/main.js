@@ -416,43 +416,63 @@ function initAboutEvents() {
 		});
 	}
 
-	if ($(window).width() > 600) {
-		var controller = new ScrollMagic.Controller();
-
-		function tweenOpacity(el) {
-			var tween = TweenMax.fromTo(el, 1, {
-				opacity: 0,
-				y: 100,
-				force3D: true
-			}, {
-				opacity: 1,
-				y: 0,
-				force3D: true
-			});
-
-			return tween;
-		};
-
-		$('.sliding-info .slides .item').each(function() {
-			new ScrollMagic.Scene({
-					triggerElement: $(this).get(),
-					triggerHook: .75,
-					duration: '50%'
-				})
-				.setTween(tweenOpacity($(this).get()))
-				.addTo(controller);
-		});
-
-		new ScrollMagic.Scene({triggerElement: '.trigger-1', duration: $('.trigger-2').offset().top - $('.trigger-1').offset().top}).setPin('.sliding-info h2').addTo(controller);
-	} else {
-		$('.sliding-info .slides').addClass('owl-carousel').owlCarousel({
-			items: 1,
-			dots: true
-		});
-	}
+	window.controller = new ScrollMagic.Controller();
 
 	$(window)
 		.on('resize', function() {
+			if (!window.controller) {
+				window.controller = new ScrollMagic.Controller();
+			}
+
+			if ($(window).width() > 600) {
+				function tweenOpacity(el) {
+					var tween = TweenMax.fromTo(el, 1, {
+						opacity: 0,
+						y: 100,
+						force3D: true
+					}, {
+						opacity: 1,
+						y: 0,
+						force3D: true
+					});
+
+					return tween;
+				};
+
+				$('.sliding-info .slides')
+					.trigger('destroy.owl.carousel.core')
+					.removeClass('owl-carousel owl-loaded')
+					.find('.owl-stage-outer')
+						.children()
+							.unwrap();
+
+				$('.sliding-info .slides .item').each(function() {
+					new ScrollMagic.Scene({
+							triggerElement: $(this).get(),
+							triggerHook: .75,
+							duration: '50%'
+						})
+						.setTween(tweenOpacity($(this).get()))
+						.addTo(controller);
+				});
+
+				new ScrollMagic.Scene({triggerElement: '.trigger-1', duration: $('.trigger-2').offset().top - $('.trigger-1').offset().top}).setPin('.sliding-info h2').addTo(controller);
+			} else {
+				$('.sliding-info .slides').addClass('owl-carousel').owlCarousel({
+					items: 1,
+					dots: true
+				});
+
+				if (window.controller) {
+					window.controller.destroy();
+					window.controller = null;
+
+					$('.scrollmagic-pin-spacer')
+						.prop('style', '')
+						.find('h2')
+							.prop('style', '');
+				}
+			}
 			loadMixedChart($('.tabs-content .active .doughnut-chart' + ($(window).width() < 1024 ? '.mobile' : '.desktop'))[0]);
 
 			loadAumChart();
@@ -512,7 +532,6 @@ function loadMixedChart(mixCanvas) {
 			ChartDataLabels,
 			{
 				beforeDraw: function (chart, args, options) {
-					console.log(chart.tooltip)
 					var txt = (chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].raw : chart.options.elements.center.text.value) + '%';
 					var label = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].label : chart.options.elements.center.text.id;
 					var color = chart.tooltip.dataPoints ? chart.tooltip.dataPoints[0].dataset.backgroundColor[chart.tooltip.dataPoints[0].dataIndex] : chart.options.elements.center.color;
