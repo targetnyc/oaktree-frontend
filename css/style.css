@@ -61,7 +61,7 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.svg-archived-memo, .insights-list-wrapper .insights-list-content .tabs-content .memo-sublist .archived:before, .svg-arrow-down, .svg-arrow-down-blue, .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .svg-arrow-down-green, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .insights-list-wrapper .insights-list-content .tabs-content .memo-sublist h3:after, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
+.svg-archived-memo, .svg-arrow-down, .svg-arrow-down-blue, .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .svg-arrow-down-green, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
 .leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-checkbox, .ui-widget.ui-dialog .subscribe-lightbox .checkbox, .svg-checkbox-checked, .ui-widget.ui-dialog .subscribe-lightbox .checkbox.checked, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .svg-close-black, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick:hover, .svg-close-blue, form.search .form-content .close:hover, .svg-download, .download:before, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .memo-wrapper .social-links .facebook:hover,
@@ -75,10 +75,10 @@ a {
 .article-wrapper .social-links .twitter, .country-addresses-wrapper .social-links .twitter, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .back.link-underline:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .back.link-underline:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .svg-youtube-green-fill, .two-column-content-wrapper .social-links .youtube:hover, .memo-wrapper .social-links .youtube:hover,
 .article-wrapper .social-links .youtube:hover, .country-addresses-wrapper .social-links .youtube:hover, .svg-youtube-green-outline, .two-column-content-wrapper .social-links .youtube, .memo-wrapper .social-links .youtube,
 .article-wrapper .social-links .youtube, .country-addresses-wrapper .social-links .youtube, .svg-youtube-white, .footer .social-links .youtube:hover, .hero-slides-wrapper .social-links .youtube:hover {
-  background: url("svg/sprite.css-410c2f0a.svg") no-repeat;
+  background: url("svg/sprite.css-d0029727.svg") no-repeat;
 }
 
-.svg-archived-memo, .insights-list-wrapper .insights-list-content .tabs-content .memo-sublist .archived:before {
+.svg-archived-memo {
   background-position: 99.64285714285714% 32%;
 }
 
@@ -105,11 +105,11 @@ a {
   height: 18px;
 }
 
-.svg-arrow-down-green, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .insights-list-wrapper .insights-list-content .tabs-content .memo-sublist h3:after, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon {
+.svg-arrow-down-green, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
   background-position: 45.80419580419581% 97.86476868327402%;
 }
 
-.svg-arrow-down-green-dims, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs-content .memo-sublist h3:after, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon {
+.svg-arrow-down-green-dims, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
   width: 18px;
   height: 18px;
 }
@@ -5479,9 +5479,6 @@ body {
   position: absolute;
   bottom: 0;
 }
-.insights-list-wrapper .insights-list-content .tabs li {
-  max-width: 155px;
-}
 .insights-list-wrapper .insights-list-content .tabs .active {
   position: relative;
 }
@@ -5541,79 +5538,6 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   vertical-align: top;
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memos-list {
-  margin-top: 80px;
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memo-sublist {
-  border: 3px solid #F1F1F1;
-  border-radius: 3px;
-  padding: 15px 30px;
-  margin: 10px 0;
-  text-align: left;
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memo-sublist h3 {
-  position: relative;
-  cursor: pointer;
-  color: #388067;
-  font-family: "orpheuspro";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 59px;
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memo-sublist h3:after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memo-sublist.opened h3:after {
-  transform: translateY(-50%) rotate(-180deg);
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memo-sublist .memo-items {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -12px 15px;
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memo-sublist .memo-item {
-  background: #F1F1F1;
-  border-radius: 3px;
-  margin: 12px;
-  width: calc(25% - 24px);
-  padding: 26px 19px;
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memo-sublist .archived {
-  background: #388067;
-  border-radius: 3px;
-  display: inline-block;
-  padding: 0 11px;
-  margin-bottom: 20px;
-  color: #fff;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: capitalize;
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memo-sublist .archived:before {
-  display: none;
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memo-sublist .date {
-  margin: 0;
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memo-sublist .title {
-  color: #388067;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 27px;
-  text-decoration: none;
-  text-underline-offset: 3px;
-}
-.insights-list-wrapper .insights-list-content .tabs-content .memo-sublist .title:hover {
-  text-decoration: underline;
 }
 .insights-list-wrapper .insights-list-content .tabs-content .content {
   padding-top: 45px;
@@ -7667,6 +7591,117 @@ body .ui-tooltip.ui-widget-content {
 
 .trigger-top {
   position: absolute;
+}
+
+.ui-dialog .ui-dialog-content.archived-memos-popup {
+  padding: 30px 35px 61px;
+  font-family: "Raleway", sans-serif;
+  overflow: visible;
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup h2 {
+  margin-bottom: 75px;
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 39px;
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup .memos-list {
+  margin-right: -23px;
+  padding-right: 23px !important;
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist {
+  border: 3px solid #F1F1F1;
+  border-radius: 3px;
+  padding: 8px 26px;
+  margin: 10px 0;
+  text-align: left;
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist:first-child {
+  margin-top: 0;
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3 {
+  position: relative;
+  cursor: pointer;
+  color: #388067;
+  font-family: "orpheuspro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 59px;
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist.opened h3:after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .memo-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px 15px;
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .memo-item {
+  margin: 12px 20px;
+  width: calc(25% - 40px);
+  padding: 21px 0;
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .date {
+  margin: 0;
+  color: #979797;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .title {
+  color: #000;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .title:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .ui-dialog .ui-dialog-content.archived-memos-popup {
+    padding: 25px 16px;
+  }
+  .ui-dialog .ui-dialog-content.archived-memos-popup h2 {
+    margin-bottom: 50px;
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist {
+    padding: 20px 16px;
+  }
+  .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3 {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .memo-item {
+    padding: 0;
+    margin: 15px 20px;
+    width: calc(50% - 40px);
+  }
+  .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .ui-dialog .ui-dialog-content.archived-memos-popup .memos-list {
+    margin-right: -13px;
+    padding-right: 13px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

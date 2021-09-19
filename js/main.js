@@ -936,56 +936,6 @@ function initInsightEvents() {
 		loadInsights($(this).closest('.content'), insightsTemplate, $(this).closest('.content').find('.insights-list .insight-item').length, true);
 	});
 
-	var memosTemplate = '<li class="memo-item">' + 
-		'<div class="archived">{archived}</div>' + 
-		'<div class="date">{date}</div>' + 
-		'<a href="" class="title">{title}</a>'
-	'</li>';
-
-	$('.memo-items').each(function() {
-		var items = $(this).data('items');
-		var itemsHTML = '';
-
-		$.each(items, function(i, item) {
-			itemsHTML += memosTemplate
-									.replace('{archived}', item.archived)
-									.replace('{date}', item.date)
-									.replace('{title}', item.title);
-		});
-
-		$(this).html(itemsHTML);
-	});
-
-	$('.memo-sublist:not(.opened)').each(function() {
-		$('.memo-items', this).hide();
-	});
-
-	$('.memo-sublist h3').on('click', function() {
-		var thisSublist = $(this).closest('.memo-sublist');
-
-		if ($(this).closest('.memo-sublist').hasClass('opened')) {
-			thisSublist
-				.find('.memo-items')
-					.slideUp(500)
-				.end()
-				.removeClass('opened');
-		} else {
-			thisSublist
-				.closest('.memos-list')
-					.find('.memo-sublist.opened')
-						.find('.memo-items')
-							.slideUp(500)
-						.end()
-						.removeClass('opened')
-					.end()
-				.end()
-				.find('.memo-items')
-					.slideDown(500)
-				.end()
-				.addClass('opened');
-		}
-	});
-
 	$('.owl-carousel').owlCarousel({
 		nav: true,
 		dots: true,
@@ -1076,13 +1026,113 @@ function initInsightEvents() {
 			modal: true,
 			width: '90%',
 			maxWidth: '1180',
-			resizable: false
+			resizable: false,
+			create: function(event, ui) {
+				$("body").css({ overflow: 'hidden' })
+			},
+			beforeClose: function(event, ui) {
+				$("body").css({ overflow: 'inherit' })
+			}
 		});
 	});
 
-	$('.trigger-top').css('top', 'calc(50vh + ' + ($('.social-links-wrapper').offset().top - 50) + 'px)' );
-	var controller = new ScrollMagic.Controller();
-	new ScrollMagic.Scene({triggerElement: '.trigger-top', duration: ($('.memo-content').offset().top + $('.memo-content').innerHeight()) - $('.trigger-top').offset().top}).setPin('.social-links-wrapper').addTo(controller);
+	if ($('.social-links-wrapper').length) {
+		$('.trigger-top').css('top', 'calc(50vh + ' + ($('.social-links-wrapper').offset().top - 50) + 'px)' );
+		var controller = new ScrollMagic.Controller();
+		new ScrollMagic.Scene({triggerElement: '.trigger-top', duration: ($('.memo-content').offset().top + $('.memo-content').innerHeight()) - $('.trigger-top').offset().top}).setPin('.social-links-wrapper').addTo(controller);
+	}
+
+	var archivedMemosPopupTemplate = 
+			'<div class="memo-sublist {className}" data-target="archive-{year}">' +
+				'<h3>{year}</h3>' + 
+				'<ul class="memo-items">{memo-items}</ul>' + 
+			'</div>';
+	var memosTemplate = '<li class="memo-item">' + 
+		'<div class="date">{date}</div>' + 
+		'<a href="" class="title">{title}</a>'
+	'</li>';
+
+	$('[data-archived-memos]').on('click', function(e) {
+		e.preventDefault();
+
+		var data = $(this).data('archived-memos');
+		var template = '<h2>Archived Memos</h2>' +
+							'<div class="scrollbar-inner memos-list">';
+
+		for (var i in data) {
+			var item = data[i];
+			var year = Object.keys(item)[0];
+			var memos = item[year];
+			var memosHtml = '';
+			
+			for (var k in memos) {
+				var memo = memos[k];
+				memosHtml += memosTemplate
+									.replace('{date}', memo.date)
+									.replace('{title}', memo.title);
+			}
+
+			template += archivedMemosPopupTemplate
+							.replace('{className}', (i == 0 ? 'opened' : ''))
+							.replaceAll('{year}', year)
+							.replace('{memo-items}', memosHtml);
+		}
+
+		template += '</div>';
+
+		$('.archived-memos-popup')
+			.html(template)
+			.dialog({
+				modal: true,
+				width: $(window).outerWidth() < 768 ? $(window).outerWidth() - 30 : '90%',
+				maxWidth: '1180',
+				resizable: false,
+				maxHeight: $(window).outerHeight() * 0.90,
+				create: function(event, ui) {
+					$("body").css({ overflow: 'hidden' })
+				},
+				beforeClose: function(event, ui) {
+					$("body").css({ overflow: 'inherit' })
+				}
+			});
+
+		$('.memos-list')
+			.scrollbar();
+		$('.memos-list.scroll-content')
+			.removeClass('memos-list')
+			.parent()
+				.css('max-height', ($('.archived-memos-popup').innerHeight() - $('.archived-memos-popup h2').outerHeight(true) - 60));
+
+		$('.memo-sublist:not(.opened)').each(function() {
+			$('.memo-items', this).hide();
+		});
+
+		$('.memo-sublist h3').on('click', function() {
+			var thisSublist = $(this).closest('.memo-sublist');
+
+			if ($(this).closest('.memo-sublist').hasClass('opened')) {
+				thisSublist
+					.find('.memo-items')
+						.slideUp(500)
+					.end()
+					.removeClass('opened');
+			} else {
+				thisSublist
+					.closest('.memos-list')
+						.find('.memo-sublist.opened')
+							.find('.memo-items')
+								.slideUp(500)
+							.end()
+							.removeClass('opened')
+						.end()
+					.end()
+					.find('.memo-items')
+						.slideDown(500)
+					.end()
+					.addClass('opened');
+			}
+		});
+	});
 }
 
 function initResponsibilityEvents() {
