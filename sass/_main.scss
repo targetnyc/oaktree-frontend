@@ -1583,19 +1583,28 @@ body {
 			bottom: 0;
 		}
 
-		.active {
+		& > li {
 			position: relative;
 
 			&:after {
 				background: #388067;
 				border-radius: 100px;
 				content: '';
+				opacity: 0;
 
 				width: 100%;
 				height: 4px;
 				position: absolute;
 				bottom: -20px;
 				z-index: 1;
+
+				transition: opacity 0.2s ease-in-out;
+			}
+		}
+
+		.active {
+			&:after {
+				opacity: 1;
 			}
 		}
 	}
@@ -3891,19 +3900,28 @@ body {
 				bottom: 0;
 			}
 
-			.active {
+			& > li {
 				position: relative;
 
 				&:after {
 					background: #388067;
 					border-radius: 100px;
 					content: '';
+					opacity: 0;
 
 					width: 100%;
 					height: 4px;
 					position: absolute;
 					bottom: -20px;
 					z-index: 1;
+
+					transition: opacity 0.2s ease-in-out;
+				}
+			}
+
+			.active {
+				&:after {
+					opacity: 1;
 				}
 			}
 
@@ -5790,22 +5808,30 @@ body {
 			bottom: 0;
 		}
 
-		.active {
+		& > li {
 			position: relative;
 
 			&:after {
 				background: #388067;
 				border-radius: 100px;
 				content: '';
+				opacity: 0;
 
 				width: 100%;
 				height: 4px;
 				position: absolute;
 				bottom: -20px;
 				z-index: 1;
+
+				transition: opacity 0.2s ease-in-out;
 			}
 		}
 
+		.active {
+			&:after {
+				opacity: 1;
+			}
+		}
 
 		h5 {
 			cursor: pointer;
@@ -5845,13 +5871,12 @@ body {
 
 			color: #000;
 			font-style: normal;
-			font-weight: 500;
-			font-size: 14px;
-			line-height: 21px;
+			font-weight: 600;
+			font-size: 22px;
+			line-height: 31px;
 		}
 
 		.content {
-			padding-top: 45px;
 			display: none;
 			justify-content: space-between;
 
@@ -5939,19 +5964,28 @@ body {
 			bottom: 0;
 		}
 
-		.active {
+		& > li {
 			position: relative;
 
 			&:after {
 				background: #388067;
 				border-radius: 100px;
 				content: '';
+				opacity: 0;
 
 				width: 100%;
 				height: 4px;
 				position: absolute;
 				bottom: -20px;
 				z-index: 1;
+
+				transition: opacity 0.2s ease-in-out;
+			}
+		}
+
+		.active {
+			&:after {
+				opacity: 1;
 			}
 		}
 
@@ -6197,10 +6231,11 @@ body .ui-tooltip.ui-widget-content {
 	border: 1px solid rgba(0, 0, 0, 0.05);
 	border-radius: 3px;
 
-	padding: 22px 33px;
+	padding: 22px 32px;
 	max-width: 395px;
 
 	color: #000;
+	font-family: "Raleway", sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 16px;
@@ -6218,20 +6253,39 @@ body .ui-tooltip.ui-widget-content {
 		position: absolute;
 	}
 
-	.ui-tooltip-content::after {
-		top: -10px;
-		left: 50%;
+	&.top .ui-tooltip-content::after {
 		border-color: white transparent;
 		border-width: 0 10px 10px;
+
+		top: -10px;
+		left: 50%;
 		margin-left: -10px;
 	}
 
-	.ui-tooltip-content::before {
+	&.top .ui-tooltip-content::before {
 		border-color: rgba(0, 0, 0, 0);
 		border-bottom-color: rgba(0, 0, 0, 0.05);
+		border-width: 0 11px 11px;
+
 		top: -11px;
 		left: 50%;
-		border-width: 0 11px 11px;
+		margin-left: -11px;
+	}
+
+	&.bottom .ui-tooltip-content::after {
+		border-color: white transparent;
+		border-width: 10px 10px 0;
+
+		left: 50%;
+		margin-left: -10px;
+	}
+
+	&.bottom .ui-tooltip-content::before {
+		border-color: rgba(0, 0, 0, 0);
+		border-top-color: rgba(0, 0, 0, 0.05);
+		border-width: 11px 11px 0;
+
+		left: 50%;
 		margin-left: -11px;
 	}
 }

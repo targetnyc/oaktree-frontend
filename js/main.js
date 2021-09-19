@@ -1430,10 +1430,15 @@ $(document).ready(function () {
 	}
 
 	$('a.has-tooltip').tooltip({
-		position: { my: "center top+15", at: "center bottom", collision: "flipfit" },
+		position: { my: "center top+15", at: "center bottom", collision: "flipfit",using: function( position, feedback ) {
+				$(this)
+					.css(position)
+					.addClass(feedback.vertical);
+			}
+		},
 		classes: {
 			"ui-tooltip": "has-arrow"
-		}
+		},
 	});
 
 	initFooterEventss();

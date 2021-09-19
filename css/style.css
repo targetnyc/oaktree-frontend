@@ -3714,20 +3714,26 @@ body {
   position: absolute;
   bottom: 0;
 }
-.portfolio .tabs .active,
-.leadership .tabs .active {
+.portfolio .tabs > li,
+.leadership .tabs > li {
   position: relative;
 }
-.portfolio .tabs .active:after,
-.leadership .tabs .active:after {
+.portfolio .tabs > li:after,
+.leadership .tabs > li:after {
   background: #388067;
   border-radius: 100px;
   content: '';
+  opacity: 0;
   width: 100%;
   height: 4px;
   position: absolute;
   bottom: -20px;
   z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.portfolio .tabs .active:after,
+.leadership .tabs .active:after {
+  opacity: 1;
 }
 .portfolio .tabs-content,
 .leadership .tabs-content {
@@ -5479,18 +5485,23 @@ body {
   position: absolute;
   bottom: 0;
 }
-.insights-list-wrapper .insights-list-content .tabs .active {
+.insights-list-wrapper .insights-list-content .tabs > li {
   position: relative;
 }
-.insights-list-wrapper .insights-list-content .tabs .active:after {
+.insights-list-wrapper .insights-list-content .tabs > li:after {
   background: #388067;
   border-radius: 100px;
   content: '';
+  opacity: 0;
   width: 100%;
   height: 4px;
   position: absolute;
   bottom: -20px;
   z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.insights-list-wrapper .insights-list-content .tabs .active:after {
+  opacity: 1;
 }
 .insights-list-wrapper .insights-list-content .tabs h5 {
   cursor: pointer;
@@ -6933,18 +6944,23 @@ body {
   position: absolute;
   bottom: 0;
 }
-.pillars .tabs .active {
+.pillars .tabs > li {
   position: relative;
 }
-.pillars .tabs .active:after {
+.pillars .tabs > li:after {
   background: #388067;
   border-radius: 100px;
   content: '';
+  opacity: 0;
   width: 100%;
   height: 4px;
   position: absolute;
   bottom: -20px;
   z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.pillars .tabs .active:after {
+  opacity: 1;
 }
 .pillars .tabs h5 {
   cursor: pointer;
@@ -6977,12 +6993,11 @@ body {
   position: relative;
   color: #000;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 31px;
 }
 .pillars .tabs-content .content {
-  padding-top: 45px;
   display: none;
   justify-content: space-between;
 }
@@ -7048,18 +7063,23 @@ body {
   position: absolute;
   bottom: 0;
 }
-.opportunities .tabs .active {
+.opportunities .tabs > li {
   position: relative;
 }
-.opportunities .tabs .active:after {
+.opportunities .tabs > li:after {
   background: #388067;
   border-radius: 100px;
   content: '';
+  opacity: 0;
   width: 100%;
   height: 4px;
   position: absolute;
   bottom: -20px;
   z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.opportunities .tabs .active:after {
+  opacity: 1;
 }
 .opportunities .tabs h5 {
   cursor: pointer;
@@ -7244,9 +7264,10 @@ body .ui-tooltip.ui-widget-content {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 3px;
-  padding: 22px 33px;
+  padding: 22px 32px;
   max-width: 395px;
   color: #000;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -7262,19 +7283,32 @@ body .ui-tooltip.ui-widget-content {
   width: 0;
   position: absolute;
 }
-.has-arrow .ui-tooltip-content::after {
-  top: -10px;
-  left: 50%;
+.has-arrow.top .ui-tooltip-content::after {
   border-color: white transparent;
   border-width: 0 10px 10px;
+  top: -10px;
+  left: 50%;
   margin-left: -10px;
 }
-.has-arrow .ui-tooltip-content::before {
+.has-arrow.top .ui-tooltip-content::before {
   border-color: rgba(0, 0, 0, 0);
   border-bottom-color: rgba(0, 0, 0, 0.05);
+  border-width: 0 11px 11px;
   top: -11px;
   left: 50%;
-  border-width: 0 11px 11px;
+  margin-left: -11px;
+}
+.has-arrow.bottom .ui-tooltip-content::after {
+  border-color: white transparent;
+  border-width: 10px 10px 0;
+  left: 50%;
+  margin-left: -10px;
+}
+.has-arrow.bottom .ui-tooltip-content::before {
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0.05);
+  border-width: 11px 11px 0;
+  left: 50%;
   margin-left: -11px;
 }
 
