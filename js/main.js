@@ -375,17 +375,34 @@ function initAboutEvents() {
 			loadMixedChart($($(this).data('target')).find('.doughnut-chart' + ($(window).width() < 1024 ? '.mobile' : '.desktop'))[0]);
 		})
 		.on('click', '.tabs-content h5', function() {
-			$(this)
-				.closest('.tabs-content')
-					.find('li')
-						.removeClass('active')
-					.end()
-				.end()
-				.closest('li')
-					.addClass('active');	
+			var isMobile = $(window).outerWidth() < 1024;
 
-			$('.tabs li').removeClass('active');
-			$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
+			if ($(this).closest('li').hasClass('active')) {
+				$(this)
+					.closest('li')
+						.find('.content')
+							.slideUp(500)
+						.end()
+						.removeClass('active');
+			} else {
+				$(this)
+					.closest('.tabs-content')
+						.find('li')
+							.find('.content')
+								.slideUp(500)
+							.end()
+							.removeClass('active')
+						.end()
+					.end()
+					.closest('li')
+						.find('.content')
+							.slideDown(500)
+						.end()
+						.addClass('active');	
+
+				$('.tabs li').removeClass('active');
+				$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
+			}
 
 			loadMixedChart($(this).closest('li').find('.doughnut-chart' + ($(window).width() < 1024 ? '.mobile' : '.desktop'))[0]);
 		});

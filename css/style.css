@@ -4075,16 +4075,13 @@ body {
   .leadership .tabs-content > li {
     border: 1px solid #aaa;
     border-radius: 3px;
+    display: block;
     margin: 5px auto;
     padding: 0 15px 15px;
   }
   .portfolio .tabs-content ul,
   .leadership .tabs-content ul {
     max-height: none;
-  }
-  .portfolio .tabs-content .active .content,
-  .leadership .tabs-content .active .content {
-    flex-direction: column;
   }
   .portfolio .tabs-content .asset-wrap,
   .leadership .tabs-content .asset-wrap {

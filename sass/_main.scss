@@ -1983,18 +1983,13 @@ body {
 				border: 1px solid #aaa;
 				border-radius: 3px;
 
+				display: block;
 				margin: 5px auto;
 				padding: 0 15px 15px;
 			}
 
 			ul {
 				max-height: none;
-			}
-
-			.active {
-				.content {
-					flex-direction: column;
-				}
 			}
 
 			.asset-wrap {
