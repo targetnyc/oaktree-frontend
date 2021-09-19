@@ -684,10 +684,12 @@ function initLeadershipEvents() {
 
 		$('#search-filter')
 			.on('focus', function() {
+				$(this).parent().addClass('focused');
 				$(this).data('placeholder', $(this).attr('placeholder'));
 				$(this).attr('placeholder', '');
 			})
 			.on('blur', function() {
+				$(this).parent().removeClass('focused');
 				$(this).attr('placeholder', $(this).data('placeholder'));
 				$(this).data('placeholder', false);
 			});
@@ -831,6 +833,16 @@ function initPeopleEvents() {
 }
 
 function initPhilosophyEvents() {
+	$(window)
+		.on('resize', function() {
+			if ($(window).outerWidth() < 1024) {
+				$('.tabbed-content-list li:not(.active) .content').hide();
+			} else {
+				$('.tabbed-content-list li:not(.active) .content').show();
+			}
+		})
+		.trigger('resize');
+
 	$(document)
 		.on('click', '.tabbed-sections li', function() {
 			$(this)
@@ -845,13 +857,39 @@ function initPhilosophyEvents() {
 			$($(this).data('target')).addClass('active');
 		})
 		.on('click', '.tabbed-content-list li', function() {
-			$(this)
-				.closest('.tabbed-content-list')
-					.find('li')
-						.removeClass('active')
+			var self = $(this);
+			if (self.hasClass('active')) {
+				self
+					.find('.content')
+						.slideUp(500)
 					.end()
-				.end()
-				.addClass('active');
+					.removeClass('active');
+			} else {
+				self
+					.closest('.tabbed-content-list')
+						.find('li')
+							.find('.content')
+								.slideUp(500)
+							.end()
+							.removeClass('active')
+						.end()
+					.end()
+					.find('.content')
+						.slideDown(500)
+					.end()
+					.addClass('active');
+
+				self
+					.closest('.tabbed-content-wrapper')
+					.find('.tabbed-sections li')
+						.each(function() {
+							$(this).removeClass('active');
+
+							if ($(this).is('[data-target="#' + self.attr('id') + '"]')) {
+								$(this).addClass('active');
+							}
+						});
+			}
 		});
 
 	$(".insights-list").owlCarousel({

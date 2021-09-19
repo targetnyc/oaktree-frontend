@@ -3008,6 +3008,8 @@ body {
 					position: absolute;
 					bottom: 0;
 					left: 0;
+
+					transition: all 0.2s ease-in-out;
 				}
 
 				&.ui-selectmenu-button-open {
@@ -3064,11 +3066,30 @@ body {
 						@extend .svg-search-blue;
 					}
 				}
+
+				&:after {
+					border-radius: 2px;
+					background: #388067;
+					content: '';
+
+					height: 2px;
+					width: 100%;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+
+					transition: all 0.2s ease-in-out;
+				}
+
+				&.focused {
+					&:after {
+						background: #000;
+					}
+				}
 			}
 
 			#search-filter {
 				border: 0 none;
-				border-bottom: 2px solid #388067;
 
 				display: inline-block;
 				padding: 13px 0;
@@ -3080,10 +3101,6 @@ body {
 				font-size: 16px;
 				line-height: 22px;
 				letter-spacing: 0.03em;
-
-				&:focus {
-					border-bottom: 2px solid #000;
-				}
 
 				&::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 					opacity: .45;
@@ -3352,10 +3369,6 @@ body {
 					display: block;
 					width: 100%;
 					margin-top: 15px;
-
-					&:after {
-						top: 43px;
-					}
 
 					span {
 						display: block;
@@ -3721,7 +3734,7 @@ body {
 
 @media screen and (max-width: 1023px) {
 	.quote-wrapper {
-		padding: 30px 15px 55px;
+		padding: 30px 0 55px;
 
 		.quote-content {
 			display: flex;
@@ -3740,6 +3753,8 @@ body {
 
 	.tabbed-content-wrapper {
 		background: #fff;
+
+		display: block;
 		margin: 0 auto 65px;
 
 		.tabbed-sections-wrapper {
@@ -3749,6 +3764,8 @@ body {
 		}
 
 		.tabbed-content-list-wrapper {
+			display: block;
+
 			.tabbed-content-list {
 				padding: 0 15px;
 				max-width: none;
@@ -3757,12 +3774,12 @@ body {
 					border: 1px solid #aaa;
 					border-radius: 3px;
 
-					padding: 16px;
+					padding: 0 16px;
 					display: block;
 					margin-bottom: 10px;
 
 					h5 {
-						padding-right: 30px;
+						padding: 16px 30px 16px 0;
 						position: relative;
 
 						font-size: 16px;
@@ -3778,13 +3795,11 @@ body {
 						line-height: 21px;
 					}
 
-					.content {
-						display: none;
-					}
-
 					&.active {
-						.content {
-							display: block;
+						padding: 16px;
+
+						h5 {
+							padding: 0 30px 0 0;
 						}
 					}
 				}

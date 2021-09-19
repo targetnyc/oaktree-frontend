@@ -4847,6 +4847,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+  transition: all 0.2s ease-in-out;
 }
 .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open:after {
   background: #000;
@@ -4883,9 +4884,22 @@ body {
   width: 26px;
   transform: scale(0.85);
 }
+.table-view .table-view-content .table-filters .search-filter-wrapper:after {
+  border-radius: 2px;
+  background: #388067;
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+.table-view .table-view-content .table-filters .search-filter-wrapper.focused:after {
+  background: #000;
+}
 .table-view .table-view-content .table-filters #search-filter {
   border: 0 none;
-  border-bottom: 2px solid #388067;
   display: inline-block;
   padding: 13px 0;
   width: 239px;
@@ -4895,9 +4909,6 @@ body {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.03em;
-}
-.table-view .table-view-content .table-filters #search-filter:focus {
-  border-bottom: 2px solid #000;
 }
 .table-view .table-view-content .table-filters #search-filter::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -5091,9 +5102,6 @@ body {
     display: block;
     width: 100%;
     margin-top: 15px;
-  }
-  .table-view .table-view-content .table-filters .search-filter-wrapper:after {
-    top: 43px;
   }
   .table-view .table-view-content .table-filters .search-filter-wrapper span {
     display: block;
@@ -5365,7 +5373,7 @@ body {
 }
 @media screen and (max-width: 1023px) {
   .quote-wrapper {
-    padding: 30px 15px 55px;
+    padding: 30px 0 55px;
   }
   .quote-wrapper .quote-content {
     display: flex;
@@ -5381,10 +5389,14 @@ body {
 
   .tabbed-content-wrapper {
     background: #fff;
+    display: block;
     margin: 0 auto 65px;
   }
   .tabbed-content-wrapper .tabbed-sections-wrapper .tabbed-sections {
     display: none;
+  }
+  .tabbed-content-wrapper .tabbed-content-list-wrapper {
+    display: block;
   }
   .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list {
     padding: 0 15px;
@@ -5393,12 +5405,12 @@ body {
   .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li {
     border: 1px solid #aaa;
     border-radius: 3px;
-    padding: 16px;
+    padding: 0 16px;
     display: block;
     margin-bottom: 10px;
   }
   .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li h5 {
-    padding-right: 30px;
+    padding: 16px 30px 16px 0;
     position: relative;
     font-size: 16px;
     line-height: 19px;
@@ -5410,11 +5422,11 @@ body {
     font-size: 14px;
     line-height: 21px;
   }
-  .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li .content {
-    display: none;
+  .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li.active {
+    padding: 16px;
   }
-  .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li.active .content {
-    display: block;
+  .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list li.active h5 {
+    padding: 0 30px 0 0;
   }
 }
 .textonly-quote-wrapper {
