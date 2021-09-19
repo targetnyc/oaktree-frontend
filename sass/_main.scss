@@ -67,7 +67,6 @@ body {
 .hero-slides-wrapper {
 	overflow: hidden;
 	margin: 0 auto;
-	max-width: 1440px;
 }
 
 .hero-slides {
@@ -884,7 +883,6 @@ body {
 
 .page-hero {
 	min-height: 400px;
-	max-width: 1440px;
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
@@ -1679,13 +1677,15 @@ body {
 
 				transition: opacity 0.2s ease-in-out;
 			}
-		}
 
-		.active {
-			&:after {
-				opacity: 1;
+			&:hover,
+			&.active {
+				&:after {
+					opacity: 1;
+				}
 			}
 		}
+
 	}
 
 	.tabs-content {
@@ -1905,10 +1905,6 @@ body {
 		h5 {
 			font-size: 14.5px;
 			line-height: 17px;
-
-			&:hover {
-				color: #388067;
-			}
 		}
 	}
 
@@ -3996,13 +3992,15 @@ body {
 
 					transition: opacity 0.2s ease-in-out;
 				}
-			}
 
-			.active {
-				&:after {
-					opacity: 1;
+				&:hover,
+				&.active {
+					&:after {
+						opacity: 1;
+					}
 				}
 			}
+
 
 			h5 {
 				cursor: pointer;
@@ -5904,13 +5902,15 @@ body {
 
 				transition: opacity 0.2s ease-in-out;
 			}
-		}
 
-		.active {
-			&:after {
-				opacity: 1;
+			&:hover,
+			&.active {
+				&:after {
+					opacity: 1;
+				}
 			}
 		}
+
 
 		h5 {
 			cursor: pointer;
@@ -6060,13 +6060,15 @@ body {
 
 				transition: opacity 0.2s ease-in-out;
 			}
-		}
 
-		.active {
-			&:after {
-				opacity: 1;
+			&:hover,
+			&.active {
+				&:after {
+					opacity: 1;
+				}
 			}
 		}
+
 
 		h5 {
 			cursor: pointer;

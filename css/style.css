@@ -2614,7 +2614,6 @@ body {
 .hero-slides-wrapper {
   overflow: hidden;
   margin: 0 auto;
-  max-width: 1440px;
 }
 
 .hero-slides.owl-carousel .owl-item {
@@ -3194,7 +3193,6 @@ body {
 
 .page-hero {
   min-height: 400px;
-  max-width: 1440px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -3807,8 +3805,9 @@ body {
   z-index: 1;
   transition: opacity 0.2s ease-in-out;
 }
-.portfolio .tabs .active:after,
-.leadership .tabs .active:after {
+.portfolio .tabs > li:hover:after, .portfolio .tabs > li.active:after,
+.leadership .tabs > li:hover:after,
+.leadership .tabs > li.active:after {
   opacity: 1;
 }
 .portfolio .tabs-content,
@@ -4004,9 +4003,6 @@ body {
 .leadership .tabs h5 {
   font-size: 14.5px;
   line-height: 17px;
-}
-.leadership .tabs h5:hover {
-  color: #388067;
 }
 .leadership .tabs-content .active .content {
   display: block;
@@ -5576,7 +5572,7 @@ body {
   z-index: 1;
   transition: opacity 0.2s ease-in-out;
 }
-.insights-list-wrapper .insights-list-content .tabs .active:after {
+.insights-list-wrapper .insights-list-content .tabs > li:hover:after, .insights-list-wrapper .insights-list-content .tabs > li.active:after {
   opacity: 1;
 }
 .insights-list-wrapper .insights-list-content .tabs h5 {
@@ -7035,7 +7031,7 @@ body {
   z-index: 1;
   transition: opacity 0.2s ease-in-out;
 }
-.pillars .tabs .active:after {
+.pillars .tabs > li:hover:after, .pillars .tabs > li.active:after {
   opacity: 1;
 }
 .pillars .tabs h5 {
@@ -7154,7 +7150,7 @@ body {
   z-index: 1;
   transition: opacity 0.2s ease-in-out;
 }
-.opportunities .tabs .active:after {
+.opportunities .tabs > li:hover:after, .opportunities .tabs > li.active:after {
   opacity: 1;
 }
 .opportunities .tabs h5 {
