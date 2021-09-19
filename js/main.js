@@ -1183,22 +1183,6 @@ function initResponsibilityEvents() {
 		.on('resize', function() {
 			if ($(window).width() >= 550) {
 				$('.membership-list .description').show();
-
-				$('.membership-list').owlCarousel({
-					nav: true,
-					dots: true,
-					responsive: {
-						550: {
-							items: 2
-						},
-						820: {
-							items: 3
-						},
-						1090: {
-							items: 4
-						}
-					}
-				});
 			} else {
 				$('.membership-list .item:not(.active) .description').hide();
 				$('.membership-list').trigger('destroy.owl.carousel');
