@@ -956,6 +956,35 @@ function initPhilosophyEvents() {
 			$(this).data('odometer-ready', true)
 		});
 	}
+
+	$('.play-video').on('click', function(e) {
+		e.preventDefault();
+
+		var videoData = $(this).data('video');
+
+		if (!$('.video-player').length) {
+			$('body').append('<div class="video-player"></div>');
+		}
+
+		var videoTemplate = '<video controls>' + 
+								'<source src="{video}" type="{mimetype}">' + 
+							'</video>';
+		$('.video-player').html(videoTemplate.replace('{video}', videoData.video).replace('{mimetype}', videoData.mimetype));
+
+		$('.video-player').dialog({
+			modal: true,
+			width: '90%',
+			maxWidth: '943',
+			resizable: false,
+			dialogClass: 'video-player-dialog',
+			create: function(event, ui) {
+				$("body").css({ overflow: 'hidden' })
+			},
+			beforeClose: function(event, ui) {
+				$("body").css({ overflow: 'inherit' })
+			}
+		});
+	})
 }
 
 function loadInsights(wrapper, template, start, append) {
@@ -1131,8 +1160,8 @@ function initInsightEvents() {
 			width: '90%',
 			maxWidth: '1180',
 			open: function(event, ui) {
-                $(this).parent().css('top', window.pageYOffset + 20);
-            },
+				$(this).parent().css('top', window.pageYOffset + 20);
+			},
 			resizable: false,
 			create: function(event, ui) {
 				$("body").css({ overflow: 'hidden' })
