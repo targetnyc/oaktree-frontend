@@ -1638,6 +1638,7 @@ body {
 		line-height: 17px;
 		letter-spacing: 0.2em;
 		text-transform: uppercase;
+		text-align: center;
 	}
 
 	.tabs {
@@ -1662,6 +1663,7 @@ body {
 
 		& > li {
 			position: relative;
+			flex-grow: 1;
 
 			&:after {
 				background: #388067;
@@ -3594,13 +3596,19 @@ body {
 }
 
 .tabbed-content-wrapper {
-	background: #f1f1f1;
-	display: flex;
+	background: linear-gradient(90deg, #fff 0%, #fff 50%, #f1f1f1 50%, #f1f1f1 100%);
 	margin-bottom: 130px;
+
+	.tabbed-content-inner {
+		max-width: 1210px;
+		margin: 0 auto;
+		display: flex;
+	}
 
 	.tabbed-sections-wrapper {
 		background: #fff;
 		display: flex;
+		width: 23%;
 
 		justify-content: flex-end;
 
@@ -3608,6 +3616,9 @@ body {
 			max-width: 290px;
 			position: relative;
 			padding-left: 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 
 			&:after {
 				background: #E0E0E0;
@@ -3660,6 +3671,8 @@ body {
 
 	.tabbed-content-list-wrapper {
 		display: flex;
+		background: #f1f1f1;
+		width: 77%;
 		
 		.tabbed-content-list {
 			padding: 40px 15px 40px 80px;
@@ -3718,20 +3731,6 @@ body {
 	}
 }
 
-@media screen and (min-width: 1211px) {
-	.tabbed-content-wrapper {
-		.tabbed-sections-wrapper {
-			width: 50%;
-			margin-left: -315px;
-		}
-
-		.tabbed-content-list-wrapper {
-			display: flex;
-			width: 50%;
-		}
-	}
-}
-
 @media screen and (max-width: 1023px) {
 	.quote-wrapper {
 		padding: 30px 0 55px;
@@ -3758,6 +3757,8 @@ body {
 		margin: 0 auto 65px;
 
 		.tabbed-sections-wrapper {
+			display: none;
+
 			.tabbed-sections {
 				display: none;
 			}
@@ -3765,6 +3766,8 @@ body {
 
 		.tabbed-content-list-wrapper {
 			display: block;
+			width: 100%;
+			background: #fff;
 
 			.tabbed-content-list {
 				padding: 0 15px;
@@ -3987,6 +3990,12 @@ body {
 
 			& > li {
 				position: relative;
+				flex-grow: 1;
+
+				h5 {
+					text-align: center;
+				}
+
 
 				&:after {
 					background: #388067;
@@ -5897,6 +5906,7 @@ body {
 
 		& > li {
 			position: relative;
+			flex-grow: 1;
 
 			&:after {
 				background: #388067;
@@ -5931,6 +5941,7 @@ body {
 			line-height: 17px;
 			letter-spacing: 0.2em;
 			text-transform: uppercase;
+			text-align: center;
 		}
 	}
 
@@ -6055,6 +6066,7 @@ body {
 
 		& > li {
 			position: relative;
+			flex-grow: 1;
 
 			&:after {
 				background: #388067;
@@ -6088,6 +6100,7 @@ body {
 			font-size: 14.5px;
 			line-height: 17px;
 			letter-spacing: 0.2em;
+			text-align: center;
 			text-transform: uppercase;
 		}
 	}

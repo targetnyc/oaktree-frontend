@@ -1130,6 +1130,9 @@ function initInsightEvents() {
 			modal: true,
 			width: '90%',
 			maxWidth: '1180',
+			open: function(event, ui) {
+                $(this).parent().css('top', window.pageYOffset + 20);
+            },
 			resizable: false,
 			create: function(event, ui) {
 				$("body").css({ overflow: 'hidden' })
@@ -1140,7 +1143,7 @@ function initInsightEvents() {
 		});
 	});
 
-	if ($('.social-links-wrapper').length) {
+	if ($('.social-links-wrapper').length && $('.memo-content').length) {
 		$('.trigger-top').css('top', 'calc(50vh + ' + ($('.social-links-wrapper').offset().top - 50) + 'px)' );
 		var controller = new ScrollMagic.Controller();
 		new ScrollMagic.Scene({triggerElement: '.trigger-top', duration: ($('.memo-content').offset().top + $('.memo-content').innerHeight()) - $('.trigger-top').offset().top}).setPin('.social-links-wrapper').addTo(controller);
@@ -1191,6 +1194,7 @@ function initInsightEvents() {
 				width: $(window).outerWidth() < 768 ? $(window).outerWidth() - 30 : '90%',
 				maxWidth: '1180',
 				resizable: false,
+				position: ['center', 20],
 				maxHeight: $(window).outerHeight() * 0.90,
 				create: function(event, ui) {
 					$("body").css({ overflow: 'hidden' })
