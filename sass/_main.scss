@@ -3497,13 +3497,6 @@ body {
 					font-size: 14px;
 					line-height: 20px;
 				}
-
-				img ~ .bio-text-wrapper {
-					h1 {
-						font-size: 20px;
-						line-height: 28px;
-					}
-				}
 			}
 		}
 	}
@@ -3518,16 +3511,15 @@ body {
 				display: block;
 
 				img {
-					float: left;
-					width: 40%;
-					margin: 0 15px 35px 0;
+					display: block;
+					width: 220px;
+					margin: 0 auto 25px;
 				}
 
 				img ~ .bio-text-wrapper {
-					padding-top: min(162px, 21.4818674%);
 
 					.bio-heading-wrapper {
-						transform: translateY(-50%);
+						text-align: center;
 					}
 				}
 

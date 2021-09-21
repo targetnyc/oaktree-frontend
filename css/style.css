@@ -5202,10 +5202,6 @@ body {
     font-size: 14px;
     line-height: 20px;
   }
-  .person-bio .person-bio-content .bio-wrapper img ~ .bio-text-wrapper h1 {
-    font-size: 20px;
-    line-height: 28px;
-  }
 }
 @media screen and (max-width: 1180px) {
   .person-bio {
@@ -5215,15 +5211,12 @@ body {
     display: block;
   }
   .person-bio .person-bio-content .bio-wrapper img {
-    float: left;
-    width: 40%;
-    margin: 0 15px 35px 0;
-  }
-  .person-bio .person-bio-content .bio-wrapper img ~ .bio-text-wrapper {
-    padding-top: min(162px, 21.4818674%);
+    display: block;
+    width: 220px;
+    margin: 0 auto 25px;
   }
   .person-bio .person-bio-content .bio-wrapper img ~ .bio-text-wrapper .bio-heading-wrapper {
-    transform: translateY(-50%);
+    text-align: center;
   }
   .person-bio .person-bio-content .bio-wrapper .bio-description-wrapper {
     clear: both;
