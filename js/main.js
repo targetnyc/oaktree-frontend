@@ -224,7 +224,7 @@ function loadAumChart() {
 
 	var chart1Canvas = document.getElementById('aum-chart');
 	var c1Ctx = chart1Canvas.getContext("2d");
-	var gradient = c1Ctx.createLinearGradient(0, 0, 0, $(window).width() < 600 ? 120 : 300);
+	var gradient = c1Ctx.createLinearGradient(0, 0, 0, $(window).width() < 767 ? 120 : 300);
 	
 	gradient.addColorStop(1, "rgba(255, 255, 255, 0)");
 	gradient.addColorStop(.2, "#388067");
@@ -263,10 +263,10 @@ function loadAumChart() {
 		options: {
 			layout: {
 				padding: {
-					top: $(window).width() < 600 ? 30 : 45,
-					bottom: $(window).width() < 600 ? 5 : 45,
-					left: $(window).width() < 600 ? 15 : 50,
-					right: $(window).width() < 600 ? 15 : 50,
+					top: $(window).width() < 767 ? 30 : 45,
+					bottom: $(window).width() < 767 ? 5 : 45,
+					left: $(window).width() < 767 ? 15 : 50,
+					right: $(window).width() < 767 ? 15 : 50,
 				}
 			},
 			plugins: {
@@ -285,7 +285,7 @@ function loadAumChart() {
 						color: '#000000',
 						font: {
 							family: "Raleway",
-							size: $(window).width() < 600 ? 11 : 16,
+							size: $(window).width() < 767 ? 11 : 16,
 							weight: 700
 						},
 						padding: 0
@@ -306,7 +306,7 @@ function loadAumChart() {
 					displayColors: false,
 					bodyFont: {
 						family: "Raleway",
-						size: $(window).width() < 600 ? 11 : 16,
+						size: $(window).width() < 767 ? 11 : 16,
 						weight: 600
 					},
 					yAlign: 'bottom'
@@ -323,7 +323,7 @@ function loadAumChart() {
 						color: '#000000',
 						font: {
 							family: "Raleway",
-							size: $(window).width() < 600 ? 11 : 14,
+							size: $(window).width() < 767 ? 11 : 14,
 							weight: 600
 						},
 						callback: function(value, index, values) {
@@ -339,11 +339,11 @@ function loadAumChart() {
 				},
 				x: {
 					ticks: {
-						padding: $(window).width() < 600 ? 10 : 20,
+						padding: $(window).width() < 767 ? 10 : 20,
 						color: '#000000',
 						font: {
 							family: "Raleway",
-							size: $(window).width() < 600 ? 11 : 14,
+							size: $(window).width() < 767 ? 11 : 14,
 							weight: 600
 						}
 					},
@@ -414,7 +414,7 @@ function initAboutEvents() {
 		});
 
 
-	if ($(window).width() < 600) {
+	if ($(window).width() < 767) {
 		$(window)
 			.on('scroll', throttle(function() {
 				$('.odometer').each(function() {
@@ -447,7 +447,7 @@ function initAboutEvents() {
 				window.controller = new ScrollMagic.Controller();
 			}
 
-			if ($(window).width() > 600) {
+			if ($(window).width() > 1023) {
 				function tweenOpacity(el) {
 					var tween = TweenMax.fromTo(el, 1, {
 						opacity: 0,
@@ -502,7 +502,7 @@ function initAboutEvents() {
 		})
 		.trigger('resize');
 
-	document.querySelectorAll('.breakdown .active .doughnut-chart' + ($(window).width() < 600 ? '.mobile' : '.desktop')).forEach(function(mixCanvas) {
+	document.querySelectorAll('.breakdown .active .doughnut-chart' + ($(window).width() < 767 ? '.mobile' : '.desktop')).forEach(function(mixCanvas) {
 		loadMixedChart(mixCanvas);
 	});
 }
@@ -661,7 +661,7 @@ function initLeadershipEvents() {
 		var searchDepartments = filterData(tabledata, 'department');
 		var searchLocations = filterData(tabledata, 'location');
 
-		if ($(window).width() > 860) {
+		if ($(window).width() > 1023) {
 			$('.owl-carousel').owlCarousel({
 				items: 5,
 				nav: true
@@ -960,7 +960,7 @@ function initPhilosophyEvents() {
 			$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
 		});
 
-	if ($(window).width() < 600) {
+	if ($(window).width() < 767) {
 		$(window)
 			.on('scroll', throttle(function() {
 				$('.odometer').each(function() {
@@ -1356,7 +1356,7 @@ function initResponsibilityEvents() {
 }
 
 function initStrategiesEvents() {
-	if ($(window).width() < 600) {
+	if ($(window).width() < 767) {
 		$(window)
 			.on('scroll', throttle(function() {
 				$('.odometer').each(function() {

@@ -3294,7 +3294,13 @@ body {
   transition: background-image 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .page-hero h1 {
+    font-size: 60px;
+    line-height: 1.875em;
+  }
+}
+@media screen and (max-width: 767px) {
   .page-hero {
     min-height: 200px;
   }
@@ -3353,7 +3359,7 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .featured-stats-wrapper .featured-stats {
     flex-direction: column;
     padding: 30px 15px;
@@ -3455,6 +3461,19 @@ body {
   transition: background-image 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 1023px) {
+  .two-column-content-wrapper .two-column-content {
+    padding: 50px 15px;
+  }
+  .two-column-content-wrapper .two-column-content h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .two-column-content-wrapper .two-column-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 @media screen and (max-width: 600px) {
   .two-column-content-wrapper .two-column-content {
     flex-direction: column;
@@ -3511,7 +3530,7 @@ body {
   margin: 75px auto 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .chart-wrapper .chart-content {
     padding: 55px 15px;
   }
@@ -3556,7 +3575,7 @@ body {
   width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .fullimage-block {
     padding: 55px 65px;
   }
@@ -3674,6 +3693,7 @@ body {
   position: absolute;
   top: 50%;
   right: 0;
+  width: 50%;
   transform: translateY(-50%);
 }
 .sliding-info .value {
@@ -3704,7 +3724,23 @@ body {
   width: 60px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .sliding-info .slides {
+    max-width: 674px;
+  }
+  .sliding-info img {
+    max-width: 492px;
+  }
+  .sliding-info .value {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .sliding-info .description {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 1023px) {
   .sliding-info {
     padding: 55px 15px 55px;
   }
@@ -3738,6 +3774,12 @@ body {
   .sliding-info .sliding-info-content .owl-dot.active {
     background: #388067;
     opacity: 1;
+  }
+  .sliding-info .sliding-info-content .img-wrap {
+    display: block;
+  }
+  .sliding-info .sliding-info-content .img-wrap img {
+    margin: 0 auto;
   }
   .sliding-info .sliding-info-content .img-wrap:after {
     display: none;
@@ -3993,10 +4035,10 @@ body {
 .leadership .tabs-content .active h5 {
   display: block;
 }
-.leadership .leadership-content {
+.leadership .leadership-content.table-view-content {
   padding: 80px 0;
 }
-.leadership .leadership-content .active h2:after {
+.leadership .leadership-content.table-view-content .active h2:after {
   display: none;
 }
 .leadership .tabs {
@@ -4049,7 +4091,16 @@ body {
   margin: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .portfolio .tabs-content .canvas-wrapper {
+    float: right;
+    width: 50%;
+  }
+  .portfolio .tabs-content .canvas-wrapper .doughnut-chart {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1023px) {
   .portfolio .portfolio-content {
     padding: 35px 15px;
   }
@@ -4081,6 +4132,7 @@ body {
   }
   .portfolio .tabs-content ul {
     max-height: none;
+    width: auto;
   }
   .portfolio .tabs-content .asset-wrap {
     max-width: none;
@@ -4359,7 +4411,7 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .references ul {
     padding: 65px 15px;
   }
@@ -4583,7 +4635,7 @@ body {
   }
 }
 .people-list {
-  padding: 80px 0;
+  padding: 80px 15px;
 }
 .people-list.grey {
   background: #f1f1f1;
@@ -4616,11 +4668,13 @@ body {
   margin-top: 65px;
 }
 .people-list .people-list-content {
-  max-width: 1175px;
+  max-width: 1265px;
   margin: 0 auto;
+  padding: 0 45px;
 }
 .people-list .people-list-content .people-wrapper {
   display: block;
+  margin: 0;
 }
 .people-list .people-list-content h2 {
   margin-bottom: 35px;
@@ -4632,8 +4686,10 @@ body {
 }
 .people-list .people-list-content .person {
   max-width: 200px;
-  margin: 0 auto;
-  padding-top: 10px;
+  padding: 10px 7.5px 0;
+}
+.people-list .people-list-content .person a {
+  display: block;
 }
 .people-list .people-list-content .person img {
   border-radius: 3px;
@@ -4723,9 +4779,12 @@ body {
     max-width: 735px;
   }
 }
-@media screen and (max-width: 831px) {
+@media screen and (max-width: 1023px) {
   .people-list {
     padding: 50px 0;
+  }
+  .people-list .people-list-content {
+    padding: 0;
   }
   .people-list h2 {
     padding: 0 15px;
@@ -4772,9 +4831,9 @@ body {
   }
 }
 .table-view .table-view-content {
-  max-width: 1180px;
+  max-width: 1210px;
   margin: 0 auto;
-  padding-bottom: 130px;
+  padding: 0 15px 130px;
 }
 .table-view .table-view-content h2 {
   margin: 45px auto;
@@ -5148,7 +5207,24 @@ body {
   left: -7.5px;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .table-view .table-view-content .table-filters .dropdown-filter-wrapper {
+    width: 219px;
+  }
+  .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button {
+    width: 209px;
+  }
+  .table-view .table-view-content .table-filters .ui-selectmenu-text {
+    width: 189px;
+  }
+  .table-view .table-view-content .table-filters .search-filter-wrapper {
+    width: 199px;
+  }
+  .table-view .table-view-content .table-filters #search-filter {
+    width: 199px;
+  }
+}
+@media screen and (max-width: 767px) {
   .table-view {
     padding: 0;
   }
@@ -6875,7 +6951,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .two-columns-wrapper .two-columns {
     padding: 50px 15px;
   }
@@ -6902,7 +6978,7 @@ body {
     text-align: left;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .people-list .people-list-content h2 {
     margin-bottom: 25px;
   }
@@ -7318,7 +7394,7 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .pillars .tabs {
     display: none;
   }
