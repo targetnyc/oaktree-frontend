@@ -6457,6 +6457,21 @@ body {
   .article-wrapper .actions-wrapper a ~ a {
     margin-top: 30px;
   }
+
+  .people-list.blue .people-list-content {
+    padding: 0 7.5px;
+  }
+  .people-list.blue .people-list-content .owl-stage-outer {
+    margin: 0;
+  }
+  .people-list.blue .people-list-content .owl-item {
+    padding: 0;
+    min-width: 0;
+  }
+  .people-list.blue .people-list-content .owl-item .person {
+    margin: 0;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .insights-list-wrapper .insights-list {
@@ -6553,8 +6568,16 @@ body {
   .people-list.blue .people-wrapper {
     padding: 0 2.5px;
   }
+  .people-list.blue .people-wrapper .owl-stage-outer {
+    margin: 0;
+  }
   .people-list.blue .people-wrapper .owl-item {
     padding: 0 12.5px;
+    text-align: center;
+  }
+  .people-list.blue .people-wrapper .owl-item .person {
+    margin: 0;
+    padding: 10px 0 0;
   }
   .people-list.blue .people-wrapper .owl-item h4 a {
     font-size: 16px;

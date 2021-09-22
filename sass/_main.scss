@@ -5160,6 +5160,26 @@ body {
 			}
 		}
 	}
+
+	.people-list.blue {
+		.people-list-content {
+			padding: 0 7.5px;
+
+			.owl-stage-outer {
+				margin: 0;
+			}
+
+			.owl-item {
+				padding: 0;
+				min-width: 0;
+
+				.person {
+					margin: 0;
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -5257,8 +5277,18 @@ body {
 		.people-wrapper {
 			padding: 0 2.5px;
 
+			.owl-stage-outer {
+				margin: 0;
+			}
+
 			.owl-item {
 				padding: 0 12.5px;
+				text-align: center;
+
+				.person {
+					margin: 0;
+					padding: 10px 0 0;
+				}
 
 				h4 a {
 					font-size: 16px;
