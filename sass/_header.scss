@@ -38,26 +38,6 @@ body {
 	.logo img {
 		max-height: 54px;
 	}
-
-	// .burger {
-	// 	display: none;
-
-	// 	&:before {
-	// 		@extend .svg-burger;
-	// 		content: '';
-	// 		display: block;
-	// 		width: 25px;
-	// 		height: 16px;
-	// 	}
-
-	// 	&.opened {
-	// 		&:before {
-	// 			@extend .svg-close-black;
-	// 			width: 30px;
-	// 			height: 30px;
-	// 		}
-	// 	}
-	// }
 }
 
 #menu-toggle {

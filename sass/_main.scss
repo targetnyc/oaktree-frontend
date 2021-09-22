@@ -577,6 +577,33 @@ body {
 		line-height: 25px;
 		letter-spacing: 0.165em;
 		text-transform: uppercase;
+		text-decoration: none;
+
+		display: inline-block;
+		position: relative;
+
+		&:after {
+			background: #388067;
+			border-radius: 2px;
+			content: '';
+
+			bottom: 0px;
+			height: 2px;
+			display: block;
+			position: absolute;
+			width: 100%;
+
+			transform-origin: 100% 50%;
+			transform: scaleX(0);
+			transition: transform .2s ease;
+		}
+		
+		&:hover {
+			&:after {
+				transform: scaleX(1);
+				transform-origin: 0 50%;
+			}
+		}
 	}
 
 	.date {
@@ -2703,11 +2730,15 @@ body {
 		background: #f1f1f1;
 		
 		.people-list-content {
-			max-width: 1285px;
+			max-width: 1195px;
 			text-align: center;
+			padding: 0 48px;
 
 			.people-wrapper {
-				padding: 0 48px;
+				padding: 0;
+				max-width: 980px;
+				margin: 0 auto;
+
 				text-align: left;
 			}
 
@@ -2717,21 +2748,15 @@ body {
 			}
 
 			.owl-item {
-				max-width: 245px;
+				text-align: center;
+
+				.person {
+					margin: 0 auto;
+				}
 			}
 
 			h2 {
 				text-align: center;
-			}
-
-			.owl-nav {
-				.owl-prev {
-					left: 0;
-				}
-
-				.owl-next {
-					right: 0;
-				}
 			}
 		}
 
@@ -2760,9 +2785,14 @@ body {
 			line-height: 39px;
 		}
 
+		.owl-item {
+			text-align: center;
+		}
+
 		.person {
 			max-width: 200px;
 			padding: 10px 7.5px 0;
+			margin: 0 auto;
 
 			a {
 				display: block;
@@ -2905,18 +2935,6 @@ body {
 	}
 }
 
-@media screen and (max-width: 1076px) {
-	.people-list {
-		&.grey {
-			.people-list-content {
-				.owl-stage-outer {
-					max-width: 735px;
-				}
-			}
-		}
-	}
-}
-
 @media screen and (max-width: 1023px) {
 	.people-list {
 		padding: 50px 0;
@@ -2931,14 +2949,6 @@ body {
 
 		.people-wrapper.owl-carousel {
 			margin: 0 7.5px;
-		}
-
-		&.grey {
-			.people-list-content {
-				.owl-stage-outer {
-					max-width: 490px;
-				}
-			}
 		}
 	}
 }
@@ -2967,10 +2977,6 @@ body {
 			.bio {
 				margin: 0 7.5px;
 				padding: 0 0 25px;
-
-				img {
-					max-width: 157px;
-				}
 
 				h4 a {
 					font-size: 18px;
@@ -4108,7 +4114,7 @@ body {
 			text-align: right;
 
 			& > span {
-				margin-right: 25px;
+				margin-right: 15px;
 
 				color: #000;
 				font-style: normal;
@@ -4423,6 +4429,33 @@ body {
 		line-height: 25px;
 		letter-spacing: 0.165em;
 		text-transform: uppercase;
+		text-decoration: none;
+
+		display: inline-block;
+		position: relative;
+
+		&:after {
+			background: #388067;
+			border-radius: 2px;
+			content: '';
+
+			bottom: 0px;
+			height: 2px;
+			display: block;
+			position: absolute;
+			width: 100%;
+
+			transform-origin: 100% 50%;
+			transform: scaleX(0);
+			transition: transform .2s ease;
+		}
+		
+		&:hover {
+			&:after {
+				transform: scaleX(1);
+				transform-origin: 0 50%;
+			}
+		}
 	}
 
 	.date {
@@ -5158,6 +5191,11 @@ body {
 			a ~ a {
 				margin-top: 30px;
 			}
+		}
+
+		.memo-content, 
+		.article-content {
+			padding: 0 15px 85px;
 		}
 	}
 
@@ -5919,7 +5957,6 @@ body {
 			}
 
 			.person {
-				width: 157px;
 				display: inline-block;
 				margin: 0 7.5px;
 				vertical-align: top;
@@ -5945,12 +5982,11 @@ body {
 			}
 
 			.owl-stage-outer {
-				margin: 0 -7.5px;
+				margin: 0;
 			}
 
 			.owl-item {
-				padding: 0 7.5px;
-				min-width: 172px;
+				padding: 0;
 			}
 
 			.owl-nav {
@@ -5990,6 +6026,8 @@ body {
 		padding: 40px 0 50px;
 
 		.people-list-content {
+			padding: 0;
+
 			h2 {
 				margin-bottom: 25px;
 			}
@@ -5998,17 +6036,12 @@ body {
 				padding: 0 15px;
 			}
 
-			.person {
-				width: 157px;
-			}
-
 			.owl-stage-outer {
-				margin: 0 -7.5px;
+				margin: 0;
 			}
 
 			.owl-item {
-				padding: 0 7.5px;
-				min-width: 172px;
+				padding: 0;
 			}
 
 			.owl-nav {
@@ -7022,7 +7055,7 @@ body .ui-tooltip.ui-widget-content {
 			}
 		}
 	}
- }
+}
 
 
 @media screen and (max-width: 1239px) {

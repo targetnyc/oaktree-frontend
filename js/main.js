@@ -1005,6 +1005,7 @@ function initPhilosophyEvents() {
 			maxWidth: '943',
 			resizable: false,
 			dialogClass: 'video-player-dialog',
+			show: { effect: "fadeIn", duration: 800 },
 			create: function(event, ui) {
 				$("body").css({ overflow: 'hidden' })
 			},
@@ -1075,7 +1076,7 @@ function initInsightEvents() {
 				'<span class="insight-type {type}"></span>' + 
 			'</a>' + 
 		'</div>' + 
-		'<div class="insights-type">{label}</div>' + 
+		'<a href="" class="insights-type">{label}</a>' + 
 		'<div class="date">{date}</div>' + 
 		'<a href="" class="title-link">{title}</a>' + 
 		'<div class="read-more"><a href="" class="link-underline">{action}</a></div>' + 
@@ -1400,10 +1401,13 @@ function initStrategiesEvents() {
 			0: {
 				items: 2
 			},
-			831: {
+			420: {
 				items: 3
 			},
-			1076: {
+			640: {
+				items: 3
+			},
+			830: {
 				items: 4
 			}
 		}

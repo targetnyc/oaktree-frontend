@@ -2993,6 +2993,26 @@ body {
   line-height: 25px;
   letter-spacing: 0.165em;
   text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.insights-wrapper .insights-type:after {
+  background: #388067;
+  border-radius: 2px;
+  content: '';
+  bottom: 0px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .2s ease;
+}
+.insights-wrapper .insights-type:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0 50%;
 }
 .insights-wrapper .date {
   margin-bottom: 10px;
@@ -4664,11 +4684,14 @@ body {
   background: #f1f1f1;
 }
 .people-list.grey .people-list-content {
-  max-width: 1285px;
+  max-width: 1195px;
   text-align: center;
+  padding: 0 48px;
 }
 .people-list.grey .people-list-content .people-wrapper {
-  padding: 0 48px;
+  padding: 0;
+  max-width: 980px;
+  margin: 0 auto;
   text-align: left;
 }
 .people-list.grey .people-list-content .owl-stage-outer {
@@ -4676,16 +4699,13 @@ body {
   margin: 0 auto;
 }
 .people-list.grey .people-list-content .owl-item {
-  max-width: 245px;
+  text-align: center;
+}
+.people-list.grey .people-list-content .owl-item .person {
+  margin: 0 auto;
 }
 .people-list.grey .people-list-content h2 {
   text-align: center;
-}
-.people-list.grey .people-list-content .owl-nav .owl-prev {
-  left: 0;
-}
-.people-list.grey .people-list-content .owl-nav .owl-next {
-  right: 0;
 }
 .people-list.grey .btn-wrap {
   margin-top: 65px;
@@ -4707,9 +4727,13 @@ body {
   font-size: 28px;
   line-height: 39px;
 }
+.people-list .people-list-content .owl-item {
+  text-align: center;
+}
 .people-list .people-list-content .person {
   max-width: 200px;
   padding: 10px 7.5px 0;
+  margin: 0 auto;
 }
 .people-list .people-list-content .person a {
   display: block;
@@ -4797,11 +4821,6 @@ body {
   right: -48px;
 }
 
-@media screen and (max-width: 1076px) {
-  .people-list.grey .people-list-content .owl-stage-outer {
-    max-width: 735px;
-  }
-}
 @media screen and (max-width: 1023px) {
   .people-list {
     padding: 50px 0;
@@ -4814,9 +4833,6 @@ body {
   }
   .people-list .people-wrapper.owl-carousel {
     margin: 0 7.5px;
-  }
-  .people-list.grey .people-list-content .owl-stage-outer {
-    max-width: 490px;
   }
 }
 @media screen and (max-width: 860px) {
@@ -4840,9 +4856,6 @@ body {
   .bio-list .bio-list-content .bio {
     margin: 0 7.5px;
     padding: 0 0 25px;
-  }
-  .bio-list .bio-list-content .bio img {
-    max-width: 157px;
   }
   .bio-list .bio-list-content .bio h4 a {
     font-size: 18px;
@@ -5669,7 +5682,7 @@ body {
   text-align: right;
 }
 .insights-list-wrapper .insights-list-content .filter > span {
-  margin-right: 25px;
+  margin-right: 15px;
   color: #000;
   font-style: normal;
   font-weight: 500;
@@ -5890,6 +5903,26 @@ body {
   line-height: 25px;
   letter-spacing: 0.165em;
   text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+.insights-list-wrapper .insights-type:after {
+  background: #388067;
+  border-radius: 2px;
+  content: '';
+  bottom: 0px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .2s ease;
+}
+.insights-list-wrapper .insights-type:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0 50%;
 }
 .insights-list-wrapper .date {
   margin-bottom: 10px;
@@ -6456,6 +6489,12 @@ body {
   .article-wrapper .memo-wrapper a ~ a,
   .article-wrapper .actions-wrapper a ~ a {
     margin-top: 30px;
+  }
+  .memo-wrapper .memo-content,
+  .memo-wrapper .article-content,
+  .article-wrapper .memo-content,
+  .article-wrapper .article-content {
+    padding: 0 15px 85px;
   }
 
   .people-list.blue .people-list-content {
@@ -7047,7 +7086,6 @@ body {
     padding-bottom: 25px !important;
   }
   .people-list .people-list-content .person {
-    width: 157px;
     display: inline-block;
     margin: 0 7.5px;
     vertical-align: top;
@@ -7068,11 +7106,10 @@ body {
     line-height: 18px;
   }
   .people-list .people-list-content .owl-stage-outer {
-    margin: 0 -7.5px;
+    margin: 0;
   }
   .people-list .people-list-content .owl-item {
-    padding: 0 7.5px;
-    min-width: 172px;
+    padding: 0;
   }
   .people-list .people-list-content .owl-nav {
     display: none;
@@ -7102,21 +7139,20 @@ body {
   .people-list.grey {
     padding: 40px 0 50px;
   }
+  .people-list.grey .people-list-content {
+    padding: 0;
+  }
   .people-list.grey .people-list-content h2 {
     margin-bottom: 25px;
   }
   .people-list.grey .people-list-content .people-wrapper {
     padding: 0 15px;
   }
-  .people-list.grey .people-list-content .person {
-    width: 157px;
-  }
   .people-list.grey .people-list-content .owl-stage-outer {
-    margin: 0 -7.5px;
+    margin: 0;
   }
   .people-list.grey .people-list-content .owl-item {
-    padding: 0 7.5px;
-    min-width: 172px;
+    padding: 0;
   }
   .people-list.grey .people-list-content .owl-nav {
     display: none;
