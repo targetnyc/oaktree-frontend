@@ -5550,6 +5550,14 @@ body {
 		font-size: 32px;
 		line-height: 59px;
 
+		&:hover {
+			color: #43997B;
+
+			&:after {
+				@extend .svg-arrow-right-light-green;
+			}
+		}
+
 		&:after {
 			@extend .svg-arrow-right-green;
 
@@ -7102,6 +7110,14 @@ body .ui-tooltip.ui-widget-content {
 			font-weight: normal;
 			font-size: 28px;
 			line-height: 59px;
+
+			&:hover {
+				color: #43997B;
+
+				&:after {
+					@extend .svg-arrow-down-light-green;
+				}
+			}
 
 			&:after {
 				@extend .svg-arrow-down-green;

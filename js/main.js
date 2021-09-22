@@ -1251,7 +1251,6 @@ function initInsightEvents() {
 				width: $(window).outerWidth() < 768 ? $(window).outerWidth() - 30 : '90%',
 				maxWidth: '1180',
 				resizable: false,
-				position: ['center', 20],
 				maxHeight: $(window).outerHeight() * 0.90,
 				create: function(event, ui) {
 					$("body").css({ overflow: 'hidden' })
