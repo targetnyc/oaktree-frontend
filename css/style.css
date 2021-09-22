@@ -3861,6 +3861,10 @@ body {
   z-index: 1;
   transition: opacity 0.2s ease-in-out;
 }
+.portfolio .tabs > li:hover h5,
+.leadership .tabs > li:hover h5 {
+  color: #388067;
+}
 .portfolio .tabs > li:hover:after, .portfolio .tabs > li.active:after,
 .leadership .tabs > li:hover:after,
 .leadership .tabs > li.active:after {
@@ -5741,6 +5745,9 @@ body {
   z-index: 1;
   transition: opacity 0.2s ease-in-out;
 }
+.insights-list-wrapper .insights-list-content .tabs > li:hover h5 {
+  color: #388067;
+}
 .insights-list-wrapper .insights-list-content .tabs > li:hover:after, .insights-list-wrapper .insights-list-content .tabs > li.active:after {
   opacity: 1;
 }
@@ -7204,6 +7211,9 @@ body {
   z-index: 1;
   transition: opacity 0.2s ease-in-out;
 }
+.pillars .tabs > li:hover h5 {
+  color: #388067;
+}
 .pillars .tabs > li:hover:after, .pillars .tabs > li.active:after {
   opacity: 1;
 }
@@ -7324,6 +7334,9 @@ body {
   bottom: -20px;
   z-index: 1;
   transition: opacity 0.2s ease-in-out;
+}
+.opportunities .tabs > li:hover h5 {
+  color: #388067;
 }
 .opportunities .tabs > li:hover:after, .opportunities .tabs > li.active:after {
   opacity: 1;

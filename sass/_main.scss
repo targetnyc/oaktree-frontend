@@ -1735,6 +1735,12 @@ body {
 				transition: opacity 0.2s ease-in-out;
 			}
 
+			&:hover {
+				h5 {
+					color: #388067;
+				}
+			}
+
 			&:hover,
 			&.active {
 				&:after {
@@ -2125,7 +2131,6 @@ body {
 			}
 
 			h5 {
-
 				font-size: 16px;
 				line-height: 19px;
 				letter-spacing: 0;
@@ -4211,7 +4216,6 @@ body {
 					text-align: center;
 				}
 
-
 				&:after {
 					background: #388067;
 					border-radius: 100px;
@@ -4225,6 +4229,12 @@ body {
 					z-index: 1;
 
 					transition: opacity 0.2s ease-in-out;
+				}
+
+				&:hover {
+					h5 {
+						color: #388067;
+					}
 				}
 
 				&:hover,
@@ -6142,6 +6152,12 @@ body {
 				transition: opacity 0.2s ease-in-out;
 			}
 
+			&:hover {
+				h5 {
+					color: #388067;
+				}
+			}
+
 			&:hover,
 			&.active {
 				&:after {
@@ -6300,6 +6316,12 @@ body {
 				z-index: 1;
 
 				transition: opacity 0.2s ease-in-out;
+			}
+
+			&:hover {
+				h5 {
+					color: #388067;
+				}
 			}
 
 			&:hover,
