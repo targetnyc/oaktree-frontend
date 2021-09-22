@@ -2009,7 +2009,7 @@ body {
 	}
 
 	.leadership {
-		.leadership-content {
+		.leadership-content.table-view-content {
 			padding: 35px 15px;
 		}
 
@@ -2101,6 +2101,10 @@ body {
 								transform: rotate(90deg) scale(0.5);
 							}
 						}
+					}
+
+					&:not(.collapsed) .dataTable {
+						margin-bottom: 0;
 					}
 
 					h3 {
@@ -3445,6 +3449,8 @@ body {
 		padding: 0;
 
 		.table-view-content {
+			padding: 35px 15px 130px;
+
 			h2 {
 				margin-top: 0;
 				margin-bottom: 35px;

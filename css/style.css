@@ -4093,7 +4093,7 @@ body {
     margin: 0 auto 50px;
   }
 
-  .leadership .leadership-content {
+  .leadership .leadership-content.table-view-content {
     padding: 35px 15px;
   }
   .leadership .tabs {
@@ -4158,6 +4158,9 @@ body {
   .leadership .tabs-content .content .collapsable-table.collapsed h3:after {
     top: 50%;
     transform: rotate(90deg) scale(0.5);
+  }
+  .leadership .tabs-content .content .collapsable-table:not(.collapsed) .dataTable {
+    margin-bottom: 0;
   }
   .leadership .tabs-content .content .collapsable-table h3 {
     padding: 18px 50px 18px 16px;
@@ -5145,6 +5148,9 @@ body {
 @media screen and (max-width: 1080px) {
   .table-view {
     padding: 0;
+  }
+  .table-view .table-view-content {
+    padding: 35px 15px 130px;
   }
   .table-view .table-view-content h2 {
     margin-top: 0;
