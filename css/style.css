@@ -64,7 +64,7 @@ a {
 .svg-archived-memo, .svg-arrow-down, .svg-arrow-down-blue, .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .svg-arrow-down-light-green, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
-.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-checkbox, .ui-widget.ui-dialog .subscribe-lightbox .checkbox, .svg-checkbox-checked, .ui-widget.ui-dialog .subscribe-lightbox .checkbox.checked, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .svg-close-black, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick:hover, .svg-close-blue, form.search .form-content .close:hover, .svg-download, .download:before, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .page-hero .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .memo-wrapper .social-links .facebook:hover,
+.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .country-addresses-wrapper .countries h4:hover:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-checkbox, .ui-widget.ui-dialog .subscribe-lightbox .checkbox, .svg-checkbox-checked, .ui-widget.ui-dialog .subscribe-lightbox .checkbox.checked, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .svg-close-black, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick:hover, .svg-close-blue, form.search .form-content .close:hover, .svg-download, .download:before, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .page-hero .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .memo-wrapper .social-links .facebook:hover,
 .article-wrapper .social-links .facebook:hover, .country-addresses-wrapper .social-links .facebook:hover, .svg-facebook-green-outline, .two-column-content-wrapper .social-links .facebook, .memo-wrapper .social-links .facebook,
 .article-wrapper .social-links .facebook, .country-addresses-wrapper .social-links .facebook, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .page-hero .social-links .facebook:hover, .svg-folder, .archived:before, .svg-info, .warning-message .info:before, .svg-insights-article, .insights-wrapper .article, .insights-list-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .insights-list-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .insights-list-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .insights-list-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .insights-list-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .insights-list-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .page-hero .social-links .linkedin, .svg-linkedin-green-fill, .two-column-content-wrapper .social-links .linkedin:hover, .memo-wrapper .social-links .linkedin:hover,
 .article-wrapper .social-links .linkedin:hover, .country-addresses-wrapper .social-links .linkedin:hover, .svg-linkedin-green-outline, .two-column-content-wrapper .social-links .linkedin, .memo-wrapper .social-links .linkedin,
@@ -171,7 +171,7 @@ a {
   height: 48px;
 }
 
-.svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after {
+.svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .country-addresses-wrapper .countries h4:hover:after {
   background-position: 0 38.58267716535433%;
 }
 
@@ -7809,6 +7809,9 @@ body .ui-tooltip.ui-widget-content {
   font-size: 32px;
   line-height: 59px;
 }
+.country-addresses-wrapper .countries h4:hover {
+  color: #43997B;
+}
 .country-addresses-wrapper .countries h4:after {
   content: '';
   width: 48px;
@@ -7860,12 +7863,12 @@ body .ui-tooltip.ui-widget-content {
   background: #f1f1f1;
   border-radius: 3px;
   margin-top: 77px;
-  padding: 25px 0 40px;
+  padding: 30px 0;
   display: flex;
 }
 .country-addresses-wrapper .info .column {
   max-width: 33.33%;
-  padding: 0 55px;
+  padding: 0 52px;
 }
 .country-addresses-wrapper .info .column ~ .column {
   border-left: 2px solid #fff;
@@ -7874,8 +7877,7 @@ body .ui-tooltip.ui-widget-content {
   font-weight: 600;
 }
 .country-addresses-wrapper .info h3 {
-  min-height: 2em;
-  margin-bottom: 17px;
+  margin-bottom: 15px;
   color: #000;
   font-style: normal;
   font-weight: 600;
@@ -7883,7 +7885,7 @@ body .ui-tooltip.ui-widget-content {
   line-height: 31px;
 }
 .country-addresses-wrapper .info h3 ~ h3 {
-  margin-top: 23px;
+  margin-top: 25px;
 }
 .country-addresses-wrapper .info sup {
   color: #000;
@@ -7913,6 +7915,11 @@ body .ui-tooltip.ui-widget-content {
   height: 1px;
 }
 
+@media screen and (max-width: 767px) {
+  .country-addresses-wrapper .countries .country {
+    padding: 15px 23px;
+  }
+}
 @media screen and (max-width: 1239px) {
   .country-addresses-wrapper .info {
     flex-direction: column;
