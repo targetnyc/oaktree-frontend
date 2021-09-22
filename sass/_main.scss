@@ -3778,6 +3778,7 @@ body {
 		}
 
 		.quote {
+			padding-right: 15px;
 			max-width: 554px;
 			margin-top: 40px;
 		}
@@ -3961,13 +3962,9 @@ body {
 @media screen and (max-width: 1023px) {
 	.quote-wrapper {
 		padding: 30px 0 55px;
-
 		.quote-content {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-
 			.quote {
+				max-width: 60%;
 				margin: 0 auto 25px;
 
 				h3 {
@@ -4041,6 +4038,21 @@ body {
 						padding: 0 16px 16px;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.quote-wrapper {
+		.quote-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.quote {
+				max-width: none;
+				padding-right: 0;
 			}
 		}
 	}
@@ -5920,6 +5932,16 @@ body {
 	}
 }
 
+@media screen and (max-width: 1280px) {
+	.two-columns-wrapper {
+		.two-columns {
+			.column {
+				margin: 0 7.5px;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1023px) {
 	.two-columns-wrapper {
 		.two-columns {
@@ -6318,8 +6340,8 @@ body {
 				flex-wrap: wrap;
 
 				li {
-					max-width: 169px;
-					margin: 0 41.5px 65px;
+					max-width: 252px;
+					margin: 0 0 65px;
 					width: 100%;
 
 					display: block;
@@ -6332,6 +6354,11 @@ body {
 					text-align: center;
 					letter-spacing: 0.03em;
 					text-decoration: none;
+
+					div {
+						max-width: 169px;
+						margin: 0 auto;
+					}
 				}
 			}
 		}
@@ -6365,8 +6392,6 @@ body {
 		}
 	}
 }
-
-
 
 .opportunities {
 	.opportunities-content {
@@ -6509,6 +6534,18 @@ body {
 			line-height: 80px;
 			vertical-align: middle;
 			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.pillars {
+		.tabs-content {
+			.content {
+				ul {
+					margin: 0 -15px;
+				}
+			}
 		}
 	}
 }
