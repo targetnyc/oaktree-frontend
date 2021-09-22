@@ -947,17 +947,32 @@ function initPhilosophyEvents() {
 			$($(this).data('target'), $(this).closest('.tabs').siblings('.tabs-content')).addClass('active');
 		})
 		.on('click', '.tabs-content h2', function() {
-			$(this)
-				.closest('.tabs-content')
-					.find('li')
-						.removeClass('active')
+			if ($(this).closest('li').hasClass('active')) {
+				$(this)
+					.closest('li')
+						.find('.content')
+							.slideUp(500)
+						.end()
+						.removeClass('active');
+			} else {
+				$(this)
+					.closest('.tabs-content')
+						.find('li')
+							.find('.content')
+								.slideUp(500)
+							.end()
+							.removeClass('active')
+						.end()
 					.end()
-				.end()
-				.closest('li')
-					.addClass('active');	
+					.closest('li')
+						.find('.content')
+							.slideDown(500)
+						.end()
+						.addClass('active');
 
-			$('.tabs li').removeClass('active');
-			$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
+				$('.tabs li').removeClass('active');
+				$('[data-target="#' + $(this).data('id') + '"]').addClass('active');
+			}
 		});
 
 	if ($(window).width() < 767) {
