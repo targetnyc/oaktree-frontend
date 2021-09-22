@@ -1720,6 +1720,7 @@ form.search.show {
 form.search .form-content {
   margin: 0 auto;
   width: 83%;
+  max-width: 1195px;
   position: relative;
   height: 54px;
 }
