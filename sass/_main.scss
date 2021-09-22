@@ -5144,6 +5144,24 @@ body {
 	}
 }
 
+@media screen and (max-width: 1023px) {
+	.memo-wrapper, 
+	.article-wrapper {
+		.memo-wrapper,
+		.actions-wrapper {
+			margin: 0 auto 50px;
+			display: flex;
+			flex-direction: column;
+
+			text-align: left;
+
+			a ~ a {
+				margin-top: 30px;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.insights-list-wrapper {
 		.insights-list {
@@ -5229,19 +5247,6 @@ body {
 			.note {
 				font-size: 14px;
 				line-height: 21px;
-			}
-		}
-
-		.memo-wrapper,
-		.actions-wrapper {
-			margin: 0 auto 50px;
-			display: flex;
-			flex-direction: column;
-
-			text-align: left;
-
-			a ~ a {
-				margin-top: 30px;
 			}
 		}
 	}

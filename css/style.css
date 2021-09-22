@@ -6423,6 +6423,23 @@ body {
     width: calc(33.3333% - 30px);
   }
 }
+@media screen and (max-width: 1023px) {
+  .memo-wrapper .memo-wrapper,
+  .memo-wrapper .actions-wrapper,
+  .article-wrapper .memo-wrapper,
+  .article-wrapper .actions-wrapper {
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .memo-wrapper .memo-wrapper a ~ a,
+  .memo-wrapper .actions-wrapper a ~ a,
+  .article-wrapper .memo-wrapper a ~ a,
+  .article-wrapper .actions-wrapper a ~ a {
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 767px) {
   .insights-list-wrapper .insights-list {
     margin: 25px -15px 10px;
@@ -6510,21 +6527,6 @@ body {
   .article-wrapper .article-content .note {
     font-size: 14px;
     line-height: 21px;
-  }
-  .memo-wrapper .memo-wrapper,
-  .memo-wrapper .actions-wrapper,
-  .article-wrapper .memo-wrapper,
-  .article-wrapper .actions-wrapper {
-    margin: 0 auto 50px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
-  .memo-wrapper .memo-wrapper a ~ a,
-  .memo-wrapper .actions-wrapper a ~ a,
-  .article-wrapper .memo-wrapper a ~ a,
-  .article-wrapper .actions-wrapper a ~ a {
-    margin-top: 30px;
   }
 
   .people-list.blue {
