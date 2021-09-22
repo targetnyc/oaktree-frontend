@@ -4180,8 +4180,8 @@ body {
 }
 .fullimage-text-block .content {
   width: 50%;
-  max-width: 600px;
-  padding: 105px 0 105px 75px;
+  max-width: 615px;
+  padding: 105px 15px 105px 75px;
   color: #fff;
 }
 .fullimage-text-block .content h2 {
@@ -4205,7 +4205,7 @@ body {
   font-weight: 600;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .fullimage-text-block {
     flex-direction: column;
     padding: 50px 15px;
@@ -4213,6 +4213,7 @@ body {
   .fullimage-text-block img {
     width: 100%;
     margin-bottom: 50px;
+    border-radius: 3px;
   }
   .fullimage-text-block .content {
     padding: 0;
