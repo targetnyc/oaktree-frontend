@@ -61,7 +61,7 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.svg-archived-memo, .svg-arrow-down, .svg-arrow-down-blue, .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .svg-arrow-down-green, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
+.svg-archived-memo, .svg-arrow-down, .svg-arrow-down-blue, .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
 .leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-checkbox, .ui-widget.ui-dialog .subscribe-lightbox .checkbox, .svg-checkbox-checked, .ui-widget.ui-dialog .subscribe-lightbox .checkbox.checked, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .svg-close-black, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick:hover, .svg-close-blue, form.search .form-content .close:hover, .svg-download, .download:before, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .page-hero .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .memo-wrapper .social-links .facebook:hover,
@@ -105,7 +105,7 @@ a {
   height: 18px;
 }
 
-.svg-arrow-down-green, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
+.svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
   background-position: 99.35275080906149% 7.042253521126761%;
 }
 
@@ -4000,16 +4000,12 @@ body {
 .leadership .tabs {
   max-width: none;
 }
+.leadership .tabs:before {
+  content: '';
+  display: none;
+}
 .leadership .tabs li {
-  max-width: 225px;
-}
-.leadership .tabs li:first-child {
-  min-width: 315px;
-  width: 30%;
-  max-width: none;
-}
-.leadership .tabs li.active {
-  padding: 0;
+  width: 25%;
 }
 .leadership .tabs h5 {
   font-size: 14.5px;
@@ -4052,24 +4048,17 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .portfolio .portfolio-content,
-  .portfolio .leadership-content,
-  .leadership .portfolio-content,
-  .leadership .leadership-content {
+  .portfolio .portfolio-content {
     padding: 35px 15px;
   }
-  .portfolio .tabs,
-  .leadership .tabs {
+  .portfolio .tabs {
     display: none;
   }
-  .portfolio .tabs-content,
-  .leadership .tabs-content {
+  .portfolio .tabs-content {
     padding: 0;
   }
   .portfolio .tabs-content h2,
-  .portfolio .tabs-content h5,
-  .leadership .tabs-content h2,
-  .leadership .tabs-content h5 {
+  .portfolio .tabs-content h5 {
     padding: 15px;
     margin: 0 -15px -15px;
     display: block;
@@ -4077,37 +4066,106 @@ body {
     line-height: 19px;
     letter-spacing: normal;
   }
-  .portfolio .tabs-content h6,
-  .leadership .tabs-content h6 {
+  .portfolio .tabs-content h6 {
     font-size: 12.5px;
     line-height: 15px;
   }
-  .portfolio .tabs-content > li,
-  .leadership .tabs-content > li {
+  .portfolio .tabs-content > li {
     border: 1px solid #aaa;
     border-radius: 3px;
     display: block;
     margin: 5px auto;
     padding: 0 15px 15px;
   }
-  .portfolio .tabs-content ul,
-  .leadership .tabs-content ul {
+  .portfolio .tabs-content ul {
     max-height: none;
   }
-  .portfolio .tabs-content .asset-wrap,
-  .leadership .tabs-content .asset-wrap {
+  .portfolio .tabs-content .asset-wrap {
     max-width: none;
   }
-  .portfolio .tabs-content .doughnut-chart.desktop,
-  .leadership .tabs-content .doughnut-chart.desktop {
+  .portfolio .tabs-content .doughnut-chart.desktop {
     display: none !important;
   }
-  .portfolio .tabs-content .doughnut-chart.mobile,
-  .leadership .tabs-content .doughnut-chart.mobile {
+  .portfolio .tabs-content .doughnut-chart.mobile {
     display: block !important;
     max-width: 200px;
     max-height: 200px;
     margin: 0 auto 50px;
+  }
+
+  .leadership .leadership-content {
+    padding: 35px 15px;
+  }
+  .leadership .tabs {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+  }
+  .leadership .tabs:before {
+    display: block;
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .leadership .tabs.opened:before {
+    top: 28px;
+    transform: rotate(180deg);
+  }
+  .leadership .tabs li {
+    padding: 18px 50px 18px 16px;
+    max-width: none;
+    width: auto;
+  }
+  .leadership .tabs li:after {
+    display: none;
+  }
+  .leadership .tabs:after {
+    display: none;
+  }
+  .leadership .tabs h5 {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+  .leadership .tabs-content {
+    padding: 0;
+  }
+  .leadership .tabs-content .active h2 {
+    padding: 0;
+    margin: 35px 0 25px;
+    display: block;
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: normal;
+  }
+  .leadership .tabs-content h6 {
+    font-size: 12.5px;
+    line-height: 15px;
+  }
+  .leadership .tabs-content > li {
+    display: block;
+    margin: 5px auto;
+  }
+  .leadership .tabs-content ul {
+    max-height: none;
+  }
+  .leadership .tabs-content .content .collapsable-table.collapsed h3:after {
+    top: 50%;
+    transform: rotate(90deg) scale(0.5);
+  }
+  .leadership .tabs-content .content .collapsable-table h3 {
+    padding: 18px 50px 18px 16px;
+  }
+  .leadership .tabs-content .content .collapsable-table h3:after {
+    top: 50%;
+    margin-top: -12px;
+    transform: rotate(-90deg) scale(0.5);
   }
 }
 .fullimage-text-block {
@@ -5086,7 +5144,7 @@ body {
 
 @media screen and (max-width: 1080px) {
   .table-view {
-    padding: 0 15px;
+    padding: 0;
   }
   .table-view .table-view-content h2 {
     margin-top: 0;
@@ -6184,6 +6242,9 @@ body {
   .insights-list-wrapper .insights-list-content .tabs li {
     padding: 18px 16px;
     max-width: none;
+  }
+  .insights-list-wrapper .insights-list-content .tabs li h5 {
+    text-align: left;
   }
   .insights-list-wrapper .insights-list-content .tabs li:after {
     display: none;

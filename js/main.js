@@ -773,34 +773,56 @@ function initLeadershipEvents() {
 				.end()
 				.addClass('active');	
 
-			$(this)
-				.closest('.tabs')
-					.siblings('.tabs-content')
-						.find('li')
-							.removeClass('active')
-						.end()
-						.find($(this).data('target'))
-							.addClass('active');
-		})
-		.on('click', '.tabs-content h2', function() {
-			$(this)
-				.closest('.tabs-content')
-					.find('li')
-						.removeClass('active')
-					.end()
-				.end()
-				.closest('li')
-					.addClass('active');	
+			$('.tabs-content li').removeClass('active');
+			$($(this).data('target')).addClass('active');
 
-			$(this)
-				.closest('.tabs-content')
-					.parent()
-						.find('.tabs li')
-							.removeClass('active')
-						.end()
-						.find('[data-target="#' + $(this).data('id') + '"]')
-							.addClass('active');
 		});
+
+	$(window)
+		.on('resize', function() {
+			if ($(window).width() < 1024) {
+				$('.tabs li:not(.active)').hide();
+
+				$('.tabs li')
+					.off('click.mobile-only')
+					.on('click.mobile-only', function() {
+						var self = this;
+						if ($(this).closest('.tabs').hasClass('opened')) {
+							var count = $(this).closest('.tabs').find('li').length - 1;
+							var ready = 0;
+
+							$(this)
+								.addClass('active')
+								.closest('.tabs')
+									.find('li')
+										.each(function() {
+											if (this !== self) {
+												$(this)
+													.removeClass('active')
+													.slideUp(500, function() {
+														ready++;
+
+														if (ready == count) {
+															$(this).closest('.tabs').removeClass('opened');
+														}
+													});
+											}
+										});
+						} else {
+							$(this)
+								.closest('.tabs')
+									.find('li:not(.active)')
+										.slideDown(500)
+									.end()
+								.addClass('opened');
+						}
+					});
+			} else {
+				$('.tabs li:not(.active)').show();
+				$('.tabs li').off('click.mobile-only');
+			}
+		})
+		.trigger('resize');
 
 	
 	if ($(window).width() < 860) {

@@ -1890,18 +1890,14 @@ body {
 		// width: 100%;
 		max-width: none;
 
+		&:before {
+			@extend .svg-arrow-down-green;
+			content: '';
+			display: none;
+		}
+
 		li {
-			max-width: 225px;
-
-			&:first-child {
-				min-width: 315px;
-				width: 30%;
-				max-width: none;
-			}
-
-			&.active {
-				padding: 0;
-			}
+			width: 25%;
 		}
 
 		h5 {
@@ -1951,10 +1947,8 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-	.portfolio,
-	.leadership {
-		.portfolio-content,
-		.leadership-content {
+	.portfolio {
+		.portfolio-content {
 			padding: 35px 15px;
 		}
 
@@ -2011,6 +2005,116 @@ body {
 					margin: 0 auto 50px;
 				}
 			}
+		}
+	}
+
+	.leadership {
+		.leadership-content {
+			padding: 35px 15px;
+		}
+
+		.tabs {
+			border: 1px solid #aaa;
+			border-radius: 3px;
+
+			flex-direction: column;
+			padding: 0;
+			position: relative;
+
+			&:before {
+				display: block;
+				position: absolute;
+				height: 18px;
+				width: 18px;
+				right: 16px;
+				top: 50%;
+
+				transform: translateY(-50%);
+			}
+
+			&.opened {
+				&:before {
+					top: 28px;
+					transform: rotate(180deg);
+				}
+			}
+
+			li {
+				padding: 18px 50px 18px 16px;
+				max-width: none;
+				width: auto;
+
+				&:after {
+					display: none;
+				}
+			}
+
+			&:after {
+				display: none;
+			}
+
+			h5 {
+
+				font-size: 16px;
+				line-height: 19px;
+				letter-spacing: 0;
+				text-align: left;
+			}
+		}
+
+		.tabs-content {
+			padding: 0;
+
+			.active {
+				h2 {
+					padding: 0;
+					margin: 35px 0 25px;
+					display: block;
+
+					font-size: 22px;
+					line-height: 31px;
+					letter-spacing: normal;
+				}
+			}
+
+
+			h6 {
+				font-size: 12.5px;
+				line-height: 15px;
+			}
+
+			& > li {
+				display: block;
+				margin: 5px auto;
+			}
+
+			ul {
+				max-height: none;
+			}
+
+			.content {
+				.collapsable-table {
+					&.collapsed {
+						h3 {
+							&:after {
+								top: 50%;
+								transform: rotate(90deg) scale(0.5);
+							}
+						}
+					}
+
+					h3 {
+						padding: 18px 50px 18px 16px;
+
+						&:after {
+							top: 50%;
+							margin-top: -12px;
+							transform: rotate(-90deg) scale(0.5);
+						}
+					}
+				}
+			}
+
 		}
 	}
 }
@@ -3338,7 +3442,7 @@ body {
 
 @media screen and (max-width: 1080px) {
 	.table-view {
-		padding: 0 15px;
+		padding: 0;
 
 		.table-view-content {
 			h2 {
@@ -4787,6 +4891,10 @@ body {
 				li {
 					padding: 18px 16px;
 					max-width: none;
+
+					h5 {
+						text-align: left;
+					}
 
 					&:after {
 						display: none;
