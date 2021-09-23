@@ -1,10 +1,10 @@
 %svg-common {
-	background: url("svg/sprite.css-52e31759.svg") no-repeat;
+	background: url("svg/sprite.css-27a9e7b1.svg") no-repeat;
 }
 
 .svg-archived-memo {
 	@extend %svg-common;
-	background-position: 91.69329073482429% 71.94244604316546%;
+	background-position: 46.00638977635783% 100%;
 }
 
 .svg-archived-memo-dims {
@@ -12,9 +12,19 @@
 	height: 24px;
 }
 
+.svg-archived-memo-blue {
+	@extend %svg-common;
+	background-position: 91.69329073482429% 89.20863309352518%;
+}
+
+.svg-archived-memo-blue-dims {
+	width: 24px;
+	height: 24px;
+}
+
 .svg-arrow-down {
 	@extend %svg-common;
-	background-position: 98.75389408099689% 31.46853146853147%;
+	background-position: 98.75389408099689% 37.76223776223776%;
 }
 
 .svg-arrow-down-dims {
@@ -44,7 +54,7 @@
 
 .svg-arrow-down-light-green {
 	@extend %svg-common;
-	background-position: 99.3730407523511% 7.042253521126761%;
+	background-position: 99.3730407523511% 26.056338028169016%;
 }
 
 .svg-arrow-down-light-green-dims {
@@ -124,7 +134,7 @@
 
 .svg-arrow-up {
 	@extend %svg-common;
-	background-position: 98.75389408099689% 25.874125874125873%;
+	background-position: 98.75389408099689% 32.16783216783217%;
 }
 
 .svg-arrow-up-dims {
@@ -144,7 +154,7 @@
 
 .svg-checkbox {
 	@extend %svg-common;
-	background-position: 43.84858044164038% 98.58156028368795%;
+	background-position: 66.5615141955836% 98.58156028368795%;
 }
 
 .svg-checkbox-dims {
@@ -154,7 +164,7 @@
 
 .svg-checkbox-checked {
 	@extend %svg-common;
-	background-position: 37.53943217665615% 98.58156028368795%;
+	background-position: 60.25236593059937% 98.58156028368795%;
 }
 
 .svg-checkbox-checked-dims {
@@ -164,7 +174,7 @@
 
 .svg-chevron {
 	@extend %svg-common;
-	background-position: 23.003194888178914% 100%;
+	background-position: 82.42811501597444% 86.33093525179856%;
 }
 
 .svg-chevron-dims {
@@ -174,7 +184,7 @@
 
 .svg-chevron-green {
 	@extend %svg-common;
-	background-position: 7.667731629392971% 100%;
+	background-position: 15.335463258785943% 100%;
 }
 
 .svg-chevron-green-dims {
@@ -214,7 +224,7 @@
 
 .svg-download {
 	@extend %svg-common;
-	background-position: 91.69329073482429% 54.67625899280576%;
+	background-position: 91.69329073482429% 80.57553956834532%;
 }
 
 .svg-download-dims {
@@ -222,9 +232,19 @@
 	height: 24px;
 }
 
+.svg-download-blue {
+	@extend %svg-common;
+	background-position: 91.69329073482429% 54.67625899280576%;
+}
+
+.svg-download-blue-dims {
+	width: 24px;
+	height: 24px;
+}
+
 .svg-ellipse {
 	@extend %svg-common;
-	background-position: 95.7703927492447% 35.810810810810814%;
+	background-position: 95.7703927492447% 41.891891891891895%;
 }
 
 .svg-ellipse-dims {
@@ -234,7 +254,7 @@
 
 .svg-ellipse-empty {
 	@extend %svg-common;
-	background-position: 91.69329073482429% 89.20863309352518%;
+	background-position: 7.667731629392971% 100%;
 }
 
 .svg-ellipse-empty-dims {
@@ -244,7 +264,7 @@
 
 .svg-ellipse-selected {
 	@extend %svg-common;
-	background-position: 91.69329073482429% 80.57553956834532%;
+	background-position: 0 100%;
 }
 
 .svg-ellipse-selected-dims {
@@ -254,7 +274,7 @@
 
 .svg-facebook {
 	@extend %svg-common;
-	background-position: 64.82758620689656% 75.68627450980392%;
+	background-position: 66.55172413793103% 36.86274509803921%;
 }
 
 .svg-facebook-dims {
@@ -264,7 +284,7 @@
 
 .svg-facebook-green-fill {
 	@extend %svg-common;
-	background-position: 66.55172413793103% 55.294117647058826%;
+	background-position: 16.20689655172414% 57.254901960784316%;
 }
 
 .svg-facebook-green-fill-dims {
@@ -274,7 +294,7 @@
 
 .svg-facebook-green-outline {
 	@extend %svg-common;
-	background-position: 66.55172413793103% 36.86274509803921%;
+	background-position: 0 57.254901960784316%;
 }
 
 .svg-facebook-green-outline-dims {
@@ -284,7 +304,7 @@
 
 .svg-facebook-white {
 	@extend %svg-common;
-	background-position: 16.20689655172414% 57.254901960784316%;
+	background-position: 82.75862068965517% 0;
 }
 
 .svg-facebook-white-dims {
@@ -294,10 +314,20 @@
 
 .svg-folder {
 	@extend %svg-common;
-	background-position: 50.1577287066246% 97.88732394366197%;
+	background-position: 100% 7.042253521126761%;
 }
 
 .svg-folder-dims {
+	width: 20px;
+	height: 18px;
+}
+
+.svg-folder-blue {
+	@extend %svg-common;
+	background-position: 72.87066246056783% 97.88732394366197%;
+}
+
+.svg-folder-blue-dims {
 	width: 20px;
 	height: 18px;
 }
@@ -314,7 +344,7 @@
 
 .svg-insights-article {
 	@extend %svg-common;
-	background-position: 12.709030100334449% 90.9090909090909%;
+	background-position: 50.836120401337794% 90.9090909090909%;
 }
 
 .svg-insights-article-dims {
@@ -324,7 +354,7 @@
 
 .svg-insights-article-hover {
 	@extend %svg-common;
-	background-position: 25.418060200668897% 90.9090909090909%;
+	background-position: 0 90.9090909090909%;
 }
 
 .svg-insights-article-hover-dims {
@@ -334,7 +364,7 @@
 
 .svg-insights-audio {
 	@extend %svg-common;
-	background-position: 0 90.9090909090909%;
+	background-position: 63.54515050167224% 90.9090909090909%;
 }
 
 .svg-insights-audio-dims {
@@ -344,7 +374,7 @@
 
 .svg-insights-audio-hover {
 	@extend %svg-common;
-	background-position: 50.836120401337794% 90.9090909090909%;
+	background-position: 38.12709030100334% 90.9090909090909%;
 }
 
 .svg-insights-audio-hover-dims {
@@ -354,7 +384,7 @@
 
 .svg-insights-video {
 	@extend %svg-common;
-	background-position: 63.54515050167224% 90.9090909090909%;
+	background-position: 25.418060200668897% 90.9090909090909%;
 }
 
 .svg-insights-video-dims {
@@ -364,7 +394,7 @@
 
 .svg-insights-video-hover {
 	@extend %svg-common;
-	background-position: 38.12709030100334% 90.9090909090909%;
+	background-position: 12.709030100334449% 90.9090909090909%;
 }
 
 .svg-insights-video-hover-dims {
@@ -374,7 +404,7 @@
 
 .svg-linkedin {
 	@extend %svg-common;
-	background-position: 82.75862068965517% 0;
+	background-position: 66.55172413793103% 55.294117647058826%;
 }
 
 .svg-linkedin-dims {
@@ -384,7 +414,7 @@
 
 .svg-linkedin-green-fill {
 	@extend %svg-common;
-	background-position: 0 57.254901960784316%;
+	background-position: 64.82758620689656% 75.68627450980392%;
 }
 
 .svg-linkedin-green-fill-dims {
@@ -414,10 +444,20 @@
 
 .svg-listen {
 	@extend %svg-common;
-	background-position: 76.6773162939297% 75.89928057553956%;
+	background-position: 91.69329073482429% 63.30935251798561%;
 }
 
 .svg-listen-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-listen-blue {
+	@extend %svg-common;
+	background-position: 91.69329073482429% 71.94244604316546%;
+}
+
+.svg-listen-blue-dims {
 	width: 24px;
 	height: 24px;
 }
@@ -444,7 +484,7 @@
 
 .svg-map-icon {
 	@extend %svg-common;
-	background-position: 91.69329073482429% 63.30935251798561%;
+	background-position: 76.6773162939297% 75.89928057553956%;
 }
 
 .svg-map-icon-dims {
@@ -494,7 +534,7 @@
 
 .svg-search-type-all {
 	@extend %svg-common;
-	background-position: 82.42811501597444% 86.33093525179856%;
+	background-position: 91.69329073482429% 46.0431654676259%;
 }
 
 .svg-search-type-all-dims {
@@ -504,7 +544,7 @@
 
 .svg-search-type-insights {
 	@extend %svg-common;
-	background-position: 0 100%;
+	background-position: 30.670926517571885% 100%;
 }
 
 .svg-search-type-insights-dims {
@@ -514,7 +554,7 @@
 
 .svg-search-type-people {
 	@extend %svg-common;
-	background-position: 91.69329073482429% 46.0431654676259%;
+	background-position: 38.33865814696485% 100%;
 }
 
 .svg-search-type-people-dims {
@@ -524,7 +564,7 @@
 
 .svg-search-type-strategies {
 	@extend %svg-common;
-	background-position: 15.335463258785943% 100%;
+	background-position: 23.003194888178914% 100%;
 }
 
 .svg-search-type-strategies-dims {
@@ -604,7 +644,7 @@
 
 .svg-view-all-blue {
 	@extend %svg-common;
-	background-position: 84.07643312101911% 75.62724014336918%;
+	background-position: 53.503184713375795% 99.6415770609319%;
 }
 
 .svg-view-all-blue-dims {
@@ -614,7 +654,7 @@
 
 .svg-view-all-green {
 	@extend %svg-common;
-	background-position: 30.573248407643312% 99.6415770609319%;
+	background-position: 84.07643312101911% 75.62724014336918%;
 }
 
 .svg-view-all-green-dims {
