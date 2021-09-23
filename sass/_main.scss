@@ -7402,6 +7402,28 @@ body .ui-tooltip.ui-widget-content {
 	}
 }
 
+.play-video {
+	position: relative;
+
+	&:after {
+		content: '';
+		@extend .svg-video-play;
+		@extend .svg-video-play-dims;
+
+		position: absolute;
+		left: 50%;
+		top: 50%;
+
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover {
+		&:after {
+			@extend .svg-video-play-green;
+		}
+	}
+}
+
 .ui-widget.ui-dialog.video-player-dialog {
 	max-width: 943px;
 
