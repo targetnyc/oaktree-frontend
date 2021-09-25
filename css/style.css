@@ -61,10 +61,13 @@ a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.svg-archived-memo, .svg-archived-memo-blue, .svg-arrow-down, .svg-arrow-down-blue, .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .svg-arrow-down-light-green, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
+.svg-archived-memo, .svg-archived-memo-blue, .svg-arrow-down, .svg-arrow-down-blue, .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .subscribe-form #sf-country-button .ui-selectmenu-icon,
+.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .svg-arrow-down-light-green, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
-.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .country-addresses-wrapper .countries h4:hover:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-checkbox, .ui-widget.ui-dialog .subscribe-lightbox .checkbox, .svg-checkbox-checked, .ui-widget.ui-dialog .subscribe-lightbox .checkbox.checked, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .svg-close-black, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick:hover, .svg-close-blue, form.search .form-content .close:hover, .svg-download, .download:before, .svg-download-blue, .download:hover:before, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .page-hero .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .memo-wrapper .social-links .facebook:hover,
+.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .country-addresses-wrapper .countries h4:hover:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-checkbox, .subscribe-form .checkbox,
+.subscribe-lightbox .checkbox, .svg-checkbox-checked, .subscribe-form .checkbox.checked,
+.subscribe-lightbox .checkbox.checked, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .svg-close-black, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick:hover, .svg-close-blue, form.search .form-content .close:hover, .svg-download, .download:before, .svg-download-blue, .download:hover:before, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .page-hero .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .memo-wrapper .social-links .facebook:hover,
 .article-wrapper .social-links .facebook:hover, .country-addresses-wrapper .social-links .facebook:hover, .svg-facebook-green-outline, .two-column-content-wrapper .social-links .facebook, .memo-wrapper .social-links .facebook,
 .article-wrapper .social-links .facebook, .country-addresses-wrapper .social-links .facebook, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .page-hero .social-links .facebook:hover, .svg-folder, .archived:before, .svg-folder-blue, .archived:hover:before, .svg-info, .warning-message .info:before, .svg-insights-article, .insights-wrapper .article, .insights-list-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .insights-list-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .insights-list-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .insights-list-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .insights-list-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .insights-list-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .page-hero .social-links .linkedin, .svg-linkedin-green-fill, .two-column-content-wrapper .social-links .linkedin:hover, .memo-wrapper .social-links .linkedin:hover,
 .article-wrapper .social-links .linkedin:hover, .country-addresses-wrapper .social-links .linkedin:hover, .svg-linkedin-green-outline, .two-column-content-wrapper .social-links .linkedin, .memo-wrapper .social-links .linkedin,
@@ -114,11 +117,13 @@ a {
   height: 18px;
 }
 
-.svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
+.svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .subscribe-form #sf-country-button .ui-selectmenu-icon,
+.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
   background-position: 30.246913580246915% 31.023102310231025%;
 }
 
-.svg-arrow-down-green-dims, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .ui-widget.ui-dialog .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
+.svg-arrow-down-green-dims, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .subscribe-form #sf-country-button .ui-selectmenu-icon,
+.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
   width: 18px;
   height: 18px;
 }
@@ -216,16 +221,19 @@ a {
   height: 16px;
 }
 
-.svg-checkbox, .ui-widget.ui-dialog .subscribe-lightbox .checkbox {
+.svg-checkbox, .subscribe-form .checkbox,
+.subscribe-lightbox .checkbox {
   background-position: 60.869565217391305% 47.17607973421927%;
 }
 
-.svg-checkbox-dims, .ui-widget.ui-dialog .subscribe-lightbox .checkbox {
+.svg-checkbox-dims, .subscribe-form .checkbox,
+.subscribe-lightbox .checkbox {
   width: 20px;
   height: 20px;
 }
 
-.svg-checkbox-checked, .ui-widget.ui-dialog .subscribe-lightbox .checkbox.checked {
+.svg-checkbox-checked, .subscribe-form .checkbox.checked,
+.subscribe-lightbox .checkbox.checked {
   background-position: 54.6583850931677% 47.17607973421927%;
 }
 
@@ -6312,16 +6320,20 @@ body {
   right: 33px;
   z-index: 1;
 }
-.ui-widget.ui-dialog .subscribe-lightbox {
+
+.subscribe-form,
+.subscribe-lightbox {
   display: flex !important;
   padding: 0 !important;
 }
-.ui-widget.ui-dialog .subscribe-lightbox .img-wrapper {
+.subscribe-form .img-wrapper,
+.subscribe-lightbox .img-wrapper {
   width: 100%;
   overflow: hidden;
   position: relative;
 }
-.ui-widget.ui-dialog .subscribe-lightbox img {
+.subscribe-form img,
+.subscribe-lightbox img {
   border-radius: 3px 0 0 3px;
   position: absolute;
   height: 100%;
@@ -6329,7 +6341,8 @@ body {
   left: 0;
   width: auto;
 }
-.ui-widget.ui-dialog .subscribe-lightbox form {
+.subscribe-form form,
+.subscribe-lightbox form {
   padding: 30px 40px;
   max-width: 460px;
   color: #000;
@@ -6338,7 +6351,8 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
-.ui-widget.ui-dialog .subscribe-lightbox h2 {
+.subscribe-form h2,
+.subscribe-lightbox h2 {
   margin-bottom: 12px;
   color: #388067;
   font-style: normal;
@@ -6346,13 +6360,16 @@ body {
   font-size: 28px;
   line-height: 39px;
 }
-.ui-widget.ui-dialog .subscribe-lightbox p {
+.subscribe-form p,
+.subscribe-lightbox p {
   margin-bottom: 20px;
 }
-.ui-widget.ui-dialog .subscribe-lightbox .heading {
+.subscribe-form .heading,
+.subscribe-lightbox .heading {
   margin-bottom: 40px;
 }
-.ui-widget.ui-dialog .subscribe-lightbox label {
+.subscribe-form label,
+.subscribe-lightbox label {
   display: block;
   margin-bottom: 9px;
   color: #000;
@@ -6363,7 +6380,8 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.ui-widget.ui-dialog .subscribe-lightbox input.text-field {
+.subscribe-form input.text-field,
+.subscribe-lightbox input.text-field {
   background: #F1F1F1;
   border: 1px solid #F1F1F1;
   border-radius: 3px;
@@ -6377,10 +6395,12 @@ body {
   line-height: 22px;
   letter-spacing: 0.03em;
 }
-.ui-widget.ui-dialog .subscribe-lightbox input.text-field:focus {
+.subscribe-form input.text-field:focus,
+.subscribe-lightbox input.text-field:focus {
   border: 1px solid #388067;
 }
-.ui-widget.ui-dialog .subscribe-lightbox #sf-country-button {
+.subscribe-form #sf-country-button,
+.subscribe-lightbox #sf-country-button {
   background: #F1F1F1;
   border: 1px solid #F1F1F1;
   border-radius: 3px;
@@ -6395,37 +6415,72 @@ body {
   line-height: 22px;
   letter-spacing: 0.03em;
 }
-.ui-widget.ui-dialog .subscribe-lightbox .link-underline {
+.subscribe-form .link-underline,
+.subscribe-lightbox .link-underline {
   color: #388067;
-  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
   text-transform: none;
 }
-.ui-widget.ui-dialog .subscribe-lightbox .link-underline:after {
+.subscribe-form .link-underline:after,
+.subscribe-lightbox .link-underline:after {
   height: 1px;
   margin-top: 0;
 }
-.ui-widget.ui-dialog .subscribe-lightbox .checkbox-field {
+.subscribe-form .checkbox-field,
+.subscribe-lightbox .checkbox-field {
   display: none;
 }
-.ui-widget.ui-dialog .subscribe-lightbox .checkbox {
+.subscribe-form .checkbox,
+.subscribe-lightbox .checkbox {
   cursor: pointer;
   display: inline-block;
   margin: 0 9px 0 0;
   vertical-align: middle;
 }
-.ui-widget.ui-dialog .subscribe-lightbox .checkbox-field ~ label {
+.subscribe-form .checkbox-field ~ label,
+.subscribe-lightbox .checkbox-field ~ label {
   display: inline-block;
 }
-.ui-widget.ui-dialog .subscribe-lightbox .btn {
+.subscribe-form .btn,
+.subscribe-lightbox .btn {
   margin-top: 40px;
+}
+
+.subscribe-form {
+  background: #f1f1f1;
+  padding: 80px 15px !important;
+}
+.subscribe-form form {
+  background: #fff;
+  margin: 0 auto;
+  max-width: 550px;
+  padding: 40px;
+  width: 100%;
+}
+.subscribe-form form p,
+.subscribe-form form h2,
+.subscribe-form form fieldset,
+.subscribe-form form .btn-wrap {
+  display: block;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
   .ui-dialog .subscribe-lightbox .img-wrapper {
     display: none;
   }
-  .ui-dialog .subscribe-lightbox .btn {
+
+  .subscribe-form .btn,
+  .subscribe-lightbox .btn {
     padding: 22px 47px;
+  }
+
+  .subscribe-form form {
+    padding: 40px 20px;
   }
 }
 .ui-selectmenu-menu.ui-selectmenu-open {

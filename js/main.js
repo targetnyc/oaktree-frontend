@@ -1548,6 +1548,10 @@ function initContactUsEvents() {
 	});
 }
 
+function initSubscribeEvents() {
+	$('#sf-country').selectmenu();
+}
+
 $(document).ready(function () {
 	var page = $('body').data('page');
 	initHeaderEvents();
@@ -1579,6 +1583,9 @@ $(document).ready(function () {
 			break;
 		case 'contact-us':
 			initContactUsEvents();
+			break;
+		case 'subscribe':
+			initSubscribeEvents();
 			break;
 	}
 
