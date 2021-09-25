@@ -1552,6 +1552,38 @@ function initSubscribeEvents() {
 	$('#sf-country').selectmenu();
 }
 
+function initTermsEvents() {
+	$('.collapsable-section.collapsed .content').hide();
+
+	$('.collapsable-section h3').on('click', function() {
+		var thisSublist = $(this).closest('.collapsable-section');
+
+		if (!$(this).closest('.collapsable-section').hasClass('collapsed')) {
+			thisSublist
+				.find('.content')
+					.slideUp(500)
+				.end()
+				.addClass('collapsed');
+		} else {
+			thisSublist
+				.parent()
+					.parent()
+						.find('.collapsable-section:not(.collapsed)')
+							.find('.content')
+								.slideUp(500)
+							.end()
+							.addClass('collapsed')
+						.end()
+					.end()
+				.end()
+				.find('.content')
+					.slideDown(500)
+				.end()
+				.removeClass('collapsed');
+		}
+	});
+}
+
 $(document).ready(function () {
 	var page = $('body').data('page');
 	initHeaderEvents();
@@ -1586,6 +1618,9 @@ $(document).ready(function () {
 			break;
 		case 'subscribe':
 			initSubscribeEvents();
+			break;
+		case 'terms':
+			initTermsEvents();
 			break;
 	}
 

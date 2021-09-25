@@ -7562,3 +7562,114 @@ body .ui-tooltip.ui-widget-content {
 		}
 	}
 }
+
+.terms-wrapper {
+	max-width: 1210px;
+	padding: 80px 15px 90px;
+	margin: 0 auto;
+
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+
+	p {
+		margin: 0 0 1em;
+	}
+
+	.collapsable-section {
+		margin-top: 90px;
+		
+		& ~ .collapsable-section {
+			margin-top: 20px;
+		}
+	}
+}
+
+.collapsable-section {
+	border: 3px solid #F1F1F1;
+	border-radius: 3px;
+
+	padding: 15px 30px;
+
+	h3 {
+		display: block;
+		padding-right: 30px;
+		position: relative;
+
+		cursor: pointer;
+
+		color: #388067;
+		font-family: "orpheuspro";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 38px;
+		line-height: 59px;
+
+		&:hover {
+			color: #43997B;
+
+			&:after {
+				@extend .svg-arrow-down-light-green;
+			}
+		}
+
+		&:after {
+			@extend .svg-arrow-down-green;
+			content: '';
+
+			position: absolute;
+			right: 0;
+			top: 50%;
+			@extend .svg-arrow-down-green-dims;
+
+			transform: translateY(-50%) rotate(-180deg);
+		}
+	}
+
+	.content {
+		margin-top: 30px;
+	}
+
+	&.collapsed {
+		h3:after {
+			transform: translateY(-50%);
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.terms-wrapper {
+		padding-top: 30px;
+
+		font-size: 14px;
+		line-height: 21px;
+
+		.collapsable-section {
+			margin-top: 45px;
+
+			& ~ .collapsable-section {
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.collapsable-section {
+		border: 1px solid #aaa;
+
+		padding: 15px 16px;
+
+		h3 {
+			font-size: 26px;
+			line-height: 31px;
+
+			&:after {
+				top: 16px;
+			}
+		}
+
+		.content {
+			margin-top: 23px;
+		}
+	}
+}

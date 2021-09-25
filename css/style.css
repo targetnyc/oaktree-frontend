@@ -62,7 +62,7 @@ a {
 }
 
 .svg-archived-memo, .svg-archived-memo-blue, .svg-arrow-down, .svg-arrow-down-blue, .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .subscribe-form #sf-country-button .ui-selectmenu-icon,
-.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .svg-arrow-down-light-green, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
+.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .collapsable-section h3:after, .svg-arrow-down-light-green, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover:after, .collapsable-section h3:hover:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
 .leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .country-addresses-wrapper .countries h4:hover:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-checkbox, .subscribe-form .checkbox,
@@ -118,17 +118,17 @@ a {
 }
 
 .svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .subscribe-form #sf-country-button .ui-selectmenu-icon,
-.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
+.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .collapsable-section h3:after {
   background-position: 30.246913580246915% 31.023102310231025%;
 }
 
 .svg-arrow-down-green-dims, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .subscribe-form #sf-country-button .ui-selectmenu-icon,
-.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
+.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .collapsable-section h3:after {
   width: 18px;
   height: 18px;
 }
 
-.svg-arrow-down-light-green, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover:after {
+.svg-arrow-down-light-green, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover:after, .collapsable-section h3:hover:after {
   background-position: 72.53086419753086% 77.55775577557756%;
 }
 
@@ -8344,6 +8344,87 @@ body .ui-tooltip.ui-widget-content {
   .video-article-content .article-content p {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+.terms-wrapper {
+  max-width: 1210px;
+  padding: 80px 15px 90px;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+.terms-wrapper p {
+  margin: 0 0 1em;
+}
+.terms-wrapper .collapsable-section {
+  margin-top: 90px;
+}
+.terms-wrapper .collapsable-section ~ .collapsable-section {
+  margin-top: 20px;
+}
+
+.collapsable-section {
+  border: 3px solid #F1F1F1;
+  border-radius: 3px;
+  padding: 15px 30px;
+}
+.collapsable-section h3 {
+  display: block;
+  padding-right: 30px;
+  position: relative;
+  cursor: pointer;
+  color: #388067;
+  font-family: "orpheuspro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 59px;
+}
+.collapsable-section h3:hover {
+  color: #43997B;
+}
+.collapsable-section h3:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-180deg);
+}
+.collapsable-section .content {
+  margin-top: 30px;
+}
+.collapsable-section.collapsed h3:after {
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 767px) {
+  .terms-wrapper {
+    padding-top: 30px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .terms-wrapper .collapsable-section {
+    margin-top: 45px;
+  }
+  .terms-wrapper .collapsable-section ~ .collapsable-section {
+    margin-top: 10px;
+  }
+
+  .collapsable-section {
+    border: 1px solid #aaa;
+    padding: 15px 16px;
+  }
+  .collapsable-section h3 {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .collapsable-section h3:after {
+    top: 16px;
+  }
+  .collapsable-section .content {
+    margin-top: 23px;
   }
 }
 
