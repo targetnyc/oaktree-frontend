@@ -62,10 +62,10 @@ a {
 }
 
 .svg-archived-memo, .svg-archived-memo-blue, .svg-arrow-down, .svg-arrow-down-blue, .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .subscribe-form #sf-country-button .ui-selectmenu-icon,
-.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .collapsable-section h3:after, .svg-arrow-down-light-green, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover:after, .collapsable-section h3:hover:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
+.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .collapsable-section h3:after, .investors-wrapper .tabs:before, .svg-arrow-down-light-green, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover:after, .collapsable-section h3:hover:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
-.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .country-addresses-wrapper .countries h4:hover:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-checkbox, .subscribe-form .checkbox,
+.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .investors-wrapper .tabs-content h3:after, .svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .country-addresses-wrapper .countries h4:hover:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .svg-arrow-up, .svg-burger, .svg-checkbox, .subscribe-form .checkbox,
 .subscribe-lightbox .checkbox, .svg-checkbox-checked, .subscribe-form .checkbox.checked,
 .subscribe-lightbox .checkbox.checked, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .svg-close-black, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick:hover, .svg-close-blue, form.search .form-content .close:hover, .svg-download, .download:before, .svg-download-blue, .download:hover:before, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .page-hero .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .memo-wrapper .social-links .facebook:hover,
 .article-wrapper .social-links .facebook:hover, .country-addresses-wrapper .social-links .facebook:hover, .svg-facebook-green-outline, .two-column-content-wrapper .social-links .facebook, .memo-wrapper .social-links .facebook,
@@ -118,7 +118,7 @@ a {
 }
 
 .svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .subscribe-form #sf-country-button .ui-selectmenu-icon,
-.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .collapsable-section h3:after {
+.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .collapsable-section h3:after, .investors-wrapper .tabs:before {
   background-position: 30.246913580246915% 31.023102310231025%;
 }
 
@@ -176,7 +176,7 @@ a {
 .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
-.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after {
+.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .investors-wrapper .tabs-content h3:after {
   background-position: 0 41.75824175824176%;
 }
 
@@ -2692,6 +2692,7 @@ body {
   color: inherit;
   font-size: inherit;
   line-height: inherit;
+  font-weight: inherit;
   text-transform: inherit;
   text-decoration: none;
 }
@@ -8488,6 +8489,465 @@ body .ui-tooltip.ui-widget-content {
   .vehicles-wrapper p {
     font-size: 14px;
     font-weight: 400;
+    line-height: 20px;
+  }
+}
+.investors-wrapper {
+  padding: 95px 15px;
+  max-width: 1210px;
+  margin: 0 auto;
+}
+.investors-wrapper .tabs {
+  display: flex;
+  padding: 0 0 40px;
+  max-width: none;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+.investors-wrapper .tabs:before {
+  content: '';
+  display: none;
+}
+.investors-wrapper .tabs:after {
+  background: #E0E0E0;
+  border-radius: 100px;
+  content: '';
+  left: 0;
+  right: 0;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+}
+.investors-wrapper .tabs > li {
+  position: relative;
+  flex-grow: 1;
+  width: 25%;
+}
+.investors-wrapper .tabs > li:after {
+  background: #388067;
+  border-radius: 100px;
+  content: '';
+  opacity: 0;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -40px;
+  z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.investors-wrapper .tabs > li:hover h5 {
+  color: #388067;
+}
+.investors-wrapper .tabs > li:hover:after, .investors-wrapper .tabs > li.active:after {
+  opacity: 1;
+}
+.investors-wrapper .tabs h5 {
+  cursor: pointer;
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14.5px;
+  line-height: 17px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.investors-wrapper .tabs-content {
+  padding: 45px 0 0;
+}
+.investors-wrapper .tabs-content .heading-2 {
+  margin-bottom: 30px;
+  color: #388067;
+  font-family: "orpheus";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 59px;
+}
+.investors-wrapper .tabs-content p .link-underline {
+  color: #388067;
+}
+.investors-wrapper .tabs-content h3 {
+  margin-bottom: 8px;
+  position: relative;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 39px;
+}
+.investors-wrapper .tabs-content h3:after {
+  display: none;
+  content: '';
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  right: -14px;
+  top: -14px;
+  transform: rotate(90deg) scale(0.4);
+}
+.investors-wrapper .tabs-content .content-inner {
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+.investors-wrapper .tabs-content .content {
+  padding-top: 45px;
+  display: none;
+  justify-content: space-between;
+}
+.investors-wrapper .tabs-content .active .content {
+  display: block;
+}
+.investors-wrapper .tabs-content .active h3:after {
+  transform: rotate(-90deg) scale(0.4);
+}
+.investors-wrapper .tabs-content .asset-wrap {
+  max-width: 600px;
+  width: 100%;
+}
+.investors-wrapper .tabs-content .stock-wrapper {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.investors-wrapper .tabs-content .stock-wrapper .stock-info {
+  background: #f1f1f1;
+  padding: 30px 40px;
+  margin-right: 20px;
+  width: calc(50% - 20px);
+}
+.investors-wrapper .tabs-content .stock-wrapper .stock-info ~ .stock-info {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.investors-wrapper .tabs-content .stock-wrapper .stock-info h4 {
+  margin-bottom: 40px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+}
+.investors-wrapper .tabs-content .stock-wrapper .stock-info h4 .link-underline {
+  color: #388067;
+}
+.investors-wrapper .tabs-content .stock-wrapper .stock-info .info-pairs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+  color: #000;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 31px;
+}
+.investors-wrapper .tabs-content .stock-wrapper .stock-info .info-pairs .change {
+  color: #EB5757;
+}
+.investors-wrapper .tabs-content .stock-wrapper .stock-info .date-info {
+  margin-top: 29px;
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.investors-wrapper .tabs-content .stock-wrapper .stock-info .date-info .date {
+  text-transform: uppercase;
+}
+.investors-wrapper .additional-content {
+  padding-top: 55px;
+}
+.investors-wrapper .additional-content li {
+  display: none;
+}
+.investors-wrapper .additional-content li.active {
+  display: block;
+}
+.investors-wrapper .additional-content .content {
+  display: flex;
+  margin: 0 -15px;
+  justify-content: space-between;
+}
+.investors-wrapper .additional-content .content.centered {
+  justify-content: space-around;
+}
+.investors-wrapper .additional-content .content.contact {
+  display: block;
+  margin-top: 40px;
+  padding: 0 15px;
+}
+.investors-wrapper .additional-content .content.contact .columns {
+  display: flex;
+}
+.investors-wrapper .additional-content .content.contact .column {
+  border-left: 1px solid #f1f1f1;
+  max-width: none;
+  padding: 0 40px;
+  width: 33.3333%;
+}
+.investors-wrapper .additional-content .content.contact .column:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+.investors-wrapper .additional-content .content.contact .column:last-child {
+  padding-right: 0;
+}
+.investors-wrapper .additional-content .content.contact h2 {
+  margin-bottom: 46px;
+  color: #388067;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+}
+.investors-wrapper .additional-content .content.contact h3 {
+  margin-bottom: 22px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 31px;
+}
+.investors-wrapper .additional-content .content.contact .address {
+  margin-bottom: 14px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.investors-wrapper .additional-content .content.contact .contact-info {
+  margin-bottom: 12px;
+  color: #0C2F4B;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.investors-wrapper .additional-content .content.contact .contact-info .link-underline {
+  color: #388067;
+  font-size: 16px;
+  text-transform: none;
+  letter-spacing: 0.03em;
+}
+.investors-wrapper .additional-content .content.contact .contact-info .link-underline:after {
+  height: 1px;
+  margin-top: 0;
+}
+.investors-wrapper .additional-content .column {
+  max-width: 353px;
+  padding: 0 15px;
+}
+.investors-wrapper .additional-content h3 {
+  margin-bottom: 22px;
+  color: #388067;
+  font-family: "orpheus";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 59px;
+}
+.investors-wrapper .additional-content p {
+  margin-bottom: 15px;
+  color: #000;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.login-wrapper {
+  background: #0C2F4B;
+  padding: 64px 15px;
+  display: flex;
+  justify-content: space-around;
+}
+.login-wrapper .column {
+  text-align: center;
+}
+.login-wrapper h4 {
+  margin-bottom: 27px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 39px;
+}
+
+@media screen and (min-width: 768px) {
+  [data-page=investors] .textonly-quote-wrapper i {
+    display: block;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .investors-wrapper .additional-content .content.contact .column {
+    padding: 0 20px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .investors-wrapper .additional-content .content.contact {
+    padding: 0 15px;
+    margin-top: 0;
+  }
+  .investors-wrapper .additional-content .content.contact h2 {
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .investors-wrapper .additional-content .content.contact .columns {
+    flex-direction: column;
+  }
+  .investors-wrapper .additional-content .content.contact .column {
+    border-left: 0 none;
+    border-top: 1px solid #f1f1f1;
+    padding: 31px 0;
+    width: 100%;
+  }
+  .investors-wrapper .additional-content .content.contact .column:first-child {
+    border-top: 0 none;
+  }
+  .investors-wrapper .additional-content .content.contact .column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .investors-wrapper .additional-content .content.contact .column .address {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .login-wrapper {
+    padding: 51px 15px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .login-wrapper .column ~ .column {
+    margin-top: 42px;
+  }
+  .login-wrapper h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  .investors-wrapper {
+    padding: 50px 15px;
+  }
+  .investors-wrapper .tabs {
+    display: none;
+  }
+  .investors-wrapper .tabs-content {
+    padding: 0;
+  }
+  .investors-wrapper .tabs-content li {
+    margin-bottom: 10px;
+  }
+  .investors-wrapper .tabs-content .content {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    display: block;
+    padding: 19px 16px;
+  }
+  .investors-wrapper .tabs-content h3 {
+    padding-right: 20px;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+  .investors-wrapper .tabs-content h3:after {
+    display: block;
+  }
+  .investors-wrapper .tabs-content h3.heading-2 {
+    margin-bottom: 0;
+    color: #000;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+  .investors-wrapper .tabs-content h3.sub-heading {
+    margin-bottom: 15px;
+    color: #388067;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 31px;
+    text-transform: none;
+  }
+  .investors-wrapper .tabs-content h3.sub-heading:after {
+    display: none;
+  }
+  .investors-wrapper .tabs-content .heading-2 ~ .content-inner {
+    margin-top: 34px;
+  }
+  .investors-wrapper .tabs-content .content-inner {
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .investors-wrapper .tabs-content .stock-wrapper {
+    flex-direction: column;
+  }
+  .investors-wrapper .tabs-content .stock-wrapper .stock-info {
+    margin: 0;
+    padding: 30px 16px;
+    width: 100%;
+  }
+  .investors-wrapper .tabs-content .stock-wrapper .stock-info ~ .stock-info {
+    margin: 20px 0 0;
+  }
+  .investors-wrapper .tabs-content .stock-wrapper .stock-info h4 {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .investors-wrapper .tabs-content .stock-wrapper .stock-info .info-pairs {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .investors-wrapper .tabs-content .stock-wrapper .stock-info .date-info {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .investors-wrapper .additional-content .content {
+    flex-direction: column;
+  }
+  .investors-wrapper .additional-content .column {
+    max-width: 100%;
+  }
+  .investors-wrapper .additional-content h3 {
+    margin-bottom: 5px;
+    font-size: 26px;
+  }
+  .investors-wrapper .additional-content p {
+    margin-bottom: 15px;
+    font-size: 16px;
     line-height: 20px;
   }
 }

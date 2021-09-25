@@ -1584,6 +1584,63 @@ function initTermsEvents() {
 	});
 }
 
+function initInvestorsEvents() {
+	$(document)
+		.on('click', '.tabs li', function() {
+			$(this)
+				.closest('.tabs')
+					.find('li')
+						.removeClass('active')
+					.end()
+				.end()
+				.addClass('active');	
+
+			$('.tabs-content li').removeClass('active');
+			$('.additional-content li').removeClass('active');
+			$($(this).data('target')).addClass('active');
+			$($(this).data('target') + '-additional').addClass('active');
+
+		})
+		.on('click', '.tabs-content h3', function() {
+			if ( $(this).closest('li').hasClass('active') ) {
+				$(this)
+					.closest('li')
+						.find('.content-inner')
+							.slideUp(500)
+						.end()
+						.removeClass('active');
+			} else {
+				$(this)
+					.closest('.tabs-content')
+						.find('.active')
+							.find('.content-inner')
+								.slideUp(500)
+							.end()
+							.removeClass('active')
+						.end()
+					.end()
+					.closest('li')
+						.find('.content-inner')
+							.slideDown(500)
+						.end()
+						.addClass('active');
+
+				$('.additional-content li').removeClass('active');
+				$('#' + $(this).closest('li').attr('id') + '-additional').addClass('active');
+			}
+		});
+
+	$(window)
+		.on('resize', function() {
+			if ($(window).outerWidth() < 768) {
+				$('.tabs-content li:not(.active) .content-inner').hide();
+			} else {
+				$('.tabs-content li:not(.active) .content-inner').show();
+			}
+		})
+		.trigger('resize');
+}
+
 $(document).ready(function () {
 	var page = $('body').data('page');
 	initHeaderEvents();
@@ -1621,6 +1678,9 @@ $(document).ready(function () {
 			break;
 		case 'terms':
 			initTermsEvents();
+			break;
+		case 'investors':
+			initInvestorsEvents();
 			break;
 	}
 
