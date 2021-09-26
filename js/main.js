@@ -999,36 +999,6 @@ function initPhilosophyEvents() {
 			$(this).data('odometer-ready', true)
 		});
 	}
-
-	$('.play-video').on('click', function(e) {
-		e.preventDefault();
-
-		var videoData = $(this).data('video');
-
-		if (!$('.video-player').length) {
-			$('body').append('<div class="video-player"></div>');
-		}
-
-		var videoTemplate = '<video controls>' + 
-								'<source src="{video}" type="{mimetype}">' + 
-							'</video>';
-		$('.video-player').html(videoTemplate.replace('{video}', videoData.video).replace('{mimetype}', videoData.mimetype));
-
-		$('.video-player').dialog({
-			modal: true,
-			width: '90%',
-			maxWidth: '943',
-			resizable: false,
-			dialogClass: 'video-player-dialog',
-			show: { effect: "fadeIn", duration: 800 },
-			create: function(event, ui) {
-				$("body").css({ overflow: 'hidden' })
-			},
-			beforeClose: function(event, ui) {
-				$("body").css({ overflow: 'inherit' })
-			}
-		});
-	})
 }
 
 function loadInsights(wrapper, template, start, append) {
@@ -1641,6 +1611,66 @@ function initInvestorsEvents() {
 		.trigger('resize');
 }
 
+function initCareersEvents() {
+	$('.collapsed-list .collapsed .content').hide();
+
+	$(document)
+		.on('click', '.collapsed-list h3', function() {
+			if ( !$(this).closest('.list-item').hasClass('collapsed') ) {
+				$(this)
+					.closest('.list-item')
+						.find('.content')
+							.slideUp(500)
+						.end()
+						.addClass('collapsed');
+			} else {
+				$(this)
+					.closest('.collapsed-list')
+						.find('.list-item:not(.collapsed)')
+							.find('.content')
+								.slideUp(500)
+							.end()
+							.addClass('collapsed')
+						.end()
+					.end()
+					.closest('.list-item')
+						.find('.content')
+							.slideDown(500)
+						.end()
+						.removeClass('collapsed');
+			}
+		});
+
+	$('.owl-carousel').owlCarousel({
+		nav: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			}
+		}
+	});
+
+	$('.benefit-list .benefit')
+		.on('mouseenter', function() {
+			$('.tile-content', this).css('top', ($(window).outerWidth() < 768 ? 140 : 189) - $('.tile-content ul', this).outerHeight(true));
+		})
+		.on('mouseleave', function() {
+			$('.tile-content', this).css('top', $(this).outerHeight() - $('h3', this).outerHeight(true));
+		});
+
+	$(window)
+		.on('resize', function() {
+			$('.owl-item .column').css('min-height', '0');
+			setTimeout(function() {
+				$('.owl-item .column').css('min-height', $('.owl-stage-outer').outerHeight());
+			}, 300);
+		})
+		.trigger('resize');
+}
+
 $(document).ready(function () {
 	var page = $('body').data('page');
 	initHeaderEvents();
@@ -1682,6 +1712,9 @@ $(document).ready(function () {
 		case 'investors':
 			initInvestorsEvents();
 			break;
+		case 'careers':
+			initCareersEvents();
+			break;
 	}
 
 	$('a.has-tooltip').tooltip({
@@ -1694,6 +1727,36 @@ $(document).ready(function () {
 		classes: {
 			"ui-tooltip": "has-arrow"
 		},
+	});
+
+	$('.play-video').on('click', function(e) {
+		e.preventDefault();
+
+		var videoData = $(this).data('video');
+
+		if (!$('.video-player').length) {
+			$('body').append('<div class="video-player"></div>');
+		}
+
+		var videoTemplate = '<video controls>' + 
+								'<source src="{video}" type="{mimetype}">' + 
+							'</video>';
+		$('.video-player').html(videoTemplate.replace('{video}', videoData.video).replace('{mimetype}', videoData.mimetype));
+
+		$('.video-player').dialog({
+			modal: true,
+			width: '90%',
+			maxWidth: '943',
+			resizable: false,
+			dialogClass: 'video-player-dialog',
+			show: { effect: "fadeIn", duration: 800 },
+			create: function(event, ui) {
+				$("body").css({ overflow: 'hidden' })
+			},
+			beforeClose: function(event, ui) {
+				$("body").css({ overflow: 'inherit' })
+			}
+		});
 	});
 
 	window.prevScrollpos = window.pageYOffset;
