@@ -4940,6 +4940,25 @@ body {
 
 .subscribe-lightbox {
 	display: none;
+
+	&.ui-dialog-content {
+		display: flex !important;
+	}
+
+	.img-wrapper {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	img {
+		border-radius: 3px 0 0 3px;
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+		width: auto;
+	}
 }
 
 .ui-widget.ui-dialog {
@@ -4982,23 +5001,7 @@ body {
 
 .subscribe-form,
 .subscribe-lightbox {
-	display: flex !important;
 	padding: 0 !important;
-
-	.img-wrapper {
-		width: 100%;
-		overflow: hidden;
-		position: relative;
-	}
-
-	img {
-		border-radius: 3px 0 0 3px;
-		position: absolute;
-		height: 100%;
-		top: 0;
-		left: 0;
-		width: auto;
-	}
 
 	form {
 		padding: 30px 40px;
@@ -5130,6 +5133,7 @@ body {
 
 .subscribe-form {
 	background: #f1f1f1;
+	display: flex;
 
 	padding: 80px 15px !important;
 

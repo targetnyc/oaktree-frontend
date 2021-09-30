@@ -6368,6 +6368,22 @@ body {
 .subscribe-lightbox {
   display: none;
 }
+.subscribe-lightbox.ui-dialog-content {
+  display: flex !important;
+}
+.subscribe-lightbox .img-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.subscribe-lightbox img {
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: auto;
+}
 
 .ui-widget.ui-dialog {
   border: 0 none !important;
@@ -6394,23 +6410,7 @@ body {
 
 .subscribe-form,
 .subscribe-lightbox {
-  display: flex !important;
   padding: 0 !important;
-}
-.subscribe-form .img-wrapper,
-.subscribe-lightbox .img-wrapper {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-.subscribe-form img,
-.subscribe-lightbox img {
-  border-radius: 3px 0 0 3px;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  width: auto;
 }
 .subscribe-form form,
 .subscribe-lightbox form {
@@ -6521,6 +6521,7 @@ body {
 
 .subscribe-form {
   background: #f1f1f1;
+  display: flex;
   padding: 80px 15px !important;
 }
 .subscribe-form form {
