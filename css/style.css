@@ -2230,7 +2230,7 @@ form.search .form-content .close {
     transition: opacity 0.4s cubic-bezier(0.555, 0.205, 0.295, 0.975);
   }
   .header .mega-nav.opened {
-    max-height: calc(100vh - 70px);
+    min-height: calc(100vh - 70px);
     overflow: auto;
     opacity: 1;
   }

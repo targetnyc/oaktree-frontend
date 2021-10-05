@@ -770,7 +770,7 @@ form.search {
 
 			&.opened {
 				// display: block;
-				max-height: calc(100vh - 70px);
+				min-height: calc(100vh - 70px);
 				overflow: auto;
 
 				opacity: 1;
