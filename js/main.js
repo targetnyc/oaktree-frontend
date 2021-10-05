@@ -1832,30 +1832,36 @@ $(document).ready(function () {
 		e.preventDefault();
 
 		var videoData = $(this).data('video');
-
-		if (!$('.video-player').length) {
-			$('body').append('<div class="video-player"></div>');
-		}
-
-		var videoTemplate = '<video controls>' + 
+		var videoTemplate = '<video autoplay="" controls>' + 
 								'<source src="{video}" type="{mimetype}">' + 
 							'</video>';
-		$('.video-player').html(videoTemplate.replace('{video}', videoData.video).replace('{mimetype}', videoData.mimetype));
+		var videoPlayerContent = videoTemplate.replace('{video}', videoData.video).replace('{mimetype}', videoData.mimetype);
 
-		$('.video-player').dialog({
-			modal: true,
-			width: '90%',
-			maxWidth: '943',
-			resizable: false,
-			dialogClass: 'video-player-dialog',
-			show: { effect: "fadeIn", duration: 800 },
-			create: function(event, ui) {
-				$("body").css({ overflow: 'hidden' })
-			},
-			beforeClose: function(event, ui) {
-				$("body").css({ overflow: 'inherit' })
+		if ($(this).hasClass('inline')) {
+			$(this).replaceWith(videoPlayerContent);
+		} else {
+			if (!$('.video-player').length) {
+				$('body').append('<div class="video-player"></div>');
 			}
-		});
+
+			$('.video-player').html(videoPlayerContent);
+
+			$('.video-player').dialog({
+				modal: true,
+				width: '90%',
+				maxWidth: '943',
+				resizable: false,
+				dialogClass: 'video-player-dialog',
+				show: { effect: "fadeIn", duration: 800 },
+				create: function(event, ui) {
+					$("body").css({ overflow: 'hidden' })
+				},
+				beforeClose: function(event, ui) {
+					$("body").css({ overflow: 'inherit' })
+				}
+			});
+		}
+
 	});
 
 	window.prevScrollpos = window.pageYOffset;

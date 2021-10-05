@@ -8513,6 +8513,9 @@ body .ui-tooltip.ui-widget-content {
   max-height: none;
   margin-bottom: 0;
 }
+.video-article-content .article-content .img-wrapper video {
+  max-width: 100%;
+}
 .video-article-content .article-content h1 {
   margin: 20px 0;
   color: #000;
