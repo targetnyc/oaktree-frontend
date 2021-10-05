@@ -78,7 +78,7 @@ a {
 .article-wrapper .social-links .twitter, .country-addresses-wrapper .social-links .twitter, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .page-hero .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-video-close, .ui-widget.ui-dialog.video-player-dialog .ui-dialog-titlebar .ui-icon-closethick, .svg-video-play, .play-video:after, .svg-video-play-green, .play-video:hover:after, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .back.link-underline:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .back.link-underline:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .page-hero .social-links .youtube, .svg-youtube-green-fill, .two-column-content-wrapper .social-links .youtube:hover, .memo-wrapper .social-links .youtube:hover,
 .article-wrapper .social-links .youtube:hover, .country-addresses-wrapper .social-links .youtube:hover, .svg-youtube-green-outline, .two-column-content-wrapper .social-links .youtube, .memo-wrapper .social-links .youtube,
 .article-wrapper .social-links .youtube, .country-addresses-wrapper .social-links .youtube, .svg-youtube-white, .footer .social-links .youtube:hover, .hero-slides-wrapper .social-links .youtube:hover, .page-hero .social-links .youtube:hover {
-  background: url("svg/sprite.css-73a2ee09.svg") no-repeat;
+  background: url("svg/sprite.css-e39b9cc5.svg") no-repeat;
 }
 
 .svg-archived-memo {
@@ -5080,6 +5080,9 @@ body {
   line-height: 22px;
   letter-spacing: 0.03em;
 }
+.table-view .table-view-content .collapsable-table h3:hover {
+  background: #103E63;
+}
 .table-view .table-view-content .collapsable-table h3:after {
   content: '';
   height: 48px;
@@ -5101,6 +5104,9 @@ body {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.03em;
+}
+.table-view .table-view-content .collapsable-table .sub-tables h4:hover {
+  background: #43997B;
 }
 .table-view .table-view-content .collapsable-table .sub-tables h4:after {
   content: '';
@@ -8498,10 +8504,14 @@ body .ui-tooltip.ui-widget-content {
   margin: 0 auto 195px;
   flex-direction: row-reverse;
 }
-.video-article-content .img-wrapper,
 .video-article-content .article-content {
   padding: 0 15px;
-  width: 50%;
+  max-width: 835px;
+  width: 100%;
+}
+.video-article-content .article-content .img-wrapper img {
+  max-height: none;
+  margin-bottom: 0;
 }
 .video-article-content .article-content h1 {
   margin: 20px 0;
@@ -9370,9 +9380,13 @@ body .ui-tooltip.ui-widget-content {
   margin: 0 -10px;
 }
 .jp-audio .jp-controls li {
-  padding: 0 5px;
+  padding: 0 5px !important;
+  margin-bottom: 0 !important;
   vertical-align: middle;
   line-height: 32px;
+}
+.jp-audio .jp-controls li:before {
+  display: none;
 }
 .jp-audio .jp-controls .jp-play {
   display: block;

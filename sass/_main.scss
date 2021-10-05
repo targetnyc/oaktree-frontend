@@ -3146,6 +3146,10 @@ body {
 				line-height: 22px;
 				letter-spacing: 0.03em;
 
+				&:hover {
+					background: #103E63;
+				}
+
 				&:after {
 					@extend .svg-arrow-right-white;
 
@@ -3175,6 +3179,10 @@ body {
 					font-size: 14px;
 					line-height: 20px;
 					letter-spacing: 0.03em;
+
+					&:hover {
+						background: #43997B;
+					}
 
 					&:after {
 						@extend .svg-arrow-right-white;
@@ -7730,13 +7738,18 @@ body .ui-tooltip.ui-widget-content {
 	margin: 0 auto 195px;
 	flex-direction: row-reverse;
 
-	.img-wrapper,
 	.article-content {
 		padding: 0 15px;
-		width: 50%;
-	}
+		max-width: 835px;
+		width: 100%;
 
-	.article-content {
+		.img-wrapper {
+			img {
+				max-height: none;
+				margin-bottom: 0;
+			}
+		}
+
 		h1 {
 			margin: 20px 0;
 			color: #000;
@@ -8890,10 +8903,15 @@ body .ui-tooltip.ui-widget-content {
 		margin: 0 -10px;
 
 		li {
-			padding: 0 5px;
+			padding: 0 5px !important;
+			margin-bottom: 0 !important;
 
 			vertical-align: middle;
 			line-height: 32px;
+
+			&:before {
+				display: none;
+			}
 		}
 
 		.jp-play {
