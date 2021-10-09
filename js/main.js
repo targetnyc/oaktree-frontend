@@ -440,9 +440,16 @@ function initAboutEvents() {
 	}
 
 	window.controller = new ScrollMagic.Controller();
+	window.lastWidth = 0;
 
 	$(window)
 		.on('resize', function() {
+			if (window.lastWidth === $(window).outerWidth()) {
+				return;
+			}
+
+			window.lastWidth = $(window).outerWidth();
+
 			if (!window.controller) {
 				window.controller = new ScrollMagic.Controller();
 			}
