@@ -441,6 +441,7 @@ function initAboutEvents() {
 
 	window.controller = new ScrollMagic.Controller();
 	window.lastWidth = 0;
+	window.lastScrollScene = false;
 
 	$(window)
 		.on('resize', function() {
@@ -452,6 +453,11 @@ function initAboutEvents() {
 
 			if (!window.controller) {
 				window.controller = new ScrollMagic.Controller();
+			}
+
+			if (window.lastScrollScene) {
+				window.lastScrollScene.destroy();
+				window.lastScrollScene = false;
 			}
 
 			if ($(window).width() > 1023) {
@@ -486,7 +492,7 @@ function initAboutEvents() {
 						.addTo(controller);
 				});
 
-				new ScrollMagic.Scene({triggerElement: '.trigger-1', duration: $('.trigger-2').offset().top - $('.trigger-1').offset().top}).setPin('.sliding-info h2').addTo(controller);
+				window.lastScrollScene = new ScrollMagic.Scene({triggerElement: '.trigger-1', duration: $('.trigger-2').offset().top - $('.trigger-1').offset().top}).setPin('.sliding-info h2').addTo(controller);
 			} else {
 				$('.sliding-info .slides').addClass('owl-carousel').owlCarousel({
 					items: 1,
