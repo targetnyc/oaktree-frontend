@@ -7521,7 +7521,10 @@ body .ui-tooltip.ui-widget-content {
 	padding: 30px 35px 61px;
 	font-family: "Raleway", sans-serif;
 	overflow: visible;
+}
 
+.insights-list-wrapper,
+.ui-dialog .ui-dialog-content.archived-memos-popup {
 	h2 {
 		margin-bottom: 75px;
 
@@ -7531,99 +7534,100 @@ body .ui-tooltip.ui-widget-content {
 		font-size: 28px;
 		line-height: 39px;
 	}
+}
 
-	.memos-list {
-		margin-right: -23px;
-		padding-right: 23px !important;
+.memos-list {
+	margin-right: -23px;
+	padding-right: 23px !important;
+}
+
+.memo-sublist {
+	border: 3px solid #F1F1F1;
+	border-radius: 3px;
+
+	padding: 8px 26px;
+	margin: 10px 0;
+
+	text-align: left;
+
+	&:first-child {
+		margin-top: 0;
 	}
 
-	.memo-sublist {
-		border: 3px solid #F1F1F1;
-		border-radius: 3px;
+	h3 {
+		position: relative;
+		cursor: pointer;
 
-		padding: 8px 26px;
-		margin: 10px 0;
+		color: #388067;
+		font-family: "orpheuspro";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 59px;
 
-		text-align: left;
-
-		&:first-child {
-			margin-top: 0;
-		}
-
-		h3 {
-			position: relative;
-			cursor: pointer;
-
-			color: #388067;
-			font-family: "orpheuspro";
-			font-style: normal;
-			font-weight: normal;
-			font-size: 28px;
-			line-height: 59px;
-
-			&:hover {
-				color: #43997B;
-
-				&:after {
-					@extend .svg-arrow-down-light-green;
-				}
-			}
+		&:hover {
+			color: #43997B;
 
 			&:after {
-				@extend .svg-arrow-down-green;
-				content: '';
-
-				position: absolute;
-				right: 0;
-				top: 50%;
-				@extend .svg-arrow-down-green-dims;
-
-				transform: translateY(-50%);
+				@extend .svg-arrow-down-light-green;
 			}
 		}
 
-		&.opened {
-			h3:after {
-				transform: translateY(-50%) rotate(-180deg);
-			}
+		&:after {
+			@extend .svg-arrow-down-green;
+			content: '';
+
+			position: absolute;
+			right: 0;
+			top: 50%;
+			@extend .svg-arrow-down-green-dims;
+
+			transform: translateY(-50%);
 		}
+	}
 
-		.memo-items {
-			display: flex;
-			flex-wrap: wrap;
-			margin: 0 -20px 15px;
+	&.opened {
+		h3:after {
+			transform: translateY(-50%) rotate(-180deg);
 		}
+	}
+}
 
-		.memo-item {
-			margin: 12px 20px;
-			width: calc(25% - 40px);
-			padding: 21px 0;
-		}
+.memo-items {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -20px 15px;
+}
 
-		.date {
-			margin: 0;
+.memo-item {
+	margin: 12px 20px;
+	width: calc(25% - 40px);
+	padding: 21px 0;
+	text-align: left;
 
-			color: #979797;
-			font-style: normal;
-			font-weight: bold;
-			font-size: 11px;
-			line-height: 25px;
-			letter-spacing: 0.165em;
-			text-transform: uppercase;
-		}
+	.date {
+		margin: 0;
 
-		.title {
-			color: #000;
-			font-style: normal;
-			font-weight: 600;
-			font-size: 22px;
-			line-height: 27px;
-			text-decoration: none;
-			text-underline-offset: 3px;
+		color: #979797;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 11px;
+		line-height: 25px;
+		letter-spacing: 0.165em;
+		text-transform: uppercase;
+	}
 
-			&:hover {
-				text-decoration: underline;
-			}
+	.title {
+		color: #000;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 27px;
+		text-decoration: none;
+		text-underline-offset: 3px;
+
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }
@@ -7631,37 +7635,42 @@ body .ui-tooltip.ui-widget-content {
 @media screen and (max-width: 767px) {
 	.ui-dialog .ui-dialog-content.archived-memos-popup {
 		padding: 25px 16px;
+	}
 
+	.insights-list-wrapper,
+	.ui-dialog .ui-dialog-content.archived-memos-popup {
 		h2 {
 			margin-bottom: 50px;
 
 			font-size: 22px;
 			line-height: 31px;
 		}
+	}
 
-		.memo-sublist {
-			padding: 20px 16px;
+	.memo-sublist {
+		padding: 20px 16px;
 
-			h3 {
-				font-size: 22px;
-				line-height: 31px;
-			}
+		h3 {
+			font-size: 22px;
+			line-height: 31px;
+		}
+	}
 
-			.memo-item {
-				padding: 0;
-				margin: 15px 20px;
-				width: calc(50% - 40px);
-			}
+	.memos-list {
+		margin-right: -13px;
+		padding-right: 13px !important;
+	}
 
-			.title {
-				font-size: 18px;
-				line-height: 25px;
-			}
+	.memo-items {
+		.memo-item {
+			padding: 0;
+			margin: 15px 20px;
+			width: calc(50% - 40px);
 		}
 
-		.memos-list {
-			margin-right: -13px;
-			padding-right: 13px !important;
+		.title {
+			font-size: 18px;
+			line-height: 25px;
 		}
 	}
 }

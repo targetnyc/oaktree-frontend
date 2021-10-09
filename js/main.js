@@ -1215,6 +1215,24 @@ function initInsightEvents() {
 		'<a href="" class="title">{title}</a>'
 	'</li>';
 
+	/* Init Memos Tab */
+	$('.memo-items').each(function() {
+		var dataItems = $(this).data('items');
+		var itemsTemplate = '<div class="scrollbar-inner memos-list">';
+		var memosHtml = '';
+
+		for (var i in dataItems) {
+			var memo = dataItems[i];
+			memosHtml += memosTemplate
+								.replace('{date}', memo.date)
+								.replace('{title}', memo.title);
+		}
+
+		$(this).html(memosHtml);
+	});
+
+	/* End Init Memos Tab */
+
 	$('[data-archived-memos]').on('click', function(e) {
 		e.preventDefault();
 

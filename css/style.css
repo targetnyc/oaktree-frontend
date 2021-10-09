@@ -62,7 +62,7 @@ a {
 }
 
 .svg-archived-memo, .svg-archived-memo-blue, .svg-arrow-down, .svg-arrow-down-blue, .table-view .table-view-content .table-filters .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .subscribe-form #sf-country-button .ui-selectmenu-icon,
-.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .collapsable-section h3:after, .investors-wrapper .tabs:before, .svg-arrow-down-light-green, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover:after, .collapsable-section h3:hover:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .two-columns-wrapper .two-columns .owl-nav .owl-prev:hover, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .two-columns-wrapper .two-columns .owl-nav .owl-prev, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
+.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .memo-sublist h3:after, .collapsable-section h3:after, .investors-wrapper .tabs:before, .svg-arrow-down-light-green, .memo-sublist h3:hover:after, .collapsable-section h3:hover:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .two-columns-wrapper .two-columns .owl-nav .owl-prev:hover, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .two-columns-wrapper .two-columns .owl-nav .owl-prev, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
 .leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .two-columns-wrapper .two-columns .owl-nav .owl-next:hover, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .investors-wrapper .tabs-content h3:after, .svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .country-addresses-wrapper .countries h4:hover:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .two-columns-wrapper .two-columns .owl-nav .owl-next, .teams-wrapper .teams-content .collapsed-list .list-item h3:after, .svg-arrow-up, .svg-audio-pause, .jp-audio .jp-controls .jp-pause, .svg-audio-play, .jp-audio .jp-controls .jp-play, .svg-backward-10, .jp-audio .jp-controls .jp-backward, .svg-burger, .svg-checkbox, .subscribe-form .checkbox,
@@ -118,17 +118,17 @@ a {
 }
 
 .svg-arrow-down-green, .leadership .tabs:before, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .tabs:before, .subscribe-form #sf-country-button .ui-selectmenu-icon,
-.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .collapsable-section h3:after, .investors-wrapper .tabs:before {
+.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .memo-sublist h3:after, .collapsable-section h3:after, .investors-wrapper .tabs:before {
   background-position: 59.39393939393939% 46.864686468646866%;
 }
 
 .svg-arrow-down-green-dims, .table-view .table-view-content .table-filters .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-icon, .insights-list-wrapper .insights-list-content .dropdown-filter-wrapper .ui-selectmenu-button.ui-button.ui-selectmenu-button-open .ui-selectmenu-icon, .subscribe-form #sf-country-button .ui-selectmenu-icon,
-.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after, .collapsable-section h3:after {
+.subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .memo-sublist h3:after, .collapsable-section h3:after {
   width: 18px;
   height: 18px;
 }
 
-.svg-arrow-down-light-green, .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover:after, .collapsable-section h3:hover:after {
+.svg-arrow-down-light-green, .memo-sublist h3:hover:after, .collapsable-section h3:hover:after {
   background-position: 44.24242424242424% 31.683168316831683%;
 }
 
@@ -8351,6 +8351,8 @@ body .ui-tooltip.ui-widget-content {
   font-family: "Raleway", sans-serif;
   overflow: visible;
 }
+
+.insights-list-wrapper h2,
 .ui-dialog .ui-dialog-content.archived-memos-popup h2 {
   margin-bottom: 75px;
   color: #000;
@@ -8359,21 +8361,23 @@ body .ui-tooltip.ui-widget-content {
   font-size: 28px;
   line-height: 39px;
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memos-list {
+
+.memos-list {
   margin-right: -23px;
   padding-right: 23px !important;
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist {
+
+.memo-sublist {
   border: 3px solid #F1F1F1;
   border-radius: 3px;
   padding: 8px 26px;
   margin: 10px 0;
   text-align: left;
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist:first-child {
+.memo-sublist:first-child {
   margin-top: 0;
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3 {
+.memo-sublist h3 {
   position: relative;
   cursor: pointer;
   color: #388067;
@@ -8383,30 +8387,33 @@ body .ui-tooltip.ui-widget-content {
   font-size: 28px;
   line-height: 59px;
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:hover {
+.memo-sublist h3:hover {
   color: #43997B;
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3:after {
+.memo-sublist h3:after {
   content: '';
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist.opened h3:after {
+.memo-sublist.opened h3:after {
   transform: translateY(-50%) rotate(-180deg);
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .memo-items {
+
+.memo-items {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -20px 15px;
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .memo-item {
+
+.memo-item {
   margin: 12px 20px;
   width: calc(25% - 40px);
   padding: 21px 0;
+  text-align: left;
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .date {
+.memo-item .date {
   margin: 0;
   color: #979797;
   font-style: normal;
@@ -8416,7 +8423,7 @@ body .ui-tooltip.ui-widget-content {
   letter-spacing: 0.165em;
   text-transform: uppercase;
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .title {
+.memo-item .title {
   color: #000;
   font-style: normal;
   font-weight: 600;
@@ -8425,7 +8432,7 @@ body .ui-tooltip.ui-widget-content {
   text-decoration: none;
   text-underline-offset: 3px;
 }
-.ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .title:hover {
+.memo-item .title:hover {
   text-decoration: underline;
 }
 
@@ -8433,30 +8440,35 @@ body .ui-tooltip.ui-widget-content {
   .ui-dialog .ui-dialog-content.archived-memos-popup {
     padding: 25px 16px;
   }
+
+  .insights-list-wrapper h2,
   .ui-dialog .ui-dialog-content.archived-memos-popup h2 {
     margin-bottom: 50px;
     font-size: 22px;
     line-height: 31px;
   }
-  .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist {
+
+  .memo-sublist {
     padding: 20px 16px;
   }
-  .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist h3 {
+  .memo-sublist h3 {
     font-size: 22px;
     line-height: 31px;
   }
-  .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .memo-item {
+
+  .memos-list {
+    margin-right: -13px;
+    padding-right: 13px !important;
+  }
+
+  .memo-items .memo-item {
     padding: 0;
     margin: 15px 20px;
     width: calc(50% - 40px);
   }
-  .ui-dialog .ui-dialog-content.archived-memos-popup .memo-sublist .title {
+  .memo-items .title {
     font-size: 18px;
     line-height: 25px;
-  }
-  .ui-dialog .ui-dialog-content.archived-memos-popup .memos-list {
-    margin-right: -13px;
-    padding-right: 13px !important;
   }
 }
 .play-video {
