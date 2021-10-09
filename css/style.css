@@ -75,7 +75,7 @@ a {
 .article-wrapper .social-links .mail:hover, .svg-mail-green-outline, .memo-wrapper .social-links .mail,
 .article-wrapper .social-links .mail, .svg-map-icon, .fullimage-block .list li:before, .country-addresses-wrapper .countries .addresses li:before, .svg-search, form.search .form-content .do-search, .table-view .table-view-content .table-filters .search-filter-wrapper button.search, .svg-search-blue, form.search .form-content .do-search:hover, .table-view .table-view-content .table-filters .search-filter-wrapper button.search:hover, .svg-search-icon, .actions-nav .action-search, .svg-search-icon-hover, .actions-nav .action-search:hover, .actions-nav .action-search.active, .svg-search-type-all, form.search .form-content .search-types .all label:before, form.search .form-content .search-types-toggle.all, .svg-search-type-insights, form.search .form-content .search-types .insights label:before, form.search .form-content .search-types-toggle.insights, .svg-search-type-people, form.search .form-content .search-types .people label:before, form.search .form-content .search-types-toggle.people, .svg-search-type-strategies, form.search .form-content .search-types .strategies label:before, form.search .form-content .search-types-toggle.strategies, .svg-twitter, .footer .social-links .twitter, .hero-slides-wrapper .social-links .twitter, .page-hero .social-links .twitter, .svg-twitter-green-fill, .two-column-content-wrapper .social-links .twitter:hover, .memo-wrapper .social-links .twitter:hover,
 .article-wrapper .social-links .twitter:hover, .country-addresses-wrapper .social-links .twitter:hover, .svg-twitter-green-outline, .two-column-content-wrapper .social-links .twitter, .memo-wrapper .social-links .twitter,
-.article-wrapper .social-links .twitter, .country-addresses-wrapper .social-links .twitter, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .page-hero .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-video-close, .ui-widget.ui-dialog.video-player-dialog .ui-dialog-titlebar .ui-icon-closethick, .svg-video-play, .play-video:after, .svg-video-play-green, .play-video:hover:after, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .back.link-underline:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .back.link-underline:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .page-hero .social-links .youtube, .svg-youtube-green-fill, .two-column-content-wrapper .social-links .youtube:hover, .memo-wrapper .social-links .youtube:hover,
+.article-wrapper .social-links .twitter, .country-addresses-wrapper .social-links .twitter, .svg-twitter-white, .footer .social-links .twitter:hover, .hero-slides-wrapper .social-links .twitter:hover, .page-hero .social-links .twitter:hover, .svg-user, .actions-nav .action-login, .svg-user-hover, .actions-nav .action-login:hover, .actions-nav .action-login.active, .svg-video-close, .ui-widget.ui-dialog.video-player-dialog .ui-dialog-titlebar .ui-icon-closethick, .svg-video-play, .play-video:after, .svg-video-play-green, .play-video:hover:after, .svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .back.link-underline:hover:before, .featured-in .view-all:hover:before, .svg-view-all-green, .press-wrapper .content .view-all:before, .back.link-underline:before, .featured-in .view-all:before, .svg-youtube, .footer .social-links .youtube, .hero-slides-wrapper .social-links .youtube, .page-hero .social-links .youtube, .svg-youtube-green-fill, .two-column-content-wrapper .social-links .youtube:hover, .memo-wrapper .social-links .youtube:hover,
 .article-wrapper .social-links .youtube:hover, .country-addresses-wrapper .social-links .youtube:hover, .svg-youtube-green-outline, .two-column-content-wrapper .social-links .youtube, .memo-wrapper .social-links .youtube,
 .article-wrapper .social-links .youtube, .country-addresses-wrapper .social-links .youtube, .svg-youtube-white, .footer .social-links .youtube:hover, .hero-slides-wrapper .social-links .youtube:hover, .page-hero .social-links .youtube:hover {
   background: url("svg/sprite.css-e39b9cc5.svg") no-repeat;
@@ -727,7 +727,7 @@ a {
   height: 64px;
 }
 
-.svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .back.link-underline:hover:before {
+.svg-view-all-blue, .press-wrapper .content .view-all:hover:before, .back.link-underline:hover:before, .featured-in .view-all:hover:before {
   background-position: 66.15384615384616% 99.66442953020135%;
 }
 
@@ -736,11 +736,11 @@ a {
   height: 23px;
 }
 
-.svg-view-all-green, .press-wrapper .content .view-all:before, .back.link-underline:before {
+.svg-view-all-green, .press-wrapper .content .view-all:before, .back.link-underline:before, .featured-in .view-all:before {
   background-position: 59.07692307692308% 99.66442953020135%;
 }
 
-.svg-view-all-green-dims, .press-wrapper .content .view-all:before, .back.link-underline:before {
+.svg-view-all-green-dims, .press-wrapper .content .view-all:before, .back.link-underline:before, .featured-in .view-all:before {
   width: 23px;
   height: 23px;
 }
@@ -8571,6 +8571,140 @@ body .ui-tooltip.ui-widget-content {
     line-height: 24px;
   }
 }
+.podcast-article-content {
+  max-width: 1180px;
+  margin: 0 auto 120px;
+}
+.podcast-article-content .article-content {
+  padding: 0 15px 150px;
+  max-width: 835px;
+  width: 100%;
+}
+.podcast-article-content .article-content .podcast-wrap {
+  display: flex;
+  margin: 0 -15px;
+  flex-direction: row-reverse;
+}
+.podcast-article-content .article-content .download {
+  float: right;
+}
+.podcast-article-content .article-content .img-wrapper {
+  max-width: 362px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  width: 100%;
+}
+.podcast-article-content .article-content .img-wrapper img {
+  max-height: none;
+  margin-bottom: 0;
+}
+.podcast-article-content .article-content h1 {
+  margin: 0 0 25px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+}
+.podcast-article-content .article-content .podcast-content {
+  padding: 0 15px;
+  max-width: 473px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.podcast-article-content .article-content .podcast-content p {
+  margin-bottom: 20px;
+}
+.podcast-article-content .article-content .podcast-content a {
+  color: #388067;
+  font-weight: 600;
+}
+.podcast-article-content img {
+  max-width: 100%;
+}
+
+.featured-in {
+  padding: 0 15px;
+}
+.featured-in h3 {
+  padding-right: 20px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 39px;
+}
+.featured-in .podcast-list {
+  display: flex;
+  justify-content: space-between;
+}
+.featured-in .podcast-list img {
+  max-height: 64px;
+}
+.featured-in .header-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.featured-in .view-all {
+  padding-right: 32px;
+  min-height: 18px;
+  min-width: 110px;
+  position: relative;
+  line-height: 25px;
+}
+.featured-in .view-all:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  transition: background-image 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .podcast-article-content {
+    flex-direction: column;
+    margin: 0 auto 50px;
+  }
+  .podcast-article-content .img-wrapper,
+  .podcast-article-content .article-content {
+    width: 100%;
+  }
+  .podcast-article-content .article-content {
+    padding-bottom: 75px;
+  }
+  .podcast-article-content .article-content .download {
+    float: none;
+    margin-bottom: 15px;
+  }
+  .podcast-article-content .article-content .podcast-wrap {
+    flex-direction: column;
+  }
+  .podcast-article-content .article-content h1 {
+    font-size: 22px;
+    line-height: 31px;
+  }
+  .podcast-article-content .article-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .featured-in .podcast-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .featured-in h3 {
+    font-size: 22px;
+    line-height: 31px;
+  }
+}
 .terms-wrapper {
   max-width: 1210px;
   padding: 80px 15px 90px;
@@ -9385,7 +9519,7 @@ body .ui-tooltip.ui-widget-content {
   }
 }
 .jp-audio {
-  margin: 20px 0;
+  margin: 0 20px;
 }
 .jp-audio .jp-interface {
   display: flex;
