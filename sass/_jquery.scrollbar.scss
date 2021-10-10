@@ -182,7 +182,7 @@
 
 .scrollbar-outer > .scroll-element.scroll-x {
     bottom: 0;
-    height: 12px;
+    height: 6px;
     left: 0;
     width: 100%;
 }
@@ -191,14 +191,14 @@
     height: 100%;
     right: 0;
     top: 0;
-    width: 12px;
+    width: 6px;
 }
 
-.scrollbar-outer > .scroll-element.scroll-x .scroll-element_outer { height: 8px; top: 2px; }
-.scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { left: 2px; width: 8px; }
+.scrollbar-outer > .scroll-element.scroll-x .scroll-element_outer { height: 4px; top: 2px; }
+.scrollbar-outer > .scroll-element.scroll-y .scroll-element_outer { left: 2px; width: 4px; }
 
 .scrollbar-outer > .scroll-element .scroll-element_outer { overflow: hidden; }
-.scrollbar-outer > .scroll-element .scroll-element_track { background-color: #eeeeee; }
+.scrollbar-outer > .scroll-element .scroll-element_track { background-color: transparent; }
 
 .scrollbar-outer > .scroll-element .scroll-element_outer,
 .scrollbar-outer > .scroll-element .scroll-element_track,
@@ -218,8 +218,8 @@
 .scrollbar-outer > .scroll-content.scroll-scrolly_visible { left: -12px; margin-left: 12px; }
 .scrollbar-outer > .scroll-content.scroll-scrollx_visible { top:  -12px; margin-top:  12px; }
 
-.scrollbar-outer > .scroll-element.scroll-x .scroll-bar { min-width: 10px; }
-.scrollbar-outer > .scroll-element.scroll-y .scroll-bar { min-height: 10px; }
+.scrollbar-outer > .scroll-element.scroll-x .scroll-bar { min-width: 4px; }
+.scrollbar-outer > .scroll-element.scroll-y .scroll-bar { min-height: 4px; }
 
 
 /* update scrollbar offset if both scrolls are visible */
