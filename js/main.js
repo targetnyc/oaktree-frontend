@@ -440,27 +440,19 @@ function initAboutEvents() {
 	}
 
 	window.controller = new ScrollMagic.Controller();
-	window.lastWidth = 0;
-	window.lastScrollScene = false;
+	window.lastWidth = $(window).width() > 1023 ? 1023 : 1024;
+
+	function getSlidingDuration() {
+		return $('.trigger-2').offset().top - $('.trigger-1').offset().top;
+	}
 
 	$(window)
 		.on('resize', function() {
-			if (window.lastWidth === $(window).outerWidth()) {
-				return;
-			}
-
-			window.lastWidth = $(window).outerWidth();
-
 			if (!window.controller) {
 				window.controller = new ScrollMagic.Controller();
 			}
 
-			if (window.lastScrollScene) {
-				window.lastScrollScene.destroy();
-				window.lastScrollScene = false;
-			}
-
-			if ($(window).width() > 1023) {
+			if (window.lastWidth <= 1023 && $(window).width() > 1023) {
 				function tweenOpacity(el) {
 					var tween = TweenMax.fromTo(el, 1, {
 						opacity: 0,
@@ -492,8 +484,8 @@ function initAboutEvents() {
 						.addTo(controller);
 				});
 
-				window.lastScrollScene = new ScrollMagic.Scene({triggerElement: '.trigger-1', duration: $('.trigger-2').offset().top - $('.trigger-1').offset().top}).setPin('.sliding-info h2').addTo(controller);
-			} else {
+				new ScrollMagic.Scene({triggerElement: '.trigger-1', duration: getSlidingDuration}).setPin('.sliding-info h2').addTo(controller);
+			} else if (window.lastWidth > 1023 && $(window).width() < 1023) {
 				$('.sliding-info .slides').addClass('owl-carousel').owlCarousel({
 					items: 1,
 					dots: true
@@ -509,9 +501,16 @@ function initAboutEvents() {
 							.prop('style', '');
 				}
 			}
-			loadMixedChart($('.tabs-content .active .doughnut-chart' + ($(window).width() < 1024 ? '.mobile' : '.desktop'))[0]);
 
-			loadAumChart();
+
+			if (window.lastWidth !== $(window).width()) {
+				window.lastWidth = $(window).width();
+
+				loadMixedChart($('.tabs-content .active .doughnut-chart' + ($(window).width() < 1024 ? '.mobile' : '.desktop'))[0]);
+
+				loadAumChart();
+			}
+
 		})
 		.trigger('resize');
 
@@ -1429,11 +1428,38 @@ function initResponsibilityEvents() {
 		}
 	});
 
+	$('.tab-list-wrap li').on('click', function() {
+		var targetID = $(this).data('id');
+
+		$(this)
+			.parent()
+				.find('.active')
+					.removeClass('active')
+				.end()
+			.end()
+			.addClass('active');
+
+		$('.membership-list')
+			.find('.item.active')
+				.slideUp(500, function() {
+					$(this)
+						.removeClass('active')
+						.parent()
+							.find('#' + targetID)
+								.addClass('active')
+								.slideDown(500);
+				});
+
+
+	});
+
 	$(window)
 		.on('resize', function() {
-			if ($(window).width() >= 550) {
+			if ($(window).width() >= 768) {
 				$('.membership-list .description').show();
+				$('.membership-list .item:not(.active)').hide();
 			} else {
+				$('.membership-list .item:not(.active)').show();
 				$('.membership-list .item:not(.active) .description').hide();
 				$('.membership-list').trigger('destroy.owl.carousel');
 
@@ -1471,30 +1497,14 @@ function initResponsibilityEvents() {
 }
 
 function initStrategiesEvents() {
-	if ($(window).width() < 767) {
-		$(window)
-			.on('scroll', throttle(function() {
-				$('.odometer').each(function() {
-					if (elementInViewport(this) && !$(this).data('odometer-ready')) {
-						od = new Odometer({
-							el: this
-						});
-
-						od.update($(this).data('odometer'));
-						$(this).data('odometer-ready', true)
-					}
-				});
-			}, 100));
-	} else {
-		$('.odometer').each(function() {
-			od = new Odometer({
-				el: this
-			});
-
-			od.update($(this).data('odometer'));
-			$(this).data('odometer-ready', true)
+	$('.odometer').each(function() {
+		od = new Odometer({
+			el: this
 		});
-	}
+
+		od.update($(this).data('odometer'));
+		$(this).data('odometer-ready', true)
+	});
 
 	$(".insights-list").owlCarousel({
 		nav: true,
