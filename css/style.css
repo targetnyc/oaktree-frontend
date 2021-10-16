@@ -67,7 +67,8 @@ a {
 .leadership .tabs-content h2:after,
 .leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .two-columns-wrapper .owl-carousel .owl-nav .owl-next:hover, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .investors-wrapper .tabs-content h3:after, .svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .country-addresses-wrapper .countries h4:hover:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .two-columns-wrapper .owl-carousel .owl-nav .owl-next, .teams-wrapper .teams-content .collapsed-list .list-item h3:after, .svg-arrow-up, .svg-audio-pause, .jp-audio .jp-controls .jp-pause, .svg-audio-play, .jp-audio .jp-controls .jp-play, .svg-backward-10, .jp-audio .jp-controls .jp-backward, .svg-burger, .svg-checkbox, .subscribe-form .checkbox,
 .subscribe-lightbox .checkbox, .svg-checkbox-checked, .subscribe-form .checkbox.checked,
-.subscribe-lightbox .checkbox.checked, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .svg-close-black, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick:hover, .svg-close-blue, form.search .form-content .close:hover, .svg-download, .download:before, .svg-download-blue, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .page-hero .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .memo-wrapper .social-links .facebook:hover,
+.subscribe-lightbox .checkbox.checked, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .membership .membership-content .img-list li .description .close,
+.membership .membership-content .tab-list li .description .close, .svg-close-black, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick:hover, .svg-close-blue, form.search .form-content .close:hover, .svg-download, .download:before, .svg-download-blue, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .page-hero .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .memo-wrapper .social-links .facebook:hover,
 .article-wrapper .social-links .facebook:hover, .country-addresses-wrapper .social-links .facebook:hover, .svg-facebook-green-outline, .two-column-content-wrapper .social-links .facebook, .memo-wrapper .social-links .facebook,
 .article-wrapper .social-links .facebook, .country-addresses-wrapper .social-links .facebook, .svg-facebook-white, .footer .social-links .facebook:hover, .hero-slides-wrapper .social-links .facebook:hover, .page-hero .social-links .facebook:hover, .svg-folder, .archived:before, .svg-folder-blue, .svg-forward-30, .jp-audio .jp-controls .jp-forward, .svg-info, .warning-message .info:before, .svg-insights-article, .insights-wrapper .article, .insights-list-wrapper .article, .svg-insights-article-hover, .insights-wrapper .img-wrapper:hover .article, .insights-list-wrapper .img-wrapper:hover .article, .svg-insights-audio, .insights-wrapper .audio, .insights-list-wrapper .audio, .svg-insights-audio-hover, .insights-wrapper .img-wrapper:hover .audio, .insights-list-wrapper .img-wrapper:hover .audio, .svg-insights-video, .insights-wrapper .video, .insights-list-wrapper .video, .svg-insights-video-hover, .insights-wrapper .img-wrapper:hover .video, .insights-list-wrapper .img-wrapper:hover .video, .svg-linkedin, .footer .social-links .linkedin, .hero-slides-wrapper .social-links .linkedin, .page-hero .social-links .linkedin, .svg-linkedin-green-fill, .two-column-content-wrapper .social-links .linkedin:hover, .memo-wrapper .social-links .linkedin:hover,
 .article-wrapper .social-links .linkedin:hover, .country-addresses-wrapper .social-links .linkedin:hover, .svg-linkedin-green-outline, .two-column-content-wrapper .social-links .linkedin, .memo-wrapper .social-links .linkedin,
@@ -287,11 +288,13 @@ a {
   height: 24px;
 }
 
-.svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick {
+.svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .membership .membership-content .img-list li .description .close,
+.membership .membership-content .tab-list li .description .close {
   background-position: 100% 0;
 }
 
-.svg-close-dims, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick {
+.svg-close-dims, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .membership .membership-content .img-list li .description .close,
+.membership .membership-content .tab-list li .description .close {
   width: 30px;
   height: 30px;
 }
@@ -4117,6 +4120,12 @@ body {
   max-width: 600px;
   width: 100%;
 }
+.portfolio .tabs-content .asset-wrap:after,
+.leadership .tabs-content .asset-wrap:after {
+  clear: both;
+  content: '';
+  display: block;
+}
 .portfolio .breakdown ul,
 .leadership .breakdown ul {
   padding: 0;
@@ -6973,46 +6982,79 @@ body {
   display: flex;
   margin: 12px -13px;
   flex-wrap: wrap;
+  position: relative;
 }
 .membership .membership-content .img-list li,
 .membership .membership-content .tab-list li {
-  background: #F1F1F1;
+  margin: 13px;
+  max-width: calc(20% - 26px);
+  width: 100%;
+}
+.membership .membership-content .img-list li .img-wrapper,
+.membership .membership-content .tab-list li .img-wrapper {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  max-width: 215px;
+  height: 80px;
+  padding: 9.5px 15px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 215px;
-  margin: 13px;
-  padding: 9.5px 15px;
-  position: relative;
-  width: calc(20% - 26px);
 }
-.membership .membership-content .img-list li.active:before,
-.membership .membership-content .tab-list li.active:before {
+.membership .membership-content .img-list li .description,
+.membership .membership-content .tab-list li .description {
+  background: #fff;
+  border: 1px solid #F1F1F1;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  position: absolute;
+  padding: 27px 54px;
+  left: 13px;
+  margin-top: 25px;
+  right: 13px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+.membership .membership-content .img-list li .description .close,
+.membership .membership-content .tab-list li .description .close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  transform: scale(0.7);
+}
+.membership .membership-content .img-list li.active .img-wrapper:before,
+.membership .membership-content .tab-list li.active .img-wrapper:before {
   content: '';
   display: block;
   width: 0;
   height: 0;
   position: absolute;
-  bottom: -28px;
+  bottom: -26px;
   border-top: 0 none;
   border-left: 13px solid transparent;
   border-right: 13px solid transparent;
   border-bottom: 13px solid #f1f1f1;
 }
-.membership .membership-content .img-list li.active:after,
-.membership .membership-content .tab-list li.active:after {
+.membership .membership-content .img-list li.active .img-wrapper:after,
+.membership .membership-content .tab-list li.active .img-wrapper:after {
   content: '';
   display: block;
   width: 0;
   height: 0;
   position: absolute;
-  bottom: -28px;
+  bottom: -26px;
   z-index: 1;
   border-top: 0 none;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #fff;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #fff;
 }
 .membership .membership-content .img-list li img,
 .membership .membership-content .tab-list li img {
@@ -7095,8 +7137,22 @@ body {
   .membership .membership-content {
     padding: 55px 0 65px;
   }
-  .membership .membership-content .tab-list-wrap {
-    display: none;
+  .membership .membership-content .tab-list li {
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    border-radius: 3px;
+    max-width: none;
+    margin: 5px 15px;
+  }
+  .membership .membership-content .tab-list li .img-wrapper {
+    box-shadow: none;
+    max-width: none;
+    display: block;
+    height: auto;
+  }
+  .membership .membership-content .tab-list li img {
+    max-height: 45px;
+    width: auto;
   }
   .membership .membership-content .item {
     border: 1px solid #aaa;
@@ -7126,6 +7182,9 @@ body {
   background: #f1f1f1;
   padding: 19px 15px;
   text-align: center;
+}
+.warning-message.white {
+  background: #fff;
 }
 .warning-message .info {
   padding: 0 0 0 27px;
@@ -8304,7 +8363,8 @@ body .ui-tooltip.ui-widget-content {
 }
 .country-addresses-wrapper .countries .addresses li {
   position: relative;
-  width: 25%;
+  width: 100%;
+  max-width: 288px;
   padding: 20px 20px 20px 51px;
 }
 .country-addresses-wrapper .countries .addresses li:before {
@@ -8489,7 +8549,8 @@ body .ui-tooltip.ui-widget-content {
     display: block;
   }
   .country-addresses-wrapper .countries .addresses li {
-    width: auto;
+    display: inline-block;
+    vertical-align: top;
   }
   .country-addresses-wrapper .countries h4 {
     font-size: 24px;
