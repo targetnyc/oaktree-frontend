@@ -1437,7 +1437,7 @@ function initResponsibilityEvents() {
 					.find('.description')
 						.slideUp(500)
 					.end()
-					.animate({'margin-bottom': 13})
+					.animate({'margin-bottom': $(window).width() >= 768 ? 13 : 0})
 					.removeClass('active');
 		} else {
 			var el = $(this).closest('li').find('.description');
@@ -1458,20 +1458,30 @@ function initResponsibilityEvents() {
 											$(this).closest('li').addClass('active');
 										})
 										.closest('li')
-											.animate({'margin-bottom': elHeight});
+											.animate({'margin-bottom': $(window).width() >= 768 ? elHeight : 0});
 								})
 							.end()
-							.animate({'margin-bottom': 13});
+							.animate({'margin-bottom': $(window).width() >= 768 ? 13 : 0});
 			} else {
 				el
 					.slideDown(500, function() {
 						$(this).closest('li').addClass('active');
 					})
 					.closest('li')
-						.animate({'margin-bottom': elHeight});
+						.animate({'margin-bottom': $(window).width() >= 768 ? elHeight : 0});
 			}
 
 		}
+	});
+
+	$('.tab-list-wrap .description .close').on('click', function() {
+		$(this)
+			.closest('li')
+				.find('.description')
+					.slideUp(500)
+				.end()
+				.animate({'margin-bottom': $(window).width() >= 768 ? 13 : 0})
+				.removeClass('active');
 	});
 
 	$(window)

@@ -5658,6 +5658,19 @@ body {
 				max-width: calc(20% - 26px);
 				width: 100%;
 
+				&:after {
+					@extend .svg-arrow-right-green;
+					content: '';
+					width: 48px;
+					height: 48px;
+					position: absolute;
+					display: none;
+					right: 0;
+					top: 14px;
+
+					transform: rotate(90deg) scale(.35);
+				}
+
 				.img-wrapper {
 					background: #FFFFFF;
 					box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
@@ -5766,44 +5779,6 @@ body {
 			position: relative;
 		}
 
-		.item {
-			border-top: 2px solid #F1F1F1;
-			border-radius: 1px;
-
-			margin: 0 0 10px;
-			height: 100%;
-
-			color: #000;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 14px;
-			line-height: 21px;
-
-			.img-wrap {
-				display: none;
-			}
-
-
-			img {
-				width: auto;
-			}
-
-			&:after {
-				@extend .svg-arrow-right-green;
-				content: '';
-				width: 48px;
-				height: 48px;
-				position: absolute;
-				display: none;
-				right: 0;
-				top: 14px;
-				z-index: -1;
-
-				transform: rotate(90deg) scale(.35);
-			}
-		}
-
-
 		.description {
 			margin-top: 35px;
 		}
@@ -5864,53 +5839,57 @@ body {
 					border-radius: 3px;
 
 					max-width: none;
-					margin: 5px 15px;
+					cursor: pointer;
+					position: relative;
+					margin: 10px 15px;
+					padding: 15px;
 
 					.img-wrapper {
+						background: transparent;
 						box-shadow: none;
 						max-width: none;
 						display: block;
 						height: auto;
+						padding: 0;
+						margin: 0;
+						z-index: 1;
 					}
 
 					img {
 						max-height: 45px;
 						width: auto;
 					}
-				}
-			}
 
-			.item {
-				border: 1px solid #aaa;
-				border-radius: 3px;
-				box-shadow: none;
-
-				margin: 10px 0;
-				padding: 15px;
-				position: relative;
-
-				&:after {
-					display: block;
-				}
-
-				&.active {
 					&:after {
-						transform: rotate(-90deg) scale(.35);
+						display: block;
+					}
+
+					&.active {
+						&:after {
+							transform: rotate(-90deg) scale(.35);
+						}
+
+						.img-wrapper {
+							&:before,
+							&:after {
+								display: none;
+							}
+						}
+					}
+
+					.description {
+						padding: 0;
+						position: static;
+						box-shadow: none;
+						border: 0 none;
+
+						.close {
+							display: none;
+						}
 					}
 				}
-
-				.img-wrap {
-					display: block;
-				}
 			}
 
-			img {
-				max-height: 45px;
-			}
-
-			.description {
-				padding-bottom: 15px;
-			}
 		}
 	}
 }

@@ -65,7 +65,8 @@ a {
 .subscribe-lightbox #sf-country-button .ui-selectmenu-icon, .memo-sublist h3:after, .collapsable-section h3:after, .investors-wrapper .tabs:before, .svg-arrow-down-light-green, .memo-sublist h3:hover:after, .collapsable-section h3:hover:after, .svg-arrow-left-black, .people-list .people-list-content .owl-nav .owl-prev:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:after, .membership .membership-content .owl-nav .owl-prev:hover, .svg-arrow-left-green, .insights-wrapper .insights-list .owl-nav .owl-prev:hover, .people-list .people-list-content .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev:hover, .membership .membership-content .owl-nav .owl-prev, .two-columns-wrapper .owl-carousel .owl-nav .owl-prev:hover, .svg-arrow-left-white, .insights-wrapper .insights-list .owl-nav .owl-prev, .people-list.blue .owl-nav .owl-prev, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.previous:hover:after, .two-columns-wrapper .owl-carousel .owl-nav .owl-prev, .svg-arrow-right-black, .people-list .people-list-content .owl-nav .owl-next:hover, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:after, .membership .membership-content .owl-nav .owl-next:hover, .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
-.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .two-columns-wrapper .owl-carousel .owl-nav .owl-next:hover, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .investors-wrapper .tabs-content h3:after, .svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .country-addresses-wrapper .countries h4:hover:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .two-columns-wrapper .owl-carousel .owl-nav .owl-next, .teams-wrapper .teams-content .collapsed-list .list-item h3:after, .svg-arrow-up, .svg-audio-pause, .jp-audio .jp-controls .jp-pause, .svg-audio-play, .jp-audio .jp-controls .jp-play, .svg-backward-10, .jp-audio .jp-controls .jp-backward, .svg-burger, .svg-checkbox, .subscribe-form .checkbox,
+.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .img-list li:after,
+.membership .membership-content .tab-list li:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .two-columns-wrapper .owl-carousel .owl-nav .owl-next:hover, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .investors-wrapper .tabs-content h3:after, .svg-arrow-right-light-green, .full-width-tabs-wrapper h4:hover:after, .country-addresses-wrapper .countries h4:hover:after, .svg-arrow-right-white, .footer .footer-links h5:after, .insights-wrapper .insights-list .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next, .table-view .table-view-content .collapsable-table h3:after, .table-view .table-view-content .collapsable-table .sub-tables h4:after, .table-view .table-view-content .dataTables_wrapper .dataTables_paginate .fg-button.next:hover:after, .two-columns-wrapper .owl-carousel .owl-nav .owl-next, .teams-wrapper .teams-content .collapsed-list .list-item h3:after, .svg-arrow-up, .svg-audio-pause, .jp-audio .jp-controls .jp-pause, .svg-audio-play, .jp-audio .jp-controls .jp-play, .svg-backward-10, .jp-audio .jp-controls .jp-backward, .svg-burger, .svg-checkbox, .subscribe-form .checkbox,
 .subscribe-lightbox .checkbox, .svg-checkbox-checked, .subscribe-form .checkbox.checked,
 .subscribe-lightbox .checkbox.checked, .svg-chevron, form.search .form-content .search-types-toggle:after, .svg-chevron-green, form.search .form-content .search-types-toggle:hover:after, .svg-close, form.search .form-content .close, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick, .membership .membership-content .img-list li .description .close,
 .membership .membership-content .tab-list li .description .close, .svg-close-black, .ui-widget.ui-dialog .ui-dialog-titlebar .ui-icon-closethick:hover, .svg-close-blue, form.search .form-content .close:hover, .svg-download, .download:before, .svg-download-blue, .svg-ellipse, .hero-slides.owl-carousel .owl-dot, .svg-ellipse-empty, .hero-slides.owl-carousel .owl-dot:hover, .svg-ellipse-selected, .hero-slides.owl-carousel .owl-dot.active, .svg-facebook, .footer .social-links .facebook, .hero-slides-wrapper .social-links .facebook, .page-hero .social-links .facebook, .svg-facebook-green-fill, .two-column-content-wrapper .social-links .facebook:hover, .memo-wrapper .social-links .facebook:hover,
@@ -177,7 +178,8 @@ a {
 .svg-arrow-right-green, .mega-nav .menu .has-submenu > a:after, .insights-wrapper .insights-list .owl-nav .owl-next:hover, .portfolio .tabs-content h2:after,
 .portfolio .tabs-content h5:after,
 .leadership .tabs-content h2:after,
-.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .item:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .two-columns-wrapper .owl-carousel .owl-nav .owl-next:hover, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .investors-wrapper .tabs-content h3:after {
+.leadership .tabs-content h5:after, .people-list .people-list-content .owl-nav .owl-next, .people-list.blue .owl-nav .owl-next:hover, .tabbed-content-wrapper .tabbed-content-list-wrapper .tabbed-content-list h5:after, .membership .membership-content .img-list li:after,
+.membership .membership-content .tab-list li:after, .membership .membership-content .owl-nav .owl-next, .full-width-tabs-wrapper h4:after, .two-columns-wrapper .owl-carousel .owl-nav .owl-next:hover, .pillars .tabs-content h2:after, .opportunities .tabs-content h2:after, .country-addresses-wrapper .countries h4:after, .investors-wrapper .tabs-content h3:after {
   background-position: 0 41.75824175824176%;
 }
 
@@ -6990,6 +6992,17 @@ body {
   max-width: calc(20% - 26px);
   width: 100%;
 }
+.membership .membership-content .img-list li:after,
+.membership .membership-content .tab-list li:after {
+  content: '';
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  display: none;
+  right: 0;
+  top: 14px;
+  transform: rotate(90deg) scale(0.35);
+}
 .membership .membership-content .img-list li .img-wrapper,
 .membership .membership-content .tab-list li .img-wrapper {
   background: #FFFFFF;
@@ -7079,34 +7092,6 @@ body {
   padding: 0 15px;
   position: relative;
 }
-.membership .membership-content .item {
-  border-top: 2px solid #F1F1F1;
-  border-radius: 1px;
-  margin: 0 0 10px;
-  height: 100%;
-  color: #000;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-}
-.membership .membership-content .item .img-wrap {
-  display: none;
-}
-.membership .membership-content .item img {
-  width: auto;
-}
-.membership .membership-content .item:after {
-  content: '';
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  display: none;
-  right: 0;
-  top: 14px;
-  z-index: -1;
-  transform: rotate(90deg) scale(0.35);
-}
 .membership .membership-content .description {
   margin-top: 35px;
 }
@@ -7142,40 +7127,42 @@ body {
     box-sizing: border-box;
     border-radius: 3px;
     max-width: none;
-    margin: 5px 15px;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 15px;
+    padding: 15px;
   }
   .membership .membership-content .tab-list li .img-wrapper {
+    background: transparent;
     box-shadow: none;
     max-width: none;
     display: block;
     height: auto;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
   }
   .membership .membership-content .tab-list li img {
     max-height: 45px;
     width: auto;
   }
-  .membership .membership-content .item {
-    border: 1px solid #aaa;
-    border-radius: 3px;
-    box-shadow: none;
-    margin: 10px 0;
-    padding: 15px;
-    position: relative;
-  }
-  .membership .membership-content .item:after {
+  .membership .membership-content .tab-list li:after {
     display: block;
   }
-  .membership .membership-content .item.active:after {
+  .membership .membership-content .tab-list li.active:after {
     transform: rotate(-90deg) scale(0.35);
   }
-  .membership .membership-content .item .img-wrap {
-    display: block;
+  .membership .membership-content .tab-list li.active .img-wrapper:before, .membership .membership-content .tab-list li.active .img-wrapper:after {
+    display: none;
   }
-  .membership .membership-content img {
-    max-height: 45px;
+  .membership .membership-content .tab-list li .description {
+    padding: 0;
+    position: static;
+    box-shadow: none;
+    border: 0 none;
   }
-  .membership .membership-content .description {
-    padding-bottom: 15px;
+  .membership .membership-content .tab-list li .description .close {
+    display: none;
   }
 }
 .warning-message {
