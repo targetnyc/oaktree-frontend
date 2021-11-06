@@ -6666,6 +6666,29 @@ body {
   .social-links-wrapper {
     display: none;
   }
+
+  .memo-wrapper .scrollmagic-pin-spacer,
+  .article-wrapper .scrollmagic-pin-spacer {
+    position: static !important;
+    margin-bottom: 20px !important;
+  }
+  .memo-wrapper .social-links-wrapper,
+  .article-wrapper .social-links-wrapper {
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+  }
+  .memo-wrapper .social-links-wrapper span,
+  .article-wrapper .social-links-wrapper span {
+    transform: rotate(0);
+    display: block;
+    margin-right: 10px;
+  }
+  .memo-wrapper .social-links-wrapper .social-links,
+  .article-wrapper .social-links-wrapper .social-links {
+    margin-top: 0;
+    flex-direction: row;
+  }
 }
 @media screen and (max-width: 1023px) {
   .btn.secondary {
@@ -6810,6 +6833,33 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left;
+  }
+  .memo-wrapper .memo-wrapper.horizontal,
+  .memo-wrapper .actions-wrapper.horizontal,
+  .article-wrapper .memo-wrapper.horizontal,
+  .article-wrapper .actions-wrapper.horizontal {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .memo-wrapper .memo-wrapper.horizontal a:first-child,
+  .memo-wrapper .actions-wrapper.horizontal a:first-child,
+  .article-wrapper .memo-wrapper.horizontal a:first-child,
+  .article-wrapper .actions-wrapper.horizontal a:first-child {
+    margin-right: 0;
+  }
+  .memo-wrapper .memo-wrapper.horizontal a:last-child,
+  .memo-wrapper .actions-wrapper.horizontal a:last-child,
+  .article-wrapper .memo-wrapper.horizontal a:last-child,
+  .article-wrapper .actions-wrapper.horizontal a:last-child {
+    margin-right: 20px;
+  }
+  .memo-wrapper .memo-wrapper.horizontal .download,
+  .memo-wrapper .actions-wrapper.horizontal .download,
+  .article-wrapper .memo-wrapper.horizontal .download,
+  .article-wrapper .actions-wrapper.horizontal .download {
+    margin: 0;
   }
   .memo-wrapper .memo-wrapper a ~ a,
   .memo-wrapper .actions-wrapper a ~ a,
